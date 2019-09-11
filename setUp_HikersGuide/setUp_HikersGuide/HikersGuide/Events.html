@@ -11,15 +11,19 @@
             margin: 0px 20px 75px 20px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
+            font-size: 21px
         }
-
         footer {
             position: fixed;
             text-align: right;
             right: 0%;
             bottom: 15%;
         }
-
+            footer img {
+                height: 50px;
+                width: 50px;
+                margin-right: 25px;
+            }
         section {
             float: left;
             max-width: 25%;
@@ -29,7 +33,6 @@
             background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
             color: lemonchiffon;
         }
-
         aside {
             max-width: 50%;
             max-height: 15%;
@@ -40,43 +43,54 @@
             background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
             color: lemonchiffon;
         }
-
+            aside img {
+                height: 500px;
+                width: 700px;
+                margin-right: 10px;
+                float: left;
+            }
         article {
             padding-top: 18rem;
         }
-
+            article img {
+                height: 300px;
+                width: 400px;
+                margin-right: 10px;
+                margin-left: 10px;
+                float: right;
+            }
         body {
             background: url('/HikersGuide/design/images.jpg');
         }
-
         li {
             color: #000000;
             text-align: right;
             padding: 10px;
         }
-
         a:link {
             color: #000000;
         }
-
         a:visited {
             color: #087800;
         }
-
         input {
             background-color: #3b321a;
             color: lemonchiffon;
         }
-
-        h3, h5 {
+        h3, h5, p strong {
             color: #f0ae35;
         }
-
         h4 {
             color: white;
             padding-right: 22px;
         }
-
+        h1 {
+            font-size: 50px
+        }
+        h2 {
+            color: #f0ae35;
+            font-size: 35px;
+        }
         span {
             position: absolute;
             top: 15%;
@@ -89,12 +103,12 @@
     <!-- form with menu items and search box -->
     <header>
         <form target="/search">
-            <h1><strong><font face="Program OT Black" size="15">Company Name</font></strong></h1>
+            <h1><strong>Company Name</strong></h1>
             <dl>
-                <dt><strong><font size="5"><a href="/HikersGuide/Home.html" target="_blank">Home</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/Blog.html" target="_blank" style="color: #000000">Blog</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/Events.html" target="_blank" style="color: #000000">Events</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/ContactUs.html" target="_blank" style="color: #000000">Contact Us</a></font></strong></dt>
+                <dt><strong><a href="/HikersGuide/Home.html" target="_blank">Home</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/Blog.html" target="_blank" style="color: #000000">Blog</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/Events.html" target="_blank" style="color: #000000">Events</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/ContactUs.html" target="_blank" style="color: #000000">Contact Us</a></strong></dt>
 
             </dl>
             <span><input name="q" type="search" /><input type="submit" /></span>
@@ -104,55 +118,54 @@
 
     <!-- Main Event blocks floating right -->
     <aside>
-        <h1><font color="#f0ae35" size="6">Lorem ipsum</font></h1>
+        <h2>Lorem Ipsum</h2>
         <hr />
-        <p></p>
-        <h1><font color="#f0ae35" size="4">Lorem ipsum</font></h1>
+        <h3>Lorem Ipsum</h3>
         <p>New York, NY</p>
-        <img src="images/hikers1002.jpg" align="left" alt="Twitter" height="500" width="700" hspace="10" />
-        <p><font face="Program OT Black">Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong><font color="#f0ae35">Augue interdum </font></strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. </font></p>
+        <img src="images/hikers1002.jpg" alt="Midnight Trail"/>
+        <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong>Augue interdum </strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis.</p>
         <article>
             <p></p>
-            <h1><font color="#f0ae35" size="4">Lorem ipsum</font></h1>
+            <h3>Lorem Ipsum</h3>
             <p>Los Angeles, CA</p>
-            <img src="images/hikers1002.jpg" align="right" alt="Twitter" height="300" width="400" hspace="10" />
-            <p><font face="Program OT Black">Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong><font color="#f0ae35">Augue interdum </font></strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. </font></p>
+            <img src="images/hikers1002.jpg" alt="Midnight Trail" />
+            <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong>Augue interdum </strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis.</p>
         </article>
     </aside>
 
     <!-- List of Event blocks floating left -->
     <section>
-        <h1><font face="Program OT Black">Featured</font></h1>
+        <h1>Featured</h1>
 
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>Houston, TX</p>
         <P>Jujubes gummies gummies gummies carrot cake chupa chups jelly-o. Powder gummi bears fruitcake. Pastry pastry danish tiramisu. Jelly beans cotton candy cookie.</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>Phoenix, AZ</p>
         <P>Tootsie roll sweet roll danish cake. Danish pastry marshmallow dragée cupcake. Caramels danish sesame snaps marshmallow.</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>Philadelphia, PA</p>
         <P>Jujubes toffee candy. Jelly brownie soufflé jelly-o biscuit. Cotton candy tootsie roll sweet oat cake. Tart danish marshmallow candy canes pudding brownie tootsie roll jujubes.</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>San Antonio, TX	</p>
         <P>Gummies cupcake oat cake danish caramels. Wafer cotton candy lollipop. Lollipop cake apple pie cake pie jelly beans liquorice.</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>San Diego, CA</p>
         <P>Carrot cake icing toffee lemon drops pudding pie oat cake tootsie roll. Tootsie roll gingerbread ice cream. Fruitcake gingerbread liquorice. Chocolate bar muffin chocolate bar cookie fruitcake brownie chocolate cake tart liquorice.</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>Dallas, TX</p>
         <P>Jelly jelly-o biscuit cotton candy fruitcake cookie biscuit gummies. Cotton candy halvah pastry marshmallow macaroon croissant icing. Caramels pie oat cake icing cookie</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>San Jose, CA</p>
         <P>Jelly jelly-o biscuit cotton candy fruitcake cookie biscuit gummies. Cotton candy halvah pastry marshmallow macaroon croissant icing. Caramels pie oat cake icing cookie</P>
         <hr />
-        <h3><font face="Georgia Bold">Lorem ipsum</font></h3>
+        <h3>Lorem Ipsum</h3>
         <p>Austin, TX</p>
         <P>Jelly jelly-o biscuit cotton candy fruitcake cookie biscuit gummies. Cotton candy halvah pastry marshmallow macaroon croissant icing. Caramels pie oat cake icing cookie</P>
         <hr />
@@ -162,14 +175,14 @@
     <!--Footer-->
     <!-- Social Media Icons with links  -->
     <footer>
-        <h4><font size="6" face="Program OT Black">Connect</font></h4>
+        <h4><font size="6">Connect</font></h4>
 
         <ul style="list-style-type:none">
-            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="images/sharethis-3-256.png" alt="Share" height="50" weight="50" hspace="25" /></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" /></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a></li>
+            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="images/sharethis-3-256.png" alt="Share" /></a></li>
         </ul>
         <h4>&copy;Company A</h4>
     </footer>

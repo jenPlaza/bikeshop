@@ -10,6 +10,7 @@
             margin: 0px 20px 75px 20px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
+            font-size: 21px
         }
         footer {
             position: fixed;
@@ -17,6 +18,11 @@
             right: 0%;
             bottom:0;
         }
+            footer img {
+                height: 50px;
+                width: 50px;
+                margin-right: 25px;
+            }
         section {
             position: relative;
             max-width: 1000px;
@@ -38,6 +44,10 @@
             background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
             color: lemonchiffon;
         }
+            article img {
+                height: 125px;
+                width: 250px;
+            }
         body {
             background: url('/HikersGuide/design/File_001.png');
         }
@@ -60,6 +70,16 @@
             color: white;
             padding-right: 22px;
         }
+        h1 {
+            font-size: 50px
+        }
+        h2 {
+            color: #f0ae35;
+            font-size:35px;
+        }
+        p strong {
+            color: #f0ae35;
+        }
         span {
             position: absolute;
             top: 15%;
@@ -73,12 +93,13 @@
     <!-- form with menu items and search box -->
     <header>
         <form target="/search">
-            <h1><strong><font face="Program OT Black" size="15">Company Name</font></strong></h1>
+            <h1><strong>Company Name</strong></h1>
             <dl>
-                <dt><strong><font size="5"><a href="/HikersGuide/Home.html" target="_blank">Home</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/Blog.html" target="_blank" style="color: #000000">Blog</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/Events.html" target="_blank" style="color: #000000">Events</a></font></strong></dt>
-                <dt><strong><font size="5"><a href="/HikersGuide/ContactUs.html" target="_blank" style="color: #000000">Contact Us</a></font></strong></dt>
+                <dt><strong><a href="/HikersGuide/Home.html" target="_blank">Home</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/Blog.html" target="_blank" style="color: #000000">Blog</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/Events.html" target="_blank" style="color: #000000">Events</a></strong></dt>
+                <dt><strong><a href="/HikersGuide/ContactUs.html" target="_blank" style="color: #000000">Contact Us</a></strong></dt>
+
             </dl>
             <span><input name="q" type="search" /><input type="submit" /></span>
         </form>
@@ -86,78 +107,82 @@
 
     <!-- Main Post block  -->
     <aside>
-        <h1><font color="#f0ae35" size="6">Lorem Ipsum</font></h1>
+        <h2>Lorem Ipsum</h2>
         <hr />
-        <p><font face="Program OT Black">Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong><font color="#f0ae35">Augue interdum </font></strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis. </font></p>
+        <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong>Augue interdum </strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis.</p>
+        <dl>
+            <dt><input type="button" value="<" onclick="location.href='#';" /></dt>
+            <dt><input type="button" value=">" onclick="location.href='#';" /></dt>
+        </dl>
     </aside>
 
 
     <!-- Other Post blocks  -->
     <center>
-        <h1><font color="#f0ae35" face="Program OT Black">Recent Posts</font></h1>
+        <h2>Recent Posts</h2>
 
         <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
         </article>
         <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
         </article>
         <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer.</p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
-        </article>
-        <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. .</p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
-        </article>
-        <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
         </article>
         <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
         </article>
         <article>
-            <h3><font face="Georgia Bold">Lorem Ipsum</font></h3>
-            <img src="design/fall-background-photo.jpg" alt="Instagram" height="100" weight="150" />
-            <h5><font face="Program OT Black">Dolor Sit Amet</font></h5>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><a href="#"><input type="button" value="Read More" /></a></p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+        </article>
+        <article>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
+            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+        </article>
+        <article>
+            <h3>Lorem Ipsum</h3>
+            <img src="design/fall-background-photo.jpg" alt="Instagram" />
+            <h5>Dolor Sit Amet</h5>
+            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
         </article>
     </center>
 
     <!--footer-->
     <!-- Social Media Icons with links  -->
     <footer>
-        <h4><font size="6" face="Program OT Black">Connect</font></h4>
+        <h4><font size="6">Connect</font></h4>
 
         <ul style="list-style-type:none">
-            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" height="50" weight="50" hspace="25" /></a></li>
-            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="images/sharethis-3-256.png" alt="Share" height="50" weight="50" hspace="25" /></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" /></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a></li>
+            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="images/sharethis-3-256.png" alt="Share" /></a></li>
         </ul>
         <h4>&copy;Company A</h4>
     </footer>
