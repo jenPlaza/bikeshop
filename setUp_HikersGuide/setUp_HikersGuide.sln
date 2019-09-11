@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "setUp_HikersGuide", "setUp_HikersGuide\", "{95204105-5A2B-43C3-817C-5452FC2E2F65}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53141"
+		Debug.AspNetCompiler.PhysicalPath = "setUp_HikersGuide\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53141\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53141"
+		Release.AspNetCompiler.PhysicalPath = "setUp_HikersGuide\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53141\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53141"
+		SlnRelativePath = "setUp_HikersGuide\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95204105-5A2B-43C3-817C-5452FC2E2F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95204105-5A2B-43C3-817C-5452FC2E2F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A56CC3E3-6CE5-4FC3-A0A2-CC6576326E76}
+	EndGlobalSection
+EndGlobal
