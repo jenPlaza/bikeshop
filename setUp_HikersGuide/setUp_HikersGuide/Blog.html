@@ -13,9 +13,9 @@
         }
         #header h1 {
                 font-size: 5em;
-                margin: 10px 10px 75px 1px;
                 top: 30px;
                 display: inline;
+                text-align: center;
             }
         #header form {
             padding: 3rem;
@@ -112,11 +112,23 @@
                 font-size: 12px;
             }
 
+        /* categories block*/
+        #categories {
+            max-width: 65%;
+            height: 50px;
+            margin: 150px 50px 75px 70px;
+            clear: both;
+        }
+            #categories dt{
+                float: left;
+                padding: 23px;
+            }
+
         /* Article level 3*/
         #aLevel3 {
             max-width: 65%;
             height: 420px;
-            margin: 50px 50px 75px 350px;
+            margin: -50px 50px 75px 350px;
             clear: both;
         }
             #aLevel3 h2 {
@@ -159,14 +171,14 @@
 
                 #aLevel3 article img {
                     height: 150px;
-                    width: 400px;
+                    width: 500px;
                     margin: 0px 0px 6px 0px;
                     padding-right: 25px;
                 }
 
                 #aLevel3 article p strong {
                     text-align: left;
-                    margin: -290px 0px 0px 0px;
+                    margin-top: -350px;
                     font-size: 12px;
                     color: #087800;
                 }
@@ -396,21 +408,24 @@
 
     </div>
 
+    <div id="categories">
+        <!-- Post blocks  -->
+        <dl>
+            <dt><strong><a href="#">All Posts</a></strong></dt>
+            <dt><strong><a href="#">Nunc & sed</a></strong></dt>
+            <dt><strong><a href="#">Massa</a></strong></dt>
+            <dt><strong><a href="#">Consequat</a></strong></dt>
+        </dl>
+
+        <!--<input type="button" value="All Posts" onclick="location.href='#';" />
+        <input type="button" value="Nunc & sed" onclick="location.href='#';" />
+        <input type="button" value="Massa" onclick="location.href='#';" />
+        <input type="button" value="Consequat" onclick="location.href='#';" />-->
+    </div>
+
     <!--Article level 3-->
     <div id="aLevel3">
 
-
-        <!-- Post blocks  -->
-        <!--<dl>
-            <dt><h3><a href="#">All Posts</a></h3></dt>
-            <dt><h3><a href="#">Nunc & sed</a></h3></dt>
-            <dt><h3><a href="#">Massa</a></h3></dt>
-            <dt><h3><a href="#">Consequat</a></h3></dt>
-        </dl>
-
-            <input type="button" value=">" onclick="location.href='#';" />
-
-        <br /><br /><br />-->
         <h2>All Posts</h2>
         <section>
             <img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />
@@ -446,17 +461,17 @@
     </div>
 
     <!--footer-->
-             Social Media Icons with links
-            <footer>
-                <h4><font size="6">Connect</font></h4>
-                <ul style="list-style-type:none">
-                    <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
-                    <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
-                    <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
-                </ul>
-                <h4>&copy;Company A</h4>
-            </footer>
-    </body>
+    <!--Social Media Icons with links-->
+    <footer>
+        <h4><font size="6">Connect</font></h4>
+        <ul style="list-style-type:none">
+            <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
+            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
+        </ul>
+        <h4>&copy;Company A</h4>
+    </footer>
+</body>
     </html>
