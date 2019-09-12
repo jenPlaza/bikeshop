@@ -7,7 +7,7 @@
     <style>
         /* Header Block*/
         form {
-            padding: 3rem;
+            padding: 2rem;
             margin: 0px 20px 75px 20px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
@@ -15,26 +15,17 @@
         }
         dt {
             float: left;
-            padding: 15px;
+            padding-left: 25px;
         }
         span {
             position: absolute;
-            top: 17%;
+            top: 5%;
             right: 5%;
         }
-        aside dl {
-            background: url('/HikersGuide/design/yellowpoly.jpg');
-            height: 60px;
-            max-width: 97%;
-            font-size: 21px;
-            margin: -4.5rem auto 1rem auto;
-            padding-left: 35px;
-        }
-
         aside {
-            max-width: 1000px;
+            max-width: 95%;
             padding: 5rem;
-            margin: -10rem auto 1rem auto;
+            margin: -4.5rem auto 1rem auto;
             background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
             color: lemonchiffon;
         }
@@ -88,8 +79,14 @@
             margin: 6rem auto 1rem auto;
             color: lemonchiffon;
             width: 60%;
-            padding-bottom: 100px;
             padding-left: 250px;
+            padding-bottom: 100px;
+        }
+        button {
+            background-color: #3b321a;
+            color: lemonchiffon;
+            font-size: 18px;
+            padding: 1rem;
         }
 
         footer {
@@ -110,10 +107,10 @@
     <!-- form with menu items and search box -->
     <header>
         <form target="/search">
-            <center>
+            
                 <h1><strong>Company Name</strong></h1>
-            </center>
-            <hr />
+
+            <!--<hr />-->
             <dl>
                 <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
                 <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
@@ -122,14 +119,6 @@
             </dl>
             <span><input name="q" type="search" size="75" /><input type="submit" /></span>
         </form>
-        <aside>
-            <dl>
-                <dt><strong><a href="#">All Posts</a></strong></dt>
-                <dt><strong><a href="#">Nunc & sed</a></strong></dt>
-                <dt><strong><a href="#">Massa</a></strong></dt>
-                <dt><strong><a href="#">Consequat</a></strong></dt>
-            </dl>
-        </aside>
     </header>
 
     <!-- Contact Us block -->
@@ -172,6 +161,8 @@
 
         <!-- Email Us link  -->
         <h5><strong><a href="#">SEND AN EMAIL</a></strong></h5>
+        <h5><strong>OR, FIND YOUR ANSWERS HERE:</strong></h5>
+        <button>FAQ</button>
     </center>
 
 
