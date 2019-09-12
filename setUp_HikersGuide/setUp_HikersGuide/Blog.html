@@ -7,22 +7,32 @@
     <style>
 
         /* Header Block*/
-        form {
-            padding: 3rem;
-            margin: 0px 2px 75px 5px;
+        #header {
+            height: 230px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
+        }
+            #header h1 {
+                font-size: 5em;
+                margin: 10px 10px 75px 1px;
+                top: 30px;
+                display: inline;
+            }
+                #header form {
+            padding: 3rem;
+            margin: -50px 0px 75px 875px;
             font-size: 21px;
         }
-        dt {
-            float: left;
-            padding: 16px;
-        }
-        span {
-            position: absolute;
-            top: 17%;
-            right: 5%;
-        }
+            #header dt {
+ 
+                float: left;
+                padding: 16px;
+            }
+            #header span {
+                position: absolute;
+                margin: -34px 0px 75px 5px;
+                left: 5%;
+            }
         header section {
             /*background: url('/HikersGuide/design/yellowpoly.jpg');*/
             background-color:navajowhite;
@@ -31,8 +41,8 @@
             font-size: 12px;
             float: left;
             margin: -4.5rem auto 1rem auto;
-
         }
+
         section img {
             height: 75px;
             width: 75px;
@@ -88,14 +98,11 @@
             color: white;
             padding-right: 22px;
         }
-        h1 {
-            font-size: 50px
-        }
         h2 {
             color: #f0ae35;
             font-size: 35px;
         }
-        dt a:link, p strong {
+        p strong {
             color: #f0ae35;
         }
 
@@ -118,20 +125,8 @@
 
     <!--Header-->
     <!-- form with menu items and search box -->
-    <header>
-        <form target="/search">
-            <center>
-                <h1><strong>Company Name</strong></h1>
-            </center>
-            <hr />
-            <dl>
-                <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
-                <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
-                <dt><strong><a href="/event.html" target="_blank">Events</a></strong></dt>
-                <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
-            </dl>
-            <span><input name="q" type="search" size="75" /><input type="submit" /></span>
-        </form>
+    <!--<header>
+        
 
         <section>
             <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
@@ -189,6 +184,21 @@
                 <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
             </center>
         </section>
+    </header>-->
+    <header>
+        <div id="header">
+            <form target="/search">
+                
+                    <h1><strong>Company Name</strong></h1>
+                    <dl>
+                        <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
+                        <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
+                        <dt><strong><a href="/event.html" target="_blank">Events</a></strong></dt>
+                        <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
+                    </dl>
+                <span><input name="q" type="search" size="50" /><input type="submit" /></span>
+            </form>
+        </div>
     </header>
 
     <!-- Post blocks  -->
