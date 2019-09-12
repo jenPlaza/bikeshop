@@ -7,7 +7,7 @@
     <style>
         /* Header Block*/
         #header {
-            height: 230px;
+            height: 200px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
         }
@@ -27,9 +27,9 @@
                 float: left;
                 padding: 16px;
             }
-        #header span {
+            #header span {
                 position: absolute;
-                margin: -34px 0px 75px 5px;
+                margin: 15px 0px 75px 5px;
                 left: 5%;
             }
             #header input {
@@ -37,6 +37,10 @@
                 color: lemonchiffon;
             }
 
+        /* Body Block*/
+        body {
+            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+        }
 
         /* Article level 1*/
         #aLevel1 {
@@ -108,24 +112,87 @@
                 font-size: 12px;
             }
 
-        #orange {
-            max-width: 65%;
-            height: 300px;
-            border: 1px solid blue;
+        /* Article level 3*/
+        #aLevel3 {
+            max-width: 57%;
+            height: 420px;
             margin: 50px 50px 75px 350px;
             clear: both;
         }
+            #aLevel3 h2 {
+                font-size: 30px;
+                color: #f0ae35;
+            }
+            #aLevel3 section {
+                width: 600px;
+                height: 300px;
+                float: left;
+                background: url('/HikersGuide/design/images.jpg');
+                margin-left: 1px;
+                margin-top: 0px;
+            }
+                #aLevel3 section img {
+                    height: 150px;
+                    width: 500px;
+                    margin: 180px 50px 0px 50px;
+                }
+                #aLevel3 section p {
+                    text-align: left;
+                    margin: -130px 0px 6px 70px;
+                    font-size: 12px;
+                    color: #087800;
+                }
+                #aLevel3 section h3 {
+                    text-align: left;
+                    margin: 5px 0px 6px 70px;
+                    padding-right: 10px;
+                }
+
+            #aLevel3 article {
+                width: 400px;
+                height: 330px;
+                float: left;
+                border: 2px solid #3b321a;
+                margin-left: 635px;
+                margin-top: -300px;
+            }
+
+                #aLevel3 article img {
+                    height: 150px;
+                    width: 400px;
+                    margin: 0px 0px 6px 0px;
+                    padding-right: 25px;
+                }
+
+                #aLevel3 article p strong {
+                    text-align: left;
+                    margin: -290px 0px 0px 0px;
+                    font-size: 12px;
+                    color: #087800;
+                }
+
+                #aLevel3 article h3 {
+                    text-align: left;
+                    color: #087800;
+                    margin-left: 10px;
+                    margin-top: 0px;
+                }
+        #aLevel3 article p  {
+            text-align: left;
+            margin: -5px 0px 6px 10px;
+            font-size: 12px;
+            color: #087800;
+        }
+
         #yellow {
             max-width: 65%;
             height: 400px;
             border: 1px solid yellow;
-            margin: -50px 50px 75px 350px;
+            margin: -10px 50px 75px 350px;
             clear: both;
         }
        
-        body {
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-        }
+        
         /*dl {
             text-align: left;
             padding: 25px;
@@ -282,83 +349,46 @@
     </div>
 
     <!--Article level 3-->
-    <div id="orange"></div>
-    <div id="yellow"></div>
+    <div id="aLevel3">
 
-    <!-- Post blocks  -->
-    <!--<dl>
+
+        <!-- Post blocks  -->
+        <!--<dl>
         <dt><h3><a href="#">All Posts</a></h3></dt>
         <dt><h3><a href="#">Nunc & sed</a></h3></dt>
         <dt><h3><a href="#">Massa</a></h3></dt>
         <dt><h3><a href="#">Consequat</a></h3></dt>
     </dl>
 
-    <br /><br /><br />-->
-    <!--<h2>All Posts</h2>
-    <article>
-        <h3>Lorem Ipsum</h3>
-        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-    </article>-->
-    <!--<article>
-        <h3>Lorem Ipsum</h3>
-        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-    </article>
-    <article>
-        <h3>Lorem Ipsum</h3>
-        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-    </article>
-    <article>
-        <h3>Lorem Ipsum</h3>
-        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-    </article>
-    <article>
-        <h3>Lorem Ipsum</h3>
-        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-    </article>-->
-    <!-- other Post block  -->
-    <!--<section>
+        <input type="button" value=">" onclick="location.href='#';" />
 
+    <br /><br /><br />-->
+        <h2>All Posts</h2>
+        <section>
+            <img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />
+            <p>Lorem Ipsum</p>
+            <h3>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </h3>
+        </section>
         <article>
-            <h2>Lorem Ipsum</h2>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <h5>Dictum sit</h5>
-            <input type="button" value=">" onclick="location.href='#';" />
+            <img src="/HikersGuide/design/yellowpoly.jpg" alt="Alternate Text" />
+            <p><strong>Lorem Ipsum</strong></p>
+            <h3>Dessert gingerbread lollipop pudding cheesecake gummies. </h3>
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut.</p>
         </article>
-        <article>
-            <h2>Lorem Ipsum</h2>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <h5>Dictum sit</h5>
-            <input type="button" value=">" onclick="location.href='#';" />
-        </article>
-        <article>
-            <h2>Lorem Ipsum</h2>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <h5>Dictum sit</h5>
-            <input type="button" value=">" onclick="location.href='#';" />
-        </article>
-    </section>-->
-    <!--footer-->
-    <!-- Social Media Icons with links  -->
-    <footer>
-        <h4><font size="6">Connect</font></h4>
-        <ul style="list-style-type:none">
-            <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
-            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
-        </ul>
-        <h4>&copy;Company A</h4>
-    </footer>
+    </div>
+    <div id="yellow">
+        <!--footer
+        <!-- Social Media Icons with links  
+        <footer>
+            <h4><font size="6">Connect</font></h4>
+            <ul style="list-style-type:none">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
+                <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
+            </ul>
+            <h4>&copy;Company A</h4>
+        </footer>
 </body>
 </html>
