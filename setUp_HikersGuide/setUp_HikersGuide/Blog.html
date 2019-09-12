@@ -1,105 +1,115 @@
-﻿<!-- HTML Comment -->
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Blog | Company A</title>
     <style>
+
+        /* Header Block*/
         form {
             padding: 3rem;
-            margin: 0px 20px 75px 20px;
+            margin: 0px 2px 75px 5px;
             background: url('/HikersGuide/design/images.jpg');
             border: 3px solid lemonchiffon;
-            font-size: 21px
+            font-size: 21px;
+        }
+        dt {
+            float: left;
+            padding: 16px;
+        }
+        span {
+            position: absolute;
+            top: 17%;
+            right: 5%;
+        }
+        header section {
+            background: url('/HikersGuide/design/white.jpg');
+            height: 75px;
+            width: 225px;
+            font-size: 12px;
+            float: left;
+            margin: -4.5rem auto 1rem auto;
+
+        }
+        section img {
+            height: 75px;
+            width: 75px;
+        }
+        section article {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 25px;
+            margin-bottom: 5%;
+            float: left;
+            background: url('/HikersGuide/design/fall-background-photo.jpg');
+            color: lemonchiffon;
+            padding: 1rem;
+            max-width: 500px;
+        }
+        article {
+            
+            max-width: 200px;
+            padding: 3rem;
+            float: left;
+            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+            color: lemonchiffon;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+            article img {
+                height: 175px;
+                width: 200px;
+            }
+        body {
+            background: url('/HikersGuide/design/File_001.png');
+        }
+        dl {
+            text-align: left;
+            padding: 25px;
+        }
+        li {
+            color: #000000;
+            text-align: right;
+            padding: 10px;
+        }
+        a:link {
+            color: #000000;
+        }
+        a:visited {
+            color: #087800;
+        }
+        h5, input {
+            background-color: #3b321a;
+            color: lemonchiffon;
+        }
+        h4 {
+            color: white;
+            padding-right: 22px;
+        }
+        h1 {
+            font-size: 50px
+        }
+        h2 {
+            color: #f0ae35;
+            font-size: 35px;
+        }
+        dt a:link, p strong {
+            color: #f0ae35;
         }
 
+
+        /*Footer Block*/
         footer {
             position: fixed;
             text-align: right;
             right: 0%;
             bottom: 0;
         }
-
-            footer img {
+        footer img {
                 height: 50px;
                 width: 50px;
                 margin-right: 25px;
-            }
-
-        section {
-            position: relative;
-            max-width: 1000px;
-            padding: 3rem;
-            margin: 5rem auto 1rem auto;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-        }
-
-        aside {
-            max-width: 1000px;
-            padding: 5rem;
-            margin: -10rem auto 1rem auto;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-            color: lemonchiffon;
-        }
-
-        article {
-            max-width: 300px;
-            padding: 1rem;
-            float: left;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-            color: lemonchiffon;
-        }
-
-            article img {
-                height: 125px;
-                width: 250px;
-            }
-
-        body {
-            background: url('/HikersGuide/design/File_001.png');
-        }
-
-        li {
-            color: #000000;
-            text-align: right;
-            padding: 10px;
-        }
-
-        a:link {
-            color: #000000;
-        }
-
-        a:visited {
-            color: #087800;
-        }
-
-        h5, input {
-            background-color: #3b321a;
-            color: lemonchiffon;
-        }
-
-        h4 {
-            color: white;
-            padding-right: 22px;
-        }
-
-        h1 {
-            font-size: 50px
-        }
-
-        h2 {
-            color: #f0ae35;
-            font-size: 35px;
-        }
-
-        p strong {
-            color: #f0ae35;
-        }
-
-        span {
-            position: absolute;
-            top: 15%;
-            right: 45%;
         }
     </style>
 </head>
@@ -109,84 +119,143 @@
     <!-- form with menu items and search box -->
     <header>
         <form target="/search">
-            <h1><strong>Company Name</strong></h1>
+            <center>
+                <h1><strong>Company Name</strong></h1>
+            </center>
+            <hr />
             <dl>
                 <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
-                <dt><strong><a href="/blog.html" target="_blank" style="color: #000000">Blog</a></strong></dt>
-                <dt><strong><a href="/event.html" target="_blank" style="color: #000000">Events</a></strong></dt>
-                <dt><strong><a href="/contact.html" target="_blank" style="color: #000000">Contact Us</a></strong></dt>
-
+                <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
+                <dt><strong><a href="/event.html" target="_blank">Events</a></strong></dt>
+                <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
             </dl>
-            <span><input name="q" type="search" /><input type="submit" /></span>
+            <span><input name="q" type="search" size="75" /><input type="submit" /></span>
         </form>
+
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
+        <section>
+            <img src="/HikersGuide/images/hikers1001.jpg" align="left" alt="hickers" />
+            <center>
+                <br />
+                <strong>Dolor Sit Amet</strong>
+                <p>Dessert gingerbread lollipop cheesecake gummies sesame. </p>
+            </center>
+        </section>
     </header>
 
-    <!-- Main Post block  -->
-    <aside>
-        <h2>Lorem Ipsum</h2>
-        <hr />
-        <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong>Augue interdum </strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis.</p>
-        <dl>
-            <dt><input type="button" value="<" onclick="location.href='#';" /></dt>
-            <dt><input type="button" value=">" onclick="location.href='#';" /></dt>
-        </dl>
-    </aside>
+    <!-- Post blocks  -->
 
+    <dl>
+        <dt><h3><a href="#">All Posts</a></h3></dt>
+        <dt><h3><a href="#">Nunc & sed</a></h3></dt>
+        <dt><h3><a href="#">Massa</a></h3></dt>
+        <dt><h3><a href="#">Consequat</a></h3></dt>
+    </dl>
 
-    <!-- Other Post blocks  -->
-    <center>
-        <h2>Recent Posts</h2>
+    <br /><br /><br />
 
+    <h2>All Posts</h2>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
+        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+    </article>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
+        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+    </article>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
+        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+    </article>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
+        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+    </article>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
+        <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
+        <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+    </article>
+
+    <!-- other Post block  -->
+
+    <section>
+        
         <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
+            <h2>Lorem Ipsum</h2>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+            <h5>Dictum sit</h5>
+            <input type="button" value=">" onclick="location.href='#';" />
         </article>
         <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
+            <h2>Lorem Ipsum</h2>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+            <h5>Dictum sit</h5>
+            <input type="button" value=">" onclick="location.href='#';" />
         </article>
         <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
+            <h2>Lorem Ipsum</h2>
             <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
+            <h5>Dictum sit</h5>
+            <input type="button" value=">" onclick="location.href='#';" />
         </article>
-        <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-        </article>
-        <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-        </article>
-        <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-        </article>
-        <article>
-            <h3>Lorem Ipsum</h3>
-            <img src="/HikersGuide/design/fall-background-photo.jpg" alt="Instagram" />
-            <h5>Dolor Sit Amet</h5>
-            <p>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </p>
-            <p><input type="button" value="Read More" onclick="location.href='#';" /></p>
-        </article>
-    </center>
+    </section>
 
     <!--footer-->
     <!-- Social Media Icons with links  -->
