@@ -1,4 +1,4 @@
-﻿<!-- HTML Comment -->
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +8,12 @@
         /* Header Block*/
         #header {
             height: 200px;
-            background: url('/HikersGuide/design/images.jpg');
-            border: 3px solid lemonchiffon;
         }
-
             #header h1 {
-                font-size: 5em;
-                margin: 10px 10px 75px 1px;
+                font-size: 4em;
                 top: 30px;
                 display: inline;
+                text-align: center;
             }
 
             #header form {
@@ -32,59 +29,252 @@
 
             #header span {
                 position: absolute;
-                margin: 14px 0px 75px 5px;
-                left: 5%;
+                margin: 15px 0px 75px 5px;
+                left: 1%;
+            }
+
+            #header input {
+                background-color: #3b321a;
+                color: lemonchiffon;
+            }
+
+        /* Body Block*/
+        body {
+            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+        }
+
+
+        /* categories block*/
+        #categories {
+            max-width: 65%;
+            height: 50px;
+            margin: -20px 50px 25px 0px;
+            clear: both;
+        }
+
+            #categories dt {
+                float: left;
+                padding: 23px;
+            }
+
+        /*rotator image*/
+        #rotator {
+            max-width: 100%;
+            height: 700px;
+            margin: -150px 0px 75px 0px;
+            background: url('/HikersGuide/design/File_001.png');
+        }
+
+            #rotator div {
+                float: left;
+            }
+
+            #rotator .left {
+                background: url(/HikersGuide/images/left.png) no-repeat;
+                width: 50px;
+                height: 50px;
+                border: none;
+            }
+
+            #rotator span {
+                float: right;
+            }
+
+            #rotator .right {
+                background: url(/HikersGuide/images/right.png) no-repeat;
+                width: 50px;
+                height: 50px;
+                border: none;
+            }
+
+            #rotator h1 {
+                text-align: left;
+                margin-left: 300px;
+                margin-top: 1px;
+                padding-top: 25px;
+                font-size: 50px;
+                color: transparent;
+            }
+
+        #events {
+            max-width: 60%;
+            height: 1000px;
+            margin: 0px 0px 75px 300px;
+            clear: both;
+        }
+
+            #events article {
+                width: 300px;
+                height: 420px;
+                float: left;
+                padding-right: 30px;
+                padding-bottom: 30px;
+            }
+
+                #events article img {
+                    height: 400px;
+                    width: 300px;
+                    margin: 0px 0px 6px 0px;
+                    padding-right: 25px;
+                }
+
+            #events h2 {
+                color: #f0ae35;
+            }
+
+            #events article h3 {
+                text-align: left;
+                color: #087800;
+                margin-left: 10px;
+                margin-top: -150px;
+            }
+
+            #events article p strong {
+                text-align: left;
+                margin-top: auto;
+                font-size: 12px;
+                color: #087800;
+            }
+
+            #events article p {
+                text-align: left;
+                margin: -5px 0px 6px 10px;
+                font-size: 12px;
+                color: #087800;
+            }
+            #events div {
+                margin: 800px 0px -70px 400px;
+            }
+
+            #events .button {
+                width: 100px;
+                height: 50px;
+                border: none;
+                background-color: #3b321a;
+                color: lemonchiffon;
+            }
+
+        /*join*/
+        #join {
+            max-width: 100%;
+            height: 600px;
+            margin: 0px 0px 75px 0px;
+            border: 3px solid black;
+            /*background: url('/HikersGuide/images/climbers.png') no-repeat;*/
+        }
+
+        #join img{
+            width: 100%;
+            height: 400px;
+            margin: 207px 0px 0px 0px;
+            /*background: url('/HikersGuide/images/climbers.png') no-repeat;*/
+        }
+
+            #join div {
+                text-align: left;
+                margin-left: 200px;
+                margin-top: -500px;
+            }
+
+        /*sign up*/
+        #sign {
+            max-width: 100%;
+            height: 160px;
+            margin: -70px 0px 75px 0px;
+            background-color: #f0ae35;
+        }
+
+            #sign h1 {
+                text-align:center;
+                /*margin-left: 1000px;*/
+            }
+            #sign p  {
+                padding-top:20px;
+                text-align: center;
+                font-size:16px;
+                color: black;
+                /*margin-left: 550px;*/
+            }
+
+            #sign span {
+                margin-left: 835px;
+            }
+
+            #sign .button {
+                background: url(/HikersGuide/images/right.png) no-repeat;
+                width: 50px;
+                height: 50px;
+                border: none;
             }
 
 
+        #misc {
+            max-width: 70%;
+            height: 400px;
+            margin: 50px 0px 0px 300px;
+            clear: both;
+        }
 
-        
-        aside {
-            max-width: 1000px;
-            padding: 4rem;
-            margin: 0rem auto 1rem auto;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-            color: lemonchiffon;
-        }
-        section {
-            position: relative;
-            max-width: 1000px;
-            padding: 4rem;
-            margin: 3rem auto 1rem auto;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-            color: #f0ae35;
-        }
-        body {
-            background: url('/HikersGuide/design/fall-background-photo.jpg');
-        }
-        li {
-            text-align: right;
-            padding: 10px;
-        }
+            #misc section {
+                width: 300px;
+                height: 420px;
+                float: left;
+                padding-right: 40px;
+                padding-bottom: 30px;
+            }
+
+                #misc section h3 {
+                    text-align: left;
+                    color: #f0ae35;
+                    margin-left: 75px;
+                    margin-top: -50px;
+                }
+
+                #misc section p {
+                    text-align: left;
+                    margin: -5px 25px 6px 75px;
+                    font-size: 12px;
+                    color: lemonchiffon;
+                }
+
+                    #misc section p strong {
+                        text-align: left;
+                        color: #f0ae35;
+                    }
+
+                #misc section button {
+                    text-align: center;
+                    margin: 20px 25px 6px 25px;
+                    font-size: 12px;
+                    background-color: #3b321a;
+                    color: lemonchiffon;
+                    height: 40px;
+                    width: 100px;
+                    border: none;
+                }
+
+            #misc a:link {
+                color: #f0ae35;
+            }
+
         a:link {
             color: #000000;
         }
+
         a:visited {
             color: #087800;
         }
-        h5, input {
-            background-color: #3b321a;
-            color: lemonchiffon;
-        }
-        h4 {
-            color: white;
-        }
-        h2, p strong {
+
+        p strong {
             color: #f0ae35;
         }
-        h1 {
-            font-size: 50px
-        }
 
 
+        /*Footer Block*/
         footer {
-            position: sticky;
+            position: fixed;
             text-align: right;
+            right: 0%;
             bottom: 0;
         }
 
@@ -93,9 +283,14 @@
                 width: 50px;
                 margin-right: 25px;
             }
+
+            footer h4 {
+                color: white;
+            }
     </style>
 </head>
 <body>
+
     <!--Header-->
     <!-- form with menu items and search box -->
     <header>
@@ -106,46 +301,136 @@
                 <dl>
                     <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
                     <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
-                    <dt><strong><a href="/event.html" target="_blank">Events</a></strong></dt>
+                    <dt><strong><a href="/events.html" target="_blank">Events</a></strong></dt>
                     <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
                 </dl>
+
                 <span><input name="q" type="search" size="50" /><input type="submit" /></span>
             </form>
         </div>
     </header>
 
-    <!-- Welcome block -->
-    <aside>
-        <h2>Welcome</h2>
-        <hr />
-        <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong>Augue interdum </strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Consequat ac felis donec et odio pellentesque. Euismod in pellentesque massa placerat duis.</p>
-        <dl>
-            <dt><input type="button" value="<" onclick="location.href='#';" /></dt>
-            <dt><input type="button" value=">" onclick="location.href='#';" /></dt>
-        </dl>
-    </aside>
+    <div id="rotator">
+        <h1><strong>.</strong></h1>
+        <h1><strong>.</strong></h1>
+        <h1><strong>.</strong></h1>
 
-    <!-- About Us block -->
-    <section>
-        <h2>About Us</h2>
-        <p>Donec et odio pellentesque diam volutpat commodo sed egestas. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis. <strong><font color="#f0ae35">Augue interdum </font></strong>velit euismod in pellentesque massa. Massa massa ultricies mi quis hendrerit. Enim sed faucibus turpis in eu mi bibendum neque egestas.</p>
+        <div>
+            <input type="button" value="." class="left" onclick="location.href='#';" />
+        </div>
+        <span>
+            <input type="button" value="." class="right" onclick="location.href='#';" />
+        </span>
+    </div>
+
+    <div id="events">
+        <h2>Recent Posts</h2>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+
+        </article>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+        </article>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+        </article>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+        </article>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+        </article>
+        <article>
+            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <h3><strong>Lorem Ipsum</strong></h3>
+            <p><strong>May 4</strong></p>
+            <br />
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+        </article>
+        <div>
+            <input type="button" value="View More" class="button" onclick="location.href='#';" />
+        </div>
+    </div>
+
+    <div id="join">
+        <img src="/HikersGuide/images/climbers.png" alt="Alternate Text" />
+        <div>
+            <h1>Lorem Ipsum</h1>
+            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies.</strong></p>
+            <p>author | city, St </p>
+        </div>
+    </div>
+    <div id="sign">
+        <p>The biggest advebture of your life is right aruond the corner.</p>
+        <h1><strong>Sign up Now!</strong></h1>
+        <span>
+            <input type="button" value="." class="button" onclick="location.href='#';" />
+        </span>
+
+    </div>
+
+    <div id="misc">
         <section>
-            <h3>Services</h3>
-            <article><h5>Dolor Sit Amet</h5></article>
-            <article><h5>Dolor Sit Amet</h5></article>
-            <article><h5>Dolor Sit Amet</h5></article>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>Tempor commodo a lacus.</h3>
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
+            </p>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>Tempor commodo a lacus</h3>
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.</p>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>Tempor commodo a lacus.</h3>
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.</p>
+
         </section>
         <section>
-            <h3>Newsletters</h3>
-            <article><h5>Dolor Sit Amet</h5></article>
-            <article><h5>Dolor Sit Amet</h5></article>
-            <article><h5>Dolor Sit Amet</h5></article>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>New Hickers</h3>
+            <p>city, ST</p>
+            <br />
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>New Hickers</h3>
+            <p>city, ST</p>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>New Hickers</h3>
+            <p>city, ST</p>
+            <img src="/HikersGuide/images/user.png" alt="Alternate Text" />
+            <h3>New Hickers</h3>
+            <p>city, ST</p>
         </section>
-    </section>
+        <section>
+            <h3>About</h3>
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. </p>
+            <br />
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. #Enim sed faucibus turpis in eu mi bibendum neque egestas. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.  </p>
+            <br />
+            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. </p>
+        </section>
+    </div>
 
-
-    <!--Footer-->
-    <!-- Social Media Icons with links  -->
+    <!--footer-->
+    <!--Social Media Icons with links-->
     <footer>
         <h4><font size="6">Connect</font></h4>
         <ul style="list-style-type:none">

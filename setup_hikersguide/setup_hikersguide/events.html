@@ -55,17 +55,18 @@
             }
 
         /*rotator image*/
-        #blue {
+        #rotator {
             max-width: 100%;
             height: 400px;
             margin: 0px 0px 75px 0px;
             background: url('/HikersGuide/design/File_001.png');
 
         }
-            #blue div {
-                margin: -150px 0px -70px 0px;
+            #rotator div {
+                float: left;
+                margin-top: -200px;
             }
-            #blue .left {
+            #rotator .left {
                 background: url(/HikersGuide/images/left.png) no-repeat;
                 width: 50px;
                 height: 50px;
@@ -73,23 +74,24 @@
                 border: none;
             }
 
-            #blue span {
-                margin: -300px 0px 0px 1655px;
+            #rotator span {
+                float:right;
+                margin-top: -200px;
             }
-            #blue .right {
+            #rotator .right {
                 background: url(/HikersGuide/images/right.png) no-repeat;
                 width: 50px;
                 height: 50px;
                 cursor: pointer;
                 border: none;
             }
-        #blue h1 {
-            text-align: left;
-            margin-left: 300px;
-            margin-top: 1px;
-            padding-top: 25px;
-            font-size:50px;
-        }
+            #rotator h1 {
+                text-align: left;
+                margin-left: 300px;
+                margin-top: 1px;
+                padding-top: 25px;
+                font-size: 50px;
+            }
 
         #events {
             max-width: 60%;
@@ -122,7 +124,7 @@
             #events article p strong {
                 text-align: left;
                 margin-top: auto;
-                font-size: 12px;
+                font-size: 16px;
                 color: #087800;
             }
 
@@ -159,10 +161,6 @@
                     font-size: 12px;
                     color: lemonchiffon;
                 }
-                #misc article p strong {
-                        text-align: left;
-                        color: #f0ae35;
-                    }
                 #misc article button {
                     text-align: left;
                     margin: 20px 25px 6px 25px;
@@ -214,7 +212,7 @@
                 <dl>
                     <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
                     <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
-                    <dt><strong><a href="/event.html" target="_blank">Events</a></strong></dt>
+                    <dt><strong><a href="/events.html" target="_blank">Events</a></strong></dt>
                     <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
                 </dl>
                 <span><input name="q" type="search" size="50" /><input type="submit" /></span>
@@ -222,16 +220,16 @@
         </div>
     </header>
 
-    <div id="blue">
+    <div id="rotator">
         <h1><strong>Lorem Ipsum</strong></h1>
         <h1><strong>May 4</strong></h1>
         <h1><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></h1>
 
         <div>
-            <input type="button" value="" class="left" onclick="location.href='#';" />
+            <input type="button" value="." class="left" onclick="location.href='#';" />
         </div>
         <span>
-            <input type="button" value="" class="right" onclick="location.href='#';" />
+            <input type="button" value="." class="right" onclick="location.href='#';" />
         </span>
     </div>
 
@@ -301,11 +299,11 @@
             <h3><strong>Special Offers</strong></h3>
             <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
             <br />
-            <p>
-                <strong>Subscribe to our newsletter</strong>
-                <br />
-                <a href="#">Enter Your email here</a>
-            </p>
+            
+                <h5>Subscribe to our newsletter</h5>
+                <p>
+                    <a href="#">Enter Your email here</a>
+                </p>
         </article>
         <article>
             <h3><strong>Mobile App</strong></h3>
