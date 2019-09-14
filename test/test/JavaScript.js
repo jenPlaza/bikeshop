@@ -97,11 +97,18 @@
 //}
 //document.write(z);
 
-var x = 10;
-var y = 5;
+//var x = 10;
+//var y = 5;
 
-if (x > y) {
+//if (x > y) {
 
-    document.write(y);
-}
+//    document.write(y);
+//}
 
+var name = null;
+name = 'Park';
+name = 'Park';
+
+document.write("1: "+name);
+document.write("/ 2: " + name);
+document.write("/ 3: " + name);

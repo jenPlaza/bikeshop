@@ -3,25 +3,24 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Events | Company A</title>
+    <title>Contact Us | Company A</title>
     <style>
         /* Header Block*/
         #header {
-            height: 200px;
+            height: 230px;
             background: url('/HikersGuide/design/images.jpg');
-            border: 3px solid lemonchiffon;
+            max-width:100%
         }
 
             #header h1 {
-                font-size: 4em;
+                margin-left:-650px;
+                font-size: 2em;
                 top: 30px;
-                display: inline;
-                text-align: center;
             }
 
             #header form {
                 padding: 3rem;
-                margin: -50px 0px 75px 875px;
+                margin: -50px 0px 75px 750px;
                 font-size: 21px;
             }
 
@@ -40,186 +39,80 @@
                 background-color: #3b321a;
                 color: lemonchiffon;
             }
-
+        aside {
+            text-align:center;
+            max-width: 110%;
+            height: 400px;
+            padding-top:200px;
+            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+            color: lemonchiffon;
+        }
         /* Body Block*/
         body {
             background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+        }        
+        li {
+            color: #000000;
+            text-align: right;
+            padding: 10px;
         }
-
-
-        /* categories block*/
-        #categories {
-            max-width: 65%;
-            height: 50px;
-            margin: -20px 50px 25px 0px;
-            clear: both;
-        }
-
-            #categories dt {
-                float: left;
-                padding: 23px;
-            }
-
-        /*rotator image*/
-        #rotator {
-            max-width: 100%;
-            height: 400px;
-            margin: 0px 0px 75px 0px;
-            background: url('/HikersGuide/design/File_001.png');
-        }
-
-            #rotator div {
-                float: left;
-                margin-top: -200px;
-            }
-
-            #rotator .left {
-                background: url(/HikersGuide/images/left.png) no-repeat;
-                width: 50px;
-                height: 50px;
-                cursor: pointer;
-                border: none;
-            }
-
-            #rotator span {
-                float: right;
-                margin-top: -200px;
-            }
-
-            #rotator .right {
-                background: url(/HikersGuide/images/right.png) no-repeat;
-                width: 50px;
-                height: 50px;
-                cursor: pointer;
-                border: none;
-            }
-
-            #rotator h1 {
-                text-align: left;
-                margin-left: 300px;
-                margin-top: 1px;
-                padding-top: 25px;
-                font-size: 50px;
-            }
-
-        #events {
-            max-width: 60%;
-            height: 1000px;
-            margin: 0px 0px 75px 300px;
-            clear: both;
-        }
-
-            #events article {
-                width: 300px;
-                height: 420px;
-                float: left;
-                padding-right: 30px;
-                padding-bottom: 30px;
-            }
-
-                #events article img {
-                    height: 400px;
-                    width: 300px;
-                    margin: 0px 0px 6px 0px;
-                    padding-right: 25px;
-                }
-
-            #events h2 {
-                color: #f0ae35;
-            }
-
-            #events article h3 {
-                text-align: left;
-                color: #087800;
-                margin-left: 10px;
-                margin-top: -150px;
-            }
-
-            #events article p strong {
-                text-align: left;
-                margin-top: auto;
-                font-size: 16px;
-                color: #087800;
-            }
-
-            #events article p {
-                text-align: left;
-                margin: -5px 0px 6px 10px;
-                font-size: 12px;
-                color: #087800;
-            }
-
-
-        #misc {
-            max-width: 60%;
-            height: 400px;
-            margin: 50px 0px 0px 300px;
-            clear: both;
-        }
-
-            #misc article {
-                width: 300px;
-                height: 420px;
-                float: left;
-                padding-right: 30px;
-                padding-bottom: 30px;
-            }
-
-                #misc article h3 {
-                    text-align: left;
-                    color: #f0ae35;
-                    margin-left: 25px;
-                    margin-top: 50px;
-                }
-
-                #misc article p {
-                    text-align: left;
-                    margin: -5px 25px 6px 25px;
-                    font-size: 12px;
-                    color: lemonchiffon;
-                }
-
-                #misc article button {
-                    text-align: left;
-                    margin: 20px 25px 6px 25px;
-                    font-size: 12px;
-                    background-color: #3b321a;
-                    color: lemonchiffon;
-                }
-
-            #misc a:link {
-                color: #f0ae35;
-            }
-
         a:link {
             color: #000000;
         }
-
         a:visited {
             color: #087800;
         }
-
-        p strong {
+        h5 {
+            color: #f0ae35;
+            font-size: 22px;
+        }
+        h2 {
+            color: #f0ae35;
+            font-size: 4em;
+        }
+        table {
+            margin: 5rem auto 1rem auto;
+            color: lemonchiffon;
+            width: 60%;
+            padding-bottom: 50px;
+            padding-left: 250px;
+        }
+        #email a {
+            margin-left: 600px;
             color: #f0ae35;
         }
-
+        #email h4 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 50px;
+            color: #000000;
+        }
+        #email input {
+            margin-top: -50px;
+            margin-left: 970px;
+            height: 50px;
+            width: 100px;
+            background-color: #f0ae35;
+            color: #000000;
+            font-size: 1.5em;
+            border:none;
+        }
 
         /*Footer Block*/
-        footer {
+            footer {
             position: fixed;
             text-align: right;
             right: 0%;
             bottom: 0;
         }
-
             footer img {
                 height: 50px;
                 width: 50px;
                 margin-right: 25px;
             }
-
             footer h4 {
                 color: white;
+                padding-right:10px;
             }
     </style>
 </head>
@@ -243,109 +136,56 @@
         </div>
     </header>
 
-    <div id="rotator">
-        <h1><strong>Lorem Ipsum</strong></h1>
-        <h1><strong>May 4</strong></h1>
-        <h1><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></h1>
+    <aside>
+    <h2>Contact Us</h2>
+        <p>Donec et odio pellentesque diam volutpat commodo sed egestas <strong>Augue interdum </strong>velit.</p>
+    </aside>
 
-        <div>
-            <input type="button" value="." class="left" onclick="location.href='#';" />
-        </div>
-        <span>
-            <input type="button" value="." class="right" onclick="location.href='#';" />
-        </span>
+
+    <!-- Contact Information in Table format-->
+    <table>
+        <tr>
+            <td><h5>1-904-378-9087</h5></td>
+            <td>US National Park Service</td>
+            <td>Company A</td>
+        </tr>
+        <tr>
+            <td>Monday- Friday</td>
+            <td>7645 NorthWest Parkway</td>
+            <td>345 Red Road</td>
+        </tr>
+        <tr>
+            <td>8:00AM - 5:30PM ET</td>
+            <td>Jacksonville, FL 67834</td>
+            <td>Jacksonville, FL 45623</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>1-904-378-9087</td>
+            <td>1-904-123-5678</td>
+        </tr>
+    </table>
+
+        <!-- Email Us link  -->
+    <div id="email">
+        <h5><strong><a href="#">SEND A MESSAGE</a></strong></h5>
+        <h4><strong>OR, FIND YOUR ANSWERS HERE: </strong></h4>
+        <input type="button" value="FAQ" class="button" onclick="location.href='#';" />
     </div>
+    
 
-    <div id="events">
-        <div id="categories">
-            <dl>
-                <dt><strong><a href="#">Today</a></strong></dt>
-                <dt><strong><a href="#">Weekend</a></strong></dt>
-                <dt><strong><a href="#">This Month</a></strong></dt>
-            </dl>
-        </div>
-
-        <h2>Today</h2>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-
-        </article>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-        </article>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-        </article>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-        </article>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-        </article>
-        <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
-            <h3><strong>Lorem Ipsum</strong></h3>
-            <p><strong>May 4</strong></p>
-            <br />
-            <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-        </article>
-    </div>
-
-    <div id="misc">
-        <article>
-            <h3><strong>Gift Vouchers</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
-            <button>Buy Gift Voucher</button>
-
-        </article>
-        <article>
-            <h3><strong>Special Offers</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
-            <br />
-
-            <h5>Subscribe to our newsletter</h5>
-            <p>
-                <a href="#">Enter Your email here</a>
-            </p>
-        </article>
-        <article>
-            <h3><strong>Mobile App</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. #Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. </p>
-        </article>
-    </div>
-
-    <!--footer-->
-    <!--Social Media Icons with links-->
-    <footer>
-        <h4><font size="6">Connect</font></h4>
-        <ul style="list-style-type:none">
-            <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
-            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
-        </ul>
-        <h4>&copy;Company A</h4>
-    </footer>
+        <!--footer-->
+        <!--Social Media Icons with links-->
+        <footer>
+            <h4><font size="6">Connect</font></h4>
+            <ul style="list-style-type:none">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
+                <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
+            </ul>
+            <h4>&copy;Company A</h4>
+        </footer>
 </body>
 </html>

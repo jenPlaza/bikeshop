@@ -3,4 +3,8 @@
  * https://joshbloom.github.io/dws1/data/hikersguide.json
 */
 
-document.write("Hello");
+var xhr = new XMLHttpRequest();
+    xhr.onload = fuction(){
+
+
+}
