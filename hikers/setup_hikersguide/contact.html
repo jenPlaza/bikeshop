@@ -6,127 +6,112 @@
     <title>Contact Us | Company A</title>
     <style>
         /* Header Block*/
-        #header {
-            max-width: 100%;
-            height: 65px;
-            margin-top: 0px;
-        }
-
             #header h1 {
                 font-size: 3em;
                 padding-left: 25px;
                 top: 30px;
                 display: inline;
-                text-align: left;
                 color: #f0ae35;
             }
-
             #header form {
                 margin-top: 30px;
                 float: right;
                 font-size: 20px;
             }
-
             #header span {
                 position: absolute;
                 margin: 0px 0px 0px -875px;
             }
-
             #header input {
                 background-color: transparent;
                 color: #f0ae35;
             }
-
         a:link {
             color: #f0ae35;
             text-decoration: none;
         }
-
         a:visited {
             color: #087800;
         }
-
-        p strong {
-            color: #f0ae35;
-        }
-
-        aside {
+        
+        #contact {
             text-align: center;
-            max-width: 110%;
             height: 400px;
             padding-top: 200px;
-            font-size:16px;
+            font-size: 16px;
         }
+            #contact h5 {
+                color: lemonchiffon;
+                font-size: 22px;
+            }
+            #contact h2 {
+                font-size: 5em;
+                color: lemonchiffon;
+            }
+       
         /* Body Block*/
         body {
             background: url('/HikersGuide/design/kayak.png') no-repeat;
-            height:50%;
         }
 
-        li {
-            color: #000000;
-            text-align: right;
-            padding: 10px;
-        }
 
-        h5 {
-            color: lemonchiffon;
-            font-size: 22px;
-        }
-
-        h2 {
-            font-size: 5em;
-            color: lemonchiffon;
-        }
-
-        table {
+        /* Info Block*/
+        #info {
             margin: -3rem auto 1rem auto;
             color: lemonchiffon;
             width: 60%;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             padding-left: 250px;
         }
+            #info td h5 {
+                color: #f0ae35;
+                font-size: 22px;
+            }
 
+
+        /* Email Block*/
         #email a {
             margin-left: 600px;
             color: #f0ae35;
+            font-size: 22px;
         }
-
         #email h4 {
             text-align: center;
             font-size: 2em;
             margin-top: 50px;
-            color: #000000;
+            color: #f0ae35;
         }
-
         #email input {
             margin-top: -30px;
             margin-left: 50%;
             height: 50px;
             width: 100px;
             background-color: transparent;
-            color: #000000;
+            color: #f0ae35;
             font-size: 1.5em;
         }
 
         /*Footer Block*/
-        footer {
+        #footer {
             position: fixed;
             text-align: right;
             right: 0%;
             bottom: 0;
         }
-
-            footer img {
-                height: 50px;
-                width: 50px;
-                margin-right: 25px;
-            }
-
-            footer h4 {
-                color: white;
-                padding-right: 10px;
-            }
+        #footerli {
+            color: #000000;
+            text-align: right;
+            padding: 10px;
+        }
+        #footer img {
+            height: 50px;
+            width: 50px;
+            margin-right: 25px;
+        }
+        #footer h4 {
+            color: white;
+            padding-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -146,14 +131,14 @@
         </section>
     </header>
 
-    <aside>
+    <aside id="contact">
         <h2>Contact Us</h2>
         <h5>Donec et odio pellentesque diam volutpat commodo sed egestas <strong>Augue interdum </strong>velit.</h5>
     </aside>
 
 
     <!-- Contact Information in Table format-->
-    <table>
+    <table id="info">
         <tr>
             <td><h5>1-904-378-9087</h5></td>
             <td>US National Park Service</td>
@@ -186,7 +171,7 @@
 
     <!--footer-->
     <!--Social Media Icons with links-->
-    <footer>
+    <footer id="footer">
         <h4><font size="6">Connect</font></h4>
         <ul style="list-style-type:none">
             <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
