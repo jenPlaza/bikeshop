@@ -19,11 +19,11 @@ myEvents.onload = function () {
     //console.log(jsonData.events[0]);//works
     //console.log(jsonData.events[0].title);//works
 
-    divRotate(jsonEvents);
+    secRotate(jsonEvents);
 
 };
 
-function divRotate(dataEvents) {
+function secRotate(dataEvents) {
     htmlEvents += '<section>';
     htmlEvents += '<h1><strong>' + dataEvents.events[4].title + '</strong></h1>';
     htmlEvents += '<h1><strong>' + dataEvents.events[4].date + '</strong></h1>';
@@ -54,11 +54,11 @@ myEvents2.onload = function () {
     //console.log(jsonData.events[0]);//works
     //console.log(jsonData.events[0].title);//works
 
-    divEvents2(jsonEvents2);
+    secEvents2(jsonEvents2);
 
 };
 
-function divEvents2(dataEvents2) {
+function secEvents2(dataEvents2) {
 
     let htmlEvents2 = "";
 

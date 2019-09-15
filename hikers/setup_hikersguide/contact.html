@@ -7,52 +7,60 @@
     <style>
         /* Header Block*/
         #header {
-            height: 350px;
-            background: url('/HikersGuide/design/forest-grass-lawn-1826.jpg');
+            max-width: 100%;
+            height: 65px;
+            margin-top: 0px;
         }
 
             #header h1 {
-                font-size: 4em;
+                font-size: 3em;
+                padding-left: 25px;
                 top: 30px;
                 display: inline;
-                text-align: center;
-                color: lemonchiffon;
+                text-align: left;
+                color: #f0ae35;
             }
 
             #header form {
-                padding: 3rem;
-                margin: -50px 0px 75px 750px;
-                font-size: 21px;
-            }
-
-            #header dt {
-                float: left;
-                padding: 16px;
-                color: lemonchiffon;
+                margin-top: 30px;
+                float: right;
+                font-size: 20px;
             }
 
             #header span {
                 position: absolute;
-                margin: 15px 0px 75px 5px;
-                left: 5%;
+                margin: 0px 0px 0px -875px;
             }
 
             #header input {
-                background-color: #3b321a;
-                color: lemonchiffon;
+                background-color: transparent;
+                color: #f0ae35;
             }
+
+        a:link {
+            color: #f0ae35;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #087800;
+        }
+
+        p strong {
+            color: #f0ae35;
+        }
 
         aside {
             text-align: center;
             max-width: 110%;
             height: 400px;
             padding-top: 200px;
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
-            color: lemonchiffon;
+            font-size:16px;
         }
         /* Body Block*/
         body {
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+            background: url('/HikersGuide/design/kayak.png') no-repeat;
+            height:50%;
         }
 
         li {
@@ -61,26 +69,18 @@
             padding: 10px;
         }
 
-        a:link {
-            color: #000000;
-        }
-
-        a:visited {
-            color: #087800;
-        }
-
         h5 {
-            color: #f0ae35;
+            color: lemonchiffon;
             font-size: 22px;
         }
 
         h2 {
-            color: #f0ae35;
-            font-size: 4em;
+            font-size: 5em;
+            color: lemonchiffon;
         }
 
         table {
-            margin: 5rem auto 1rem auto;
+            margin: -3rem auto 1rem auto;
             color: lemonchiffon;
             width: 60%;
             padding-bottom: 50px;
@@ -100,14 +100,13 @@
         }
 
         #email input {
-            margin-top: -50px;
-            margin-left: 970px;
+            margin-top: -30px;
+            margin-left: 50%;
             height: 50px;
             width: 100px;
-            background-color: #f0ae35;
+            background-color: transparent;
             color: #000000;
             font-size: 1.5em;
-            border: none;
         }
 
         /*Footer Block*/
@@ -149,7 +148,7 @@
 
     <aside>
         <h2>Contact Us</h2>
-        <p>Donec et odio pellentesque diam volutpat commodo sed egestas <strong>Augue interdum </strong>velit.</p>
+        <h5>Donec et odio pellentesque diam volutpat commodo sed egestas <strong>Augue interdum </strong>velit.</h5>
     </aside>
 
 
@@ -178,11 +177,11 @@
     </table>
 
     <!-- Email Us link  -->
-    <div id="email">
+    <section id="email">
         <h5><strong><a href="#">SEND A MESSAGE</a></strong></h5>
         <h4><strong>OR, FIND YOUR ANSWERS HERE: </strong></h4>
         <input type="button" value="FAQ" class="button" onclick="location.href='#';" />
-    </div>
+    </section>
 
 
     <!--footer-->
