@@ -7,71 +7,54 @@
     <style>
         /* Header Block*/
         #header {
-            height: 350px;
+            height: 65px;
             background: url('/HikersGuide/design/forest-grass-lawn-1826.jpg');
         }
-
             #header h1 {
-                font-size: 4em;
+                font-size: 3em;
+                padding-left: 25px;
                 top: 30px;
                 display: inline;
-                text-align: center;
-                color: lemonchiffon;
+                text-align: left;
+                color: #f0ae35;
             }
-
             #header form {
-                padding: 3rem;
-                margin: -50px 0px 75px 750px;
-                font-size: 21px;
+                margin-top: 20px;
+                float: right;
+                font-size: 20px;
+                color: #f0ae35;
             }
-
-            #header dt {
-                float: left;
-                padding: 16px;
-                color: lemonchiffon;
-            }
-
             #header span {
                 position: absolute;
-                margin: 15px 0px 75px 5px;
-                left: 5%;
+                margin: 0px 0px 0px -875px;
             }
-
             #header input {
-                background-color: #3b321a;
-                color: lemonchiffon;
+                background-color: transparent;
+                color: #f0ae35;
             }
+        a:link {
+            color: #f0ae35;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #087800;
+        }
 
         /* Body Block*/
         body {
-            background: url('/HikersGuide/design/JG-Warm-Painterly-Background@2x.jpg');
+            background: url('/HikersGuide/design/pattern28.png');
         }
-
-
-        /* categories block*/
-        #categories {
-            max-width: 65%;
-            height: 50px;
-            margin: -20px 50px 25px 0px;
-            clear: both;
-        }
-
-            #categories dt {
-                float: left;
-                padding: 23px;
-            }
 
         /*rotator image*/
         #rotator {
             max-width: 100%;
             height: 400px;
-            margin: 0px 0px 75px 0px;
-            background: url('/HikersGuide/design/File_001.png');
+            background: url('/HikersGuide/design/yellowpoly.jpg');
         }
 
             #rotator div {
                 float: left;
-                margin-top: -200px;
+                margin-top: -100px;
             }
 
             #rotator .left {
@@ -80,6 +63,7 @@
                 height: 50px;
                 cursor: pointer;
                 border: none;
+                margin-top: -100px;
             }
 
             #rotator span {
@@ -109,6 +93,10 @@
             margin: 0px 0px 75px 300px;
             clear: both;
         }
+        #events dt {
+            float: left;
+            padding: 23px;
+        }
 
             #events article {
                 width: 300px;
@@ -116,6 +104,7 @@
                 float: left;
                 padding-right: 30px;
                 padding-bottom: 30px;
+                
             }
 
                 #events article img {
@@ -131,23 +120,25 @@
 
             #events article h3 {
                 text-align: left;
-                color: #087800;
+                color: lemonchiffon;
                 margin-left: 10px;
-                margin-top: -150px;
+                margin-top: -200px;
             }
+
+            
 
             #events article p strong {
                 text-align: left;
                 margin-top: auto;
                 font-size: 16px;
-                color: #087800;
+                color: lemonchiffon;
             }
 
             #events article p {
                 text-align: left;
                 margin: -5px 0px 6px 10px;
                 font-size: 12px;
-                color: #087800;
+                color: lemonchiffon;
             }
 
 
@@ -157,6 +148,7 @@
             margin: 50px 0px 0px 300px;
             clear: both;
         }
+        
 
             #misc article {
                 width: 300px;
@@ -187,23 +179,18 @@
                     background-color: #3b321a;
                     color: lemonchiffon;
                 }
+            #misc h5 {
+                margin-top:70px;
+                color: #f0ae35;
+                font-size: 18px;
+            }
 
             #misc a:link {
                 color: #f0ae35;
+                font-size: 18px;
+                margin-top: 75px;
+                margin-left: -100px;
             }
-
-        a:link {
-            color: #000000;
-        }
-
-        a:visited {
-            color: #087800;
-        }
-
-        p strong {
-            color: #f0ae35;
-        }
-
 
         /*Footer Block*/
         footer {
@@ -221,6 +208,7 @@
 
             footer h4 {
                 color: white;
+                padding-right:10px;
             }
     </style>
 </head>
@@ -229,46 +217,44 @@
     <!--Header-->
     <!-- form with menu items and search box -->
     <header>
-        <div id="header">
+        <section id="header">
+            <h1 id="id01"><strong>Company Name</strong></h1>
             <form target="/search">
-
-                <h1 id="id01"><strong>Company Name</strong></h1>
-                <dl>
-                    <dt><strong><a href="/index.html" target="_blank">Home</a></strong></dt>
-                    <dt><strong><a href="/blog.html" target="_blank">Blog</a></strong></dt>
-                    <dt><strong><a href="/events.html" target="_blank">Events</a></strong></dt>
-                    <dt><strong><a href="/contact.html" target="_blank">Contact Us</a></strong></dt>
-                </dl>
+                <strong><a href="/index.html" target="_blank">Home</a></strong>
+                <strong><a href="/blog.html" target="_blank">Blog</a></strong>
+                <strong><a href="/events.html" target="_blank">Events</a></strong>
+                <strong><a href="/contact.html" target="_blank">Contact Us</a></strong>
                 <span><input name="q" type="search" size="50" /><input type="submit" /></span>
             </form>
-        </div>
+        </section>
     </header>
 
-    <div id="rotator">
+    <section id="rotator">
         <h1><strong>Lorem Ipsum</strong></h1>
         <h1><strong>May 4</strong></h1>
         <h1><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></h1>
 
-        <div>
+        <section>
             <input type="button" value="." class="left" onclick="location.href='#';" />
-        </div>
+        </section>
         <span>
             <input type="button" value="." class="right" onclick="location.href='#';" />
         </span>
-    </div>
+    </section>
 
-    <div id="events">
-        <div id="categories">
-            <dl>
-                <dt><strong><a href="#">Today</a></strong></dt>
-                <dt><strong><a href="#">Weekend</a></strong></dt>
-                <dt><strong><a href="#">This Month</a></strong></dt>
-            </dl>
-        </div>
-
+    <section id="events">
+        <dl>
+            <dt><strong><a href="#">Today</a></strong></dt>
+            <dd></dd>
+            <dt><strong><a href="#">Weekend</a></strong></dt>
+            <dd></dd>
+            <dt><strong><a href="#">This Month</a></strong></dt>
+            <dd></dd>
+        </dl>
+        <br/><br /><br />
         <h2>Today</h2>
         <article>
-            <img src="/HikersGuide/images/hikers1002.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001 (1).png" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
@@ -276,41 +262,41 @@
 
         </article>
         <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001 (2).png" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
             <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
         </article>
         <article>
-            <img src="/HikersGuide/images/hikers1004.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001 (3).png" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
             <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
         </article>
         <article>
-            <img src="/HikersGuide/images/hikers1001.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001 (4).png" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
             <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
         </article>
         <article>
-            <img src="/HikersGuide/images/hikers1003.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
             <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
         </article>
         <article>
-            <img src="/HikersGuide/images/hikers1002.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001 (5).png" alt="Alternate Text" />
             <h3><strong>Lorem Ipsum</strong></h3>
             <p><strong>May 4</strong></p>
             <br />
             <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
         </article>
-    </div>
+    </section>
 
     <div id="misc">
         <article>
@@ -325,13 +311,17 @@
             <br />
 
             <h5>Subscribe to our newsletter</h5>
-            <p>
+            <!--<p>
                 <a href="#">Enter Your email here</a>
-            </p>
+            </p>-->
         </article>
         <article>
             <h3><strong>Mobile App</strong></h3>
             <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. #Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. </p>
+            <br /><br /><br /><br /><br />
+            <p>
+                <a href="#">Enter Your email here</a>
+            </p>
         </article>
     </div>
 

@@ -11,7 +11,7 @@ myEvents.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 let htmlEvents = document.getElementById("id01");
 htmlEvents.innerHTML = "Company A";
 
-window.onload = function () {
+myEvents.onload = function () {
 
     var jsonEvents = JSON.parse(myEvents.responseText);
 
@@ -19,28 +19,80 @@ window.onload = function () {
     //console.log(jsonData.events[0]);//works
     //console.log(jsonData.events[0].title);//works
 
-    divALevel3(jsonEvents);
+    divRotate(jsonEvents);
 
 };
 
-function divALevel3(dataEvents) {
-    //Testing
-    //console.log(data.events.length);//works
+function divRotate(dataEvents) {
+    htmlEvents += '<section>';
+    htmlEvents += '<h1><strong>' + dataEvents.events[4].title + '</strong></h1>';
+    htmlEvents += '<h1><strong>' + dataEvents.events[4].date + '</strong></h1>';
+    htmlEvents += '<h1><strong>' + dataEvents.events[4].location + ' </strong></h1>';
 
-    for (var i = 0; i < data.events.length; i++) {
-        htmlEvents += '<article>';
-        htmlEvents += '<img src="' + data.events[i].imageURL + '"';
-        htmlEvents += 'alt="' + data.events[i].sponsor + '"/>';
+    htmlEvents += '<section>';
+    htmlEvents += '<input type="button" value="." class="left" onclick="location.href=#;" />';
+    htmlEvents += '</section>';
+    htmlEvents += '<span>';
+    htmlEvents += '<input type="button" value="." class="right" onclick="location.href=#;" />';
+    htmlEvents += '</span>';
+    htmlEvents += '</section>';
 
-        htmlEvents += '<p><strong>' + data.events[i].subtitle + '</strong></p>';
 
-        htmlEvents += '<h3>' + data.events[i].title + '</h3>';
-        htmlEvents += '<p>' + data.events[i].text + '</p>';
-
-        htmlContent += '</article>';
-    }
-
-    var articleEvents = document.getElementById("events");
+    var articleEvents = document.getElementById("rotator");
     articleEvents.innerHTML = htmlEvents;
 }
 myEvents.send();
+
+var myEvents2 = new XMLHttpRequest();
+myEvents2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+
+myEvents2.onload = function () {
+
+    var jsonEvents2 = JSON.parse(myEvents2.responseText);
+
+    //Testing
+    //console.log(jsonData.events[0]);//works
+    //console.log(jsonData.events[0].title);//works
+
+    divEvents2(jsonEvents2);
+
+};
+
+function divEvents2(dataEvents2) {
+
+    let htmlEvents2 = "";
+
+    var imageArray = ["/HikersGuide/design/File_001 (1).png", "/HikersGuide/design/File_001 (2).png", "/HikersGuide/design/File_001 (3).png",
+        "/HikersGuide/design/File_001 (4).png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_001 (5).png"];
+    htmlEvents2 += '<section>';
+    htmlEvents2 += '<dl>';
+    htmlEvents2 += '<dt><strong><a href="#">Today</a></strong></dt>';
+    htmlEvents2 += '<dd></dd>';
+    htmlEvents2 += '<dt><strong><a href="#">Weekend</a></strong></dt>';
+    htmlEvents2 += '<dd></dd>';
+    htmlEvents2 += '<dt><strong><a href="#">This Month</a></strong></dt>';
+    htmlEvents2 += '<dd></dd>';
+    htmlEvents2 += '</dl>';
+    htmlEvents2 += '<br /> <br /> <br />';
+    htmlEvents2 += '<h2>Today</h2>';
+
+    for (var i = 0; i < dataEvents2.events.length; i++) {
+        htmlEvents2 += '<article>';
+
+        htmlEvents2 += '<img src="' + imageArray[i] + '"';
+        htmlEvents2 += 'alt="' + dataEvents2.events[i].subtitle + '"/>';
+
+        htmlEvents2 += '<h3><strong>' + dataEvents2.events[i].title + '</strong></p>';
+
+        htmlEvents2 += '<p><strong>' + dataEvents2.events[i].date + '</strong></p>';
+        
+        htmlEvents2 += '<br/>';
+        htmlEvents2 += '<p>' + dataEvents2.events[i].text + '</p>';
+        htmlEvents2 += '</article>';
+        htmlEvents2 += '</section>';
+    }
+
+    var articleEvents = document.getElementById("events");
+    articleEvents.innerHTML = htmlEvents2;
+}
+myEvents2.send();
