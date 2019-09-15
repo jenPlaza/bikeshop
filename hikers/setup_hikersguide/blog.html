@@ -10,14 +10,14 @@
             height: 65px;
             background: url('/HikersGuide/design/forest-grass-lawn-1826.jpg');
         }
-            #header h1 {
-                font-size: 3em;
-                padding-left: 25px;
-                top: 30px;
-                display: inline;
-                text-align: left;
-                color: lemonchiffon;
-            }
+                #header h1 {
+                    font-size: 3em;
+                    padding-left: 25px;
+                    top: 30px;
+                    display: inline;
+                    text-align: left;
+                    color: #f0ae35;
+                }
             #header form {
                 margin-top: -5px;
                 float:right;
@@ -26,16 +26,16 @@
             #header dt {
                 float: left;
                 padding: 16px;
-                color: lemonchiffon;
+                /*color: lemonchiffon;*/
             }
             #header span {
                 position: absolute;
                 margin: 10px 0px 0px -875px;
             }
-            #header input {
-                background-color: transparent;
-                color: lemonchiffon;
-            }
+                #header input {
+                    background-color: transparent;
+                    color: #f0ae35;
+                }
 
         /* Body Block*/
             body {
@@ -87,6 +87,7 @@
             clear: both;
             position: relative;
             text-align: center;
+            padding-bottom:3%;
         }
             #aLevel2 article {
                 width: 300px;
@@ -118,90 +119,110 @@
                 font-size: 12px;
             }
 
-        /* categories block*/
-        #categories {
-            max-width: 65%;
-            height: 50px;
-            margin: 0px 50px 75px 70px;
-            clear: both;
-        }
-            #categories dt {
-                float: left;
-                padding: 23px;
-                color: lemonchiffon;
-            }
-
         /* Article level 3*/
         #aLevel3 {
             max-width: 65%;
             height: 420px;
-            margin: -50px 50px 75px 350px;
+            margin: 0px 50px 75px 350px;
             clear: both;
         }
+            #aLevel3 dt {
+                float: left;
+                padding: 23px;
+            }
             #aLevel3 h2 {
                 font-size: 30px;
                 color: #f0ae35;
             }
+
             #aLevel3 section {
+                position:absolute;
                 width: 650px;
                 height: 300px;
                 float: left;
-                background: url('/HikersGuide/design/images.jpg');
+                background: url('/HikersGuide/design/union-wood-sunrise.jpg.653x0_q80_crop-smart.jpg');
                 margin-left: 1px;
                 margin-top: 0px;
             }
-                #aLevel3 section img {
-                    height: 150px;
+            #aLevel3 section img {
+                    position:absolute;
+                    height: 125px;
                     width: 500px;
-                    margin: 180px 50px 0px 50px;
+                    margin: 200px 50px 0px 80px;
                 }
-                #aLevel3 section p {
+            #aLevel3 section p {
+                    position: relative;
                     text-align: left;
-                    margin: -130px 0px 6px 70px;
-                    font-size: 12px;
+                    margin: 215px 0px 20px 100px;
+                    font-size: 14px;
                     color: #087800;
                 }
-                #aLevel3 section h3 {
+            #aLevel3 section h3 {
+                    position: relative;
                     text-align: left;
-                    margin: 5px 0px 6px 70px;
-                    padding-right: 10px;
+                    margin: -10px 0px 0px 100px;
+                    padding-right: 20%;
+                }
+            #aLevel3 section dt strong {
+                    position: relative;
+                    float: left;
+                    margin: -20px 0px 6px 75px;
+                    font-size: 10px;
                 }
 
             #aLevel3 article {
+                position: absolute;
                 width: 500px;
                 height: 330px;
                 float: left;
                 border: 2px solid #3b321a;
+                background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
                 margin-left: 700px;
-                margin-top: -300px;
+                margin-top: 000px;
             }
 
                 #aLevel3 article img {
-                    height: 150px;
+                    position: absolute;
+                    height: 175px;
                     width: 500px;
-                    margin: 0px 0px 6px 0px;
-                    padding-right: 25px;
                 }
 
                 #aLevel3 article p strong {
+                    position: relative;
                     text-align: left;
-                    margin-top: -350px;
-                    font-size: 12px;
-                    color: #087800;
+                    margin: 215px 0px 20px 20px;
+                    font-size: 14px;
+                    color: lemonchiffon;
                 }
 
                 #aLevel3 article h3 {
+                    position: relative;
                     text-align: left;
-                    color: #087800;
-                    margin-left: 10px;
+                    /*color: #087800;*/
+                    color: lemonchiffon;
+                    /*color: black;*/
+                    margin-left: 25px;
                     margin-top: 0px;
+                    font-size: 25px;
                 }
-        #aLevel3 article p  {
-            text-align: left;
-            margin: -5px 0px 6px 10px;
-            font-size: 12px;
-            color: #087800;
-        }
+                #aLevel3 article p {
+                    position: relative;
+                    /*text-align: left;*/
+                    /*margin: 0px 0px 6px 200px;*/
+                    font-size: 12px;
+                    color: lemonchiffon;
+                    margin-top: 75px;
+                    margin-left: 0px;
+                    padding-right: 25px;
+                    padding-left: 25px;
+                }
+                #aLevel3 article dt strong {
+                    position: relative;
+                    float: left;
+                    margin: -0px 0px 6px 75px;
+                    font-size: 12px;
+                    color: #087800;
+                }
 
         /* Article level 4*/
         #aLevel4 {
@@ -271,9 +292,10 @@
                     padding-left: 10px;
                 }
 
-                
+
         a:link {
-            color: #000000;
+            color: #f0ae35;
+            text-decoration:none;
         }
         a:visited {
             color: #087800;
@@ -412,33 +434,38 @@
 
     </div>
 
-    <div id="categories">
-        <!-- Post blocks  -->
-        <dl>
-            <dt><strong><a href="#">All Posts</a></strong></dt>
-            <dt><strong><a href="#">Nunc & sed</a></strong></dt>
-            <dt><strong><a href="#">Massa</a></strong></dt>
-            <dt><strong><a href="#">Consequat</a></strong></dt>
-        </dl>
-    </div>
-
     <!--Article level 3-->
     <div id="aLevel3">
-
+        <dl>
+        <dt><strong><a href="#">All Posts</a></strong></dt>
+        <dt><strong><a href="#">Nunc & sed</a></strong></dt>
+        <dt><strong><a href="#">Massa</a></strong></dt>
+        <dt><strong><a href="#">Consequat</a></strong></dt>
+    </dl>
+        <br /><br />
         <h2>All Posts</h2>
         <section>
-            <img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />
+            <img src="/HikersGuide/design/File_001.png" alt="Alternate Text" />
             <p><strong>Lorem Ipsum</strong></p>
             <h3>Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps jelly wafer. </h3>
-            <p></p>
+            <dl>
+                <dt><strong>by Jen Plaza</strong></dt>
+                <dt><strong>Sep 12, 2012</strong></dt>
+                <dt><strong>lollipop </strong></dt>
+            </dl>
         </section>
-        <article>
-            <img src="/HikersGuide/design/yellowpoly.jpg" alt="Alternate Text" />
-            <p><strong>Lorem Ipsum</strong></p>
-            <h3>Dessert gingerbread lollipop pudding cheesecake gummies. </h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut.</p>
-        </article>
-    </div>
+                <article>
+                    <img src="/HikersGuide/design/File_001.png" alt="Alternate Text" />
+                    <p><strong>Lorem Ipsum</strong></p>
+                    <h3>Dessert gingerbread lollipop pudding cheesecake gummies. </h3>
+                    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut.</p>
+                    <dl>
+                        <dt><strong>by Jen Plaza</strong></dt>
+                        <dt><strong>Sep 12, 2012</strong></dt>
+                        <dt><strong>lollipop </strong></dt>
+                    </dl>
+                </article>
+</div>
 
     <!--Article level 4-->
     <div id="aLevel4">
