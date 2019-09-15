@@ -8,7 +8,7 @@
 
 var myBlog = new XMLHttpRequest();
 myBlog.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-let htmlBlog = document.getElementById("id01");
+var htmlBlog = document.getElementById("id01");
 htmlBlog.innerHTML = "Company A";
 myBlog.onload = function () {
 
@@ -17,9 +17,9 @@ myBlog.onload = function () {
     //console.log(jsonData.posts[0]);//works
     //console.log(jsonData.posts[0].title);//works
 
-    divALevel1(jsonBlog);
+    secALevel1(jsonBlog);
 };
-function divALevel1(data1) {
+function secALevel1(data1) {
     for (var i = 0; i < data1.locations.length; i++) {
         htmlBlog += '<article>';
         htmlBlog += '<h3>' + data1.locations[i].title + '</h3>';
@@ -37,10 +37,10 @@ var myAtricle2 = new XMLHttpRequest();
 myAtricle2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 myAtricle2.onload = function () {
     var jsonArticle2 = JSON.parse(myAtricle2.responseText);
-    divALevel2(jsonArticle2);
+    secALevel2(jsonArticle2);
 };
-function divALevel2(data2) {
-    let htmlArticle2 = '';
+function secALevel2(data2) {
+    var htmlArticle2 = '';
 
     //Testing
    // console.log(data.posts.length);//works
@@ -72,11 +72,11 @@ myAtricle3.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json')
 myAtricle3.onload = function () {
 
     var jsonArticle3 = JSON.parse(myAtricle3.responseText);
-    divALevel3(jsonArticle3);
+    secALevel3(jsonArticle3);
 };
 
-function divALevel3(data3) {
-    let htmlArticle3 = '';
+function secALevel3(data3) {
+    var htmlArticle3 = '';
     htmlArticle3 += '<dl >';
     htmlArticle3 += '<dt><strong><a href="#">All Posts</a></strong></dt>';
     htmlArticle3 += '<dt><strong><a href="#">Nunc & sed</a></strong></dt>';
@@ -117,3 +117,57 @@ function divALevel3(data3) {
     articleBlog.innerHTML = htmlArticle3;
 }
 myAtricle3.send();
+
+var myAtricle4 = new XMLHttpRequest();
+myAtricle4.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+myAtricle4.onload = function () {
+
+    var jsonArticle4 = JSON.parse(myAtricle4.responseText);
+    secALevel4(jsonArticle4);
+};
+
+function secALevel4(data4) {
+    var htmlArticle4 = '';
+
+        htmlArticle4 += '<article>';
+    htmlArticle4 += '<img src="/HikersGuide/design/forest-grass-lawn-1826.jpg" alt="Alternate Text" />';
+        htmlArticle4 += '<p><strong>' + data4.locations[2].title + '</strong></p>';
+    htmlArticle4 += '<h3>' + data4.locations[2].text + '</h3>';
+    htmlArticle4 += '<p>' + data4.posts[1].text + '</p>';
+        htmlArticle4 += '<dl>';
+        htmlArticle4 += '<dt><strong>by ' + data4.posts[2].author + '</strong></dt>';
+        htmlArticle4 += '<dt><strong>' + data4.posts[2].postDate + '</strong></dt>';
+        htmlArticle4 += '<dt><strong>' + data4.posts[2].moreLink + '</strong></dt>';
+        htmlArticle4 += '</dl>';
+    htmlArticle4 += '</article>';
+
+
+    htmlArticle4 += '<article>';
+    htmlArticle4 += '<img src="/HikersGuide/design/fall-background-photo.jpg" alt="Alternate Text" />';
+    htmlArticle4 += '<p><strong>' + data4.locations[3].title + '</strong></p>';
+    htmlArticle4 += '<h3>' + data4.locations[3].text + '</h3>';
+    htmlArticle4 += '<p>' + data4.posts[1].text + '</p>';
+    htmlArticle4 += '<dl>';
+    htmlArticle4 += '<dt><strong>by ' + data4.posts[3].author + '</strong></dt>';
+    htmlArticle4 += '<dt><strong>' + data4.posts[3].postDate + '</strong></dt>';
+    htmlArticle4 += '<dt><strong>' + data4.posts[3].moreLink + '</strong></dt>';
+    htmlArticle4 += '</dl>';
+    htmlArticle4 += '</article>';
+
+
+    htmlArticle4 += '<section>';
+    htmlArticle4 += '<h3>' + data4.posts[5].subtitle + '</h3>';
+    htmlArticle4 += '<h2>' + data4.posts[5].text + '</h2>';
+
+    htmlArticle4 += '<dl>';
+    htmlArticle4 += '<dt>by ' + data4.posts[5].author + '</dt>';
+    htmlArticle4 += '<dt>' + data4.posts[5].postDate + '</dt>';
+    htmlArticle4 += '<dt>' + data4.posts[5].moreLink + '</dt>';
+    htmlArticle4 += '</dl>';
+    htmlArticle4 += '</section>';
+
+
+    var articleBlog = document.getElementById("aLevel4");
+    articleBlog.innerHTML = htmlArticle4;
+}
+myAtricle4.send();
