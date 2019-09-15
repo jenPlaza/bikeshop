@@ -62,8 +62,8 @@ function divEvents2(dataEvents2) {
 
     let htmlEvents2 = "";
 
-    var imageArray = ["/HikersGuide/design/File_001 (1).png", "/HikersGuide/design/File_001 (2).png", "/HikersGuide/design/File_001 (3).png",
-        "/HikersGuide/design/File_001 (4).png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_001 (5).png"];
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/smokyriver.png", "/HikersGuide/design/tree.png",
+        "/HikersGuide/design/crystalriver.png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg"];
     htmlEvents2 += '<section>';
     htmlEvents2 += '<dl>';
     htmlEvents2 += '<dt><strong><a href="#">Today</a></strong></dt>';
