@@ -63,7 +63,6 @@ function secMisc(dataHome2) {
     htmlHome2 += '<p>' + dataHome2.about.text + '</p>';
     htmlHome2 += '</aside>';
 
-    //htmlHome2 += '</section>';
     htmlHome2 += '<Table id="misc">';
     for (var i = 0; i < dataHome2.hikers.length; i++) {
 
