@@ -20,6 +20,7 @@ myEvents.onload = function () {
     //console.log(jsonData.events[0].title);//works
 
     secRotate(jsonEvents);
+    secEvents2(jsonEvents);
 
 };
 
@@ -41,22 +42,6 @@ function secRotate(dataEvents) {
     var articleEvents = document.getElementById("rotator");
     articleEvents.innerHTML = htmlEvents;
 }
-myEvents.send();
-
-var myEvents2 = new XMLHttpRequest();
-myEvents2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-
-myEvents2.onload = function () {
-
-    var jsonEvents2 = JSON.parse(myEvents2.responseText);
-
-    //Testing
-    //console.log(jsonData.events[0]);//works
-    //console.log(jsonData.events[0].title);//works
-
-    secEvents2(jsonEvents2);
-
-};
 
 function secEvents2(dataEvents2) {
 
@@ -95,4 +80,5 @@ function secEvents2(dataEvents2) {
     var articleEvents = document.getElementById("events");
     articleEvents.innerHTML = htmlEvents2;
 }
-myEvents2.send();
+
+myEvents.send();

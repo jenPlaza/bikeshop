@@ -17,6 +17,9 @@ myBlog.onload = function () {
     //console.log(jsonData.posts[0].title);//works
 
     secALevel1(jsonBlog);
+    secALevel2(jsonBlog);
+    secALevel3(jsonBlog);
+    secALevel4(jsonBlog);
 };
 function secALevel1(data1) {
     for (var i = 0; i < data1.locations.length; i++) {
@@ -29,20 +32,9 @@ function secALevel1(data1) {
     var articleBlog = document.getElementById("aLevel1");
     articleBlog.innerHTML = htmlBlog;
 }
-myBlog.send();
 
-
-var myAtricle2 = new XMLHttpRequest();
-myAtricle2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-myAtricle2.onload = function () {
-    var jsonArticle2 = JSON.parse(myAtricle2.responseText);
-    secALevel2(jsonArticle2);
-};
 function secALevel2(data2) {
     var htmlArticle2 = '';
-
-    //Testing
-   // console.log(data.posts.length);//works
 
    for (var i = 0; i < data2.posts.length; i++) {
        htmlArticle2 += '<article>';
@@ -63,16 +55,6 @@ function secALevel2(data2) {
     var articleBlog = document.getElementById("aLevel2");
     articleBlog.innerHTML = htmlArticle2;
 }
-myAtricle2.send();
-
-
-var myAtricle3 = new XMLHttpRequest();
-myAtricle3.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-myAtricle3.onload = function () {
-
-    var jsonArticle3 = JSON.parse(myAtricle3.responseText);
-    secALevel3(jsonArticle3);
-};
 
 function secALevel3(data3) {
     var htmlArticle3 = '';
@@ -115,15 +97,6 @@ function secALevel3(data3) {
     var articleBlog = document.getElementById("aLevel3");
     articleBlog.innerHTML = htmlArticle3;
 }
-myAtricle3.send();
-
-var myAtricle4 = new XMLHttpRequest();
-myAtricle4.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-myAtricle4.onload = function () {
-
-    var jsonArticle4 = JSON.parse(myAtricle4.responseText);
-    secALevel4(jsonArticle4);
-};
 
 function secALevel4(data4) {
     var htmlArticle4 = '';
@@ -169,4 +142,5 @@ function secALevel4(data4) {
     var articleBlog = document.getElementById("aLevel4");
     articleBlog.innerHTML = htmlArticle4;
 }
-myAtricle4.send();
+
+myBlog.send();

@@ -11,12 +11,16 @@ myHome.onload = function () {
 
     var jsonHome = JSON.parse(myHome.responseText);
     secEvents(jsonHome);
+    secMiscMem(jsonHome);
+    secMiscMEvents(jsonHome);
+    secMiscAbout(jsonHome);
 };
 
 function secEvents(dataHome) {
 
+    htmlHome += '<section>';
     htmlHome += '<h2>Recent Posts</h2>';
-
+    
     for (var i = 0; i < dataHome.posts.length; i++) {
         htmlHome += '<article>';
         htmlHome += '<img src="' + dataHome.posts[i].imageURL + '"';
@@ -33,60 +37,65 @@ function secEvents(dataHome) {
         htmlHome += '</dl>';
         htmlHome += '</article>';
     }
-
-    htmlHome += '<div>';
-    htmlHome += '<input type="button" value="View More" class="button" onclick="location.href=#;" />';
-    htmlHome += '</div>';
-
+    
+    htmlHome += '</section>';
+    
     var articleBlog = document.getElementById("events");
     articleBlog.innerHTML = htmlHome;
 }
-myHome.send();
 
-
-var myHome2 = new XMLHttpRequest();
-myHome2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-
-myHome2.onload = function () {
-
-    var jsonHome2 = JSON.parse(myHome2.responseText);
-    secMisc(jsonHome2);
-};
-
-function secMisc(dataHome2) {
+function secMiscMem(dataHomeMembers) {
 
     var htmlHome2 = "";
 
-    htmlHome2 += '<aside>';
-    htmlHome2 += '<h3>About</h3>';
-    htmlHome2 += '<p><strong>' + dataHome2.about.title + '</strong></p>';
-    htmlHome2 += '<p>' + dataHome2.about.text + '</p>';
-    htmlHome2 += '</aside>';
+    htmlHome2 += '<section>';
 
-    htmlHome2 += '<Table id="misc">';
-    for (var i = 0; i < dataHome2.hikers.length; i++) {
+    for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
 
+    htmlHome2 += '<img src="' + dataHomeMembers.hikers[i].imageURL + '"';
 
-        htmlHome2 += '<tr>';
-        htmlHome2 += '<td>';
-        htmlHome2 += '<section>';
-        htmlHome2 += '<img src="' + dataHome2.hikers[i].imageURL + '"';
-        htmlHome2 += 'alt="' + dataHome2.hikers[i].subtitle + '"/>';
-        htmlHome2 += '<h3>' + dataHome2.hikers[0].firstname + " " + dataHome2.hikers[i].firstname + '</h3>';
-        htmlHome2 += '<p>  A member since ' + dataHome2.hikers[i].joinDate + '. A member from ' + dataHome2.hikers[i].city + " " + dataHome2.hikers[i].state + '</p>';
-        htmlHome2 += '</section>';
-        htmlHome2 += '</td>';
-        htmlHome2 += '<td>';
-        htmlHome2 += '<section>';
-        htmlHome2 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
-        htmlHome2 += '<h3>' + dataHome2.events[i].title +'</h3>';
-        htmlHome2 += '<p>' + dataHome2.events[i].state + '</p>';
-        htmlHome2 += '</section>';
-        htmlHome2 += '</td>';
+    htmlHome2 += 'alt="' + dataHomeMembers.hikers[i].subtitle + '"/>';
+
+    htmlHome2 += '<p><strong>' + dataHomeMembers.hikers[i].firstname + " " + dataHomeMembers.hikers[i].lastname + '</strong>';
+
+    htmlHome2 += '<br/ >  A member since ' + dataHomeMembers.hikers[0].joinDate + '. A member from' + dataHomeMembers.hikers[i].city + ", " + dataHomeMembers.hikers[i].state +".";
+    htmlHome2 += '</p>';
     }
-    htmlHome2 += '</Table>';
+    htmlHome2 += '</section>';
 
-    var articleBlog = document.getElementById("misc");
+    var articleBlog = document.getElementById("members");
     articleBlog.innerHTML = htmlHome2;
 }
-myHome2.send();
+
+function secMiscMEvents(dataHomeMEvents) {
+
+    var htmlHome3 = "";
+
+    htmlHome3 += '<section>';
+
+    for (i = 0; i < dataHomeMEvents.events.length; i++) {
+            htmlHome3 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
+        htmlHome3 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
+        htmlHome3 += '<br/ >' + dataHomeMEvents.events[i].state + '</p>';
+        }
+    htmlHome3 += '</section>';
+
+    var articleBlog = document.getElementById("mEvents");
+    articleBlog.innerHTML = htmlHome3;
+}
+
+function secMiscAbout(dataHomeAbout) {
+
+    var htmlHome4 = "";
+
+    htmlHome4 += '<section>';
+    htmlHome4 += '<h3>About</h3>';
+    htmlHome4 += '<p><strong>' + dataHomeAbout.about.title + '</strong></p>';
+    htmlHome4 += '<p>' + dataHomeAbout.about.text + '</p>';
+    htmlHome4 += '</section>';
+
+    var articleBlog = document.getElementById("about");
+    articleBlog.innerHTML = htmlHome4;
+}
+
+myHome.send();
