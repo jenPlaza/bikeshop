@@ -5,6 +5,7 @@
 
 //testing
 //alert("hello");
+
 var myEvents = new XMLHttpRequest();
 myEvents.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
@@ -15,31 +16,30 @@ myEvents.onload = function () {
 
     var jsonEvents = JSON.parse(myEvents.responseText);
 
-    //Testing
-    //console.log(jsonData.events[0]);//works
-    //console.log(jsonData.events[0].title);//works
-
     secRotate(jsonEvents);
     secEvents2(jsonEvents);
-
 };
 
 function secRotate(dataEvents) {
     htmlEvents += '<section>';
-    htmlEvents += '<h1><strong>' + dataEvents.events[4].title + '</strong></h1>';
-    htmlEvents += '<h1><strong>' + dataEvents.events[4].date + '</strong></h1>';
-    htmlEvents += '<h1><strong>' + dataEvents.events[4].location + ' </strong></h1>';
+    htmlEvents += '<img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />';
+    htmlEvents += '<h2>' + dataEvents.events[4].date + '</h2>';
+    htmlEvents += '<h3>' + dataEvents.events[4].location + ' </h3>';
 
-    htmlEvents += '<section>';
-    htmlEvents += '<input type="button" value="." class="left" onclick="location.href=#;" />';
-    htmlEvents += '</section>';
     htmlEvents += '<span>';
-    htmlEvents += '<input type="button" value="." class="right" onclick="location.href=#;" />';
+    var buttonLeft = document.getElementsByClassName(".left");
+    htmlEvents += buttonLeft;
+    //htmlEvents += '<input type="button" value="." class="left" onclick="location.href=#;" />';
+    htmlEvents += '</span>';
+    htmlEvents += '<span>';
+    var buttonRight = document.getElementsByClassName(".right");
+    htmlEvents += buttonRight;
+    //htmlEvents += '<input type="button" value="." class="right" onclick="location.href=#;" />';
     htmlEvents += '</span>';
     htmlEvents += '</section>';
 
 
-    var articleEvents = document.getElementById("rotator");
+    var articleEvents = document.getElementById("rotatorEvents");
     articleEvents.innerHTML = htmlEvents;
 }
 
@@ -63,22 +63,16 @@ function secEvents2(dataEvents2) {
 
     for (var i = 0; i < dataEvents2.events.length; i++) {
         htmlEvents2 += '<article>';
-
         htmlEvents2 += '<img src="' + imageArray[i] + '"';
         htmlEvents2 += 'alt="' + dataEvents2.events[i].subtitle + '"/>';
-
-        htmlEvents2 += '<h3><strong>' + dataEvents2.events[i].title + '</strong></p>';
-
-        htmlEvents2 += '<p><strong>' + dataEvents2.events[i].date + '</strong></p>';
-        
-        htmlEvents2 += '<br/>';
-        htmlEvents2 += '<p>' + dataEvents2.events[i].text + '</p>';
+        htmlEvents2 += '<h3><strong>' + dataEvents2.events[i].title + '</strong></h3>';
+        htmlEvents2 += '<h4>' + dataEvents2.events[i].date + '</h4>';
+        htmlEvents2 += '<p>' + dataEvents2.events[i].location + '</p>';
         htmlEvents2 += '</article>';
-        htmlEvents2 += '</section>';
     }
-
+    htmlEvents2 += '</section>';
     var articleEvents = document.getElementById("events");
     articleEvents.innerHTML = htmlEvents2;
 }
-
 myEvents.send();
+

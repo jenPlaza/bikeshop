@@ -12,43 +12,40 @@ header {
     table-layout: fixed;
     width: 100%;
     height: 50px;
+    margin-top:-20px;
 }
 
 header section {
         display: table-cell;
 }
 
-#header {
-    Border: 2px solid green;
-}
-
 #header h1 {
-        font-size: 3em;
-        text-align:left;
-        padding-left: 4%;
-        color: #f0ae35;
-        margin-top: -1px;
+    font-size: 3em;
+    text-align: left;
+    padding-left: 4%;
+    color: #f0ae35;
+    margin-top: 1%;
 }
 
 #form {
     width: 950px;
-    Border: 2px solid blue;
     font-size: 21px;
     padding-right: 25px;
 }
 form input {
-        background-color: transparent;
-        color: #f0ae35;
+    background-color: transparent;
+    color: #f0ae35;
 }
 
 a:link {
-    color: #087800;
+    color: #f0ae35;
     text-decoration: none;
     padding: 30px;
+    font-size: 20px;
 }
 
 a:visited {
-    color: #f0ae35;
+    color: #ffd503;
 }
 
 /* Rotator Block*/
@@ -58,33 +55,14 @@ a:visited {
 #rotatorHome {
     width: 100%;
     margin-top: -6%;
+    overflow: hidden;
 }
 #rotatorEvents {
     max-width: 100%;
     margin-top: 0%;
-}
-
-
-span .left {
-    position: relative;
-    padding-left: 2%;
-    float: left;
-    background: url(/HikersGuide/images/left.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: -400px
-}
-
-span .right {
-    position: relative;
-    padding-right:2%;
-    float: right;
-    background: url(/HikersGuide/images/right.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: -400px;
+    overflow: hidden;
+    text-align: center;
+    color: #0a1563;
 }
 
 /* Body Block*/
@@ -111,7 +89,7 @@ body {
         border: 1px solid #3b321a;
         background: url('/HikersGuide/design/abstract-luxury-leather-black-texture-260nw-570397270.jpg');
         color: lemonchiffon;
-        margin-left: 0px;
+        margin-left: -30px;
         float: left;
     }
 
@@ -138,67 +116,198 @@ body {
     }
 
 
-/* Blog: Article Block 2*/
+/*  Home Posts, Blog Article Block 2, Event listings*/
 /*==================================================
 ================================================== */
-#aLevel2 {
+#events, #aLevel2 {
     max-width: 100%;
-    height: 350px;
-    margin-top: -5px;
-    margin-left: 0.5rem;
+    height: 390px;
+    margin: 0px 0px 0px 0.5rem;
+    padding: 10px 0px 3% 0px;
     clear: both;
     position: relative;
     text-align: center;
-    padding-bottom: 3%;
 }
 
-#events, #posts {
+#posts {
     height: auto;
     margin: auto;
     width: auto;
-    /*margin: 0px 15% 1% 18%;*/
+    margin: 0px 15% 1% 18%;
     clear: both;
     text-align: center;
 }
 
-    #events article, #posts article, #aLevel2 article {
-        width: 360px;
-        height: 360px;
+#events article, #posts article, #aLevel2 article {
+        width: 400px;
+        height: 400px;
         float: left;
         color: lemonchiffon;
         margin-left: 1px;
-    }
+}
 
-        #events article img, #posts article img, #aLevel2 article img {
-            position: relative;
-            height: 350px;
-            width: 350px;
-        }
+#events article img, #posts article img, #aLevel2 article img {
+            height: 390px;
+            width: 390px;
+}
 
-    #events h2, #posts h2 {
+    #events h2, #posts h2, #aLevel3 h2 {
         color: #f0ae35;
-        text-align: left;
+        font-size: 30px;
+        padding-top: 2% 0px 5px 0px;
     }
 
     #events h3, #posts h3, #aLevel2 h3 {
-        position: relative;
-        margin: 10px 0px 90px 0px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 3% 0px 3%;
+        font-size: 28px;
     }
 
-    #events p, #posts p, #aLevel2 p {
+#events p, #posts p, #aLevel2 p {
         position: relative;
-        margin: -175px 0px 6px 0px;
-        font-size: 16px;
-    }
-
-#posts dd, #aLevel2 dt {
-    position: relative;
-    float: left;
-    padding-left: 25px;
-    font-size: 11px;
+        margin: -250px 0px 0px 0px;
+        font-size: 20px;
 }
 
-/* Span input button Block 3*/
+
+/* Blog: Article Block 3, 4*/
+/*==================================================
+================================================== */
+#aLevel3 {
+    max-width: 65%;
+    height: 420px;
+    margin: 0px 50px 75px 350px;
+    clear: both;
+}
+    #aLevel3 section {
+        position: absolute;
+        width: 690px;
+        height: 320px;
+        float: left;
+        background: url('/HikersGuide/design/union-wood-sunrise.jpg.653x0_q80_crop-smart.jpg');
+        margin-left: 1px;
+        margin-top: 50px;
+        color: #ffd503;
+        text-align: left;
+    }
+
+#aLevel3 section img {
+            position: absolute;
+            height: 125px;
+            width: 500px;
+            margin: 200px 50px 0px 80px;
+}
+
+#aLevel3 section section {
+            position: relative;
+            height: 150px;
+            width: 500px;
+            margin: 200px 0px 0px 80px;
+            background: url('/HikersGuide/design/white.jpg');
+            color: black;
+            text-align:center;
+}
+
+    #aLevel3 article {
+        position: absolute;
+        width: 500px;
+        height: 330px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 720px;
+    }
+
+
+/* Article level 4*/
+#aLevel4 {
+    max-width: 65%;
+    height: 400px;
+    margin: 0px 50px 75px 350px;
+    padding-top: 100px;
+    clear: both;
+}
+#aLevel4 article {
+    width: 475px;
+    height: 400px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -100px;
+    padding-right: 25px;
+}
+
+#aLevel4 article img, #aLevel3 article img {
+    position: relative;
+    height: 150px;
+    width: 495px;
+}
+
+#aLevel4 article article, #aLevel3 article article {
+    position: relative;
+    height: 200px;
+    width: 475px;
+    margin: -5px 0px 0px 0px;
+    padding: 0px 10px 5px 10px;
+    text-align: left;
+    color: lemonchiffon;
+    background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
+    font-size: 13px;
+}
+
+    #aLevel4 section {
+        width: 175px;
+        height: 295px;
+        float: left;
+        margin-left: -20px;
+        margin-top: -50px;
+    }
+
+        #aLevel4 section section {
+            padding-top: 60px;
+            padding-left: 20px;
+            margin-left: 20px;
+            color: white;
+            text-align: left;
+            background: url('/HikersGuide/design/File_002 (5).png');
+        }
+
+/* Unordered Lists*/
+/*==================================================
+================================================== */
+#aLevel3 dt {
+    position: relative;
+    float: left;
+    margin: 50px 10px 50px 15px;
+    padding-right: -2%;
+    font-size: 14px;
+    color: #ffd503;
+}
+#events dt, #posts dd, #aLevel2 dt {
+    position: relative;
+    float: left;
+    margin: 10px 0px 0px 20px;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #ffd503;
+}
+
+#aLevel4 dt, #aLevel3 article dt{
+    position: relative;
+    float: left;
+    margin: -25px 0px 28px 30px;
+    font-size: 12px;
+    color: #8a7300;
+}
+
+#aLevel3 section dt {
+    position: relative;
+    float: left;
+    margin: -25px 0px 28px 100px;
+    font-size: 11px;
+    color: #8a7300;
+}
+
+
+/* Buttons Block*/
 /*==================================================
 ================================================== */
 
@@ -214,24 +323,109 @@ span .more {
     font-size: 16px;
 }
 
+span .left {
+    position: relative;
+    padding-left: 2%;
+    float: left;
+    background: url(/HikersGuide/images/left.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-top: -400px
+}
 
-/* Blog: Article Block 3*/
+span .right {
+    position: relative;
+    padding-right: 2%;
+    float: right;
+    background: url(/HikersGuide/images/right.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-top: -400px;
+}
+
+/* Home: join & sign Block 3*/
 /*==================================================
 ================================================== */
+    #join {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 1000px;
+    border: 3px solid black;
+}
 
+    #join img {
+        width: 100%;
+        height: 400px;
+        margin: 88px 0px 0px 0px;
+    }
 
+        #join section {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            text-align: left;
+            margin: -350px 40% 0px 5%;
+            color: lemonchiffon;
+        }
 
+/*sign up*/
+#sign {
+    max-width: 100%;
+    height: 170px;
+    margin-top: -15px;
+    background-color: #f0ae35;
+}
 
+    #sign section {
+        text-align: center;
+        padding-left: 5%;
+        padding-top: 20px;
+        color: black;
+    }
 
+    #sign .button {
+        background: url(/HikersGuide/images/right.png) no-repeat;
+        width: 50px;
+        height: 50px;
+        border: none;
+    }
 
+/* Home: Misc Block 3*/
+/*==================================================
+================================================== */
+#sectionMisc {
+    display: table;
+    table-layout: fixed;
+    width: 70%;
+    height: 100px;
+    padding: 5% 13% 3% 15%;
+    color: lemonchiffon;
+}
 
+    #sectionMisc section {
+        display: table-cell;
+        height: 100px;
+    }
 
+    #about h3, #sectionMisc p strong {
+        color: #f0ae35;
+        font-size: 16px;
+        margin-top: 30px;
+    }
 
+#about {
+    text-align: left;
+    padding-right: 10%;
+}
 
-
-
-
-
+#mEvents img, #members img {
+    float: left;
+    width: 65px;
+    height: 50px;
+    padding: 5px 15px 0px 25px;
+}
 
 
 
