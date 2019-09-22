@@ -83,7 +83,7 @@ body {
     clear: both;
 }
 
-    #aLevel1 article {
+#aLevel1 article {
         height: 110px;
         width: 300px;
         border: 1px solid #3b321a;
@@ -91,35 +91,35 @@ body {
         color: lemonchiffon;
         margin-left: -30px;
         float: left;
-    }
+}
 
-    #aLevel1 img {
+#aLevel1 img {
         height: 100px;
         width: 150px;
         float: left;
         padding-right: 25px;
-    }
+}
 
-    #aLevel1 p {
+#aLevel1 p {
         text-align: left;
         margin: 7px -15px 5px 10px;
         font-size: 10px;
         padding: 0px 20px 5px 20px;
         word-break: break-all;
-    }
+}
 
-    #aLevel1 h3 {
+#aLevel1 h3 {
         text-align: left;
         font-size: 16px;
         margin: 15px -45px 10px 35px;
         padding-right: 35px;
-    }
+}
 
 
 /*  Home Posts, Blog Article Block 2, Event listings*/
 /*==================================================
 ================================================== */
-#events, #aLevel2 {
+/*#events,*/ #aLevel2 {
     max-width: 100%;
     height: 390px;
     margin: 0px 0px 0px 0.5rem;
@@ -138,7 +138,7 @@ body {
     text-align: center;
 }
 
-#events article, #posts article, #aLevel2 article {
+/*#events article,*/ #posts article, #aLevel2 article {
         width: 400px;
         height: 400px;
         float: left;
@@ -146,24 +146,24 @@ body {
         margin-left: 1px;
 }
 
-#events article img, #posts article img, #aLevel2 article img {
+/*#events article img,*/ #posts article img, #aLevel2 article img {
             height: 390px;
             width: 390px;
 }
 
-    #events h2, #posts h2, #aLevel3 h2 {
+    /*#events h2,*/ #posts h2, #aLevel3 h2 {
         color: #f0ae35;
         font-size: 30px;
         padding-top: 2% 0px 5px 0px;
-    }
+}
 
-    #events h3, #posts h3, #aLevel2 h3 {
+    /*#events h3,*/ #posts h3, #aLevel2 h3 {
         margin: 0px 0px 0px 0px;
         padding: 0px 3% 0px 3%;
         font-size: 28px;
-    }
+}
 
-#events p, #posts p, #aLevel2 p {
+/*#events p,*/ #posts p, #aLevel2 p {
         position: relative;
         margin: -250px 0px 0px 0px;
         font-size: 20px;
@@ -179,7 +179,7 @@ body {
     margin: 0px 50px 75px 350px;
     clear: both;
 }
-    #aLevel3 section {
+#aLevel3 section {
         position: absolute;
         width: 690px;
         height: 320px;
@@ -189,7 +189,7 @@ body {
         margin-top: 50px;
         color: #ffd503;
         text-align: left;
-    }
+}
 
 #aLevel3 section img {
             position: absolute;
@@ -208,25 +208,25 @@ body {
             text-align:center;
 }
 
-    #aLevel3 article {
+#aLevel3 article {
         position: absolute;
         width: 500px;
         height: 330px;
         float: left;
         margin-top: 50px;
         margin-left: 720px;
-    }
+}
 
 
 /* Article level 4*/
-#aLevel4 {
+/*#events,*/ #aLevel4 {
     max-width: 65%;
     height: 400px;
     margin: 0px 50px 75px 350px;
     padding-top: 100px;
     clear: both;
 }
-#aLevel4 article {
+    /*#events article,*/ #aLevel4 article {
     width: 475px;
     height: 400px;
     float: left;
@@ -235,7 +235,7 @@ body {
     padding-right: 25px;
 }
 
-#aLevel4 article img, #aLevel3 article img {
+        /*#events article img,*/ #aLevel4 article img, #aLevel3 article img {
     position: relative;
     height: 150px;
     width: 495px;
@@ -253,22 +253,22 @@ body {
     font-size: 13px;
 }
 
-    #aLevel4 section {
+#aLevel4 section {
         width: 175px;
         height: 295px;
         float: left;
         margin-left: -20px;
         margin-top: -50px;
-    }
+}
 
-        #aLevel4 section section {
+#aLevel4 section section {
             padding-top: 60px;
             padding-left: 20px;
             margin-left: 20px;
             color: white;
             text-align: left;
             background: url('/HikersGuide/design/File_002 (5).png');
-        }
+}
 
 /* Unordered Lists*/
 /*==================================================
@@ -404,12 +404,12 @@ span .right {
     color: lemonchiffon;
 }
 
-    #sectionMisc section {
+#sectionMisc section {
         display: table-cell;
         height: 100px;
     }
 
-    #about h3, #sectionMisc p strong {
+#about h3, #sectionMisc p strong {
         color: #f0ae35;
         font-size: 16px;
         margin-top: 30px;

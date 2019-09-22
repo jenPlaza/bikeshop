@@ -19,18 +19,211 @@
             margin-top: -20px;
             color: #0a1563;
         }
-        #events h3 {
+
+        #list {
+            
+            width: 945px;
+            max-width: 65%;
+            height: 30px;
+            margin: auto;
+            margin-top: 3%;
+            clear: both;
+            border:1px solid green;
+        }
+
+        #events {
+            background-color: #292828;
+            width: 945px;
+            max-width: 65%;
+            height: 945px;
+            margin: auto;
+            padding: 0% 0% 1% 1%;
+            clear: both;
+        }
+
+        #misc {
+            width: 945px;
+            height: 300px;
+            margin: auto;
+            padding: 1% 8px 1% 1%;
+        }
+        #events article {
+            float: left;
+            height: 450px;
+            width: 270px;
+            margin: 30px 0px -15px 21px;
+            padding-right: 20px;
+            font-size: 13px;
+        }
+
+        #misc section {
+            float: left;
+            height: 140px;
+            width: 245px;
+            margin-left:5px;
+            padding: 2% 40px 0px 25px;
+        }
+                #events article img {
+                    position: relative;
+                    height: 300px;
+                    width: 290px;
+                    margin-left: -15px;
+                }
+                #events article section {
+                    position: relative;
+                    height: 140px;
+                    width: 260px;
+                    margin: -10px 0px 0px -15px;
+                    padding: 5px 10px 0px 20px;
+                    background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
+                }
+
+        #events article section p{
+            color:lemonchiffon;
+            margin-top: -10px;
+
+        }
+
+            #events article section p strong {
+                margin-top: -10px;
+            }
+        #misc section section {
             position: relative;
-            margin-top: -250px;
+            height: 160px;
+            width: 260px;
+            margin: -12px 0px 5px -25px;
+            padding: 10px 10px 0px 20px;
             color: lemonchiffon;
+            font-size: 12px;
         }
-        #events h4 {
+                    #misc section p strong, #events article section p strong {
+                        color: #8a7300;
+                        font-size: 13px;
+                        margin-bottom:-3px;
+                    }
+
+                        /* Gift, Tag, App icons*/
+                        #misc section img {
+                            position: relative;
+                            height: 20px;
+                            width: 20px;
+                            margin-left: -10px;
+                        }
+
+            #misc .newsletter p strong{
+                text-align: left;
+                margin-left: -25px;
+            }
+
+        #misc .btnBuy {
+            width: 135px;
+            height: 35px;
+            padding: 3%;
+            color: lemonchiffon;
+            border-color: #292828;
+            background-color: transparent;
+        }
+
+        #misc .btnL {
+            width: 200px;
+            height: 35px;
+            margin-top: -65px;
+            padding: 3%;
+            border-color: #292828;
+            color: lemonchiffon;
+            background-color: transparent
+        }
+#misc .btnL img {
+                width: 35px;
+                height: 30px;
+                float: right;
+                margin-top: -13px;
+                padding: 5px 0px 5px 20px;
+            }
+
+/*subscribe paragraph tag*/
+#misc .newsletter p {
+            text-align: left;
+            padding-left: 25px;
+        }
+
+#misc .btns {
+            width:234px;
+            height: 50px;
+        }
+        #misc .appStore {
+            width: 115px;
+            height: 36px;
+            margin-left:-10px;
+            float: right;
+            border-color: #292828;
+            background-color: transparent;
+        }
+        #misc .googlePlay {
+            width: 115px;
+            height: 36px;
+            float: left;
+            border-color: #292828;
+            background-color: transparent;
+        }
+#misc .appStore img{
+            width: 107px;
+            height: 100px;
+            float: right;
+            margin: -35px -4px 0px 0px;
+        }
+#misc .googlePlay img{
+            width: 107px;
+            height: 100px;
+            float: left;
+            margin: -35px 0px 0px -5px;
+        }
+
+        h5 {
+            color: #8a7300;
+            font-size: 20px;
+            margin: 0px 0px 0px 0px;
+        }
+        h3 {
+            color: #f0ae35;
+        }
+
+        #filter {
+            background-color: #292828;
+            max-width: 100%;
+            height: 100px;
+            clear: both;
             position: relative;
-            margin-top: 0px;
         }
-        #events p {
-            margin-top: 0px;
-        }
+
+            #filter section {
+                height: 100px;
+                width: 950px;
+                margin: auto;
+                color: lemonchiffon;
+                font-size: 12px;
+                padding: 0px 5px 0px 5px;
+            }
+
+                #filter section a {
+                    font-size: 10px;
+                    color: #ffd800;
+                    text-align: left;
+                }
+                #filter section h2 {
+                    font-size: 22px;
+                    color: lemonchiffon;
+                    text-align: center;
+                    margin-top:15px;
+                    margin-bottom: 5px;
+                }
+
+            #filter .link {
+                height: 30px;
+                width: 130px;
+                float: left;
+                margin: 6px 126px 0px 50px;
+            }
     </style>
 </head>
 <body>
@@ -40,7 +233,6 @@
         <section id="header">
 
             <h1 id="id01"><strong>Company Name</strong></h1>
-
         </section>
 
         <section id="form">
@@ -55,7 +247,7 @@
     </header>
     <section id="rotatorEvents">
         <img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />
-        <h2>
+        <h2 id="id02">
             May 4
             </h2>
             <h3>
@@ -69,96 +261,140 @@
         </span>
     </section>
 
-    <section id="events">
-        <dl>
-            <dt><strong><a href="#">Today</a></strong></dt>
-            <dd></dd>
-            <dt><strong><a href="#">Weekend</a></strong></dt>
-            <dd></dd>
-            <dt><strong><a href="#">This Month</a></strong></dt>
-            <dd></dd>
-        </dl>
-        <br /><br /><br />
-        <h2>Today</h2>
-        <article>
-                <img src="/HikersGuide/design/sunnytrees.png" alt="Alternate Text" />
-                <h3><strong>Lorem Ipsum</strong></h3>
-                <h4>May 4</h4>
-                <p>
-                    Dessert gingerbread lollipop pudding cheesecake gummies.
-                </p>
-        </article>
-        <article>
-            <img src="/HikersGuide/design/smokyRiver.png" alt="Alternate Text" />
-            <h2>Lorem Ipsum</h2>
-            <h3>May 4</h3>
-            <p>
-                Dessert gingerbread lollipop pudding cheesecake gummies.
-            </p>
-        </article>
-        <article>
-            <img src="/HikersGuide/design/tree.png" alt="Alternate Text" />
-            <h2>Lorem Ipsum</h2>
-            <h3>May 4</h3>
-            <p>
-                Dessert gingerbread lollipop pudding cheesecake gummies.
-            </p>
-        </article>
-        <article>
-            <img src="/HikersGuide/design/crystalriver.png" alt="Alternate Text" />
-            <h2>Lorem Ipsum</h2>
-            <h3>May 4</h3>
-            <p>
-                Dessert gingerbread lollipop pudding cheesecake gummies.
-            </p>
-        </article>
-        <article>
-            <img src="/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg" alt="Alternate Text" />
-            <h2>Lorem Ipsum</h2>
-            <h3>May 4</h3>
-            <p>
-                Dessert gingerbread lollipop pudding cheesecake gummies.
-            </p>
-        </article>
+    <section id="list">
+        <strong><a href="#">Today</a></strong>
+        <strong><a href="#">Weekend</a></strong>
+        <strong><a href="#">This Month</a></strong>
     </section>
+        <section id="events">
+            <article>
+                <img src="/HikersGuide/design/sunnytrees.png" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (17).png" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (16).png" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/crystalriver.png" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (13).png" alt="Alternate Text" />
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <p><strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+        </section>
 
-    <!--<section id="misc">
-        <article>
-            <h3><strong>Gift Vouchers</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
-            <button>Buy Gift Voucher</button>
+        <section id="misc">
+            <section>
+                <img src="HikersGuide/design/gift.png" alt="Alternate Text" />
+                <section>
+                    <h5>Gift vouchers</h5>
+                    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
+                </section>
+                <section class="vouchers">
+                    <button type="submit" class="btnBuy" onclick="location.href = '#';">Buy a Gift Voucher</button>
+                </section>
+            </section>
+            <section>
+                <img src="HikersGuide/design/tag-3.png" alt="Alternate Text" />
+                <section>
+                    <h5>Special offers</h5>
+                    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
+                </section>
+                <section class="newsletter">
+                    <p><strong>Subscribe to our newsletter</strong></p>
+                    <br />
+                    <button type="submit" class="btnL" onclick="location.href = '#';"><img src="HikersGuide/design/envelope.png" alt="Alternate Text" /> Enter your email here</button>
+                </section>
+            </section>
+            <section>
+                <img src="HikersGuide/design/iphone.png" alt="Alternate Text" />
+                <section>
+                    <h5>Mobile app</h5>
+                    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. #Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. </p>
+                </section>
+                <section class="btns">
+                    <button type="submit" class="appStore" onclick="location.href = '#';"><img src="HikersGuide/design/appstore.png" alt="Alternate Text" /></button>
+                    <button type="submit" class="googlePlay" onclick="location.href = '#';"><img src="HikersGuide/design/googleplay.png" alt="Alternate Text" /></button>
+                </section>
+            </section>
+        </section>
 
-        </article>
-        <article>
-            <h3><strong>Special Offers</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.  </p>
-            <br />
+        <section id="filter">
+            <section>
+                <section class="link">
+                    <h2>Tropical</h2>
+                    <a href="#">Rainforests</a>
+                    <a href="#">Dry Rainforests</a>
+                </section>
 
-            <h5>Subscribe to our newsletter</h5>
-        </article>
-        <article>
-            <h3><strong>Mobile App</strong></h3>
-            <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. #Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. </p>
-            <br /><br /><br /><br /><br />
-            <p>
-                <a href="#">Enter Your email here</a>
-            </p>
-        </article>
-    </section>-->
+                <section class="link">
+                    <h2>Temperate</h2>
+                    <a href="#">Temperate</a>
+                </section>
 
-    <!--footer-->
-    <!--Social Media Icons with links-->
-    <footer>
-        <h4><strong>Connect</strong></h4>
-        <ul style="list-style-type:none">
-            <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
-            <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
-        </ul>
-        <h4>&copy;Company A</h4>
-    </footer>
-    <script src="events.js"></script>
+                <section class="link">
+                    <h2>Boreal</h2>
+                    <a href="#">Boreal</a>
+                </section>
+            </section>
+        </section>
+
+        <!--footer-->
+        <!--Social Media Icons with links-->
+        <footer>
+            <section>
+                <h4><strong>Connect</strong></h4>
+                <ul style="list-style-type:none">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
+                    <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
+                </ul>
+                <h4>&copy;Company A</h4>
+            </section>
+
+        </footer>
+        <script src="events.js"></script>
 </body>
 </html>
