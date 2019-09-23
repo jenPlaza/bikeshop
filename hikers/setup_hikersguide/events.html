@@ -1,232 +1,11 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Events | Company A</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-    <style>
-        header {
-            background: url('/HikersGuide/design/File_001 (10).png');
-        }
-        #rotatorEvents h2 {
-            text-align:center;
-            margin-top: -250px;
-            color: #0a1563;
-        }
-        #rotatorEvents h3 {
-            text-align: center;
-            margin-top: -20px;
-            color: #0a1563;
-        }
-
-        #list {
-            
-            width: 945px;
-            max-width: 65%;
-            height: 30px;
-            margin: auto;
-            margin-top: 3%;
-            clear: both;
-            border:1px solid green;
-        }
-
-        #events {
-            background-color: #292828;
-            width: 945px;
-            max-width: 65%;
-            height: 945px;
-            margin: auto;
-            padding: 0% 0% 1% 1%;
-            clear: both;
-        }
-
-        #misc {
-            width: 945px;
-            height: 300px;
-            margin: auto;
-            padding: 1% 8px 1% 1%;
-        }
-        #events article {
-            float: left;
-            height: 450px;
-            width: 270px;
-            margin: 30px 0px -15px 21px;
-            padding-right: 20px;
-            font-size: 13px;
-        }
-
-        #misc section {
-            float: left;
-            height: 140px;
-            width: 245px;
-            margin-left:5px;
-            padding: 2% 40px 0px 25px;
-        }
-                #events article img {
-                    position: relative;
-                    height: 300px;
-                    width: 290px;
-                    margin-left: -15px;
-                }
-                #events article section {
-                    position: relative;
-                    height: 140px;
-                    width: 260px;
-                    margin: -10px 0px 0px -15px;
-                    padding: 5px 10px 0px 20px;
-                    background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
-                }
-
-        #events article section p{
-            color:lemonchiffon;
-            margin-top: -10px;
-
-        }
-
-            #events article section p strong {
-                margin-top: -10px;
-            }
-        #misc section section {
-            position: relative;
-            height: 160px;
-            width: 260px;
-            margin: -12px 0px 5px -25px;
-            padding: 10px 10px 0px 20px;
-            color: lemonchiffon;
-            font-size: 12px;
-        }
-                    #misc section p strong, #events article section p strong {
-                        color: #8a7300;
-                        font-size: 13px;
-                        margin-bottom:-3px;
-                    }
-
-                        /* Gift, Tag, App icons*/
-                        #misc section img {
-                            position: relative;
-                            height: 20px;
-                            width: 20px;
-                            margin-left: -10px;
-                        }
-
-            #misc .newsletter p strong{
-                text-align: left;
-                margin-left: -25px;
-            }
-
-        #misc .btnBuy {
-            width: 135px;
-            height: 35px;
-            padding: 3%;
-            color: lemonchiffon;
-            border-color: #292828;
-            background-color: transparent;
-        }
-
-        #misc .btnL {
-            width: 200px;
-            height: 35px;
-            margin-top: -65px;
-            padding: 3%;
-            border-color: #292828;
-            color: lemonchiffon;
-            background-color: transparent
-        }
-#misc .btnL img {
-                width: 35px;
-                height: 30px;
-                float: right;
-                margin-top: -13px;
-                padding: 5px 0px 5px 20px;
-            }
-
-/*subscribe paragraph tag*/
-#misc .newsletter p {
-            text-align: left;
-            padding-left: 25px;
-        }
-
-#misc .btns {
-            width:234px;
-            height: 50px;
-        }
-        #misc .appStore {
-            width: 115px;
-            height: 36px;
-            margin-left:-10px;
-            float: right;
-            border-color: #292828;
-            background-color: transparent;
-        }
-        #misc .googlePlay {
-            width: 115px;
-            height: 36px;
-            float: left;
-            border-color: #292828;
-            background-color: transparent;
-        }
-#misc .appStore img{
-            width: 107px;
-            height: 100px;
-            float: right;
-            margin: -35px -4px 0px 0px;
-        }
-#misc .googlePlay img{
-            width: 107px;
-            height: 100px;
-            float: left;
-            margin: -35px 0px 0px -5px;
-        }
-
-        h5 {
-            color: #8a7300;
-            font-size: 20px;
-            margin: 0px 0px 0px 0px;
-        }
-        h3 {
-            color: #f0ae35;
-        }
-
-        #filter {
-            background-color: #292828;
-            max-width: 100%;
-            height: 100px;
-            clear: both;
-            position: relative;
-        }
-
-            #filter section {
-                height: 100px;
-                width: 950px;
-                margin: auto;
-                color: lemonchiffon;
-                font-size: 12px;
-                padding: 0px 5px 0px 5px;
-            }
-
-                #filter section a {
-                    font-size: 10px;
-                    color: #ffd800;
-                    text-align: left;
-                }
-                #filter section h2 {
-                    font-size: 22px;
-                    color: lemonchiffon;
-                    text-align: center;
-                    margin-top:15px;
-                    margin-bottom: 5px;
-                }
-
-            #filter .link {
-                height: 30px;
-                width: 130px;
-                float: left;
-                margin: 6px 126px 0px 50px;
-            }
-    </style>
 </head>
-<body>
+<body id="eventPage">
     <!--Header-->
     <!-- form with menu items and search box -->
     <header>
@@ -249,24 +28,27 @@
         <img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />
         <h2 id="id02">
             May 4
-            </h2>
-            <h3>
-                Dessert gingerbread lollipop pudding cheesecake gummies.
-            </h3>
+        </h2>
+        <h3>
+            Dessert gingerbread lollipop pudding cheesecake gummies.
+        </h3>
+
         <span>
-            <input type="button" value="." class="left" onclick="location.href='#';" />
+        <button class="left" onclick="location.href='#';">.</button>
         </span>
         <span>
-            <input type="button" value="." class="right" onclick="location.href='#';" />
+        <button class="right" onclick="location.href='#';">.</button>
         </span>
+
     </section>
 
-    <section id="list">
-        <strong><a href="#">Today</a></strong>
-        <strong><a href="#">Weekend</a></strong>
-        <strong><a href="#">This Month</a></strong>
+    <section id="tab">
+        <button class="tablinks" onclick="filter(event, 'Today')">Today</button>
+        <button class="tablinks" onclick="filter(event, 'Weekend')">Weekend</button>
+        <button class="tablinks" onclick="filter(event, 'ThisMonth')">This Month</button>
     </section>
-        <section id="events">
+    <section id="events">
+        <section id="Today" class="tabcontent">
             <article>
                 <img src="/HikersGuide/design/sunnytrees.png" alt="Alternate Text" />
                 <section>
@@ -322,6 +104,65 @@
                 </section>
             </article>
         </section>
+        <section id="Weekend" class="tabcontent">
+            <article>
+                <img src="/HikersGuide/design/File_001 (14).png" alt="Alternate Text" />
+                <section>
+                    <h3>Weekday Wanderer - Caledon State Park</h3>
+                    <p>2016-11-10</p>
+                    <p><strong>3401 Courthouse Road North Chesterfield </strong></p>
+                    <p><strong>VA</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (5).png" alt="Alternate Text" />
+                <section>
+                    <h3>Veterans Appreciation Walk and Reception</h3>
+                    <p>2016-11-05</p>
+                    <p><strong>7030 Garrison St. Arvada </strong></p>
+                    <p><strong>CO</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (15).png" alt="Alternate Text" />
+                <section>
+                    <h3>Turkey Trek 5K Family Hike</h3>
+                    <p>2016-11-19</p>
+                    <p><strong>2100 East Centerville-Station Centerville </strong></p>
+                    <p><strong>OH</strong></p>
+                </section>
+            </article>
+        </section>
+<section id="ThisMonth" class="tabcontent">
+            <article>
+                <img src="/HikersGuide/design/File_001 (19).png" alt="Alternate Text" />
+                <section>
+                    <h3>Bear Mountain State Park</h3>
+                    <p>2019-11-04</p>
+                    <p><strong>Route 9W North, Bear Mountain </strong></p>
+                    <p><strong>NY</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (12).png" alt="Alternate Text" />
+                <section>
+                    <h3>The Race Against Extinction</h3>
+                    <p>2018-09-22</p>
+                    <p><strong>Any Place Washington Central Park</strong></p>
+                    <p><strong>DC</strong></p>
+                </section>
+            </article>
+            <article>
+                <img src="/HikersGuide/design/File_001 (18).png" alt="Alternate Text" />
+                <section>
+                    <h3>Weekday Wanderer - Harriman State Park</h3>
+                    <p>2017-06-10</p>
+                    <p><strong>Harriman State Park </strong></p>
+                    <p><strong>NY</strong></p>
+                </section>
+            </article>
+        </section>
+    </section>
 
         <section id="misc">
             <section>
@@ -358,7 +199,6 @@
                 </section>
             </section>
         </section>
-
         <section id="filter">
             <section>
                 <section class="link">
@@ -395,6 +235,7 @@
             </section>
 
         </footer>
-        <script src="events.js"></script>
+        <!--<script src="events.js"></script>-->
+    <script src="events.js"></script>
 </body>
 </html>

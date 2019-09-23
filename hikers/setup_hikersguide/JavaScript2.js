@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/hikersguide.json
 */
@@ -27,34 +27,43 @@ function filter(evt, category) {
 var myEvents = new XMLHttpRequest();
 myEvents.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 myEvents.onload = function () {
+
     var jsonEvents = JSON.parse(myEvents.responseText);
 
     secRotate(jsonEvents);
-    secToday(jsonEvents);
-    secWeekend(jsonEvents);
-    secThisMonth(jsonEvents);
+    secEvents2(jsonEvents);
 };
 
 function secRotate(dataEvents) {
-    //htmlEvents += '<section>';
+
+
+    htmlEvents += '<section>';
     htmlEvents += '<img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />';
+
+    //var rotator = document.getElementById("id02");
+    //htmlEvents = '<h2>' + dataEvents.events[4].date + '</h2>';
+    //rotator.innerHTML = htmlEvents;
 
     htmlEvents += '<h2>' + dataEvents.events[4].date + '</h2>';
     htmlEvents += '<h3>' + dataEvents.events[4].location + ' </h3>';
 
     htmlEvents += '<span>';
-    htmlEvents += '<button class=left onclick=location.href="#">.</button>';
+    var buttonLeft = document.getElementsByClassName(".left");
+    htmlEvents += buttonLeft;
+    //htmlEvents += '<input type="button" value="." class="left" onclick="location.href=#;" />';
     htmlEvents += '</span>';
     htmlEvents += '<span>';
-    htmlEvents += '<button class=right onclick=location.href="#">.</button>';
+    var buttonRight = document.getElementsByClassName(".right");
+    htmlEvents += buttonRight;
+    //htmlEvents += '<input type="button" value="." class="right" onclick="location.href=#;" />';
     htmlEvents += '</span>';
+    htmlEvents += '</section>';
 
-    //htmlEvents += '</section>';
 
     var articleEvents = document.getElementById("rotatorEvents");
     articleEvents.innerHTML = htmlEvents;
 }
-function secToday(dataEvents2) {
+function secEvents2(dataEvents2) {
 
     let htmlEvents2 = '<section>';
 
@@ -88,54 +97,6 @@ function secToday(dataEvents2) {
     htmlEvents2 += '</section>';
     var articleEvents = document.getElementById("Today");
     articleEvents.innerHTML = htmlEvents2;
-}
-function secWeekend(dataEvents3) {
-
-    let htmlEvents3 = '<section>';
-
-    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_001 (17).png", "/HikersGuide/design/File_001 (14).png",
-        "/HikersGuide/design/File_001 (5).png", "/HikersGuide/design/File_001 (15).png", "/HikersGuide/design/File_001 (13).png"];
-
-    for (var i = 2; i < dataEvents3.events.length; i++) {
-        htmlEvents3 += '<article>';
-        htmlEvents3 += '<img src="' + imageArray[i] + '"';
-        htmlEvents3 += 'alt="' + dataEvents3.events[i].subtitle + '"/>';
-        htmlEvents3 += '<section>';
-        htmlEvents3 += '<h3>' + dataEvents3.events[i].title + '</h3>';
-        htmlEvents3 += '<p>' + dataEvents3.events[i].date + '</p>';
-        htmlEvents3 += '<p><strong>' + dataEvents3.events[i].location + '<br/ >';
-        htmlEvents3 += dataEvents3.events[i].state + '</strong></p>';
-        htmlEvents3 += '</section>';
-        htmlEvents3 += '</article>';
-    }
-
-    htmlEvents3 += '</section>';
-    var articleEvents = document.getElementById("Weekend");
-    articleEvents.innerHTML = htmlEvents3;
-}
-function secThisMonth(dataEvents4) {
-
-    let htmlEvents4 = '<section>';
-
-    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_001 (17).png", "/HikersGuide/design/File_001 (16).png",
-        "/HikersGuide/design/File_001 (12).png", "/HikersGuide/design//File_001 (18).png", "/HikersGuide/design/File_001 (19).png"];
-
-    for (var i = 3; i < dataEvents4.events.length; i++) {
-        htmlEvents4 += '<article>';
-        htmlEvents4 += '<img src="' + imageArray[i] + '"';
-        htmlEvents4 += 'alt="' + dataEvents4.events[i].subtitle + '"/>';
-        htmlEvents4 += '<section>';
-        htmlEvents4 += '<h3>' + dataEvents4.events[i].title + '</h3>';
-        htmlEvents4 += '<p>' + dataEvents4.events[i].date + '</p>';
-        htmlEvents4 += '<p><strong>' + dataEvents4.events[i].location + '<br/ >';
-        htmlEvents4 += dataEvents4.events[i].state + '</strong></p>';
-        htmlEvents4 += '</section>';
-        htmlEvents4 += '</article>';
-    }
-
-    htmlEvents4 += '</section>';
-    var articleEvents = document.getElementById("ThisMonth");
-    articleEvents.innerHTML = htmlEvents4;
 }
 myEvents.send();
 

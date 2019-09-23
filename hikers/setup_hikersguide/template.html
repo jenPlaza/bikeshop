@@ -47,49 +47,42 @@
     <body>
 
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="filter(event, 'Today')">Today</button>
+            <button class="tablinks" onclick="filter(event, 'Weekend')">Weekend</button>
+            <button class="tablinks" onclick="filter(event, 'This Month')">This Month</button>
         </div>
 
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
+        <div id="Today" class="tabcontent">
+            <h3>Today</h3>
             <p>London is the capital city of England.</p>
+
+            <article>
+                <img src="/HikersGuide/design/sunnytrees.png" alt="Alternate Text" height="200" width="400"/>
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>May 4</p>
+                    <strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
+                    <p><strong>State</strong></p>
+                </section>
+            </article>
+
         </div>
 
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
+        <div id="Weekend" class="tabcontent">
+            <h3>Weekend</h3>
             <p>Paris is the capital of France.</p>
         </div>
 
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
+        <div id="This Month" class="tabcontent">
+            <h3>This Month</h3>
             <p>Tokyo is the capital of Japan.</p>
         </div>
-
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script>
-
-      
 
             <!--<h1 id="id01">This is the Body of the page</h1>
     <p>Anything within the body of a web page is displayed in the main browser window.</p>-->
             <!--<script src="content.js"></script>-->
             <!--<script src="events.js"></script>-->
-            <script src="index.js"></script>
+            <script src="JavaScript.js"></script>
 
 </body>
 </html>
