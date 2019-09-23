@@ -12,6 +12,7 @@ htmlEvents.innerHTML = "Company A";
 function filter(evt, category) {
 
     var tabcontent = document.getElementsByClassName("tabcontent");
+
     for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
