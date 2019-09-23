@@ -6,12 +6,40 @@
     <title>Contact Us | Company A</title>
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
-        header {
+        /*header {
             margin-top: -5%;
         }
-        /* Body Block*/
         body {
             background: url('/HikersGuide/design/File_001 (10).png') no-repeat;
+        }*/
+        header section{
+            width:100%;
+            height:126px;
+            border: 1px solid red;
+            margin-top: 0px;
+        }
+        header.thin {
+            width: 100%;
+            height: 42px;
+            border: 1px solid pink;
+            margin-top: 0px;
+        }
+        header.menu {
+            width: 100%;
+            height: 84px;
+            border: 1px solid orange;
+            margin-top: 0px;
+        }
+        #search img{
+            width:20px;
+            height: 20px;
+        }
+        #search.btn, #menu.btn{
+
+            /*border-color:dimgray;*/
+            color:lemonchiffon;
+            text-align:center;
+            font-weight:bolder;
         }
     </style>
 </head>
@@ -20,7 +48,7 @@
     <!--Header-->
     <!-- form with menu items and search box -->
     <header>
-        <section id="header">
+        <!--<section id="header">
 
             <h1 id="id01"><strong>Company Name</strong></h1>
 
@@ -34,25 +62,110 @@
                 <strong><a href="/contact.html" target="_blank">Contact Us</a></strong>
                 <span><input id="formSrch" name="q" type="search" size="50" /><input type="submit" /></span>
             </form>
+        </section>-->
+        <section>
+            <section class="thin">
+                <div><img src="HikersGuide/images/hikersGuide.png" /></div>
+                <div><img src="HikersGuide/design/phone-68-128.png" /><p>1-904-378-9087</p></div>
+                <div><img src="HikersGuide/images/user.png" /><p>Login In / Register</p></div>
+            </section>
+            <section class="menu">
+                <div>
+                    <button class="btn" onclick="location.href='/index.html'">Company A</button>
+                    <button class="btn" onclick="location.href='/index.html'">Home</button>
+                    <button class="btn" onclick="location.href='/blog.html'">Blog</button>
+                    <button class="btn" onclick="location.href='/events.html'">Events</button>
+                    <button class="btn active" onclick="location.href='/contact.html'">Contact US</button>
+                </div>
+                <section id="search">
+                    <form>
+                        <input id="formSrch" class="btn" name="q" type="search" size="50" /><img src="HikersGuide/design/search-3-512.png" />
+                    </form>
+                </section>
+            </section>
         </section>
     </header>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Donec et odio pellentesque diam volutpat commodo sed egestas <strong>Augue interdum </strong>velit.</p>
+    </section>
 
-   
+    <section id="info">
+        <!-- Contact Information in Table format-->
+        <table>
+            <tr>
+                <td><h5>1-904-378-9087</h5></td>
+                <td>US National Park Service</td>
+                <td>Company A</td>
+            </tr>
+            <tr>
+                <td>Monday- Friday</td>
+                <td>7645 NorthWest Parkway</td>
+                <td>345 Red Road</td>
+            </tr>
+            <tr>
+                <td>8:00AM - 5:30PM ET</td>
+                <td>Jacksonville, FL 67834</td>
+                <td>Jacksonville, FL 45623</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1-904-378-9087</td>
+                <td>1-904-123-5678</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="email">
+        <!-- Email Us link  -->
+        <h5><strong><a href="#">SEND A MESSAGE</a></strong></h5>
+        <h4><strong>OR, FIND YOUR ANSWERS HERE: </strong></h4>
+        <input type="button" value="FAQ" class="button" onclick="location.href='#';" />
+    </section>
+
+
 
 
     <!--footer-->
     <!--Social Media Icons with links-->
     <footer id="footer">
-        <h4><strong>Connect</strong></h4>
-        <ul style="list-style-type:none">
+        <section class="support">
+            <div>
+                <h3>CUSTOMER SUPPORT</h3>
+                <p>Let us help you find what you are looking for</p>
+            </div>
+            <div class="HFC">
+                   <a href="#" target="_blank">HELP</a>
+                   <a href="#">FAQ</a>
+                    <a href="#">CONTACT</a>
+            </div>
+
+        </section>
+        <section class="signUp">
+            <div>
+                <h3>SIGN ME UP</h3>
+                <p>Join The Nation</p>
+            </div>
+                <span><input id="formSrch" name="q" value="Email Address" type="search" size="25" /><input type="submit" /></span>
+        </section>
+        <section class="Follow us">
+            <div>
+                <h3>FOLLOW US</h3>
+            </div>
+            <div class="icons">
+                <ul style="list-style-type:none">
             <li><a href="https://www.facebook.com" target="_blank"><img src="/HikersGuide/images/facebook.png" alt="Facebook" /></a></li>
             <li><a href="https://twitter.com" target="_blank"><img src="/HikersGuide/images/twitter.png" alt="Twitter" /></a></li>
             <li><a href="https://www.youtube.com" target="_blank"><img src="/HikersGuide/images/youtube.png" alt="YouTube" /></a></li>
             <li><a href="https://www.instagram.com" target="_blank"><img src="/HikersGuide/images/instagram.png" alt="Instagram" /></a></li>
             <li><a href="/HikersGuide/design/HikersGuide.jpg" target="_blank"><img src="/HikersGuide/images/sharethis-3-256.png" alt="Share" /></a></li>
-        </ul>
-        <h4>&copy;Company A</h4>
+            </ul>
+            </div>
+            <div>
+                <h4>&copy;Company A</h4>
+            </div>
+        </section>
     </footer>
-    <script src="content.js"></script>
+    <!--<script src="content.js"></script>-->
 </body>
 </html>
