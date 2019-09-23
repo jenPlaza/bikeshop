@@ -28,12 +28,45 @@ function secALevel1(data1) {
     var htmlBlog = '<h3>';
     article.innerHTML = htmlBlog;
 
+    var imageArray = ["/HikersGuide/design/File_001 (5).png", "/HikersGuide/design/File_001 (10).png", "/HikersGuide/design/File_001 (15).png","/HikersGuide/design/File_001 (12).png", "/HikersGuide/design/File_001 (13).png", "/HikersGuide/design/File_001 (14).png", "/HikersGuide/design/File_001 (18).png"];
+
     for (var i = 0; i < data1.locations.length; i++) {
         htmlBlog += '<article>';
+        htmlBlog += '<img src="' + imageArray[i] + '"';
+        htmlBlog += 'alt="' + data1.locations[i].title + '"/>';
         htmlBlog += '<h3>' + data1.locations[i].title + '</h3>';
-        htmlBlog += '<p>' + data1.locations[i].text + '</p>';
+        htmlBlog += '<dl>';
+        htmlBlog += '<dt>by ' + data1.posts[i].author + '</dt>';
+        htmlBlog += '<dt>' + data1.posts[i].postDate + '</dt>';
+        htmlBlog += '<dt>' + data1.posts[i].moreLink + '</dt>';
+        htmlBlog += '</dl>';
+
         htmlBlog += '</article>';
     }
+
+    htmlBlog += '<article>';
+    htmlBlog += '<img src="' + imageArray[i] + '"';
+    htmlBlog += 'alt="' + data1.locations[0].title + '"/>';
+    htmlBlog += '<h3>' + data1.locations[0].title + '</h3>';
+    htmlBlog += '<dl>';
+    htmlBlog += '<dt>by ' + data1.posts[0].author + '</dt>';
+    htmlBlog += '<dt>' + data1.posts[0].postDate + '</dt>';
+    htmlBlog += '<dt>' + data1.posts[0].moreLink + '</dt>';
+    htmlBlog += '</dl>';
+
+    htmlBlog += '</article>';
+
+    htmlBlog += '<article>';
+    htmlBlog += '<img src="' + imageArray[i] + '"';
+    htmlBlog += 'alt="' + data1.locations[3].title + '"/>';
+    htmlBlog += '<h3>' + data1.locations[3].title + '</h3>';
+    htmlBlog += '<dl>';
+    htmlBlog += '<dt>by ' + data1.posts[3].author + '</dt>';
+    htmlBlog += '<dt>' + data1.posts[3].postDate + '</dt>';
+    htmlBlog += '<dt>' + data1.posts[3].moreLink + '</dt>';
+    htmlBlog += '</dl>';
+
+    htmlBlog += '</article>';
 
     var articleBlog = document.getElementById("aLevel1");
     articleBlog.innerHTML = htmlBlog;
@@ -65,14 +98,7 @@ function secALevel2(data2) {
 
 function secALevel3(data3) {
     var htmlArticle3 = '';
-    htmlArticle3 += '<dl >';
-    htmlArticle3 += '<dt><strong><a href="#">All Posts</a></strong></dt>';
-    htmlArticle3 += '<dt><strong><a href="#">Tropical</a></strong></dt>';
-    htmlArticle3 += '<dt><strong><a href="#">Temperate</a></strong></dt>';
-    htmlArticle3 += '<dt><strong><a href="#">Boreal</a></strong></dt>';
-    htmlArticle3 += '</dl >';
 
-    htmlArticle3 += '<h2>All Posts</h2>';
     htmlArticle3 += '<section>';
     htmlArticle3 += '<img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />';
     htmlArticle3 += '<section>';
