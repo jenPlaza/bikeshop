@@ -2,7 +2,6 @@
 ================================================== 
 ================================================== */
 
-/*html {*/
 /* Header Block*/
 /*==================================================
 ================================================== */
@@ -147,7 +146,6 @@ body {
 /*Blog: Article Block 1
 ==================================================
 ==================================================*/
-}
 #aLevel1 {
     max-width: 93%;
     height: 120px;
@@ -181,7 +179,7 @@ body {
 ================================================== */
 #aLevel2 {
     max-width: 93%;
-    height: 340px;
+    height: 360px;
     clear: both;
     text-align: center;
     margin: auto;
@@ -202,6 +200,7 @@ body {
         float: left;
         color: lemonchiffon;
 
+
     }
     #posts article img, #aLevel2 article img {
         width: 330px;
@@ -209,9 +208,24 @@ body {
         border: 15px solid #292828;
 
     }
+        #posts article h3 {
+            position: relative;
+            margin: -300px 0px 0px 0px;
+        }
+
+        #posts article p {
+            position: relative;
+            margin: 0px 0px -15px 0px;
+            padding: 0px 2% -15px -25px;
+        }
+
+    #posts dd {
+        padding-left: 0.2px;
+    }
 #posts h2, #aLevel3 h2 {
         font-size: 30px;
-        padding-top: 2% 0% 5px 0px;
+        padding-top: 2%;
+        padding-bottom:5px;
         color:#f0ae35;
 }
 #posts h3, #aLevel2 h3 {
@@ -334,13 +348,13 @@ span .more {
     overflow: hidden;
     margin-bottom: 3%;
 }
-#aLevel4 article {
-    width: 475px;
-    height: 400px;
-    float: left;
-    margin-right: 10px;
-    padding-right: 25px;
-}
+    #aLevel4 article {
+        width: 475px;
+        height: 400px;
+        float: left;
+        margin-right: 10px;
+        padding-right: 25px;
+    }
 #aLevel4 article img, #aLevel3 article img {
     position: relative;
     height: 175px;
@@ -901,5 +915,3 @@ footer h3 {
             width: 30px;
             padding: 1% 3% 0% 3%;
         }
-
-/*}*/
