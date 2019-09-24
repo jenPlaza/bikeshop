@@ -5,84 +5,113 @@
         <meta charset="utf-8" />
         <title>Company A</title>
         <style>
-            body {
-                font-family: Arial;
+            #wrapper2 {
+                position: relative;
+                margin-top: 5px;
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                height: 71px;
             }
-
-            /* Style the tab */
-            .tab {
-                overflow: hidden;
-            }
-                /* Style the buttons inside the tab */
-                .tab button {
-                    background-color: inherit;
-                    float: left;
-                    border:inherit;
-                    outline: none;
-                    cursor: pointer;
-                    padding: 14px 16px;
-                    transition: 0.3s;
-                    font-size: 17px;
+                #wrapper2 div {
+                    display: table-cell;
+                    height: 71px;
                 }
-
-                    /* Change background color of buttons on hover */
-                    /*.tab button:hover {
-                        background-color: #ddd;
-                    }*/
-
-                    /* Create an active/current tablink class */
-                    .tab button.active {
-                        background-color: #ccc;
-                    }
-
-            /* Style the tab content */
-            .tabcontent {
-                display: none;
-                padding: 6px 12px;
-                border-top: none;
-                background-color: #ccc;
+            #cmpny, #btn01, #btn02, #btn03, #btn04 {
+                border: 1px solid #292828;
+                
             }
-        </style>
-    </head>
+            #btn05 {
+                width: 51%;
+                background-color: aqua;
+                border: 1px solid #292828;
+            }
+                #btn05 img {
+                    width: 30px;
+                    height: 30px;
+                }
+            #box {
+                margin: auto;
+                text-align: center;
+            }
+            .btns {
+                width: 100%;
+                height: 70px;
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+                border: none;
+            }
+            .searchboxs {
+                width:90%;
+                height:70px;
+                margin-left: 5px;
+                background-color: transparent;
+                border: none;
+            }
+
+</style>
+</head>
     <body>
-
-        <div class="tab">
-            <button class="tablinks" onclick="filter(event, 'Today')">Today</button>
-            <button class="tablinks" onclick="filter(event, 'Weekend')">Weekend</button>
-            <button class="tablinks" onclick="filter(event, 'This Month')">This Month</button>
-        </div>
-
-        <div id="Today" class="tabcontent">
-            <h3>Today</h3>
-            <p>London is the capital city of England.</p>
-
-            <article>
-                <img src="/HikersGuide/design/sunnytrees.png" alt="Alternate Text" height="200" width="400"/>
-                <section>
-                    <h3>Lorem Ipsum</h3>
-                    <p>May 4</p>
-                    <strong>Dessert gingerbread lollipop pudding cheesecake gummies. </strong></p>
-                    <p><strong>State</strong></p>
-                </section>
-            </article>
-
-        </div>
-
-        <div id="Weekend" class="tabcontent">
-            <h3>Weekend</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-
-        <div id="This Month" class="tabcontent">
-            <h3>This Month</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-
-            <!--<h1 id="id01">This is the Body of the page</h1>
+        <!--<h1 id="id01">This is the Body of the page</h1>
     <p>Anything within the body of a web page is displayed in the main browser window.</p>-->
-            <!--<script src="content.js"></script>-->
-            <!--<script src="events.js"></script>-->
-            <script src="JavaScript.js"></script>
+        <!--<script src="content.js"></script>-->
+        <!--<script src="events.js"></script>-->
+        <!--<script src="JavaScript.js"></script>-->
+        <header>
+            <section id="header">
+                <div id="secOne">
+                    <img class="logo" src="HikersGuide/images/hikersGuide.png" />
+                </div>
+                <div id="secTwo">
+                    <section class="container">
+                        <img src="HikersGuide/design/phone-68-128.png" />
+                        <p>1-904-378-9087</p>
+                    </section>
+                </div>
+                <div id="secThree">
+                    <section class="container">
+                        <img src="HikersGuide/images/user.png" />
+                        <p>Login In / Register</p>
+                    </section>
+                </div>
+            </section>
+            <div id="wrapper2">
+                <div id="cmpny">
+                    <section id="box">
+                        <h1 id="id01" class="btns" >Company Name</h1>
+                    </section>
+                </div>
+                <div id="btn01">
+                    <section id="box">
+                        <button class="btns" target="_blank" onclick="location.href='/index.html'">HOME</button>
+                    </section>
+                </div>
+                <div id="btn02">
+                    <section id="box">
+                        <button class="btns" target="_blank" onclick="location.href='/blog.html'">BLOG</button>
+                    </section>
+                </div>
+                <div id="btn03">
+                    <section id="box">
+                        <button class="btns" target="_blank" onclick="location.href='/events.html'">EVENTS</button>
+                    </section>
+                </div>
+                <div id="btn04">
+                    <section id="box">
+                        <button class="btns" target="_blank" onclick="location.href='/contact.html'">CONTACT US</button>
+                    </section>
+                </div>
+                <div id="btn05">
+                    <!--<section id="">-->
+                    <form>
+                        <input class="searchboxs" name="searchbox" type="search" />
+                        <img src="HikersGuide/design/search-3-512.png" alt="Alternate Text" />
 
-</body>
+                    </form>
+                    <!--</section>-->
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
