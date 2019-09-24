@@ -6,41 +6,120 @@
 /* Header Block*/
 /*==================================================
 ================================================== */
-header {
+
+#eventPage header, #contactPage header, #blogPage header {
+    background-color: #292828;
+    height:130px;
+}
+#header {
     position:relative;
     display: table;
     table-layout: fixed;
     width: 100%;
-    height: 50px;
-    margin-top:-20px;
+    height: 28px;
 }
-header section {
+
+    #header div {
         display: table-cell;
+        height: 28px;
+    }
+
+#secOne img {
+    height: 28px;
+    width: 28px;
+    float: left;
 }
-#header h1 {
-    font-size: 3em;
-    text-align: left;
-    padding-left: 4%;
-    color: #f0ae35;
-    margin-top: 1%;
+
+#secTwo {
+    width: 34%;
 }
-#form {
-    width: 950px;
-    font-size: 21px;
-    padding-right: 25px;
+
+.container {
+    width: 300px;
+    height: 28px;
+    padding-bottom: 10px;
+    color: white;
+    margin: auto;
 }
-form input {
+
+.container img {
+        height: 20px;
+        width: 20px;
+        padding-right: 10px;
+        float: left;
+}
+
+#secThree {
+    width: 34%;
+}
+
+#secFour {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+
+.btn {
+    border: 1px solid dimgrey;
+    float: left;
+    width: 225px;
+    height: 72px;
+    color: white;
+    margin-top: 0px;
     background-color: transparent;
-    color: #f0ae35;
-}
-a:link {
-    color: #f0ae35;
     text-decoration: none;
-    padding: 30px;
-    font-size: 20px;
+    
 }
-a:visited {
-    color: #ffd503;
+
+#id01 {
+    border: 1px solid dimgrey;
+    width: 224px;
+    height: 70px;
+    color: white;
+    float: left;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#wrapper2 {
+    position:relative;
+    margin-top: 5px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+    #wrapper2 div {
+        display: table-cell;
+        height: 80px;
+    }
+
+#search {
+    width: 50.8%;
+}
+
+    #search Form {
+        float: left;
+        border: 1px solid dimgrey;
+        margin: 0px 0px 17px -4px;
+        height: 70px;
+    }
+
+.searchbox {
+    height: 70px;
+    width: 1100px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+#search Form img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
 }
 
 /* Home: Rotator Block*/
@@ -62,8 +141,8 @@ body {
 /*Blog: Article Block 1
 ==================================================
 ==================================================*/
-#blogPage header {
-    background: url('/HikersGuide/design/File_001 (10).png');
+/*#blogPage header {
+    background: url('/HikersGuide/design/pattern28.png');*/
 }
 #aLevel1 {
     max-width: 93%;
@@ -318,9 +397,7 @@ span .more {
 /* Events Page */
 /*==================================================
 ================================================== */
-#eventPage header {
-    background: url('/HikersGuide/design/File_001 (10).png');
-}
+
 #rotatorEvents h2 {
     text-align: center;
     margin-top: -250px;
@@ -641,103 +718,203 @@ h3 {
 
 
 
-
+/* contact Page*
+/ *===================================================
+================================================== */
 #contact {
     text-align: center;
-    height: 400px;
-    padding-top: 100px;
+    width: 100%;
+    height: 450px;
     font-size: 16px;
+    background: url('/HikersGuide/design/File_001 (20).png') no-repeat;
+    overflow: hidden;
 }
-
     #contact h5 {
-        color: lemonchiffon;
-        font-size: 2em;
+        color: black;
+        font-size: 1.5em;
+        margin-top: -50px;
     }
-
+    #contact strong {
+        font-weight: bolder;
+        font-size: larger;
+    }
     #contact h2 {
-        font-size: 5em;
-        color: lemonchiffon;
+        font-size: 6em;
+        font-weight:bolder;
+        color: black;
+        text-align:center;
+        margin-top:200px;
     }
-
-
-
 
 /* Info Block*/
 #info {
-    margin: -3rem auto 1rem auto;
-    color: lemonchiffon;
-    width: 60%;
-    padding-bottom: 100px;
-    padding-left: 250px;
+    color: white;
+    width: 100%;
+    height:650px;
     font-size: 1.25em;
-}
+    background-color: #292828;
+    margin: auto;
+    margin-top: 25px;
 
-    #info td h5 {
+}
+ table {
+    width: 85%;
+}
+     td a {
+        text-decoration: none;
+        color:lemonchiffon;
+    }
+#info h5 {
         font-size: 1.5em;
         color: #f0ae35;
     }
-
-
-/* Email Block*/
-#email a {
-    margin-left: 600px;
-    color: #f0ae35;
-    font-size: 2em;
+#wrapper3 {
+    display: table;
+    table-layout: fixed;
+    width: 60%;
+    height: 190px;
+    margin-left:30%;
 }
 
-#email h4 {
-    text-align: center;
-    font-size: 2em;
-    margin-top: 50px;
-    color: #f0ae35;
+#wrapper3 div {
+        display: table-cell;
+        height: 190px;
+    }
+
+#areaOne {
+    padding: 3% 5% 0px 5%
 }
 
-/*#email input {
-    margin-top: -30px;
-    margin-left: 50%;
+    #areaOne secLeft {
+        float: left;
+    }
+
+    #areaOne a {
+        text-decoration: none;
+        color: #f0ae35;
+        font-size: 25px;
+    }
+
+    #areaOne img {
+        width: 50px;
+        height: 50px;
+    }
+
+#areaTwo {
+    width: 70%;
+    padding: 0% 5% 0px 5%
+}
+
+    #areaTwo img {
+        width: 350px;
+        height: 350px;
+        margin-top: -20px;
+        margin-left: 20%;
+    }
+#wrapper4 {
+    display: table;
+    table-layout: fixed;
+    width: 30%;
     height: 50px;
-    width: 100px;
+    margin-left: 45%;
+}
+
+    #wrapper4 div {
+        display: table-cell;
+        height: 50px;
+    }
+#areaThree {
+    display: table-cell;
+    height: 100px;
+    float: left;
+}
+    #areaThree h4 {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 30px;
+        color: #f0ae35;
+    }
+
+#areaFour input {
+    margin: 0px 0px 0px 0px;
+    height: 40px;
+    width: 125px;
     background-color: transparent;
     color: #f0ae35;
-    font-size: 2em;
-}*/
-
+    font-size: 1.5em;
+}
 
 /*Footer Block*/
 footer {
     text-align: center;
-    color:white;
-    background-color: #292828;
-    max-width: 100%;
-    height: 225px;
+    color: white;
     clear: both;
 }
-footer {
+#footer {
     color: white;
 border:1px solid dimgrey;
     max-width: 33%;
     height: 225px;
     clear: both;
 }
-
-    footer.icons {
-        height: 20px;
-        width: 20px;
-        margin:auto;
-        float:left;
+footer h3 {
+    font-weight: bolder;
+    color: white;
+}
+#wrapper5 {
+    margin-top: 1%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 150px;
+    font-size:13px;
+}
+    #wrapper5 div {
+        display: table-cell;
+        height: 150px;
     }
-    footer.HFC {
-        margin: auto;
-        float: left;
+    #support {
+        border: 1px solid dimgrey;
+        background-color: #292828;
+        color: white;
     }
-
-    footer h4 {
-        font-size: 2em;
-        padding-right: 10px;
+    #support a {
+        text-decoration: none;
+        padding-right: 6%;
+        padding-left: 6%;
+        color: white;
     }
-
-    footer h3 {
-        font-weight:bolder;
+#signUp {
+    border: 1px solid dimgrey;
+    background-color: #292828;
+}
+    #signUp .srch {
+        height: 36px;
+        width: 400px;
+        background-color: transparent;
+        border: none;
+        color: white;
     }
+    #signUp .submit {
+        height: 36px;
+        width: 75px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    Form {
+        border: 1px solid dimgrey;
+       margin-left:20%;
+       margin-top:0.5%;
+    }
+#followUs {
+    border: 1px solid dimgrey;
+    background-color: #292828;
+}
+        #followUs img {
+            height: 30px;
+            width: 30px;
+            padding: 1% 3% 0% 3%;
+        }
 
 /*}*/

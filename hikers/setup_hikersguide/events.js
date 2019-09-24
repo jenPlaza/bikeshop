@@ -37,7 +37,7 @@ myEvents.onload = function () {
 };
 
 function secRotate(dataEvents) {
-    //htmlEvents += '<section>';
+    
     htmlEvents += '<img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />';
 
     htmlEvents += '<h2>' + dataEvents.events[4].date + '</h2>';
@@ -49,8 +49,6 @@ function secRotate(dataEvents) {
     htmlEvents += '<span>';
     htmlEvents += '<button class=right onclick=location.href="#">.</button>';
     htmlEvents += '</span>';
-
-    //htmlEvents += '</section>';
 
     var articleEvents = document.getElementById("rotatorEvents");
     articleEvents.innerHTML = htmlEvents;
