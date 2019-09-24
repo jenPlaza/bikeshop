@@ -5,8 +5,6 @@
 //testing
 //alert("hello");
 
-var htmlBlog = document.getElementById("id01");
-htmlBlog.innerHTML = "Company A";
 
 var myBlog = new XMLHttpRequest();
 myBlog.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
@@ -143,11 +141,7 @@ function secALevel4(data4) {
     htmlArticle4 += '<h3>' + data4.locations[2].text + '</h3>';
     htmlArticle4 += '<p>' + data4.posts[1].text + '</p>';
     htmlArticle4 += '</article>';
-        htmlArticle4 += '<dl>';
-        htmlArticle4 += '<dt><strong>by ' + data4.posts[2].author + '</strong></dt>';
-        htmlArticle4 += '<dt><strong>' + data4.posts[2].postDate + '</strong></dt>';
-        htmlArticle4 += '<dt><strong>' + data4.posts[2].moreLink + '</strong></dt>';
-        htmlArticle4 += '</dl>';
+
     htmlArticle4 += '</article>';
 
 
@@ -158,11 +152,7 @@ function secALevel4(data4) {
     htmlArticle4 += '<h3>' + data4.locations[3].text + '</h3>';
     htmlArticle4 += '<p>' + data4.posts[1].text + '</p>';
     htmlArticle4 += '</article>';
-    htmlArticle4 += '<dl>';
-    htmlArticle4 += '<dt><strong>by ' + data4.posts[3].author + '</strong></dt>';
-    htmlArticle4 += '<dt><strong>' + data4.posts[3].postDate + '</strong></dt>';
-    htmlArticle4 += '<dt><strong>' + data4.posts[3].moreLink + '</strong></dt>';
-    htmlArticle4 += '</dl>';
+
     htmlArticle4 += '</article>';
 
 
@@ -172,9 +162,6 @@ function secALevel4(data4) {
     htmlArticle4 += '<p>' + data4.locations[4].text + '</p>';
     htmlArticle4 += '<p>' + data4.locations[4].city + ' | ' + data4.locations[4].state+'</p>';
     htmlArticle4 += '</section>';
-    htmlArticle4 += '<dl>';
-    htmlArticle4 += '<dt>by ' + data4.posts[5].author + '</dt>';
-    htmlArticle4 += '</dl>';
     htmlArticle4 += '</section>';
 
 

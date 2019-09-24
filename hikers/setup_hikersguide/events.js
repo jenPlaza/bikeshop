@@ -6,10 +6,8 @@
 //testing
 //alert("hello");
 
-let htmlEvents = document.getElementById("id01");
-htmlEvents.innerHTML = "Company A";
-
 function filter(evt, category) {
+    var htmlEvents = "";
 
     var tabcontent = document.getElementsByClassName("tabcontent");
 

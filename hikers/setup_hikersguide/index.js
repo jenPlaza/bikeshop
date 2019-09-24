@@ -1,9 +1,6 @@
 ﻿//testing
 //alert("hello");
 
-var htmlHome = document.getElementById("id01");
-htmlHome.innerHTML = "Company A";
-
 var myHome = new XMLHttpRequest();
 myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
@@ -18,9 +15,10 @@ myHome.onload = function () {
 };
 
 function secEvents(dataHome) {
+    var htmlHome = "";
 
     var posts = document.getElementById("id02");
-    var htmlHome = '<h2>Recent Posts</h2>';
+     htmlHome = '<h2>Recent Posts</h2>';
     posts.innerHTML = htmlHome;
 
     for (var i = 0; i < dataHome.posts.length; i++) {

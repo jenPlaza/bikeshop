@@ -1,6 +1,6 @@
-/* Hiker's Guide CSS
-================================================== 
-================================================== */
+/* Hiker's Guide CSS*/
+
+
 
 /* Header Block*/
 /*==================================================
@@ -8,7 +8,7 @@
 
 #eventPage header, #contactPage header, #blogPage header {
     background-color: #292828;
-    height:130px;
+    height:141px;
 }
 #header {
     position:relative;
@@ -46,64 +46,59 @@
 #secThree {
     width: 34%;
 }
-#secFour {
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
-.btn {
-    border: 1px solid dimgrey;
-    float: left;
-    width: 225px;
-    height: 72px;
-    color: white;
-    margin-top: 0px;
-    background-color: transparent;
-    text-decoration: none;
-    
-}
-#id01 {
-    border: 1px solid dimgrey;
-    width: 224px;
-    height: 70px;
-    color: white;
-    float: left;
-    margin-top: 0px;
-    text-align: center;
-    font-size: 25px;
-}
+
 #wrapper2 {
-    position:relative;
+    position: relative;
     margin-top: 5px;
     display: table;
     table-layout: fixed;
     width: 100%;
-    height: 80px;
+    height: 60px;
 }
+
 #wrapper2 div {
-        display: table-cell;
-        height: 80px;
-    }
-#search {
-    width: 50.8%;
+    display: table-cell;
+    height: 60px;
 }
-#search Form {
-        float: left;
-        border: 1px solid dimgrey;
-        margin: 0px 0px 17px -4px;
-        height: 70px;
+
+#cmpny, #btn01, #btn02, #btn03, #btn04 {
+    border: 1px solid dimgrey;
+}
+
+#btn05 {
+    width: 51%;
+    border: 1px solid dimgrey;
+}
+
+    #btn05 img {
+        width: 30px;
+        height: 30px;
     }
-.searchbox {
-    height: 70px;
-    width: 1100px;
+
+.box {
+    margin: auto;
+    text-align: center;
+}
+
+.btns {
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.searchboxs {
+    width: 90%;
+    height: 65px;
     margin-left: 5px;
     background-color: transparent;
     border: none;
 }
-#search Form img {
-    width: 30px;
-    height: 30px;
-    margin-left: 15px;
+
+h6{
+    color:white;
 }
 
 /* Home: Rotator Block*/
@@ -111,7 +106,7 @@
 ================================================== */
 #rotatorHome {
     width: 100%;
-    margin-top: -6%;
+    margin-top: -7.5%;
     overflow: hidden;
 }
 span .leftBtn {
@@ -151,7 +146,6 @@ body {
     height: 120px;
     margin: auto;
     clear: both;
-    overflow: hidden;
 }
 #aLevel1 article {
         height: 120px;
@@ -173,6 +167,15 @@ body {
         margin: 15px -45px 10px 35px;
         padding-right: 20px;
 }
+    #aLevel1 dt {
+        position: relative;
+        color: #8a7300;
+        float: left;
+        margin-top: -6px;
+        font-size: 8px;
+        font-weight: bolder;
+        padding-right: 5px;
+    }
 
 /*  Home Posts & View More Btn, Blog Article Block 2, Event listings
 /*==================================================
@@ -183,8 +186,8 @@ body {
     clear: both;
     text-align: center;
     margin: auto;
-    overflow: hidden;
-    margin-top: 7%;
+    
+    margin-top: 1%;
 }
 #posts {
     height: auto;
@@ -193,6 +196,7 @@ body {
     margin: 0px 15% 1% 18%;
     clear: both;
     text-align: center;
+    overflow: hidden;
 }
     #posts article, #aLevel2 article {
         width: 380px;
@@ -216,7 +220,7 @@ body {
         #posts article p {
             position: relative;
             margin: 0px 0px -15px 0px;
-            padding: 0px 2% -15px -25px;
+            padding: 0px 2% 15px 25px;
         }
 
     #posts dd {
@@ -247,6 +251,16 @@ body {
         font-size: 14px;
         color: #ffd503;
     }
+#aLevel2 dt {
+    position: relative;
+    color: lemonchiffon;
+    float: left;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: bolder;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 
 /*Home: view more button*/
 span .more {
@@ -259,6 +273,7 @@ span .more {
     background-color: transparent;
     color: #f0ae35;
     font-size: 16px;
+    border-color:dimgrey;
 }
 
 /* Blog: Article Block 3, 4*/
@@ -271,10 +286,8 @@ span .more {
     margin: auto;
     margin-top: 3%;
     margin-bottom: 1%;
-    overflow: hidden;
 }
-#aLevel3 section {
-        position: absolute;
+    #aLevel3 section {
         width: 690px;
         height: 320px;
         float: left;
@@ -282,7 +295,7 @@ span .more {
         margin-left: 1px;
         color: #ffd503;
         text-align: left;
-}
+    }
     #aLevel3 section h3 {
         position: relative;
         font-size: 20px;
@@ -316,13 +329,13 @@ span .more {
             color: black;
             text-align:left;
 }
-#aLevel3 article {
+    #aLevel3 article {
         position: absolute;
         width: 500px;
         height: 330px;
         float: left;
         margin-left: 720px;
-}
+    }
     #aLevel3 article p {
         position: relative;
         font-size: 11px;
@@ -339,13 +352,30 @@ span .more {
         font-size: 11px;
         margin-bottom: -30px;
     }
+    #aLevel3 article dt {
+        position: relative;
+        float: left;
+        font-size: 10px;
+        color: #8a7300;
+        padding-left: 20px;
+        padding-right: 90px;
+        margin-top: -10px;
+    }
+
+    #aLevel3 section dt {
+        position: relative;
+        float: left;
+        margin: -25px 0px 28px 100px;
+        font-size: 11px;
+        color: #8a7300;
+        font-weight: bolder;
+    }
 
 #aLevel4 {
     max-width: 53%;
     height: 350px;
     clear: both;
     margin: auto;
-    overflow: hidden;
     margin-bottom: 3%;
 }
     #aLevel4 article {
@@ -356,12 +386,10 @@ span .more {
         padding-right: 25px;
     }
 #aLevel4 article img, #aLevel3 article img {
-    position: relative;
     height: 175px;
     width: 495px;
 }
 #aLevel4 article article, #aLevel3 article article {
-    position: relative;
     height: 175px;
     width: 475px;
     margin: -5px 0px 0px 0px;
@@ -371,12 +399,12 @@ span .more {
     background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
     font-size: 13px;
 }
-#aLevel4 section {
+    #aLevel4 section {
         width: 175px;
         height: 295px;
         float: left;
         margin-left: -20px;
-}
+    }
 #aLevel4 section section {
             padding-top: 60px;
             padding-left: 20px;
@@ -389,7 +417,9 @@ span .more {
 /* Events Page */
 /*==================================================
 ================================================== */
-
+#rotatorEvents {
+    overflow: hidden;
+}
 #rotatorEvents h2 {
     text-align: center;
     margin-top: -250px;
@@ -427,12 +457,12 @@ span .right {
     max-width: 65%;
     height: 40px;
     margin: auto;
-    margin-top: 12%;
+    margin-top: 2%;
     clear: both;
 }
 #tab button {
         float: left;
-        color: #ffd503;
+        color: lemonchiffon;
         border: none;
         background-color: transparent;
         outline: none;
@@ -495,14 +525,16 @@ span .right {
     height: 300px;
     margin: auto;
     padding: 1% 8px 1% 1%;
+    position: relative;
 }
-#misc section {
-    float: left;
-    height: 140px;
-    width: 245px;
-    margin-left: 5px;
-    padding: 2% 40px 0px 25px;
-}
+    #misc section {
+        position: relative;
+        float: left;
+        height: 140px;
+        width: 245px;
+        margin-left: 5px;
+        padding: 2% 40px 0px 25px;
+    }
 #misc section section {
     position: relative;
     height: 160px;
@@ -512,11 +544,12 @@ span .right {
     color: lemonchiffon;
     font-size: 12px;
 }
-#misc section p strong, #events article section p strong {
-    color: #8a7300;
-    font-size: 13px;
-    margin-bottom: -3px;
-}
+        #misc section p strong, #events article section p strong {
+            position: relative;
+            color: #8a7300;
+            font-size: 13px;
+            margin-bottom: -3px;
+        }
 
 /* Gift, Tag, App icons*/
 #misc section img {
@@ -525,59 +558,68 @@ span .right {
     width: 20px;
     margin-left: -10px;
 }
-#misc .newsletter p strong {
-    text-align: left;
-    margin-left: -25px;
-}
-#misc .btnBuy {
-    width: 135px;
-    height: 35px;
-    padding: 3%;
-    color: lemonchiffon;
-    border-color: #292828;
-    background-color: transparent;
-}
-#misc .btnL {
-    width: 200px;
-    height: 35px;
-    margin-top: -65px;
-    padding: 3%;
-    border-color: #292828;
-    color: lemonchiffon;
-    background-color: transparent
-}
-#misc .btnL img {
-        width: 35px;
-        height: 30px;
-        float: right;
-        margin-top: -13px;
-        padding: 5px 0px 5px 20px;
+    #misc .newsletter p strong {
+        position: relative;
+        text-align: left;
+        margin-left: -25px;
     }
+    #misc .btnBuy {
+        position: relative;
+        width: 135px;
+        height: 35px;
+        padding: 3%;
+        color: lemonchiffon;
+        border-color: #292828;
+        background-color: transparent;
+    }
+    #misc .btnL {
+        position: relative;
+        width: 200px;
+        height: 35px;
+        margin-top: -65px;
+        padding: 3%;
+        border-color: #292828;
+        color: lemonchiffon;
+        background-color: transparent;
+        position: relative;
+    }
+        #misc .btnL img {
+            position: relative;
+            width: 35px;
+            height: 30px;
+            float: right;
+            margin-top: -13px;
+            padding: 5px 0px 5px 20px;
+        }
 
 /*subscribe paragraph tag*/
-#misc .newsletter p {
-    text-align: left;
-    padding-left: 25px;
-}
-#misc .btns {
-    width: 234px;
-    height: 50px;
-}
-#misc .appStore {
-    width: 115px;
-    height: 36px;
-    margin-left: -10px;
-    float: right;
-    border-color: #292828;
-    background-color: transparent;
-}
-#misc .googlePlay {
-    width: 115px;
-    height: 36px;
-    float: left;
-    border-color: #292828;
-    background-color: transparent;
-}
+    #misc .newsletter p {
+        position: relative;
+        text-align: left;
+        padding-left: 25px;
+    }
+    #misc .btns {
+        position: relative;
+        width: 234px;
+        height: 50px;
+    }
+    #misc .appStore {
+        position: relative;
+        width: 115px;
+        height: 36px;
+        margin-left: -10px;
+        float: right;
+        border-color: #292828;
+        background-color: transparent;
+    }
+    #misc .googlePlay {
+        position: relative;
+        width: 115px;
+        height: 36px;
+        float: left;
+        border-color: #292828;
+        background-color: transparent;
+    }
 #misc .appStore img {
     width: 107px;
     height: 100px;
@@ -601,13 +643,14 @@ h3 {
 }
 
 #filter {
+    position:relative;
     background-color: #292828;
     max-width: 100%;
     height: 100px;
     clear: both;
-    position: relative;
-}    
-#filter section {
+}
+    #filter section {
+        position: relative;
         height: 100px;
         width: 950px;
         margin: auto;
@@ -617,7 +660,7 @@ h3 {
     }
 #filter section a {
             font-size: 10px;
-            color: #ffd800;
+            color: dimgrey;
             text-align: left;
         }
 #filter section h2 {
@@ -638,18 +681,19 @@ h3 {
 /*==================================================
 ================================================== */
 #join {
+    position: relative;
     max-width: 100%;
     height: 500px;
-    margin-top: 1000px;
+    margin-top: 175px;
     background-color: #f0ae35;
 }
-#join img {
+    #join img {
         width: 1200px;
         height: 375px;
         margin: 111px 0px 0px 35%;
     }
 #join section {
-            position: relative;
+            position: static;
             width: 400px;
             height: 200px;
             text-align: left;
@@ -659,24 +703,28 @@ h3 {
 
 /*sign up*/
 #sign {
+    position: relative;
     max-width: 100%;
     height: 75px;
     margin-top: -15px;
     background-color: #292828;
 }
-#sign section {
+    #sign section {
+        position: relative;
         text-align: center;
         padding-left: 5%;
         padding-top: 10px;
-        color: black;
-}
-    #sign section div {
-        text-align: center;
-        width: 620px;
-        height: 50px;
-        margin:auto;
+        color: dimgrey;
     }
+        #sign section div {
+            position: relative;
+            text-align: center;
+            width: 620px;
+            height: 50px;
+            margin: auto;
+        }
     #sign .button {
+        position: relative;
         background: url(/HikersGuide/images/right.png) no-repeat;
         width: 50px;
         height: 50px;
@@ -693,7 +741,7 @@ h3 {
     width: 70%;
     height: 100px;
     padding: 5% 13% 3% 15%;
-    color: white;
+    color: dimgrey;
 }
 #sectionMisc section {
         display: table-cell;
@@ -723,9 +771,9 @@ h3 {
 #contact {
     text-align: center;
     width: 100%;
-    height: 450px;
+    height: 500px;
     font-size: 16px;
-    background: url('/HikersGuide/design/File_001 (20).png') no-repeat;
+    background: url('/HikersGuide/design/File_002 (20).png') no-repeat;
     overflow: hidden;
 }
     #contact h5 {
@@ -841,6 +889,7 @@ h3 {
     background-color: transparent;
     color: #f0ae35;
     font-size: 1.5em;
+    border-color: dimgrey;
 }
 
 /*Footer Block*/
@@ -901,11 +950,11 @@ footer h3 {
         border: none;
         color: white;
     }
-    Form {
-        border: 1px solid dimgrey;
-       margin-left:20%;
-       margin-top:0.5%;
-    }
+#signUp Form {
+    border: 1px solid dimgrey;
+    margin-left: 20%;
+    margin-top: 0.5%;
+}
 #followUs {
     border: 1px solid dimgrey;
     background-color: #292828;
