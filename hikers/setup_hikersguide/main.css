@@ -8,7 +8,7 @@
 
 #eventPage header, #contactPage header, #blogPage header {
     background-color: #292828;
-    height:141px;
+    height:148px;
 }
 #header {
     position:relative;
@@ -181,7 +181,7 @@ body {
 /*==================================================
 ================================================== */
 #aLevel2 {
-    max-width: 93%;
+    max-width: 100%;
     height: 360px;
     clear: both;
     text-align: center;
@@ -411,7 +411,7 @@ span .more {
             margin-left: 20px;
             color: white;
             text-align: left;
-            background: url('/HikersGuide/design/File_002 (5).png');
+            background: url('/HikersGuide/design/File_0025.png');
 }
 
 /* Events Page */
@@ -419,6 +419,7 @@ span .more {
 ================================================== */
 #rotatorEvents {
     overflow: hidden;
+    height:400px;
 }
 #rotatorEvents h2 {
     text-align: center;
@@ -773,7 +774,7 @@ h3 {
     width: 100%;
     height: 500px;
     font-size: 16px;
-    background: url('/HikersGuide/design/File_002 (20).png') no-repeat;
+    background: url('/HikersGuide/design/File_00220.png') no-repeat;
     overflow: hidden;
 }
     #contact h5 {

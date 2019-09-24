@@ -26,7 +26,7 @@ function secALevel1(data1) {
     var htmlBlog = '<h3>';
     article.innerHTML = htmlBlog;
 
-    var imageArray = ["/HikersGuide/design/File_001 (5).png", "/HikersGuide/design/File_001 (10).png", "/HikersGuide/design/File_001 (15).png","/HikersGuide/design/File_001 (12).png", "/HikersGuide/design/File_001 (13).png", "/HikersGuide/design/File_001 (14).png", "/HikersGuide/design/File_001 (18).png"];
+    var imageArray = ["/HikersGuide/design/File_005.png", "/HikersGuide/design/File_010.png", "/HikersGuide/design/File_015.png","/HikersGuide/design/File_012.png", "/HikersGuide/design/File_013.png", "/HikersGuide/design/File_014.png", "/HikersGuide/design/File_018.png"];
 
     for (var i = 0; i < data1.locations.length; i++) {
         htmlBlog += '<article>';

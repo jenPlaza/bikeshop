@@ -36,7 +36,7 @@ myEvents.onload = function () {
 
 function secRotate(dataEvents) {
     
-    htmlEvents += '<img src="HikersGuide/design/File_001 (11).png" alt="Alternate Text" />';
+    htmlEvents += '<img src="HikersGuide/design/File_011.png" alt="Alternate Text" />';
 
     htmlEvents += '<h2>' + dataEvents.events[4].date + '</h2>';
     htmlEvents += '<h3>' + dataEvents.events[4].location + ' </h3>';
@@ -55,8 +55,8 @@ function secToday(dataEvents2) {
 
     let htmlEvents2 = '<section>';
 
-    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_001 (17).png", "/HikersGuide/design/File_001 (16).png",
-        "/HikersGuide/design/crystalriver.png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_001 (13).png"];
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
+        "/HikersGuide/design/crystalriver.png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_013.png"];
 
     for (var i = 0; i < dataEvents2.events.length; i++) {
         htmlEvents2 += '<article>';
@@ -90,8 +90,8 @@ function secWeekend(dataEvents3) {
 
     let htmlEvents3 = '<section>';
 
-    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_001 (17).png", "/HikersGuide/design/File_001 (14).png",
-        "/HikersGuide/design/File_001 (5).png", "/HikersGuide/design/File_001 (15).png", "/HikersGuide/design/File_001 (13).png"];
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_014.png",
+        "/HikersGuide/design/File_005.png", "/HikersGuide/design/File_015.png", "/HikersGuide/design/File_013.png"];
 
     for (var i = 2; i < dataEvents3.events.length; i++) {
         htmlEvents3 += '<article>';
@@ -114,8 +114,8 @@ function secThisMonth(dataEvents4) {
 
     let htmlEvents4 = '<section>';
 
-    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_001 (17).png", "/HikersGuide/design/File_001 (16).png",
-        "/HikersGuide/design/File_001 (12).png", "/HikersGuide/design//File_001 (18).png", "/HikersGuide/design/File_001 (19).png"];
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
+        "/HikersGuide/design/File_012.png", "/HikersGuide/design//File_018.png", "/HikersGuide/design/File_019.png"];
 
     for (var i = 3; i < dataEvents4.events.length; i++) {
         htmlEvents4 += '<article>';
