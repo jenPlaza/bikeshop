@@ -2,31 +2,150 @@
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/hikersguide.json
 */
-//testing
-//alert("hello");
 
+var myJsonRequest1 = new XMLHttpRequest();
+myJsonRequest1.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+myJsonRequest1.onload = function () {
 
-var myBlog = new XMLHttpRequest();
-myBlog.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+    var request = JSON.parse(myJsonRequest1.responseText);
 
-myBlog.onload = function () {
-
-    var jsonBlog = JSON.parse(myBlog.responseText);
-    //Testing
-    //console.log(jsonData.posts[0]);//works
-    //console.log(jsonData.posts[0].title);//works
-
-    secALevel1(jsonBlog);
-    secALevel2(jsonBlog);
-    secALevel3(jsonBlog);
-    secALevel4(jsonBlog);
+    secEvents(request);
+    secJoin(request);
+    secMiscMem(request);
+    secMiscMEvents(request);
+    secMiscAbout(request);
 };
-function secALevel1(data1) {
-    var article = document.getElementsByTagName("h3");
-    var htmlBlog = '<h3>';
-    article.innerHTML = htmlBlog;
+myJsonRequest1.send();
 
-    var imageArray = ["/HikersGuide/design/File_005.png", "/HikersGuide/design/File_010.png", "/HikersGuide/design/File_015.png","/HikersGuide/design/File_012.png", "/HikersGuide/design/File_013.png", "/HikersGuide/design/File_014.png", "/HikersGuide/design/File_018.png"];
+myJsonRequest2 = new XMLHttpRequest();
+myJsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+myJsonRequest2.onload = function () {
+
+    var request = JSON.parse(myJsonRequest2.responseText);
+
+    secALevel1(request);
+    secALevel2(request);
+    secALevel3(request);
+    secALevel4(request);
+};
+myJsonRequest2.send();
+
+myJsonRequest3 = new XMLHttpRequest();
+myJsonRequest3.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+myJsonRequest3.onload = function () {
+    var request = JSON.parse(myJsonRequest3.responseText);
+
+    secRotate(request);
+    secToday(request);
+    secWeekend(request);
+    secThisMonth(request);
+};
+myJsonRequest3.send();
+
+//index page
+
+//var posts = document.getElementById("id02");
+//var htmlHome = '<h2>Recent Posts</h2>';
+//posts.innerHTML = htmlHome;
+
+function secEvents(dataHome) {
+
+    let htmlHome = '<section>';
+
+     htmlHome += '<h2>Recent Posts</h2>';
+
+    for (var i = 0; i < dataHome.posts.length; i++) {
+        htmlHome += '<article>';
+        htmlHome += '<img src="' + dataHome.posts[i].imageURL + '"';
+        htmlHome += 'alt="' + dataHome.posts[i].subtitle + '"/>';
+        htmlHome += '<h3>' + dataHome.posts[i].title + '</h3>';
+        htmlHome += '<p><strong>' + dataHome.posts[i].subtitle + '</strong></p>';
+        htmlHome += '<dl>';
+        htmlHome += '<dt></dt>';
+        htmlHome += '<dd>by ' + dataHome.posts[i].author + '</dd>';
+        htmlHome += '<dt></dt>';
+        htmlHome += '<dd>' + dataHome.posts[i].postDate + '</dd>';
+        htmlHome += '<dt></dt>';
+        htmlHome += '<dd>' + dataHome.posts[i].moreLink + '</dd>';
+        htmlHome += '</dl>';
+
+        htmlHome += '</article>';
+    }
+
+    htmlHome += '</section>';
+    var articleBlog = document.getElementById("posts");
+    articleBlog.innerHTML = htmlHome;
+}
+function secJoin(dataHomeJoin) {
+    let htmlHome2 = '';
+
+    htmlHome2 += '<img src="/HikersGuide/images/climbers.png" alt="Alternate Text" />';
+    htmlHome2 += '<section>';
+    htmlHome2 += '<h2>' + dataHomeJoin.locations[4].title + '</h2>';
+    htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
+    htmlHome2 += '<p>' + dataHomeJoin.locations[4].city + ' | ' + dataHomeJoin.locations[4].state + ' </p>';
+    htmlHome2 += '</section>';
+
+    var articleEvents = document.getElementById("join");
+    articleEvents.innerHTML = htmlHome2;
+}
+function secMiscMem(dataHomeMembers) {
+
+    let htmlHome3 = '<section>';
+
+    for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
+
+        htmlHome3 += '<img src="' + dataHomeMembers.hikers[i].imageURL + '"';
+
+        htmlHome3 += 'alt="' + dataHomeMembers.hikers[i].subtitle + '"/>';
+
+        htmlHome3 += '<p><strong>' + dataHomeMembers.hikers[i].firstname + " " + dataHomeMembers.hikers[i].lastname + '</strong>';
+
+        htmlHome3 += '<br/ >  A member since ' + dataHomeMembers.hikers[0].joinDate + '. A member from' + dataHomeMembers.hikers[i].city + ", " + dataHomeMembers.hikers[i].state + ".";
+        htmlHome3 += '</p>';
+    }
+    htmlHome3 += '</section>';
+
+    var articleBlog = document.getElementById("members");
+    articleBlog.innerHTML = htmlHome3;
+}
+function secMiscMEvents(dataHomeMEvents) {
+
+    let htmlHome4 = '<section>';
+
+    for (i = 0; i < dataHomeMEvents.events.length; i++) {
+        htmlHome4 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
+        htmlHome4 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
+        htmlHome4 += '<br/ >' + dataHomeMEvents.events[i].state + '</p>';
+    }
+    htmlHome4 += '</section>';
+
+    var articleBlog = document.getElementById("mEvents");
+    articleBlog.innerHTML = htmlHome4;
+}
+function secMiscAbout(dataHomeAbout) {
+
+    let htmlHome5 = '';
+
+    htmlHome5 += '<section>';
+    htmlHome5 += '<h3>About</h3>';
+    htmlHome5 += '<p><strong>' + dataHomeAbout.about.title + '</strong></p>';
+    htmlHome5 += '<p>' + dataHomeAbout.about.text + '</p>';
+    htmlHome5 += '</section>';
+
+    var articleBlog = document.getElementById("about");
+    articleBlog.innerHTML = htmlHome5;
+}
+
+//blog page
+function secALevel1(data1) {
+    //var article = document.getElementsByTagName("h3");
+    //let htmlBlog = '<h3>';
+    //article.innerHTML = 'jen Plaza';
+
+    let htmlBlog = "";
+
+    var imageArray = ["/HikersGuide/design/File_005.png", "/HikersGuide/design/File_010.png", "/HikersGuide/design/File_015.png", "/HikersGuide/design/File_012.png", "/HikersGuide/design/File_013.png", "/HikersGuide/design/File_014.png", "/HikersGuide/design/File_018.png"];
 
     for (var i = 0; i < data1.locations.length; i++) {
         htmlBlog += '<article>';
@@ -34,11 +153,13 @@ function secALevel1(data1) {
         htmlBlog += 'alt="' + data1.locations[i].title + '"/>';
         htmlBlog += '<h3>' + data1.locations[i].title + '</h3>';
         htmlBlog += '<dl>';
+        htmlBlog += '<dd></dd>';
         htmlBlog += '<dt>by ' + data1.posts[i].author + '</dt>';
+        htmlBlog += '<dd></dd>';
         htmlBlog += '<dt>' + data1.posts[i].postDate + '</dt>';
+        htmlBlog += '<dd></dd>';
         htmlBlog += '<dt>' + data1.posts[i].moreLink + '</dt>';
         htmlBlog += '</dl>';
-
         htmlBlog += '</article>';
     }
 
@@ -47,11 +168,13 @@ function secALevel1(data1) {
     htmlBlog += 'alt="' + data1.locations[0].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[0].title + '</h3>';
     htmlBlog += '<dl>';
-    htmlBlog += '<dt>by ' + data1.posts[0].author + '</dt>';
-    htmlBlog += '<dt>' + data1.posts[0].postDate + '</dt>';
-    htmlBlog += '<dt>' + data1.posts[0].moreLink + '</dt>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>by ' + data1.posts[0].author + '</dd>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>' + data1.posts[0].postDate + '</dd>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>' + data1.posts[0].moreLink + '</dd>';
     htmlBlog += '</dl>';
-
     htmlBlog += '</article>';
 
     htmlBlog += '<article>';
@@ -59,19 +182,21 @@ function secALevel1(data1) {
     htmlBlog += 'alt="' + data1.locations[3].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[3].title + '</h3>';
     htmlBlog += '<dl>';
-    htmlBlog += '<dt>by ' + data1.posts[3].author + '</dt>';
-    htmlBlog += '<dt>' + data1.posts[3].postDate + '</dt>';
-    htmlBlog += '<dt>' + data1.posts[3].moreLink + '</dt>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>by ' + data1.posts[3].author + '</dd>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>' + data1.posts[3].postDate + '</dd>';
+    htmlBlog += '<dt></dt>';
+    htmlBlog += '<dd>' + data1.posts[3].moreLink + '</dd>';
     htmlBlog += '</dl>';
-
     htmlBlog += '</article>';
+    htmlBlog += '</section>';
 
     var articleBlog = document.getElementById("aLevel1");
     articleBlog.innerHTML = htmlBlog;
 }
-
 function secALevel2(data2) {
-    var htmlArticle2 = '';
+    let htmlArticle2 = '';
 
    for (var i = 0; i < data2.posts.length; i++) {
        htmlArticle2 += '<article>';
@@ -93,11 +218,9 @@ function secALevel2(data2) {
     var articleBlog = document.getElementById("aLevel2");
     articleBlog.innerHTML = htmlArticle2;
 }
-
 function secALevel3(data3) {
-    var htmlArticle3 = '';
+    let htmlArticle3 = '<section>';
 
-    htmlArticle3 += '<section>';
     htmlArticle3 += '<img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />';
     htmlArticle3 += '<section>';
         htmlArticle3 += '<p><strong>' + data3.locations[0].title + '</strong></p>';
@@ -130,7 +253,6 @@ function secALevel3(data3) {
     var articleBlog = document.getElementById("aLevel3");
     articleBlog.innerHTML = htmlArticle3;
 }
-
 function secALevel4(data4) {
     var htmlArticle4 = '';
 
@@ -169,4 +291,108 @@ function secALevel4(data4) {
     articleBlog.innerHTML = htmlArticle4;
 }
 
-myBlog.send();
+
+//events page
+function secRotate(dataEvents) {
+    let htmlEvents = '';
+
+    htmlEvents += '<section>';
+    htmlEvents += '<img src="HikersGuide/design/File_011.png" alt="Alternate Text" />';
+
+    htmlEvents += '<h1>' + dataEvents.events[4].date + '</h1>';
+    htmlEvents += '<h5>' + dataEvents.events[4].location + ' </h5>';
+
+    htmlEvents += '<span>';
+    htmlEvents += '<button class=left onclick=location.href="#">.</button>';
+    htmlEvents += '</span>';
+    htmlEvents += '<span>';
+    htmlEvents += '<button class=right onclick=location.href="#">.</button>';
+    htmlEvents += '</span>';
+    htmlEvents += '</section>';
+
+    var articleEvents = document.getElementById("rotatorEvents");
+    articleEvents.innerHTML = htmlEvents;
+}
+function secToday(dataEvents2) {
+
+    let htmlEvents2 = '<section>';
+
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
+        "/HikersGuide/design/crystalriver.png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_013.png"];
+
+    for (var i = 0; i < dataEvents2.events.length; i++) {
+        htmlEvents2 += '<article>';
+        htmlEvents2 += '<img src="' + imageArray[i] + '"';
+        htmlEvents2 += 'alt="' + dataEvents2.events[i].subtitle + '"/>';
+        htmlEvents2 += '<section>';
+        htmlEvents2 += '<h3>' + dataEvents2.events[i].title + '<h3>';
+        htmlEvents2 += '<p>' + dataEvents2.events[i].date + '<p>';
+        htmlEvents2 += '<p><strong>' + dataEvents2.events[i].location + '<br/ >';
+        htmlEvents2 += dataEvents2.events[i].state + '</strong></p>';
+        htmlEvents2 += '</section>';
+        htmlEvents2 += '</article>';
+    }
+
+    htmlEvents2 += '<article>';
+    htmlEvents2 += '<img src="' + imageArray[5] + '"';
+    htmlEvents2 += 'alt="' + dataEvents2.events[3].subtitle + '"/>';
+    htmlEvents2 += '<section>';
+    htmlEvents2 += '<h3>' + dataEvents2.events[3].title + '</h3>';
+    htmlEvents2 += '<p>' + dataEvents2.events[3].date + '</p>';
+    htmlEvents2 += '<p><strong>' + dataEvents2.events[3].location + '<br/ >';
+    htmlEvents2 += dataEvents2.events[3].state + '</strong></p>';
+    htmlEvents2 += '</section>';
+    htmlEvents2 += '</article>';
+
+    htmlEvents2 += '</section>';
+    var articleEvents = document.getElementById("Today");
+    articleEvents.innerHTML = htmlEvents2;
+}
+function secWeekend(dataEvents3) {
+
+    let htmlEvents3 = '<section>';
+
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_014.png",
+        "/HikersGuide/design/File_005.png", "/HikersGuide/design/File_015.png", "/HikersGuide/design/File_013.png"];
+
+    for (var i = 2; i < dataEvents3.events.length; i++) {
+        htmlEvents3 += '<article>';
+        htmlEvents3 += '<img src="' + imageArray[i] + '"';
+        htmlEvents3 += 'alt="' + dataEvents3.events[i].subtitle + '"/>';
+        htmlEvents3 += '<section>';
+        htmlEvents3 += '<h3>' + dataEvents3.events[i].title + '</h3>';
+        htmlEvents3 += '<p>' + dataEvents3.events[i].date + '</p>';
+        htmlEvents3 += '<p><strong>' + dataEvents3.events[i].location + '<br/ >';
+        htmlEvents3 += dataEvents3.events[i].state + '</strong></p>';
+        htmlEvents3 += '</section>';
+        htmlEvents3 += '</article>';
+    }
+
+    htmlEvents3 += '</section>';
+    var articleEvents = document.getElementById("Weekend");
+    articleEvents.innerHTML = htmlEvents3;
+}
+function secThisMonth(dataEvents4) {
+
+    let htmlEvents4 = '<section>';
+
+    var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
+        "/HikersGuide/design/File_012.png", "/HikersGuide/design//File_018.png", "/HikersGuide/design/File_019.png"];
+
+    for (var i = 3; i < dataEvents4.events.length; i++) {
+        htmlEvents4 += '<article>';
+        htmlEvents4 += '<img src="' + imageArray[i] + '"';
+        htmlEvents4 += 'alt="' + dataEvents4.events[i].subtitle + '"/>';
+        htmlEvents4 += '<section>';
+        htmlEvents4 += '<h3>' + dataEvents4.events[i].title + '</h3>';
+        htmlEvents4 += '<p>' + dataEvents4.events[i].date + '</p>';
+        htmlEvents4 += '<p><strong>' + dataEvents4.events[i].location + '<br/ >';
+        htmlEvents4 += dataEvents4.events[i].state + '</strong></p>';
+        htmlEvents4 += '</section>';
+        htmlEvents4 += '</article>';
+    }
+
+    htmlEvents4 += '</section>';
+    var articleEvents = document.getElementById("ThisMonth");
+    articleEvents.innerHTML = htmlEvents4;
+}

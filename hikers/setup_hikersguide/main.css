@@ -10,6 +10,8 @@
     background-color: #292828;
     height:148px;
 }
+/*section listed as a table display*/
+/*compartment1 */
 #header {
     position:relative;
     display: table;
@@ -22,6 +24,7 @@
         display: table-cell;
         height: 28px;
     }
+
 #secOne img {
     height: 28px;
     width: 28px;
@@ -34,7 +37,7 @@
     width: 300px;
     height: 28px;
     padding-bottom: 10px;
-    color: white;
+    color: #EEEEEE;
     margin: auto;
 }
 .container img {
@@ -47,6 +50,7 @@
     width: 34%;
 }
 
+/*compartment2*/
 #wrapper2 {
     position: relative;
     margin-top: 5px;
@@ -55,7 +59,6 @@
     width: 100%;
     height: 60px;
 }
-
 #wrapper2 div {
     display: table-cell;
     height: 60px;
@@ -64,13 +67,11 @@
 #cmpny, #btn01, #btn02, #btn03, #btn04 {
     border: 1px solid dimgrey;
 }
-
 #btn05 {
     width: 51%;
     border: 1px solid dimgrey;
 }
-
-    #btn05 img {
+#btn05 img {
         width: 30px;
         height: 30px;
     }
@@ -79,16 +80,14 @@
     margin: auto;
     text-align: center;
 }
-
 .btns {
     width: 100%;
     height: 35px;
-    color: white;
+    color: #EEEEEE;
     background-color: transparent;
     text-decoration: none;
     border: none;
 }
-
 .searchboxs {
     width: 90%;
     height: 65px;
@@ -97,8 +96,13 @@
     border: none;
 }
 
-h6{
-    color:white;
+a:link {
+    color: #f0ae35;
+    text-decoration: none;
+    padding: 30px;
+}
+a:visited {
+    color: #111111;
 }
 
 /* Home: Rotator Block*/
@@ -119,7 +123,6 @@ span .leftBtn {
     border: none;
     margin-top: -300px
 }
-
 span .rightBtn {
     position: relative;
     padding-right: 2%;
@@ -133,10 +136,39 @@ span .rightBtn {
 
  /*Body Block
 ==================================================
-==================================================*/ 
+==================================================*/
 body {
     background: url('/HikersGuide/design/pattern28.png');
+    font: 1em 'Program OT Book', Georgia, serif;
 }
+/*h6 {
+    color: #EEEEEE;
+}*/
+h5 {
+    /*color: #8a7300;*/
+    font-size: 20px;
+}
+/*h4 {
+    color: lemonchiffon;
+    font: 12px Program OT Book;
+}*/
+/*h3{
+    color: #CCCCCC;
+    font: 1.2em Georgia;
+}
+h2 {
+    color: lemonchiffon;
+    font: 12px Program OT Bold;
+}*/
+h1 {
+    color: #EEEEEE;
+    font: 50 Program OT Black;
+}
+p {
+    color: lemonchiffon;
+    font: 13px Program OT Book;
+}
+
 
 /*Blog: Article Block 1
 ==================================================
@@ -152,29 +184,32 @@ body {
         width: 295px;
         border: 1px solid #3b321a;
         background: url('/HikersGuide/design/abstract-luxury-leather-black-texture-260nw-570397270.jpg');
-        color: lemonchiffon;
+        
         float: left;
     }
-#aLevel1 img {
+    #aLevel1 img {
         height: 80px;
         width: 100px;
         float: left;
         padding-right: 10px;
-}
-#aLevel1 h3 {
+        
+    }
+    #aLevel1 h3 {
         text-align: left;
         font-size: 15px;
         margin: 15px -45px 10px 35px;
         padding-right: 20px;
-}
+        color: #CCCCCC;
+    }
     #aLevel1 dt {
         position: relative;
         color: #8a7300;
         float: left;
         margin-top: -6px;
-        font-size: 8px;
+        font-size: 9px;
         font-weight: bolder;
-        padding-right: 5px;
+        padding-right: 6px;
+        padding-bottom: 6px;
     }
 
 /*  Home Posts & View More Btn, Blog Article Block 2, Event listings
@@ -186,44 +221,41 @@ body {
     clear: both;
     text-align: center;
     margin: auto;
-    
     margin-top: 1%;
 }
 #posts {
     height: auto;
     margin: auto;
-    width: auto;
-    margin: 0px 15% 1% 18%;
+    width: 100%;
+    margin: 0px 15% 1% 0px;
     clear: both;
     text-align: center;
     overflow: hidden;
 }
-    #posts article, #aLevel2 article {
+#posts article, #aLevel2 article {
         width: 380px;
         height: 380px;
         float: left;
         color: lemonchiffon;
 
 
-    }
-    #posts article img, #aLevel2 article img {
+}
+#posts article img, #aLevel2 article img {
         width: 330px;
         height: 330px;
         border: 15px solid #292828;
 
     }
-        #posts article h3 {
+#posts article h3 {
             position: relative;
             margin: -300px 0px 0px 0px;
         }
-
-        #posts article p {
+#posts article p {
             position: relative;
             margin: 0px 0px -15px 0px;
             padding: 0px 2% 15px 25px;
         }
-
-    #posts dd {
+#posts dd {
         padding-left: 0.2px;
     }
 #posts h2, #aLevel3 h2 {
@@ -235,33 +267,31 @@ body {
 #posts h3, #aLevel2 h3 {
         padding: 0px 8% 0px 8%;
         font-size: 28px;
-        color:lemonchiffon;
-}
-    #posts p, #aLevel2 p {
+        color: lemonchiffon;
+    }
+#posts p, #aLevel2 p {
         position: relative;
         padding: 0px 8% 0px 8%;
-        margin: -160px 0px 0px 30px;
+        margin: -200px 0px 0px 30px;
         font-size: 20px;
     }
-#posts dd, #aLevel2 dt {
+#posts dd {
         position: relative;
         float: left;
         margin: 10px 0px 0px 8%;
         padding-right: 15px;
         font-size: 14px;
-        color: #ffd503;
+        color: #8a7300;
     }
 #aLevel2 dt {
     position: relative;
-    color: lemonchiffon;
+    color: #8a7300;
     float: left;
-    padding-left: 10px;
-    font-size: 11px;
+    padding-right: 1%;
+    font-size: 10px;
     font-weight: bolder;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    margin: -10px 0px 10px 8%;
 }
-
 /*Home: view more button*/
 span .more {
     width: 100px;
@@ -287,7 +317,7 @@ span .more {
     margin-top: 3%;
     margin-bottom: 1%;
 }
-    #aLevel3 section {
+#aLevel3 section {
         width: 690px;
         height: 320px;
         float: left;
@@ -296,14 +326,14 @@ span .more {
         color: #ffd503;
         text-align: left;
     }
-    #aLevel3 section h3 {
+#aLevel3 section h3 {
         position: relative;
         font-size: 20px;
         text-align: left;
         margin-left: 20px;
         color:black;
     }
-    #aLevel3 section p {
+#aLevel3 section p {
         position: relative;
         font-size: 11px;
         text-align: left;
@@ -313,7 +343,6 @@ span .more {
         color: #f0ae35;
         font-weight:bolder;
     }
-
 #aLevel3 section img {
             position: absolute;
             height: 125px;
@@ -329,44 +358,43 @@ span .more {
             color: black;
             text-align:left;
 }
-    #aLevel3 article {
+#aLevel3 article {
         position: absolute;
         width: 500px;
         height: 330px;
         float: left;
         margin-left: 720px;
     }
-    #aLevel3 article p {
+#aLevel3 article p {
         position: relative;
         font-size: 11px;
         margin-top: 40px;
         margin-bottom: -10px;
     }
-    #aLevel3 article p strong{
+#aLevel3 article p strong{
         position: relative;
         font-size: 11px;
         margin-top: 20px;
     }
-    #aLevel3 article h3 {
+#aLevel3 article h3 {
         position: relative;
         font-size: 11px;
         margin-bottom: -30px;
     }
-    #aLevel3 article dt {
+#aLevel3 article dt {
         position: relative;
         float: left;
         font-size: 10px;
         color: #8a7300;
         padding-left: 20px;
         padding-right: 90px;
-        margin-top: -10px;
+        margin-top: 130px;
     }
-
-    #aLevel3 section dt {
+#aLevel3 section dt {
         position: relative;
         float: left;
         margin: -25px 0px 28px 100px;
-        font-size: 11px;
+        font-size: 10px;
         color: #8a7300;
         font-weight: bolder;
     }
@@ -378,28 +406,28 @@ span .more {
     margin: auto;
     margin-bottom: 3%;
 }
-    #aLevel4 article {
+#aLevel4 article {
         width: 475px;
         height: 400px;
         float: left;
         margin-right: 10px;
         padding-right: 25px;
-    }
+}
 #aLevel4 article img, #aLevel3 article img {
     height: 175px;
     width: 495px;
 }
 #aLevel4 article article, #aLevel3 article article {
-    height: 175px;
-    width: 475px;
-    margin: -5px 0px 0px 0px;
-    padding: 0px 10px 5px 10px;
-    text-align: left;
-    color: lemonchiffon;
-    background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
-    font-size: 13px;
-}
-    #aLevel4 section {
+            height: 175px;
+            width: 475px;
+            margin: -5px 0px 0px 0px;
+            padding: 0px 10px 5px 10px;
+            text-align: left;
+            color: #CCCCCC;
+            background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
+            font-size: 12px;
+        }
+#aLevel4 section {
         width: 175px;
         height: 295px;
         float: left;
@@ -409,10 +437,10 @@ span .more {
             padding-top: 60px;
             padding-left: 20px;
             margin-left: 20px;
-            color: white;
+            color: #EEEEEE;
             text-align: left;
             background: url('/HikersGuide/design/File_0025.png');
-}
+        }
 
 /* Events Page */
 /*==================================================
@@ -424,13 +452,15 @@ span .more {
 #rotatorEvents h2 {
     text-align: center;
     margin-top: -250px;
-    color: #0a1563;
+    color: #111111;
+    font-size:4em;
 }
 #rotatorEvents h3 {
-    text-align: center;
-    margin-top: -20px;
-    color: #0a1563;
-}
+        text-align: center;
+        margin-top: -20px;
+        color: #111111;
+        font-size: 20px;
+    }
 span .left {
     position: relative;
     padding-left: 2%;
@@ -463,7 +493,7 @@ span .right {
 }
 #tab button {
         float: left;
-        color: lemonchiffon;
+        color: #CCCCCC;
         border: none;
         background-color: transparent;
         outline: none;
@@ -485,7 +515,7 @@ span .right {
     background-color: #292828;
     width: 945px;
     max-width: 65%;
-    height: 945px;
+    height: 954px;
     margin: auto;
     margin-top: 0px;
     padding: 0% 0% 1% 1%;
@@ -514,9 +544,9 @@ span .right {
     background: url('HikersGuide/design/817111225_preview_Black_background_leather-wallpaper-2048x1152.jpg');
 }
 #events article section p {
-        color: lemonchiffon;
+        color: #CCCCCC;
         margin-top: -10px;
-}
+    }
 #events article section p strong {
             margin-top: -10px;
 }
@@ -528,7 +558,7 @@ span .right {
     padding: 1% 8px 1% 1%;
     position: relative;
 }
-    #misc section {
+#misc section {
         position: relative;
         float: left;
         height: 140px;
@@ -537,15 +567,15 @@ span .right {
         padding: 2% 40px 0px 25px;
     }
 #misc section section {
-    position: relative;
-    height: 160px;
-    width: 260px;
-    margin: -12px 0px 5px -25px;
-    padding: 10px 10px 0px 20px;
-    color: lemonchiffon;
-    font-size: 12px;
-}
-        #misc section p strong, #events article section p strong {
+            position: relative;
+            height: 160px;
+            width: 260px;
+            margin: -12px 0px 5px -25px;
+            padding: 10px 10px 0px 20px;
+            color: #CCCCCC;
+            font-size: 12px;
+        }
+#misc section p strong, #events article section p strong {
             position: relative;
             color: #8a7300;
             font-size: 13px;
@@ -559,32 +589,32 @@ span .right {
     width: 20px;
     margin-left: -10px;
 }
-    #misc .newsletter p strong {
+#misc .newsletter p strong {
         position: relative;
         text-align: left;
         margin-left: -25px;
     }
-    #misc .btnBuy {
+#misc .btnBuy {
         position: relative;
         width: 135px;
         height: 35px;
         padding: 3%;
-        color: lemonchiffon;
+        color: #CCCCCC;
         border-color: #292828;
         background-color: transparent;
     }
-    #misc .btnL {
+#misc .btnL {
         position: relative;
         width: 200px;
         height: 35px;
         margin-top: -65px;
         padding: 3%;
         border-color: #292828;
-        color: lemonchiffon;
+        color: #CCCCCC;
         background-color: transparent;
         position: relative;
     }
-        #misc .btnL img {
+#misc .btnL img {
             position: relative;
             width: 35px;
             height: 30px;
@@ -594,17 +624,17 @@ span .right {
         }
 
 /*subscribe paragraph tag*/
-    #misc .newsletter p {
+#misc .newsletter p {
         position: relative;
         text-align: left;
         padding-left: 25px;
     }
-    #misc .btns {
+#misc .btns {
         position: relative;
         width: 234px;
         height: 50px;
     }
-    #misc .appStore {
+#misc .appStore {
         position: relative;
         width: 115px;
         height: 36px;
@@ -613,7 +643,7 @@ span .right {
         border-color: #292828;
         background-color: transparent;
     }
-    #misc .googlePlay {
+#misc .googlePlay {
         position: relative;
         width: 115px;
         height: 36px;
@@ -634,11 +664,7 @@ span .right {
     margin: -35px 0px 0px -5px;
 }
 
-h5 {
-    color: #8a7300;
-    font-size: 20px;
-    margin: 0px 0px 0px 0px;
-}
+
 h3 {
     color: #f0ae35;
 }
@@ -655,7 +681,7 @@ h3 {
         height: 100px;
         width: 950px;
         margin: auto;
-        color: lemonchiffon;
+        color: #CCCCCC;
         font-size: 12px;
         padding: 0px 5px 0px 5px;
     }
@@ -664,9 +690,9 @@ h3 {
             color: dimgrey;
             text-align: left;
         }
-#filter section h2 {
+        #filter section h2 {
             font-size: 22px;
-            color: lemonchiffon;
+            color: #CCCCCC;
             text-align: center;
             margin-top: 15px;
             margin-bottom: 5px;
@@ -684,23 +710,24 @@ h3 {
 #join {
     position: relative;
     max-width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: 175px;
     background-color: #f0ae35;
 }
     #join img {
+        position: relative;
         width: 1200px;
         height: 375px;
-        margin: 111px 0px 0px 35%;
+        margin: 30px 0px 0px 35%;
     }
-#join section {
-            position: static;
-            width: 400px;
-            height: 200px;
-            text-align: left;
-            margin: -350px 40% 0px 5%;
-            color: white;
-        }
+    #join section {
+        position: static;
+        width: 400px;
+        height: 200px;
+        text-align: left;
+        margin: -350px 40% 0px 5%;
+        color: #EEEEEE;
+    }
 
 /*sign up*/
 #sign {
@@ -715,7 +742,7 @@ h3 {
         text-align: center;
         padding-left: 5%;
         padding-top: 10px;
-        color: dimgrey;
+        color: #888888;
     }
         #sign section div {
             position: relative;
@@ -740,27 +767,29 @@ h3 {
     display: table;
     table-layout: fixed;
     width: 70%;
-    height: 100px;
-    padding: 5% 13% 3% 15%;
-    color: dimgrey;
+    height: 150px;
+    padding: 4% 0% 3% 0px;
+    color: #888888;
+    margin:auto;
 }
 #sectionMisc section {
         display: table-cell;
-        height: 100px;
+        height: 150px;
     }
 #sign section strong, #about h3, #sectionMisc p strong {
         color: #f0ae35;
-        font-size: 16px;
-        margin-top: 30px;
+        font-size: 15px;
+        margin-top: 25px;
     }
 #about {
+    width:25%;
     text-align: left;
-    padding-right: 10%;
+    padding-right: 8%;
 }
 #mEvents img, #members img {
     float: left;
-    width: 65px;
-    height: 50px;
+    width: 60px;
+    height: 45px;
     padding: 5px 15px 0px 25px;
 }
 
@@ -778,7 +807,7 @@ h3 {
     overflow: hidden;
 }
     #contact h5 {
-        color: black;
+        color: #111111;
         font-size: 1.5em;
         margin-top: -50px;
     }
@@ -786,17 +815,17 @@ h3 {
         font-weight: bolder;
         font-size: larger;
     }
-    #contact h2 {
-        font-size: 6em;
+    #contact h1 {
+        font-size: 5em;
         font-weight:bolder;
-        color: black;
+        color: #111111;
         text-align:center;
         margin-top:200px;
     }
 
 /* Info Block*/
 #info {
-    color: white;
+    color: #EEEEEE;
     width: 100%;
     height:650px;
     font-size: 1.25em;
@@ -808,10 +837,10 @@ h3 {
  table {
     width: 85%;
 }
-     td a {
-        text-decoration: none;
-        color:lemonchiffon;
-    }
+td a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
 #info h5 {
         font-size: 1.5em;
         color: #f0ae35;
@@ -896,20 +925,21 @@ h3 {
 /*Footer Block*/
 footer {
     text-align: center;
-    color: white;
+    color: #EEEEEE;
     clear: both;
 }
 #footer {
-    color: white;
-border:1px solid dimgrey;
+    color: #EEEEEE;
+    border: 1px solid dimgrey;
     max-width: 33%;
     height: 225px;
     clear: both;
 }
 footer h3 {
     font-weight: bolder;
-    color: white;
+    color: #EEEEEE;
 }
+
 #wrapper5 {
     margin-top: 1%;
     display: table;
@@ -918,49 +948,52 @@ footer h3 {
     height: 150px;
     font-size:13px;
 }
-    #wrapper5 div {
+#wrapper5 div {
         display: table-cell;
         height: 150px;
     }
-    #support {
-        border: 1px solid dimgrey;
-        background-color: #292828;
-        color: white;
-    }
-    #support a {
+
+#support {
+    border: 1px solid dimgrey;
+    background-color: #292828;
+    color: #EEEEEE;
+}
+#support a {
         text-decoration: none;
         padding-right: 6%;
         padding-left: 6%;
-        color: white;
+        color: #EEEEEE;
     }
+
 #signUp {
     border: 1px solid dimgrey;
     background-color: #292828;
 }
-    #signUp .srch {
+#signUp .srch {
         height: 36px;
         width: 400px;
         background-color: transparent;
         border: none;
-        color: white;
+        color: #EEEEEE;
     }
-    #signUp .submit {
+#signUp .submit {
         height: 36px;
         width: 75px;
         background-color: transparent;
         border: none;
-        color: white;
+        color: #EEEEEE;
     }
 #signUp Form {
     border: 1px solid dimgrey;
     margin-left: 20%;
     margin-top: 0.5%;
 }
+
 #followUs {
     border: 1px solid dimgrey;
     background-color: #292828;
 }
-        #followUs img {
+#followUs img {
             height: 30px;
             width: 30px;
             padding: 1% 3% 0% 3%;
