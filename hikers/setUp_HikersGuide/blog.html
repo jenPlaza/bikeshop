@@ -11,17 +11,17 @@
     <header>
         <section id="header">
             <div id="secOne">
-                <img class="logo" src="HikersGuide/images/hikersGuide.png" alt="image"/>
+                <img class="logo" src="HikersGuide/images/hikersGuide.png" alt="image" />
             </div>
             <div id="secTwo">
                 <section class="container">
-                    <img src="HikersGuide/design/phone-68-128.png" alt="image"/>
+                    <img src="HikersGuide/design/phone-68-128.png" alt="image" />
                     <h6>1-904-378-9087</h6>
                 </section>
             </div>
             <div id="secThree">
                 <section class="container">
-                    <img src="HikersGuide/images/user.png" alt="image"/>
+                    <img src="HikersGuide/images/user.png" alt="image" />
                     <h6>Login In / Register</h6>
                 </section>
             </div>
@@ -53,9 +53,11 @@
                 </section>
             </div>
             <div id="btn05">
+
                 <Form>
-                    <input class="searchboxs" name="searchbox" type="search" />
-                    <img src="HikersGuide/design/search-3-512.png" alt="image" />
+            <input placeholder="Search" id="check" class="searchboxs" name="searchbox" type="search" onsearch="search()" />
+
+                    <img src="HikersGuide/design/search-3-512.png" alt="Alternate Text" />
 
                 </Form>
             </div>
@@ -267,7 +269,7 @@
         <article>
             <img src="/HikersGuide/design/File_001.png" alt="Alternate Text" />
             <article>
-                <p>Lorem Ipsum</p>
+                <p><strong>Lorem Ipsum</strong></p>
                 <h3>Dessert gingerbread lollipop pudding cheesecake gummies. </h3>
                 <p>Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dictum sit amet justo donec enim diam vulputate ut.</p>
             </article>
@@ -346,7 +348,7 @@
                 <section>
                     <h3>SIGN ME UP</h3>
                     <p>Join The Nation</p>
-                    <Form><input class="srch" name="q" value="Email Address" type="search" size="36" /><input class="submit" type="submit" /></Form>
+                    <Form><input class="srch" name="q" placeholder="Enter Email" type="search" size="36" /><input class="submit" type="submit" /></Form>
                 </section>
             </div>
             <div id="followUs">
@@ -364,5 +366,6 @@
         </div>
     </footer>
     <script src="content.js"></script>
+    <script src="events.js"></script>
 </body>
-    </html>
+</html>

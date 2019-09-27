@@ -17,7 +17,7 @@ myJsonRequest1.onload = function () {
 };
 myJsonRequest1.send();
 
-myJsonRequest2 = new XMLHttpRequest();
+var myJsonRequest2 = new XMLHttpRequest();
 myJsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 myJsonRequest2.onload = function () {
 
@@ -30,7 +30,7 @@ myJsonRequest2.onload = function () {
 };
 myJsonRequest2.send();
 
-myJsonRequest3 = new XMLHttpRequest();
+var myJsonRequest3 = new XMLHttpRequest();
 myJsonRequest3.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 myJsonRequest3.onload = function () {
     var request = JSON.parse(myJsonRequest3.responseText);
@@ -43,14 +43,9 @@ myJsonRequest3.onload = function () {
 myJsonRequest3.send();
 
 //index page
-
-//var posts = document.getElementById("id02");
-//var htmlHome = '<h2>Recent Posts</h2>';
-//posts.innerHTML = htmlHome;
-
 function secEvents(dataHome) {
 
-    let htmlHome = '<section>';
+    var htmlHome = '<section>';
 
      htmlHome += '<h2>Recent Posts</h2>';
 
@@ -77,7 +72,7 @@ function secEvents(dataHome) {
     articleBlog.innerHTML = htmlHome;
 }
 function secJoin(dataHomeJoin) {
-    let htmlHome2 = '';
+    var htmlHome2 = '';
 
     htmlHome2 += '<img src="/HikersGuide/images/climbers.png" alt="Alternate Text" />';
     htmlHome2 += '<section>';
@@ -91,7 +86,7 @@ function secJoin(dataHomeJoin) {
 }
 function secMiscMem(dataHomeMembers) {
 
-    let htmlHome3 = '<section>';
+    var htmlHome3 = '<section>';
 
     for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
 
@@ -111,9 +106,9 @@ function secMiscMem(dataHomeMembers) {
 }
 function secMiscMEvents(dataHomeMEvents) {
 
-    let htmlHome4 = '<section>';
+    var htmlHome4 = '<section>';
 
-    for (i = 0; i < dataHomeMEvents.events.length; i++) {
+    for (var i = 0; i < dataHomeMEvents.events.length; i++) {
         htmlHome4 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
         htmlHome4 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
         htmlHome4 += '<br/ >' + dataHomeMEvents.events[i].state + '</p>';
@@ -125,7 +120,7 @@ function secMiscMEvents(dataHomeMEvents) {
 }
 function secMiscAbout(dataHomeAbout) {
 
-    let htmlHome5 = '';
+    var htmlHome5 = '';
 
     htmlHome5 += '<section>';
     htmlHome5 += '<h3>About</h3>';
@@ -140,10 +135,10 @@ function secMiscAbout(dataHomeAbout) {
 //blog page
 function secALevel1(data1) {
     //var article = document.getElementsByTagName("h3");
-    //let htmlBlog = '<h3>';
-    //article.innerHTML = 'jen Plaza';
+    //var htmlBlog = '<h3>';
+    //article.innerHTML = htmlBlog;
 
-    let htmlBlog = "";
+    var htmlBlog = "";
 
     var imageArray = ["/HikersGuide/design/File_005.png", "/HikersGuide/design/File_010.png", "/HikersGuide/design/File_015.png", "/HikersGuide/design/File_012.png", "/HikersGuide/design/File_013.png", "/HikersGuide/design/File_014.png", "/HikersGuide/design/File_018.png"];
 
@@ -168,12 +163,12 @@ function secALevel1(data1) {
     htmlBlog += 'alt="' + data1.locations[0].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[0].title + '</h3>';
     htmlBlog += '<dl>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>by ' + data1.posts[0].author + '</dd>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>' + data1.posts[0].postDate + '</dd>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>' + data1.posts[0].moreLink + '</dd>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>by ' + data1.posts[0].author + '</dt>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>' + data1.posts[0].postDate + '</dt>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>' + data1.posts[0].moreLink + '</dt>';
     htmlBlog += '</dl>';
     htmlBlog += '</article>';
 
@@ -182,21 +177,20 @@ function secALevel1(data1) {
     htmlBlog += 'alt="' + data1.locations[3].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[3].title + '</h3>';
     htmlBlog += '<dl>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>by ' + data1.posts[3].author + '</dd>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>' + data1.posts[3].postDate + '</dd>';
-    htmlBlog += '<dt></dt>';
-    htmlBlog += '<dd>' + data1.posts[3].moreLink + '</dd>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>by ' + data1.posts[3].author + '</dt>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>' + data1.posts[3].postDate + '</dt>';
+    htmlBlog += '<dd></dd>';
+    htmlBlog += '<dt>' + data1.posts[3].moreLink + '</dt>';
     htmlBlog += '</dl>';
     htmlBlog += '</article>';
-    htmlBlog += '</section>';
 
     var articleBlog = document.getElementById("aLevel1");
     articleBlog.innerHTML = htmlBlog;
 }
 function secALevel2(data2) {
-    let htmlArticle2 = '';
+    var htmlArticle2 = '';
 
    for (var i = 0; i < data2.posts.length; i++) {
        htmlArticle2 += '<article>';
@@ -219,7 +213,7 @@ function secALevel2(data2) {
     articleBlog.innerHTML = htmlArticle2;
 }
 function secALevel3(data3) {
-    let htmlArticle3 = '<section>';
+    var htmlArticle3 = '<section>';
 
     htmlArticle3 += '<img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />';
     htmlArticle3 += '<section>';
@@ -291,10 +285,9 @@ function secALevel4(data4) {
     articleBlog.innerHTML = htmlArticle4;
 }
 
-
 //events page
 function secRotate(dataEvents) {
-    let htmlEvents = '';
+    var htmlEvents = '';
 
     htmlEvents += '<section>';
     htmlEvents += '<img src="HikersGuide/design/File_011.png" alt="Alternate Text" />';
@@ -315,7 +308,7 @@ function secRotate(dataEvents) {
 }
 function secToday(dataEvents2) {
 
-    let htmlEvents2 = '<section>';
+    var htmlEvents2 = '<section>';
 
     var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
         "/HikersGuide/design/crystalriver.png", "/HikersGuide/design/photo-1507041957456-9c397ce39c97.jpg", "/HikersGuide/design/File_013.png"];
@@ -350,7 +343,7 @@ function secToday(dataEvents2) {
 }
 function secWeekend(dataEvents3) {
 
-    let htmlEvents3 = '<section>';
+    var htmlEvents3 = '<section>';
 
     var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_014.png",
         "/HikersGuide/design/File_005.png", "/HikersGuide/design/File_015.png", "/HikersGuide/design/File_013.png"];
@@ -374,7 +367,7 @@ function secWeekend(dataEvents3) {
 }
 function secThisMonth(dataEvents4) {
 
-    let htmlEvents4 = '<section>';
+    var htmlEvents4 = '<section>';
 
     var imageArray = ["/HikersGuide/design/sunnytrees.png", "/HikersGuide/design/File_017.png", "/HikersGuide/design/File_016.png",
         "/HikersGuide/design/File_012.png", "/HikersGuide/design//File_018.png", "/HikersGuide/design/File_019.png"];

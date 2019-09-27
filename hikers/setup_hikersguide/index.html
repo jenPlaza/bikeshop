@@ -54,9 +54,8 @@
             </div>
             <div id="btn05">
                 <Form>
-                    <input class="searchboxs" name="searchbox" type="search" />
-                    <img src="HikersGuide/design/search-3-512.png" alt="image" />
-
+                    <input placeholder="Search" id="check" class="searchboxs" name="searchbox" type="search" onsearch="search()" />
+                    <img src="HikersGuide/design/search-3-512.png" alt="Alternate Text" />
                 </Form>
             </div>
         </div>
@@ -175,7 +174,28 @@
                     The biggest advebture of your life is right aruond the corner.
                     <strong> Sign up Now!</strong>
                 </p>
-                <input type="button" value="." class="button" onclick="location.href='#';" />
+                <input type="button" value="." class="button" onclick="openForm()" />
+
+                <!--popop form-->
+                <form id="mailingList">
+
+                    <label for="email"><b>Email</b></label>
+
+                    <input type="text" placeholder="Enter Email" name="email">
+
+                    <button id="buttonS" type="submit" class="buttonS">Submit</button>
+                </form>
+
+
+                <script>
+                    document.getElementById("buttonS").addEventListener('click', function () {
+                        alert("Thank you for submitting your request, your email has been recieved.");
+
+                        close();
+
+                        //document.getElementById("mailingList").style.display = "none";
+                    });
+                </script>
             </div>
         </section>
     </section>
@@ -273,7 +293,7 @@
                 <section>
                     <h3>SIGN ME UP</h3>
                     <p>Join The Nation</p>
-                    <Form><input class="srch" name="q" value="Email Address" type="search" size="36" /><input class="submit" type="submit" /></Form>
+                    <Form><input class="srch" name="q" placeholder="Enter Email" type="search" size="36" /><input class="submit" type="submit" /></Form>
                 </section>
             </div>
             <div id="followUs">
@@ -291,5 +311,6 @@
         </div>
     </footer>
     <script src="content.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Events | Company A</title>
     <link href="main.css" rel="stylesheet" type="text/css">
- 
+
 </head>
 <body id="eventPage">
     <!--Header-->
@@ -55,13 +55,12 @@
             </div>
             <div id="btn05">
                 <Form>
-                    <input class="searchboxs" name="searchbox" type="search" />
+                    <input placeholder="Search" id="check" class="searchboxs" name="searchbox" type="search" onsearch="search()" />
                     <img src="HikersGuide/design/search-3-512.png" alt="Alternate Text" />
 
                 </Form>
             </div>
         </div>
-
     </header>
 
     <section id="rotatorEvents">
@@ -87,6 +86,7 @@
         <button class="tablinks" onclick="filter(event, 'Weekend')">Weekend</button>
         <button class="tablinks" onclick="filter(event, 'ThisMonth')">This Month</button>
     </section>
+
     <section id="events">
         <section id="Today" class="tabcontent" style=display:block>
             <article>
@@ -277,7 +277,7 @@
                 <section>
                     <h3>SIGN ME UP</h3>
                     <p>Join The Nation</p>
-                    <Form><input class="srch" name="q" value="Email Address" type="search" size="36" /><input class="submit" type="submit" /></Form>
+                    <Form><input class="srch" name="q" placeholder="Enter Email" type="search" size="36" /><input class="submit" type="submit" /></Form>
                 </section>
             </div>
             <div id="followUs">

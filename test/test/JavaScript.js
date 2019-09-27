@@ -105,10 +105,35 @@
 //    document.write(y);
 //}
 
-var name = null;
-name = 'Park';
-name = 'Park';
+//var name = null;
+//name = 'Park';
+//name = 'Park';
 
-document.write("1: "+name);
-document.write("/ 2: " + name);
-document.write("/ 3: " + name);
+//document.write("1: "+name);
+//document.write("/ 2: " + name);
+//document.write("/ 3: " + name);
+
+function checkUserName() {
+    alert("test");
+}
+
+
+if (elUserName.addEventListener) {
+
+    elUserName.addEventListener('blur', function () {
+
+        checkUserName();
+
+    }, false);
+
+} else {
+
+    elUserName.attachEvent('blur', function () {
+
+        checkUserName();
+
+    });
+
+}
+
+
