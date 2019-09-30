@@ -310,18 +310,32 @@ h1 {
     font-weight: bolder;
     margin: -10px 0px 10px 8%;
 }
-/*Home: view more button*/
+
+/*Home: view more buttons*/
+span .seeMore {
+    width: 90px;
+    height: 30px;
+    position: relative;
+    float: left;
+    margin: 155px 0px 0px 24px;
+    background-color: #f0ae35;
+    color: dimgrey;
+    font-size: 16px;
+    border-color: lemonchiffon;
+    border:none;
+}
+
 span .more {
     width: 100px;
     height: 50px;
     position: relative;
     float: left;
-    margin-top: 50px;
-    margin-left: 50%;
+    margin: 50px 0px 0px 50%;
     background-color: transparent;
     color: #f0ae35;
     font-size: 16px;
-    border-color:dimgrey;
+    border-color: dimgrey;
+
 }
 
 /* Blog: Article Block 3, 4*/
@@ -790,37 +804,64 @@ h3 {
     display: table;
     table-layout: fixed;
     width: 70%;
-    height: 150px;
+    height: 175px;
     padding: 4% 0% 3% 0px;
     color: #888888;
     margin:auto;
 }
 #sectionMisc section {
         display: table-cell;
-        height: 150px;
+        height: 175px;
+        
     }
+
 #sign section strong, #about h3, #sectionMisc p strong {
         color: #f0ae35;
         /*font-size: 15px;*/
         margin-top: 25px;
     }
 #about {
-    width:25%;
+    width: 25%;
     text-align: left;
     padding-right: 8%;
+    padding: 0px 60px 0px 150px;
+}
+#mEvents {
+    border: 1px solid red;
+    width: 25%;
+    padding: 0px 150px 0px 60px;
+}
+#members {
+    border: 1px solid blue;
+    width: 20%;
+    padding 0px 60px 0px 60px;
+}
+#members p{
+    text-align:left;
+    margin: 1px 0px 0px 0px;
 }
 #mEvents img, #members img {
     float: left;
     width: 60px;
     height: 45px;
-    padding: 5px 15px 0px 25px;
+    padding: 0px 15px 0px 25px;
 }
+    #members img {
+        float:left;
+    }
 
 
-/* contact Page*
+
+
+
+
+
+
+
+        /* contact Page*
 / *===================================================
 ================================================== */
-#contact {
+        #contact {
     text-align: center;
     width: 100%;
     height: 500px;
