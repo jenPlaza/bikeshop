@@ -76,7 +76,8 @@ function secJoin(dataHomeJoin) {
 
     htmlHome2 += '<img src="/HikersGuide/images/climbers.png" alt="Alternate Text" />';
     htmlHome2 += '<section>';
-    htmlHome2 += '<h2>' + dataHomeJoin.locations[4].title + '</h2>';
+    htmlHome2 += '<h2>JOIN THE ADVENTURE</h2>';
+    htmlHome2 += '<h4>' + dataHomeJoin.locations[4].title + '</h4>';
     htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
     htmlHome2 += '<p>' + dataHomeJoin.locations[4].city + ' | ' + dataHomeJoin.locations[4].state + ' </p>';
     htmlHome2 += '</section>';
@@ -87,35 +88,31 @@ function secJoin(dataHomeJoin) {
 function secMiscMem(dataHomeMembers) {
 
     var htmlHome3 = '<section>';
-
-    for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
-
-        htmlHome3 += '<img src="' + dataHomeMembers.hikers[i].imageURL + '"';
-
-        htmlHome3 += 'alt="' + dataHomeMembers.hikers[i].subtitle + '"/>';
-
-        htmlHome3 += '<p><strong>' + dataHomeMembers.hikers[i].firstname + " " + dataHomeMembers.hikers[i].lastname + '</strong>';
-
-        htmlHome3 += '<br/ >  A member since ' + dataHomeMembers.hikers[0].joinDate + '. A member from' + dataHomeMembers.hikers[i].city + ", " + dataHomeMembers.hikers[i].state + ".";
-        htmlHome3 += '</p>';
+    htmlHome3 += '<h3>Upcoming Events</h3>';
+    for (var i = 0; i < dataHomeMembers.events.length; i++) {
+        htmlHome3 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
+        htmlHome3 += '<p><strong>' + dataHomeMembers.events[i].title + '</strong></p>';
+        htmlHome3 += '<p>' + dataHomeMembers.events[i].text + '</p>';
     }
     htmlHome3 += '</section>';
 
-    var articleBlog = document.getElementById("members");
+    var articleBlog = document.getElementById("mEvents");
     articleBlog.innerHTML = htmlHome3;
 }
 function secMiscMEvents(dataHomeMEvents) {
 
     var htmlHome4 = '<section>';
+    htmlHome4 += '<h3>New Hikers</h3>';
+    for (var i = 0; i < dataHomeMEvents.hikers.length; i++) {
+        htmlHome4 += '<img src="' + dataHomeMEvents.hikers[i].imageURL + '"';
+        htmlHome4 += 'alt="' + dataHomeMEvents.hikers[i].subtitle + '"/>';
 
-    for (var i = 0; i < dataHomeMEvents.events.length; i++) {
-        htmlHome4 += '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
-        htmlHome4 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
-        htmlHome4 += '<br/ >' + dataHomeMEvents.events[i].state + '</p>';
+        htmlHome4 += '<p><strong>' + dataHomeMEvents.hikers[i].firstname + " " + dataHomeMEvents.hikers[i].lastname + '</strong></p>';
+        htmlHome4 += '<p>' + dataHomeMEvents.hikers[i].city + ", " + dataHomeMEvents.hikers[i].state + '</p>';
     }
     htmlHome4 += '</section>';
 
-    var articleBlog = document.getElementById("mEvents");
+    var articleBlog = document.getElementById("members");
     articleBlog.innerHTML = htmlHome4;
 }
 function secMiscAbout(dataHomeAbout) {
@@ -147,6 +144,7 @@ function secALevel1(data1) {
         htmlBlog += '<img src="' + imageArray[i] + '"';
         htmlBlog += 'alt="' + data1.locations[i].title + '"/>';
         htmlBlog += '<h3>' + data1.locations[i].title + '</h3>';
+        htmlBlog += '<p>' + data1.locations[i].text + '</p>';
         htmlBlog += '<dl>';
         htmlBlog += '<dd></dd>';
         htmlBlog += '<dt>by ' + data1.posts[i].author + '</dt>';
@@ -154,7 +152,9 @@ function secALevel1(data1) {
         htmlBlog += '<dt>' + data1.posts[i].postDate + '</dt>';
         htmlBlog += '<dd></dd>';
         htmlBlog += '<dt>' + data1.posts[i].moreLink + '</dt>';
-        htmlBlog += '</dl>';
+        htmlBlog += '<span';
+        htmlBlog += '<input type="button" value="View More" class="seeMore" onclick="location.href=#" />';
+        htmlBlog += '</span>';
         htmlBlog += '</article>';
     }
 
@@ -162,6 +162,7 @@ function secALevel1(data1) {
     htmlBlog += '<img src="' + imageArray[i] + '"';
     htmlBlog += 'alt="' + data1.locations[0].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[0].title + '</h3>';
+    htmlBlog += '<p>' + data1.locations[0].text + '</p>';
     htmlBlog += '<dl>';
     htmlBlog += '<dd></dd>';
     htmlBlog += '<dt>by ' + data1.posts[0].author + '</dt>';
@@ -170,12 +171,15 @@ function secALevel1(data1) {
     htmlBlog += '<dd></dd>';
     htmlBlog += '<dt>' + data1.posts[0].moreLink + '</dt>';
     htmlBlog += '</dl>';
+    htmlBlog += '<input type="button" value="View More" class="seeMore" onclick="location.href=#" />';
+    htmlBlog += '</span>';
     htmlBlog += '</article>';
 
     htmlBlog += '<article>';
     htmlBlog += '<img src="' + imageArray[i] + '"';
     htmlBlog += 'alt="' + data1.locations[3].title + '"/>';
     htmlBlog += '<h3>' + data1.locations[3].title + '</h3>';
+    htmlBlog += '<p>' + data1.locations[3].text + '</p>';
     htmlBlog += '<dl>';
     htmlBlog += '<dd></dd>';
     htmlBlog += '<dt>by ' + data1.posts[3].author + '</dt>';
@@ -184,6 +188,8 @@ function secALevel1(data1) {
     htmlBlog += '<dd></dd>';
     htmlBlog += '<dt>' + data1.posts[3].moreLink + '</dt>';
     htmlBlog += '</dl>';
+    htmlBlog += '<input type="button" value="View More" class="seeMore" onclick="location.href=#" />';
+    htmlBlog += '</span>';
     htmlBlog += '</article>';
 
     var articleBlog = document.getElementById("aLevel1");
