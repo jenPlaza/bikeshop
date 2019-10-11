@@ -6,9 +6,7 @@
 var jsonRequest = new XMLHttpRequest();
 jsonRequest.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
 jsonRequest.onload = function () {
-
     var connection = JSON.parse(jsonRequest.responseText);
-
 	var body="";
 	
 	if(body = document.getElementById("index")){
@@ -19,12 +17,23 @@ jsonRequest.onload = function () {
 	events(connection);
 	}
 	else{
-	shop(connection);
+	/*shopCollections(connection);
+	shopProducts(connection);*/
 	}
-	
-
 };
 jsonRequest.send();
+
+var jsonRequest2 = new XMLHttpRequest();
+jsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
+jsonRequest2.onload = function () {
+    var connection2 = JSON.parse(jsonRequest2.responseText);
+
+	shopCollections(connection2);
+	shopProducts(connection2);
+
+};
+jsonRequest2.send();
+
 
 function features(dFeatures) {
 
@@ -52,6 +61,7 @@ function features(dFeatures) {
     var sectionHome = document.getElementById("features");
     sectionHome.innerHTML = data;
 }
+
 function plans(dPlans) {
 
     var dataPlan = '<h4>CycleClub</h4>';
@@ -69,14 +79,15 @@ function plans(dPlans) {
     var sectionHome = document.getElementById("plans");
     sectionHome.innerHTML = dataPlan;
 }
+
 function events(dEvents) {
 	
-	var imageArray = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
+	var imageArray1 = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
 	
 		var dataEvent = '<article>';
 	
     for (var i = 0; i < dEvents.events.length; i++) {
-		dataEvent += '<img src="' + imageArray[i] + '"';
+		dataEvent += '<img src="' + imageArray1[i] + '"';
         dataEvent += 'alt="' + dEvents.events[i].title + '"/>';
 		
         dataEvent += '<h5><em>' + dEvents.events[i].title + '</em></h5>';
@@ -87,6 +98,43 @@ function events(dEvents) {
     var sectionHome = document.getElementById("articles");
     sectionHome.innerHTML = dataEvent;
 }
-function shop(dShop) {
+
+function shopCollections(dShopC) {
+	var imageArray2 = ["images/newCollection.png", "images/shirt.png", "images/motorBike1.png", "images/motorBike2.png"];
 	
+	var dataSCollections = '<aside>';
+	dataSCollections += '<img src="' + imageArray2[0] + '"';
+    dataSCollections += 'alt="New Collection"/>';
+	dataSCollections += '<h4><em>New Collection</em></h4>';
+	dataSCollections += '<h5>Products</h5>';
+
+    for (var i = 1; i < dShopC.products.length; i++) {
+		dataSCollections += '<article>';
+		dataSCollections += '<img src="' + imageArray2[i] + '"';
+        dataSCollections += 'alt="' + dShopC.products[i].title + '"/>';
+		
+        dataSCollections += '<h5><em>' + dShopC.products[i].title + '</em></h5>';
+        dataSCollections += '<p>' + dShopC.products[i].description +'</p>';
+		dataSCollections += '<p>$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</p>';
+		dataSCollections += '</article>';
+    }
+	dataSCollections += '</aside>';
+	
+    var sectionHome = document.getElementById("collections");
+    sectionHome.innerHTML = dataSCollections;
+}
+
+function shopProducts(dShopP) {
+    for (var i = 1; i < dShopP.products.length; i++) {
+		dataSProducts += '<article>';
+		dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
+    	dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
+		
+        dataSProducts += '<p>' + dShopP.products[i].description +'</p>';
+		dataSProducts += '<h6><em>$' + dShopP.products[i].salePrice +"</em> "+ dShopP.products[i].price +'</h6>';
+		dataSProducts += '</article>';
+    }
+	
+    var sectionHome = document.getElementById("products");
+    sectionHome.innerHTML = dataSProducts;
 }
