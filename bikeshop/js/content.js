@@ -16,24 +16,14 @@ jsonRequest.onload = function () {
 	else if(body = document.getElementById("events")){
 	events(connection);
 	}
+	else if(body = document.getElementById("shop")) {
+	shopProducts(connection);
+	}
 	else{
-	/*shopCollections(connection);
-	shopProducts(connection);*/
+		
 	}
 };
 jsonRequest.send();
-
-var jsonRequest2 = new XMLHttpRequest();
-jsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
-jsonRequest2.onload = function () {
-    var connection2 = JSON.parse(jsonRequest2.responseText);
-
-	shopCollections(connection2);
-	shopProducts(connection2);
-
-};
-jsonRequest2.send();
-
 
 function features(dFeatures) {
 
@@ -70,7 +60,6 @@ function plans(dPlans) {
 
     for (var i = 0; i < dPlans.benefits.length; i++) {
         dataPlan += '<article>';
-	
         dataPlan += '<h5>' + dPlans.benefits[i].title + '</h5>';
         dataPlan += '<p>' + dPlans.benefits[i].description +'</p>'
 		dataPlan += '</article>';
@@ -81,7 +70,6 @@ function plans(dPlans) {
 }
 
 function events(dEvents) {
-	
 	var imageArray1 = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
 	
 		var dataEvent = '<article>';
@@ -99,7 +87,19 @@ function events(dEvents) {
     sectionHome.innerHTML = dataEvent;
 }
 
-function shopCollections(dShopC) {
+
+/*var jsonRequest2 = new XMLHttpRequest();
+jsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
+jsonRequest2.onload = function () {
+    var connection2 = JSON.parse(jsonRequest2.responseText);
+
+	shopCollections(connection2);
+	shopProducts(connection2);
+	
+};
+jsonRequest2.send();*/
+
+/*function shopCollections(dShopC) {
 	var imageArray2 = ["images/newCollection.png", "images/shirt.png", "images/motorBike1.png", "images/motorBike2.png"];
 	
 	var dataSCollections = '<aside>';
@@ -108,7 +108,7 @@ function shopCollections(dShopC) {
 	dataSCollections += '<h4><em>New Collection</em></h4>';
 	dataSCollections += '<h5>Products</h5>';
 
-    for (var i = 1; i < dShopC.products.length; i++) {
+    for (var i = 0; i < dShopC.products.length; i++) {
 		dataSCollections += '<article>';
 		dataSCollections += '<img src="' + imageArray2[i] + '"';
         dataSCollections += 'alt="' + dShopC.products[i].title + '"/>';
@@ -122,19 +122,23 @@ function shopCollections(dShopC) {
 	
     var sectionHome = document.getElementById("collections");
     sectionHome.innerHTML = dataSCollections;
-}
+}*/
 
 function shopProducts(dShopP) {
-    for (var i = 1; i < dShopP.products.length; i++) {
-		dataSProducts += '<article>';
-		dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
-    	dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
+	
+	var dataSProducts = '<article>';
+	
+for (var i = 0; i < dShopP.products.length; i++) {
+        
+        dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
+        dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
 		
-        dataSProducts += '<p>' + dShopP.products[i].description +'</p>';
-		dataSProducts += '<h6><em>$' + dShopP.products[i].salePrice +"</em> "+ dShopP.products[i].price +'</h6>';
+        dataSProducts += '<p>' + dShopP.products[i].description + '</p>';
+        dataSProducts += '<h6><strong>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</strong></h6>';
 		dataSProducts += '</article>';
     }
 	
     var sectionHome = document.getElementById("products");
     sectionHome.innerHTML = dataSProducts;
 }
+
