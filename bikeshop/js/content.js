@@ -16,11 +16,8 @@ jsonRequest.onload = function () {
 	else if(body = document.getElementById("events")){
 	events(connection);
 	}
-	else if(body = document.getElementById("shop")) {
+	else  {
 	shopProducts(connection);
-	}
-	else{
-		
 	}
 };
 jsonRequest.send();
@@ -87,19 +84,7 @@ function events(dEvents) {
     sectionHome.innerHTML = dataEvent;
 }
 
-
-/*var jsonRequest2 = new XMLHttpRequest();
-jsonRequest2.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
-jsonRequest2.onload = function () {
-    var connection2 = JSON.parse(jsonRequest2.responseText);
-
-	shopCollections(connection2);
-	shopProducts(connection2);
-	
-};
-jsonRequest2.send();*/
-
-/*function shopCollections(dShopC) {
+function shopCollections(dShopC) {
 	var imageArray2 = ["images/newCollection.png", "images/shirt.png", "images/motorBike1.png", "images/motorBike2.png"];
 	
 	var dataSCollections = '<aside>';
@@ -122,7 +107,7 @@ jsonRequest2.send();*/
 	
     var sectionHome = document.getElementById("collections");
     sectionHome.innerHTML = dataSCollections;
-}*/
+}
 
 function shopProducts(dShopP) {
 	
@@ -134,7 +119,7 @@ for (var i = 0; i < dShopP.products.length; i++) {
         dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
 		
         dataSProducts += '<p>' + dShopP.products[i].description + '</p>';
-        dataSProducts += '<h6><strong>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</strong></h6>';
+        dataSProducts += '<h6><em>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</em></h6>';
 		dataSProducts += '</article>';
     }
 	
