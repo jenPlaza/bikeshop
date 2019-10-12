@@ -17,6 +17,7 @@ jsonRequest.onload = function () {
 	events(connection);
 	}
 	else  {
+		shopCollections(connection);
 	shopProducts(connection);
 	}
 };
@@ -41,7 +42,7 @@ function features(dFeatures) {
 		
         data += '<p><strong>Product</strong></p>';
         data += '<p>' + dFeatures.products[i].description + '</p>';
-        data += '<h6><strong>$' + dFeatures.products[i].salePrice +"  "+dFeatures.products[i].price + '</strong>'
+        data += '<h6><strong>$' + dFeatures.products[i].salePrice +"  "+dFeatures.products[i].price + '</strong></h6>';
 		data += '</article>';
     }
 	
@@ -58,7 +59,7 @@ function plans(dPlans) {
     for (var i = 0; i < dPlans.benefits.length; i++) {
         dataPlan += '<article>';
         dataPlan += '<h5>' + dPlans.benefits[i].title + '</h5>';
-        dataPlan += '<p>' + dPlans.benefits[i].description +'</p>'
+        dataPlan += '<p>' + dPlans.benefits[i].description +'</p>';
 		dataPlan += '</article>';
     }
 	
@@ -76,7 +77,7 @@ function events(dEvents) {
         dataEvent += 'alt="' + dEvents.events[i].title + '"/>';
 		
         dataEvent += '<h5><em>' + dEvents.events[i].title + '</em></h5>';
-        dataEvent += '<p>' + dEvents.events[i].text +'</p>'
+        dataEvent += '<p>' + dEvents.events[i].text +'</p>';
 		dataEvent += '</article>';
     }
 	
@@ -85,17 +86,15 @@ function events(dEvents) {
 }
 
 function shopCollections(dShopC) {
-	var imageArray2 = ["images/newCollection.png", "images/shirt.png", "images/motorBike1.png", "images/motorBike2.png"];
-	
+
 	var dataSCollections = '<aside>';
-	dataSCollections += '<img src="' + imageArray2[0] + '"';
-    dataSCollections += 'alt="New Collection"/>';
+	dataSCollections += '<img src="images/newCollection.png" alt="new collection of bicycles" />';
 	dataSCollections += '<h4><em>New Collection</em></h4>';
 	dataSCollections += '<h5>Products</h5>';
 
-    for (var i = 0; i < dShopC.products.length; i++) {
+    for (var i = 5; i < dShopC.products.length; i++) {
 		dataSCollections += '<article>';
-		dataSCollections += '<img src="' + imageArray2[i] + '"';
+		dataSCollections += '<img src="' + dShopC.products[i].imageURL + '"';
         dataSCollections += 'alt="' + dShopC.products[i].title + '"/>';
 		
         dataSCollections += '<h5><em>' + dShopC.products[i].title + '</em></h5>';
