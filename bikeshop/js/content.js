@@ -3,35 +3,55 @@
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
 
+//Creating XMLHTTPRequest object
 var jsonRequest = new XMLHttpRequest();
+
+//Request json by retrieving info from https://joshbloom.github.io/dws1/data/bikeshop.json
 jsonRequest.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
+
+//once the response has loaded
 jsonRequest.onload = function () {
-    var connection = JSON.parse(jsonRequest.responseText);
-	var home = document.getElementById("index");
-	var events = document.getElementById("events");
 	
+	//I'm going to parse the json arrray, and save it to variable connection
+    var connection = JSON.parse(jsonRequest.responseText);
+	
+	//declaring the varible body to initailly equll null
 	var body="";
 	
-	if(body = home){
+	//conditional statements to return info from the index, events, shop, or contact page.
+	// body includes an id element of index, then convert html from these two functions
+	if(body = document.getElementById("index")){
     features(connection);
 	plans(connection);
 	}
-	else if(body = events){
+	
+	// body includes an id element of events, then convert html from this function
+	else if(body = document.getElementById("events")){
 	events(connection);
 	}
+	
+	//otherwise, convert html from these two functions
 	else  {
 		shopCollections(connection);
 	shopProducts(connection);
 	}
 };
+
+//send the request
 jsonRequest.send();
 
+//index Page
 function features(dFeatures) {
 
+	//using innerHtml to update elements in the section with an id of features
+	
+	//creating a new varible to hold my h4
     var data = '<h4>Shop</h4>';
 
+	//I'm going to take the value of my h2 tag and store it as my varible data
      data += '<h2>Featured Products</h2>';
 
+	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article>';
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
@@ -47,16 +67,21 @@ function features(dFeatures) {
 		data += '</article>';
     }
 	
-    var sectionHome = document.getElementById("features");
-    sectionHome.innerHTML = data;
+	//here I'm going to take the html value listed for features and store it as my varible sectionHome, then I'm going to equal sectionHome with the new information stored in data.
+    var sectionFeatures = document.getElementById("features");
+    sectionFeatures.innerHTML = data;
 }
 
 function plans(dPlans) {
 
+	//using innerHtml to update elements in the section with an id of plans
+	//creating a new varible to hold my h4
     var dataPlan = '<h4>CycleClub</h4>';
 
+	//I'm going to take the value of my h2 tag and store it as my varible dataPlan
      dataPlan += '<h2><em>Member Benefits</em></h2>';
 
+	//here I'm looping through the benefits array in the json object and retrieving the info for the title and description, for all articles in the plans section.
     for (var i = 0; i < dPlans.benefits.length; i++) {
         dataPlan += '<article>';
         dataPlan += '<h5>' + dPlans.benefits[i].title + '</h5>';
@@ -64,15 +89,21 @@ function plans(dPlans) {
 		dataPlan += '</article>';
     }
 	
-    var sectionHome = document.getElementById("plans");
-    sectionHome.innerHTML = dataPlan;
+	//here I'm going to take the html value listed for plans and store it as my varible sectionPlans, then I'm going to equal sectionPlans with the new information stored in dataPlan.
+    var sectionPlans = document.getElementById("plans");
+    sectionPlans.innerHTML = dataPlan;
 }
 
 function events(dEvents) {
+
+	//using innerHtml to update elements in the section with an id of articles
+	//creating an array of images that the json object did not include.
 	var imageArray1 = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
 	
+	//creating a new varible to asign the article tag too.
 		var dataEvent = '<article>';
 	
+	//here I'm looping through the events array in the json object and retrieving the info for the title and text, for all articles in the articles section.
     for (var i = 0; i < dEvents.events.length; i++) {
 		dataEvent += '<img src="' + imageArray1[i] + '"';
         dataEvent += 'alt="' + dEvents.events[i].title + '"/>';
@@ -82,17 +113,24 @@ function events(dEvents) {
 		dataEvent += '</article>';
     }
 	
-    var sectionHome = document.getElementById("articles");
-    sectionHome.innerHTML = dataEvent;
+	//here I'm going to take the html value listed for articles and store it as my varible sectionEvents, then I'm going to equal sectionEvents with the new information stored in dataEvent.
+    var sectionEvents = document.getElementById("articles");
+    sectionEvents.innerHTML = dataEvent;
 }
 
 function shopCollections(dShopC) {
 
+	//using innerHtml to update elements in the section with an id of collections
+	
+	//creating a new varible to asign the Aside tag too.
 	var dataSCollections = '<aside>';
+	
+	//I'm going to take the value of my image, h4, and h5 and store it as my variable dataSCollections
 	dataSCollections += '<img src="images/newCollection.png" alt="new collection of bicycles" />';
 	dataSCollections += '<h4><em>New Collection</em></h4>';
 	dataSCollections += '<h5>Products</h5>';
 
+	//here I'm looping through the products array in the json object and retrieving the info for the image, title, description, and prices, for all articles in the collections section.
     for (var i = 5; i < dShopC.products.length; i++) {
 		dataSCollections += '<article>';
 		dataSCollections += '<img src="' + dShopC.products[i].imageURL + '"';
@@ -105,14 +143,18 @@ function shopCollections(dShopC) {
     }
 	dataSCollections += '</aside>';
 	
-    var sectionHome = document.getElementById("collections");
-    sectionHome.innerHTML = dataSCollections;
+	//here I'm going to take the html value listed for collections and store it as my varible sectionColl, then I'm going to equal sectionColl with the new information stored in dataSCollections.
+    var sectionColl = document.getElementById("collections");
+    sectionColl.innerHTML = dataSCollections;
 }
 
 function shopProducts(dShopP) {
-	
+
+	//using innerHtml to update elements in the section with an id of products
+	//creating a new varible to asign the article tag too.
 	var dataSProducts = '<article>';
 	
+	//here I'm looping through the products array in the json object and retrieving the info for the image, title, description, and prices, for all articles in the products section.
 for (var i = 0; i < dShopP.products.length; i++) {
         
         dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
@@ -123,8 +165,9 @@ for (var i = 0; i < dShopP.products.length; i++) {
 		dataSProducts += '</article>';
     }
 	
-    var sectionHome = document.getElementById("products");
-    sectionHome.innerHTML = dataSProducts;
+	//here I'm going to take the html value listed for products and store it as my varible sectionPro, then I'm going to equal sectionPro with the new information stored in dataSProducts.
+    var sectionPro = document.getElementById("products");
+    sectionPro.innerHTML = dataSProducts;
 }
 
 
