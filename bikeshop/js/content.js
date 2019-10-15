@@ -7,13 +7,16 @@ var jsonRequest = new XMLHttpRequest();
 jsonRequest.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
 jsonRequest.onload = function () {
     var connection = JSON.parse(jsonRequest.responseText);
+	var home = document.getElementById("index");
+	var events = document.getElementById("events");
+	
 	var body="";
 	
-	if(body = document.getElementById("index")){
+	if(body = home){
     features(connection);
 	plans(connection);
 	}
-	else if(body = document.getElementById("events")){
+	else if(body = events){
 	events(connection);
 	}
 	else  {
@@ -123,4 +126,5 @@ for (var i = 0; i < dShopP.products.length; i++) {
     var sectionHome = document.getElementById("products");
     sectionHome.innerHTML = dataSProducts;
 }
+
 
