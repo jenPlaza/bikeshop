@@ -34,9 +34,7 @@ function features(dFeatures) {
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
         data += 'alt="' + dFeatures.products[i].title + '"/>';
 		
-/*        data += '<p class="redSale"><em>sale</em></p>';*/
-		
-        data += '<div class=“4Rating”>';
+        data += '<div>';
         data += '<img src="images/ratings.png" alt="4 star rating" />';
         data += '</div>';
 		
@@ -99,7 +97,7 @@ function shopCollections(dShopC) {
 		
         dataSCollections += '<h5><em>' + dShopC.products[i].title + '</em></h5>';
         dataSCollections += '<p>' + dShopC.products[i].description +'</p>';
-		dataSCollections += '<p>$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</p>';
+		dataSCollections += '<p class="sale">$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</p>';
 		dataSCollections += '</article>';
     }
 	dataSCollections += '</aside>';
