@@ -89,11 +89,14 @@ function plans(dPlans) {
 		dataPlan += '</article>';
     }
 	
+	
+	
 	//here I'm going to take the html value listed for plans and store it as my varible sectionPlans, then I'm going to equal sectionPlans with the new information stored in dataPlan.
     var sectionPlans = document.getElementById("plans");
     sectionPlans.innerHTML = dataPlan;
 }
 
+//events page
 function events(dEvents) {
 
 	//using innerHtml to update elements in the section with an id of articles
@@ -118,6 +121,7 @@ function events(dEvents) {
     sectionEvents.innerHTML = dataEvent;
 }
 
+//shop page
 function shopCollections(dShopC) {
 
 	//using innerHtml to update elements in the section with an id of collections
