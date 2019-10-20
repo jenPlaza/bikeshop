@@ -3,290 +3,469 @@
 <head>
 <meta charset="UTF-8">
 <title>Home | CycleWorld</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<style>
+	body, /*section,*/ footer, article, p, a, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
 
+} 
+h1, h2, h3, h4{
+			text-transform: uppercase;
+			display: block;
+	
+		}
+		h3 strong{
+			color: gray;
+		}
+		em{color:white;}
+		p em, strike {
+			color: gray;
+			font-style: normal;
+		}
+		header {
+            width: 100%;
+            height: 500px;
+            clear: both;
+        }
+	 	nav
+		{
+            height: 45px;
+			background-color: #3D3D3D;
+			text-align: center;
+        }
+		nav li{
+			display:inline;
+		}
+		nav a {
+			height:44px;
+			width:150px;
+			padding:10px;
+			color: #FFFFFF;
+			background-color: #3D3D3D;
+			display: inline-block;
+		}
+		nav a.active{
+			background-color: #000000;
+		}
+		header img{
+			margin:6% 0px 0px 15%;
+			height:60%;
+			weight:60%;
+		}
+		header + section
+		{
+			background: url("images/banner.jpg")no-repeat;
+            height:800px;
+			margin-top:-456px;
+			background-size: cover;
+			overflow: hidden;
+		}
+		#index section{
+		height: auto%;
+		clear: both;
+			
+		/*controls logo visibility*/
+		overflow: hidden;
+		}
+		article{
+			height:auto%;
+			margin:0% 1% 1% 0%;
+			border: 1px solid green;
+			display:inline-block;
+			overflow: hidden;
+			padding-top: 5%;
+			overflow: hidden;
+		}
+		section section
+		{
+			border: 1px solid red;
+			width:85%;
+			height:75%;
+			margin:2% 0% 3% 8%;
+			position:relative;
+			overflow: hidden;
+		}
+		.thirtyTwoWidth
+		{
+			width:32%;
+			text-align: center;
+			margin left:0% 0% 1% 1%;
+		}
+		.thirtyTwoWidth h2
+		{
+  			width:100%;
+			
+			background-color: black;
+			opacity: 0.6;
+			top: -75px;
+		}
+		.thirtyTwoWidth p
+		{
+  			width:30%;
+			margin-left:37%;
+			background-color: red;
+			top: -100px;
+		}
+		 section:nth-of-type(2), section:nth-of-type(4)
+		{
+		background-color:#000000;
+        }
+		section:nth-of-type(2) img
+		{
+			width:100%;
+			height:100%;
+			margin-top: -275px;
+		}
+		section:nth-of-type(2) p, section:nth-of-type(2) h2, .cart p, .cartNo p
+		{
+			padding: 1%;
+			position: relative;
+  			color: #f0f0f0;
+			margin-top: 10%;
+			text-transform: uppercase;
+			display: block;
+}
+		section:nth-of-type(3) img
+		{
+			margin-top: -70px;
+		}
+		section:nth-of-type(3) h3
+		{
+			margin: 3% 0px -17px 8%;
+			color: grey;
+		}
+		section:nth-of-type(3) h1
+		{
+			margin-left:8%;
+		}
+		section:nth-of-type(4) h3, section:nth-of-type(4) h2
+		{
+			text-align: center;
+		}
+		section:nth-of-type(4) img
+		{
+			margin-top: -60px;
+			weight:100px;
+			height:100px;
+			border: 3px solid white;
+		}
+		.twentyFiveWidth
+		{
+			width:23.5%;
+		}
+		.redSale, .redSaleNo
+		{
+			padding: 1%;
+			position: relative;
+  			color: #f0f0f0;
+			margin-top: -35px;
+			text-transform: uppercase;
+			display: block;
+			width:30%;
+			text-align: center;
+			margin-left:-10px;
+			background-color: red;
+			transform: skew(-10deg);
+		}
+		.redSaleNo, .cartNo
+		{
+			visibility: hidden;
+		}
+		.twentyFiveWidth div
+		{
+			width:100%;
+			height:35px;
+			background-color: black;	
+			opacity: 0.7;
+			margin-top: -75px;
+		}
+		.cart p
+		{
+			padding-top:10px;
+		}
+		#cart
+		{ 
+			float:left;
+			margin-left:5px;
+			width:25px;
+			height:25px;
+		}
+		.starfill
+		{
+   font-size: 20px;
+   color: red;
+ }
+		.staroutline
+		{
+   font-size: 20px;
+   color: grey;
+ }
+		#fourrating
+		{visibility: visibile;}	
+
+		
+	</style>
 </head>
 <body id="index">
-	<header>
-			<!--Navigation-->
-			<nav>
-			<ul>
-				<li><a href="index.html" target="_blank">Home</a></li>
-				<li><a href="shop.html" target="_blank">Shop</a></li>
-				<li><a href="events.html" target="_blank">Club Events</a></li>
-				<li><a href="contact.html" target="_blank">Contact</a></li>
-
-			</ul>
-			</nav>
-		<!--Logo-->
-			<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
-		</header>
-	<section id="banner">
-			
-	</section>
-	
-	<section id="cta">
+<header>
+  <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/">Shop</a>
+        <a href="/">Club Events</a>
+        <a href="/">Contact</a>
+ </nav>
+		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
+</header>
+	<section></section>
+	<section>
 		<!--Action-->
-			<ul>
-				<li>
-					<!--Image-->
+			<section>
+				<article class="thirtyTwoWidth">
+				<h2 ><em>Bikes</em></h2>
+					<p><a href="#">Shop Now</a></p>
 					<img src="images/bikes.jpg" alt="bicycle image" />
-					
-					<!--title-->
-				<h2 class="shadowBx"><em>Bikes</em></h2>
-					
-					<!--CTA-->
-					<p class="redBx"><a href="">Shop Now</a></p>
-				</li>
-				<li>
-					<!--Image-->
+				</article>
+				<article class="thirtyTwoWidth">
+				<h2><em>Accessories</em></h2>
+					<p><a href="#">Shop Now</a></p>
 					<img src="images/speedometer.jpg" alt="speedometer image" />
-					
-					<!--title-->
-				<h2 class="shadowBx"><em>Accessories</em></h2>
-					
-					<!--CTA-->
-					<p class="redBx"><a href="">Shop Now</a></p>
-				</li>
-				<li>
-					<!--Image-->
+				</article>
+				<article class="thirtyTwoWidth">
+					<h2><em>Apparel</em></h2>
+					<p><a href="#">Shop Now</a></p>				
 					<img src="images/backpack.jpg" alt="a cyclist with a backpack" />
-					
-					<!--title-->
-					<h2 class="shadowBx"><em>Apparel</em></h2>
-					
-					<!--CTA-->
-					<p class="redBx"><a href="">Shop Now</a></p>
-				</li>
-			</ul>
-		</section>
-	
-	<section id="features">
-		<h4>Shop</h4>
-		<h2>Featured Products</h2>
-
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-				<!--Signage-->
-				<p class="redSale">
-					<em>sale</em></p>
-				
-				<!--rating Image-->
-				<div class="4Rating">
-				<img src="images/ratings.png" alt="4 star rating"  id="four" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6><strong>$24.48</strong>  $35.99</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img id="fullColor" src="images/seat.jpg" alt="seat image" />
-
-				<!--Signage-->
-				<p class="redSale"><em>sale</em></p>
-				
-				<!--icon with text-->
-				<div class=“cart”>
-				<img src="images/cart.png" alt="cart png" />
-				<p class="cartShadowBx"><strong>Add To Cart</strong></p>
-				</div>
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6><strong>$24.48</strong>  $35.99</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6>$24.48</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-					
-				<!--Signage-->
-				<p class="redSale"><em>sale</em></p>
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6><strong>$24.48</strong>  $35.99</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6>$24.48</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-			  	<!--Signage-->
-				<p class="redSale"><em>sale</em></p>
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6><strong>$24.48</strong>  $35.99</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-			 	<!--Signage-->
-				<p class="redSale"><em>sale</em></p>
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6><strong>$24.48</strong>  $35.99</h6>
-			</article>
-			<article>
-				<!--Product Image-->
-				<img src="images/seat.jpg" alt="seat image" />
-				
-				<!--rating Image-->
-				<div class=“4Rating”>
-				<img src="images/ratings.png" alt="4 star rating" />
-				</div>
-				
-				<!--title-->
-				<p><strong>Product</strong></p>
-			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<!--pricing-->
-				<h6>$24.48</h6>
-			</article>
+				</article>
+			</section>
 	</section>
-	
-	<section id="plans">
-			<h4>CycleClub</h4>
+	<section>
+		<h3>Shop</h3>
+		<h1>Featured Products</h1>
+		<section>
+			<article class="twentyFiveWidth">
+				<p class="redSale">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48  </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSale">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cart">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48  </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSaleNo">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSale">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSaleNo">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSale">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSale">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+			<article class="twentyFiveWidth">
+				<p class="redSaleNo">sale</p>
+				<img src="images/seat.jpg" alt="seat image" />
+				
+				<div class="cartNo">
+				<img id="cart" src="images/cart.png" alt="cart png" />
+				<p><strong>Add To Cart</strong></p>
+				</div
+				
+				<div id="fourrating">
+				<span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="starfill">&#9733</span><span class="staroutline">&#9734</span>
+				</div>
+				<br/><br/>
+				<p><strong>Product</strong></p>
+			    <p><em></em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+				<br/>
+				<p><strong>$24.48 </strong><strike><em>$35.99</em></strike></p>
+			</article>
+		</section>
+	</section>
+	<section>
+			<h3><strong>CycleClub</strong></h3>
 			<h2><em>Member Benefits</em></h2>
-			<article>
-					<h5>Free Shipping</h5>
+		<section>
+			<article class="thirtyTwoWidth">
+				<img src="images/truck.png" alt="truck icon" />
+					<h4><em>Free Shipping</em></h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</p>
 			</article>
-			<article>
-					<h5>In-Store Tune Ups</h5>
+			<article class="thirtyTwoWidth">
+				<img src="images/wrench.png" alt="wrench icon" />
+					<h4><em>In-Store Tune Ups</em></h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</p>
 			</article>
-			<article>
-				<h5>Newsletter</h5>
+			<article class="thirtyTwoWidth">
+				<img src="images/envelope.png" alt="truck icon" />
+				<h4><em>Newsletter</em></h4>
 				<form method="post">
 					<label id="email">Email</label>
                     <input placeholder="Enter Email" type="email" name="email"><input type="submit" />
 				</form>
 			</article>
+		</section>
 	</section>
-	
-	<footer>
-		<section>
-			<section id="abtthestore">
-							<h6><strong><em><a href="#">Gift Cards</a></em></strong></h6>
-							<h6><strong><em><a href="#">Find A Store</a></em></strong></h6>
-							<h6><strong><em><a href="#">Sign Up For Email</a></em></strong></h6>
-							<h6><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></h6>
-			</section>
-			<section id="abttheorders">
-							<h6><strong><em><a href="#">Get Help</a></em></strong></h6>
-							<h6><a href="#">Order Status</a></h6>
-							<h6><a href="#">Shipping and Delivery</a></h6>
-							<h6><a href="#">Returns</a></h6>
-							<h6><a href="#">Payment Options</a></h6>
-							<h6><a href="#">Contact Us</a></h6>
 
-		  </section>
-			<section id="abtthebus">
-				<h6><strong><em><a href="#">News</a></em></strong></h6>
-				<h6><strong><em><a href="#">About CycleWorld</a></em></strong></h6>
-				<h6><a href="#">Careers</a></h6>
-				<h6><a href="#">Gearup Culture & Careers</a></h6>
-				<h6><a href="#">Investors</a></h6>
-				<h6><a href="#">Sustainable Innovation</a></h6>
-				<h6><a href="#">CA Suply Chains Act</a></h6>
-				<h6><a href="#">Contact Us</a></h6>
-			</section>
-			<section id="abtthesocial">
-						<h6><strong><em>Social</em></strong></h6>
-       						 <ul >
+	<footer>
+		<section id="abtthestore">
+			<ul>
+							<li><strong><em><a href="#">Gift Cards</a></em></strong></li>
+							<li><strong><em><a href="#">Find A Store</a></em></strong></li>
+							<li><strong><em><a href="#">Sign Up For Email</a></em></strong></li>
+							<li><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></li>
+			</ul>
+			<ul>
+							<li><strong><em><a href="#">Get Help</a></em></strong></li>
+							<li><a href="#">Order Status</a></li>
+							<li><a href="#">Shipping and Delivery</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Payment Options</a></li>
+							<li><a href="#">Contact Us</a></li>
+
+		  </ul>
+			<ul>
+				<li><strong><em><a href="#">News</a></em></strong></li>
+				<li><strong><em><a href="#">About CycleWorld</a></em></strong></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Gearup Culture & Careers</a></li>
+				<li><a href="#">Investors</a></li>
+				<li><a href="#">Sustainable Innovation</a></li>
+				<li><a href="#">CA Suply Chains Act</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<ul>
+						<li><strong><em>Social</em></strong></li>
             				 <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" /></a></li>
            					 <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon" /></a></li>
            					 <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube icon" /></a></li>
            					 <li><a href="https://www.google.com" target="_blank"><img src="images/google.png" alt="google icon" /></a></li>
           					 <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo " /></a></li>
-       						 </ul>
-		  </section>
+		  </ul>
 		</section>
 				<hr />
-		<section>
-				<section id="abttheinc">
+		<section id="abttheinc">
 					<h6>United States 2016CycleWorld, Inc. All Rights Reserved</h6>
-				</section>
-				<section id="documentaion">
-					<h6><a href="#">Guides</a></h6>
-					<h6><a href="#">Terms of Use</a></h6>
-					<h6><a href="#">Privacy Policy</a></h6>
-			</section>
+				<ul>
+					<li><a href="#">Guides</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					</ul>
 		</section>
 </footer>
 	
-	<script src="js/content.js"></script>
+	<!--<script src="js/content.js"></script>-->
 </body>
 </html>

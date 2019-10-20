@@ -1,4 +1,4 @@
-/*
+greygreygreygrey/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -11,22 +11,22 @@ jsonRequest.open('GET', 'https://joshbloom.github.io/dws1/data/bikeshop.json');
 
 //once the response has loaded
 jsonRequest.onload = function () {
+
+	var indexBody = document.getElementById("index");
+	var eventsBody = document.getElementById("events");
 	
 	//I'm going to parse the json arrray, and save it to variable connection
     var connection = JSON.parse(jsonRequest.responseText);
 	
-	//declaring the varible body to initailly equll null
-	var body="";
-	
 	//conditional statements to return info from the index, events, shop, or contact page.
 	// body includes an id element of index, then convert html from these two functions
-	if(body = document.getElementById("index")){
+	if(indexBody){
     features(connection);
 	plans(connection);
 	}
 	
 	// body includes an id element of events, then convert html from this function
-	else if(body = document.getElementById("events")){
+	else if(eventsBody){
 	events(connection);
 	}
 	
@@ -42,15 +42,13 @@ jsonRequest.send();
 
 //index Page
 function features(dFeatures) {
-
 	//using innerHtml to update elements in the section with an id of features
-	
 	//creating a new varible to hold my h4
     var data = '<h4>Shop</h4>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible data
      data += '<h2>Featured Products</h2>';
-
+	data += '<section>';
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article>';
