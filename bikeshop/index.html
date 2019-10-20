@@ -5,7 +5,7 @@
 <title>Home | CycleWorld</title>
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<style>
-	body, /*section,*/ footer, article, p, a, ul, li{
+	body, section, footer, article, p, a, ul, li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -19,64 +19,26 @@
 h1, h2, h3, h4{
 			text-transform: uppercase;
 			display: block;
-	
 		}
-		h3 strong{
+		h3 {
 			color: gray;
 		}
-		em{color:white;}
+		em{color:white;
+			font-style: normal;
+		}
 		p em, strike {
 			color: gray;
 			font-style: normal;
 		}
-		header {
-            width: 100%;
-            height: 500px;
-            clear: both;
-        }
-	 	nav
-		{
-            height: 45px;
-			background-color: #3D3D3D;
-			text-align: center;
-        }
-		nav li{
-			display:inline;
-		}
-		nav a {
-			height:44px;
-			width:150px;
-			padding:10px;
-			color: #FFFFFF;
-			background-color: #3D3D3D;
-			display: inline-block;
-		}
-		nav a.active{
-			background-color: #000000;
-		}
-		header img{
-			margin:6% 0px 0px 15%;
-			height:60%;
-			weight:60%;
-		}
-		header + section
-		{
-			background: url("images/banner.jpg")no-repeat;
-            height:800px;
-			margin-top:-456px;
-			background-size: cover;
-			overflow: hidden;
-		}
 		#index section{
 		height: auto%;
 		clear: both;
-			
-		/*controls logo visibility*/
+		/*controling logo visibility*/
 		overflow: hidden;
 		}
 		article{
 			height:auto%;
-			margin:0% 1% 1% 0%;
+			margin:0% 1% 2% 0%;
 			border: 1px solid green;
 			display:inline-block;
 			overflow: hidden;
@@ -88,30 +50,83 @@ h1, h2, h3, h4{
 			border: 1px solid red;
 			width:85%;
 			height:75%;
-			margin:2% 0% 3% 8%;
+			margin:2% 0% 2% 8%;
 			position:relative;
 			overflow: hidden;
 		}
+		
+		
+		/*Header*/
+		header 
+		{
+            width: 100%;
+            height: 500px;
+            clear: both;
+        }
+	 	nav
+		{
+            height: 45px;
+			background-color: #3D3D3D;
+			text-align: center;
+        }
+		nav li
+		{
+			display:inline;
+		}
+		nav a 
+		{
+			height:44px;
+			width:150px;
+			padding:10px;
+			color: #FFFFFF;
+			background-color: #3D3D3D;
+			display: inline-block;
+		}
+		nav a.active
+		{
+			background-color: #000000;
+		}
+		header img
+		{
+			margin:6% 0px 0px 15%;
+			height:60%;
+			weight:60%;
+		}
+		
+		
+		/*Banner*/
+		header + section
+		{
+			background: url("images/banner.jpg")no-repeat;
+            height:800px;
+			margin-top:-456px;
+			background-size: cover;
+			overflow: hidden;
+		}
+		
+		
+		/*CTA*/
 		.thirtyTwoWidth
 		{
 			width:32%;
-			text-align: center;
 			margin left:0% 0% 1% 1%;
+			text-align: center;
 		}
 		.thirtyTwoWidth h2
 		{
   			width:100%;
-			
 			background-color: black;
 			opacity: 0.6;
 			top: -75px;
 		}
-		.thirtyTwoWidth p
+		.thirtyTwoWidth h5 strong
 		{
-  			width:30%;
-			margin-left:37%;
+  			padding:1%;
 			background-color: red;
-			top: -100px;
+			top: -75px;
+			position:relative;
+			color: white;
+			font-weight: bold;
 		}
 		 section:nth-of-type(2), section:nth-of-type(4)
 		{
@@ -132,6 +147,9 @@ h1, h2, h3, h4{
 			text-transform: uppercase;
 			display: block;
 }
+		
+		
+		/*Feature Products*/
 		section:nth-of-type(3) img
 		{
 			margin-top: -70px;
@@ -145,18 +163,7 @@ h1, h2, h3, h4{
 		{
 			margin-left:8%;
 		}
-		section:nth-of-type(4) h3, section:nth-of-type(4) h2
-		{
-			text-align: center;
-		}
-		section:nth-of-type(4) img
-		{
-			margin-top: -60px;
-			weight:100px;
-			height:100px;
-			border: 3px solid white;
-		}
-		.twentyFiveWidth
+				.twentyFiveWidth
 		{
 			width:23.5%;
 		}
@@ -209,6 +216,32 @@ h1, h2, h3, h4{
  }
 		#fourrating
 		{visibility: visibile;}	
+		
+		
+		/*Plans*/
+		section:nth-of-type(4) h3
+		{
+			text-align: center;
+			margin: 2% 0px -15px 0px;
+		}
+		section:nth-of-type(4) h1
+		{
+			text-align: center;
+			margin-bottom: -35px;
+		}
+		section:nth-of-type(4) img
+		{
+			margin-top: -60px;
+			weight:100px;
+			height:100px;
+			border: 3px solid white;
+		}
+		section:nth-of-type(4) p em
+		{
+			margin: 0px 0px 0px 25%;
+			text-align: justify;
+		}
+
 
 		
 	</style>
@@ -228,18 +261,18 @@ h1, h2, h3, h4{
 		<!--Action-->
 			<section>
 				<article class="thirtyTwoWidth">
-				<h2 ><em>Bikes</em></h2>
-					<p><a href="#">Shop Now</a></p>
+				<h2><em>Bikes</em></h2>
+					<h5><strong><a href="#">Shop Now</a></strong></h5>
 					<img src="images/bikes.jpg" alt="bicycle image" />
 				</article>
 				<article class="thirtyTwoWidth">
 				<h2><em>Accessories</em></h2>
-					<p><a href="#">Shop Now</a></p>
+					<h5><strong><a href="#">Shop Now</a></strong></h5>
 					<img src="images/speedometer.jpg" alt="speedometer image" />
 				</article>
 				<article class="thirtyTwoWidth">
-					<h2><em>Apparel</em></h2>
-					<p><a href="#">Shop Now</a></p>				
+				<h2><em>Apparel</em></h2>
+					<h5><strong><a href="#">Shop Now</a></strong></h5>
 					<img src="images/backpack.jpg" alt="a cyclist with a backpack" />
 				</article>
 			</section>
@@ -395,18 +428,18 @@ h1, h2, h3, h4{
 		</section>
 	</section>
 	<section>
-			<h3><strong>CycleClub</strong></h3>
-			<h2><em>Member Benefits</em></h2>
+			<h3>CycleClub</h3>
+			<h1><em>Member Benefits</em></h1>
 		<section>
 			<article class="thirtyTwoWidth">
 				<img src="images/truck.png" alt="truck icon" />
 					<h4><em>Free Shipping</em></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</p>
+					<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</em></p>
 			</article>
 			<article class="thirtyTwoWidth">
 				<img src="images/wrench.png" alt="wrench icon" />
 					<h4><em>In-Store Tune Ups</em></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</p>
+					<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae deleniti quaerat.</em></p>
 			</article>
 			<article class="thirtyTwoWidth">
 				<img src="images/envelope.png" alt="truck icon" />
