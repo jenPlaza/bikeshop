@@ -3,55 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <title>Shop | CycleWorld</title>
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<style>
+		/*shop*/
+aside{
+	float:left;
+	width:20%;
+			height:75%;
+			margin:0% 1% 2% 1%;
+			position:relative;
+			overflow: hidden;
+			border: 1px solid blue;
+}
+#shop section{
+
+			width:75%;
+			height:75%;
+	height: auto%;
+		clear: both;
+	overflow: hidden;
+	float:right;
+			margin:0% 1% 2% 0%;
+			position:relative;
+			
+			border: 1px solid pink;
+	}
+		article{
+			height:auto%;
+			margin:0% 1% 2% 0%;
+			display:inline-block;
+			text-align: center;
+			padding-top: 5%;
+			border: 1px solid green;
+		}
+		
+		#products img
+		{
+			width:100%;
+			height:100%;
+			margin-top: -80px;
+			border:1px solid grey;
+		}
+		section ul{
+			width:25%;
+			height:auto;
+			margin:0% 5% 2% 5%;
+			display:inline-block;
+			overflow: hidden;
+			padding-top: 1%;
+			border:1px solid green;
+		}
+	
+		#products a
+		{
+			height:20px;
+				width:20px;
+			float:left;
+			margin-left: 16%;
+			
+		}
+		#pListings{
+			margin-top:-50%;
+		}
+		
+	</style>
 </head>
 
 <body id="shop">
-<header> 
-  <!--Navigation-->
+<header>
   <nav>
-    <ul>
-      <li><a href="index.html" target="_blank">Home</a></li>
-      <li><a href="shop.html" target="_blank">Shop</a></li>
-      <li><a href="events.html" target="_blank">Club Events</a></li>
-      <li><a href="contact.html" target="_blank">Contact</a></li>
-    </ul>
-  </nav>
-	<!--Logo-->
-			<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="events.html">Club Events</a>
+        <a href="contact.html">Contact</a>
+ </nav>
+		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
 </header>
 	
 <section>
-  <ul class="breadcrumb">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Collections</a></li>
-    <li><a href="#">Products</a></li>
-  </ul>
+  <section class="breadcrumb">
+    <a href="#">Home</a>
+    <a href="#">Collections</a>
+    <a href="#">Products</a>
+  </section>
 </section>
-	
 <section>
-  <aside id="collections">
+<aside id="collections">
     <h4>Collections</h4>
-    <ul>
-      <li>
         <p><a class="btn active" href="#" >Bike Parts & Components</a></p>
-      </li>
-      <li>
         <p><a class="btn" href="#" >Bike Tools & Transport</a></p>
-      </li>
-      <li>
         <p><a class="btn" href="#" >Bikes & Frames</a></p>
-      </li>
-      <li>
         <p><a class="btn" href="#" >Cycling Clothing</a></p>
-      </li>
-      <li>
         <p><a class="btn" href="#" >Light & Accessories</a></p>
-      </li>
-      <li>
         <p><a class="btn" href="#" >Sale</a></p>
-      </li>
-    </ul>
 	  
     <img src="images/newCollection.png" alt="new collection of bicycles" />
     <h4><em>New Collection</em></h4>
@@ -99,7 +143,7 @@
             <input class="btn active" type="submit"  value="Featured"/>
             </strong></p>
         </li>
-        <li>
+<!--        <li>
           <p><strong>
             <input class="btn" type="submit" value="Price: low to high"/>
             </strong></p>
@@ -108,7 +152,7 @@
           <p><strong>
             <input class="btn" type="submit" onclick="location.href='#'" value="Price: high to low"/>
             </strong></p>
-        </li>
+        </li>-->
       </ul>
       <ul class="show">
         <li>
@@ -122,7 +166,7 @@
             <input class="btn active" type="submit" onclick="location.href='#'" value="9"/>
             </strong></p>
         </li>
-        <li>
+<!--        <li>
           <p><strong>
             <input class="btn" type="submit" onclick="location.href='#'" value="6"/>
             </strong></p>
@@ -131,94 +175,112 @@
           <p><strong>
             <input class="btn" type="submit" value="12"/>
             </strong></p>
-        </li>
+        </li>-->
       </ul>
     </section>
-	  
-    <section id="products">
-      <article> <img src="images/brakes.png" alt="brakes pads" >
+	<section id="products">
+      <article class="thirtyTwoWidth">
+		  <!--<img src="images/brakes.png" alt="brakes pads" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6><em>$55.00</em> - $31.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+        <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/helmet1.png" alt="helmet" >
+      <article class="thirtyTwoWidth"> 
+		  <!--<img src="images/helmet1.png" alt="helmet" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$36.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/helmet2.png" alt="helmet" >
+      <article class="thirtyTwoWidth"> 
+		  <!--<img src="images/helmet2.png" alt="helmet" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$25.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/tricycle.png" alt="bicycle" >
+      <article class="thirtyTwoWidth"> 
+		  <!--<img src="images/tricycle.png" alt="bicycle" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6 class="sale">$155.00 - $288.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/bars.png" alt="bicycle" >
+      <article class="thirtyTwoWidth">
+		 <!-- <img src="images/bars.png" alt="bicycle" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$55.00 - $88.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/basket.jpg" alt="basket" >
+      <article class="thirtyTwoWidth"> 
+		  <!--<img src="images/basket.jpg" alt="basket" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$15.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/IB-BA20.jpg" alt="pakpak" >
+      <article class="thirtyTwoWidth"> 
+		  <!--<img src="images/IB-BA20.jpg" alt="pakpak" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$25.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/pump.jpg" alt="pump" >
+      <article class="thirtyTwoWidth">
+		  <!--<img src="images/pump.jpg" alt="pump" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6>$66.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
-      <article> <img src="images/motorBike3.png" alt="bicycle" >
+      <article class="thirtyTwoWidth">
+		  <!--<img src="images/motorBike3.png" alt="bicycle" >-->
+		  	<img src="images/seat.jpg" alt="seat image" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <h6 class="sale">$255.00 - $388.00</h6>
-        <ul>
-          <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
-          <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
-          <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
-        </ul>
+         <section class="links">
+          <a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a>
+          <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a>
+          <a href="#"><img src="images/heart.png" alt="favorite icon" ></a>
+        </section>
       </article>
     </section>
-    <section class="pageLinks">
+		<section>
+   <!-- <section class="pageLinks">
       <p><strong>1-9</strong> products(s) of 20</p>
       <ul>
         <li><a href="#">Previous</a></li>
@@ -228,58 +290,62 @@
         <li><a href="#">Next</a></li>
       </ul>
     </section>
-  </section>
-</section>
-<footer>
+	  </section>
+
+	<footer>
 		<section>
-			<section id="abtthestore">
-							<h6><strong><em><a href="#">Gift Cards</a></em></strong></h6>
-							<h6><strong><em><a href="#">Find A Store</a></em></strong></h6>
-							<h6><strong><em><a href="#">Sign Up For Email</a></em></strong></h6>
-							<h6><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></h6>
-			</section>
-			<section id="abttheorders">
-							<h6><strong><em><a href="#">Get Help</a></em></strong></h6>
-							<h6><a href="#">Order Status</a></h6>
-							<h6><a href="#">Shipping and Delivery</a></h6>
-							<h6><a href="#">Returns</a></h6>
-							<h6><a href="#">Payment Options</a></h6>
-							<h6><a href="#">Contact Us</a></h6>
-					
-		  </section>
-			<section id="abtthebus">
-				<h6><strong><em><a href="#">News</a></em></strong></h6>
-				<h6><strong><em><a href="#">About CycleWorld</a></em></strong></h6>
-				<h6><a href="#">Careers</a></h6>
-				<h6><a href="#">Gearup Culture & Careers</a></h6>
-				<h6><a href="#">Investors</a></h6>
-				<h6><a href="#">Sustainable Innovation</a></h6>
-				<h6><a href="#">CA Suply Chains Act</a></h6>
-				<h6><a href="#">Contact Us</a></h6>
-			</section>
-			<section id="abtthesocial">
-						<h6><strong><em>Social</em></strong></h6>
-       						 <ul >
-            				 <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" /></a></li>
-           					 <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon" /></a></li>
-           					 <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube icon" /></a></li>
-           					 <li><a href="https://www.google.com" target="_blank"><img src="images/google.png" alt="google icon" /></a></li>
-          					 <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo " /></a></li>
-       						 </ul>
+			<ul>
+							<li><strong><em><a href="#">Gift Cards</a></em></strong></li>
+							<li><strong><em><a href="#">Find A Store</a></em></strong></li>
+							<li><strong><em><a href="#">Sign Up For Email</a></em></strong></li>
+							<li><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></li>
+				<li>.</li>
+				<li>.</li>
+				<li>.</li>
+				<li>.</li>
+			</ul>
+			<ul>
+							<li><strong><em><a href="#">Get Help</a></em></strong></li>
+							<li><p><em><a href="#">Order Status</a></em></p></li>
+							<li><p><em><a href="#">Shipping and Delivery</a></em></p></li>
+							<li><p><em><a href="#">Returns</a></em></p></li>
+							<li><p><em><a href="#">Payment Options</a></em></p></li>
+							<li><p><em><a href="#">Contact Us</a></em></p></li>
+				<li>.</li>
+				<li>.</li>
+
+		  </ul>
+			<ul>
+				<li><strong><em><a href="#">News</a></em></strong></li>
+				<li><strong><em><a href="#">About CycleWorld</a></em></strong></li>
+				<li><p><em><a href="#">Careers</a></em></p></li>
+				<li><p><em><a href="#">Gearup Culture & Careers</a></em></p></li>
+				<li><p><em><a href="#">Investors</a></em></p></li>
+				<li><p><em><a href="#">Sustainable Innovation</a></em></p></li>
+				<li><p><em><a href="#">CA Suply Chains Act</a></em></p></li>
+				<li><p><em><a href="#">Contact Us</a></em></p></li>
+			</ul>
+		
+			<section class="social">
+						<strong><em>Social</em></strong>
+				<br /><br />
+            				 <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" /></a>
+           					 <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon" /></a>
+           					 <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube icon" /></a>
+           					 <a href="https://www.google.com" target="_blank"><img src="images/google.png" alt="google icon" /></a>
+          					 <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo " /></a>
 		  </section>
 		</section>
 				<hr />
-		<section>
-				<section id="abttheinc">
+		<section >
 					<h6>United States 2016CycleWorld, Inc. All Rights Reserved</h6>
-				</section>
-				<section id="documentaion">
-					<h6><a href="#">Guides</a></h6>
-					<h6><a href="#">Terms of Use</a></h6>
-					<h6><a href="#">Privacy Policy</a></h6>
+			<ul class="abttheinc">
+					<li><p><em><a href="#">Guides</a></em></p></li>
+					<li><p><em><a href="#">Terms of Use</a></em></p></li>
+					<li><p><em><a href="#">Privacy Policy</a></em></p></li>
+		</ul>
 			</section>
-		</section>
-</footer>
-	<script src="js/content.js"></script>
+</footer>-->
+	<!--<script src="js/content.js"></script>-->
 </body>
 </html>

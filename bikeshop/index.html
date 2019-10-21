@@ -3,16 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <title>Home | CycleWorld</title>
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<style>
+	header + section
+		{
+			background: url("images/banner.jpg")no-repeat;
+            height:800px;
+			margin-top:-456px;
+			background-size: cover;
+			overflow: hidden;
+		}
+		
+		section:nth-of-type(4){
+			background: url("images/gears.jpg") 0 800px;
+			width:100%;
+			background-size: cover;
+			overflow: hidden;
+			position:relative;
+			filter:brightness(30%);
+			/*opacity:1;*/
+		}
+	</style>
 	
 </head>
 <body id="index">
 <header>
   <nav>
-        <a href="/" class="active">Home</a>
-        <a href="/">Shop</a>
-        <a href="/">Club Events</a>
-        <a href="/">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="events.html">Club Events</a>
+        <a href="contact.html">Contact</a>
  </nav>
 		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
 </header>
@@ -190,6 +210,7 @@
 	<section>
 			<h3>CycleClub</h3>
 			<h1><em>Member Benefits</em></h1>
+		
 		<section>
 			<article class="twentyWidth">
 				<img src="images/truck.png" alt="truck icon" />
@@ -206,7 +227,6 @@
 				<h4><em>Newsletter</em></h4>
 				
 				<form method="post">
-					<!--<label id="email">Email</label>-->
                     <input placeholder="Enter Email" type="email" name="email"><input type="submit" />
 					</form></form>
 					<br />
