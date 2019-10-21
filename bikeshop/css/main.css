@@ -3,5 +3,321 @@
 ================================================== */
 
 html {
-	
+
+	body, section, footer, article, p, a, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+
+} 
+h1, h2, h3, h4{
+			text-transform: uppercase;
+			display: block;
+		}
+		h3, h6 {
+			color: gray;
+		}
+		em{color:white;
+			font-style: normal;
+		}
+		p em, strike {
+			color: gray;
+			font-style: normal;
+		}
+		#index section{
+		height: auto%;
+		clear: both;
+		/*controling logo visibility*/
+		overflow: hidden;
+		}
+		article{
+			height:auto%;
+			margin:0% 1% 2% 0%;
+			display:inline-block;
+			overflow: hidden;
+			padding-top: 5%;
+			overflow: hidden;
+		}
+		section section
+		{
+			width:85%;
+			height:75%;
+			margin:2% 0% 2% 8%;
+			position:relative;
+			overflow: hidden;
+		}
+		
+		
+		/*Header*/
+		header 
+		{
+            width: 100%;
+            height: 500px;
+            clear: both;
+        }
+	 	nav
+		{
+            height: 45px;
+			background-color: #3D3D3D;
+			text-align: center;
+        }
+		nav a 
+		{
+			height:44px;
+			width:150px;
+			padding:10px;
+			color: #FFFFFF;
+			background-color: #3D3D3D;
+			display: inline-block;
+		}
+		nav a.active
+		{
+			background-color: #000000;
+		}
+		header img
+		{
+			margin:6% 0px 0px 15%;
+			height:60%;
+			weight:60%;
+		}
+		
+		
+		/*Banner*/
+		header + section
+		{
+			background: url("images/banner.jpg")no-repeat;
+            height:800px;
+			margin-top:-456px;
+			background-size: cover;
+			overflow: hidden;
+		}
+		
+		
+		/*CTA*/
+		.thirtyTwoWidth
+		{
+			width:32%;
+			margin left:0% 0% 1% 1%;
+			text-align: center;
+		}
+		.thirtyTwoWidth h2
+		{
+  			width:100%;
+			background-color: black;
+			opacity: 0.6;
+			top: -75px;
+		}
+		.thirtyTwoWidth h5 strong
+		{
+  			padding:1%;
+			background-color: red;
+			top: -75px;
+			position:relative;
+			color: white;
+			font-weight: bold;
+		}
+		 section:nth-of-type(2), footer
+		{
+		background-color:#000000;
+        }
+		section:nth-of-type(2) img
+		{
+			width:100%;
+			height:100%;
+			margin-top: -275px;
+		}
+		section:nth-of-type(2) p, section:nth-of-type(2) h2, .cart p, .cartNo p
+		{
+			padding: 1%;
+			position: relative;
+  			color: #f0f0f0;
+			margin-top: 10%;
+			text-transform: uppercase;
+			display: block;
+}
+		
+		
+		/*Feature Products*/
+		section:nth-of-type(3) img
+		{
+			margin-top: -70px;
+		}
+		section:nth-of-type(3) h3
+		{
+			margin: 3% 0px -17px 8%;
+			color: grey;
+		}
+		section:nth-of-type(3) h1
+		{
+			margin-left:8%;
+		}
+				.twentyFiveWidth
+		{
+			width:23.5%;
+		}
+		.redSale, .redSaleNo
+		{
+			padding: 1%;
+			position: relative;
+  			color: #f0f0f0;
+			margin-top: -35px;
+			text-transform: uppercase;
+			display: block;
+			width:30%;
+			text-align: center;
+			margin-left:-10px;
+			background-color: red;
+			transform: skew(-10deg);
+		}
+		.redSaleNo, .cartNo
+		{
+			visibility: hidden;
+		}
+		.twentyFiveWidth div
+		{
+			width:100%;
+			height:35px;
+			background-color: black;	
+			opacity: 0.7;
+			margin-top: -80px;
+		}
+		.cart p
+		{
+			padding-top:10px;
+		}
+		#cart
+		{ 
+			float:left;
+			margin-top:5px;
+			margin-left:5px;
+			padding-right:10px;
+			width:25px;
+			height:25px;
+		}
+		.starfill
+		{
+   font-size: 20px;
+   color: red;
+ }
+		.staroutline
+		{
+   font-size: 20px;
+   color: grey;
+ }
+		#fourrating
+		{visibility: visibile;}	
+		
+		
+		/*Plans*/
+		section:nth-of-type(4){
+			background: url("images/gears.jpg")no-repeat;
+			width:100%;
+			background-size: cover;
+			/*overflow: hidden;*/
+			position:relative;
+			opacity:1;
+			
+		}
+		section:nth-of-type(4) h3
+		{
+			text-align: center;
+			margin: 2% 0px -15px 0px;
+			position:relative;
+		}
+		section:nth-of-type(4) h1
+		{
+			text-align: center;
+			margin-bottom: -35px;
+		}
+		section:nth-of-type(4) img
+		{
+			margin-top: -60px;
+			weight:100px;
+			height:100px;
+			border: 3px solid white;
+			position:relative;
+		}
+		.twentyWidth
+		{
+			width:15%;
+			margin:0% 0% 1% 14%;
+			text-align: center;
+		}
+		.twentyWidth p
+		{
+			text-align: left;
+			margin:-15px 5px 0px 25px;
+		}
+		input{
+			height:22px;
+		}
+		input[type=submit] {
+			background-color:red;
+			color:white;
+			height:30px;
+			border:none;
+		}
+		
+		/*Footer*/
+		footer{
+		overflow: hidden;
+		}
+		footer section{
+			width:85%;
+			height:75%;
+			margin:2% 0% 2% 8%;
+			position:relative;
+		}
+		footer ul{
+			height:auto;
+			margin:0% 5% 2% 5%;
+			display:inline-block;
+			overflow: hidden;
+			padding-top: 1%;
+		}
+		footer h6{
+			float:left;
+			text-transform:capitalize;
+		}
+		
+		.social
+		{
+			float:right;
+			height:auto;
+			width:30%;
+			text-align:right;
+			margin-right: 3%;
+		}
+		.social img{
+			margin-left: 3%;
+			height:8%;
+			width: 8%;
+		}
+
+		.abttheinc
+		{
+			float:right;
+			height:auto;
+			width:30%;
+			text-align:right;
+			margin-right: 3%;
+			display:inline;
+			padding:0;
+			
+		}
+		.abttheinc li{
+			display:inline-block;
+			margin: -20px 0px 0px 3%;
+			width:150px;
+			text-transform:lowercase;
+		}
+		.abttheinc p em{
+			text-transform:capitalize;
+		}
+		
 }
