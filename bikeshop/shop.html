@@ -11,10 +11,23 @@
 			width:100%;
 			height: auto%;
 			clear: both;
-			margin:0% 2% 2% 2%;
+			margin:0% 2% 1% 1%;
 			position:relative;
 			border: 1px solid pink;
+			background-color: transparent;
+			overflow:hidden;
+			
+			
 		}
+		/*	.apparel
+		{
+			background: url("images/backpack.jpg")no-repeat;
+           height:600px;
+			margin-top:-10%;
+			background-size: cover;
+			position:relative;
+			overflow: hidden;
+		}*/
 aside{
 	
 	width:20%;
@@ -23,26 +36,63 @@ aside{
 			position:relative;
 			border: 1px solid blue;
 	float:left;
+	overflow:hidden;
 }
 		main{
 			width:75%;
 			height:auto;
-			margin:0% 1% 2% 1%;
+			margin:0% 1% 2% 0%;
 			position:relative;
 			border: 1px solid yellow;
 			float:right;
+			overflow:hidden;
 		}
-
-	
 		article{
+			
 			height:auto%;
-			margin:0% 1% 2% 0%;
+			margin:0% 01% 2% 1%;
 			display:inline-block;
 			text-align: center;
 			padding-top: 5%;
 			border: 1px solid green;
 		}
-		
+		.twentyTwoWidth{
+			width: 30%;
+			
+		}
+		.twentyTwoWidth h4{
+		text-transform: lowercase;
+		}
+		.filters {
+			height:35px;
+		}
+		.filters div {
+			width:30px;
+			height:30px;
+			display:inline-block;		
+		}
+		ul.filter li, ul.show li{
+			display: inline-block;
+		 white-space: nowrap;
+			text-align:left;
+		}
+		.show{
+			float:right;
+			padding-right:5%;
+			margin-top:-75px;
+		}	
+		.sortBy{
+			margin-top:-15px;
+		}	
+		input[type=submit]{
+			width:50px;
+			background-color: #C0BCBC;
+			border:solid;
+			text-align: left;
+		}
+		.sortBy input[type=submit]{
+			width:150px;
+		}		
 		#products img
 		{
 			width:100%;
@@ -50,16 +100,6 @@ aside{
 			margin-top: -80px;
 			border:1px solid grey;
 		}
-		section ul{
-			width:25%;
-			height:auto;
-			margin:0% 5% 2% 5%;
-			display:inline-block;
-			overflow: hidden;
-			padding-top: 1%;
-			border:1px solid green;
-		}
-	
 		#products a
 		{
 			height:20px;
@@ -71,6 +111,7 @@ aside{
 		#pListings{
 			margin-top:-50%;
 		}
+
 		
 	</style>
 </head>
@@ -78,18 +119,20 @@ aside{
 <body id="shop">
 <header>
   <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="shop.html">Shop</a>
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
         <a href="events.html">Club Events</a>
         <a href="contact.html">Contact</a>
  </nav>
-		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
-</header>
 	
+		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
+
+</header>
+	<!--<section class="apparel"></section>-->
 
   <section class="breadcrumb">
-    <a href="#">Home</a>
-    <a href="#">Collections</a>
+    <a href="#">Home > </a>
+    <a href="#">Collections > </a>
     <a href="#">Products</a>
   </section>
 <section>
@@ -125,7 +168,7 @@ aside{
   </aside>
 	
  <main>
-    <h2>Products</h2>
+    <h1>Products</h1>
 	<section>
       <button class="btn active" >All</button>
       <button class="btn" >Light & Accessories</button>
@@ -135,117 +178,110 @@ aside{
       <button class="btn" >Bikes & Frames</button>
     </section>
     <section class="filters">
-      <ul class="views">
-        <li><a href="#"><img src="images/icons8-grid-view-96.png" alt="grid view icon" />.</a></li>
-        <li><a href="#"><img src="images/icons8-day-view-150.png" alt="list view icon" />.</a></li>
+		<ul class="filter">
+     <li><div>
+        <a href="#"><img src="images/icons8-grid-view-96.png" alt="grid view icon" /><em>.</em></a>
+		</div></li> 
+			<li></li>
+		<li><div>
+        <a href="#"><img src="images/icons8-day-view-150.png" alt="list view icon" /><em>.</em></a>
+	 </div></li> 
+      
+     <li>
+		 <ul class="sortBy">
+          <li><h5><em>..........</em>Sort by:</h5></li> 
+          <li><h5><input class="active" type="submit" value="Featured"/></h5></li> 
+     </ul>
+	</li>
       </ul>
-      <ul class="sortBy">
-        <li>
-          <p>Sort by:</p>
-        </li>
-        <li>
-          <p><strong>
-            <input class="btn active" type="submit"  value="Featured"/>
-            </strong></p>
-        </li>
-      </ul>
-      <ul class="show">
-        <li>
-          <p>20 items</p>
-        </li>
-        <li>
-          <p>Show</p>
-        </li>
-        <li>
-          <p><strong>
-            <input class="btn active" type="submit" onclick="location.href='#'" value="9"/>
-            </strong></p>
-        </li>
-      </ul>
+		  <ul class="show">
+         <li><h5>20 items<em>......</em>Show:</h5></li> 
+          <li><h5><input class="active" type="submit" value="9"/></h5></li> 
+			</ul>
     </section>
 	<section id="products">
-      <article class="thirtyTwoWidth">
+      <article class="twentyTwoWidth">
 		  <!--<img src="images/brakes.png" alt="brakes pads" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6><em>$55.00</em> - $31.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$55.00 - $31.00</h4>
         <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth"> 
-		  <!--<img src="images/helmet1.png" alt="helmet" >-->
+      <article class="twentyTwoWidth">
+		  <!--<img src="images/brakes.png" alt="brakes pads" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$36.00</h6>
-         <ul class="links">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$55.00 - $31.00</h4>
+        <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth"> 
+      <article class="twentyTwoWidth"> 
 		  <!--<img src="images/helmet2.png" alt="helmet" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$25.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$25.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth"> 
+      <article class="twentyTwoWidth"> 
 		  <!--<img src="images/tricycle.png" alt="bicycle" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6 class="sale">$155.00 - $288.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4 class="sale">$155.00 - $288.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth">
+      <article class="twentyTwoWidth">
 		 <!-- <img src="images/bars.png" alt="bicycle" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$55.00 - $88.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$55.00 - $88.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth"> 
+      <article class="twentyTwoWidth"> 
 		  <!--<img src="images/basket.jpg" alt="basket" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$15.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$15.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth"> 
+      <article class="twentyTwoWidth"> 
 		  <!--<img src="images/IB-BA20.jpg" alt="pakpak" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$25.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$25.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="thirtyTwoWidth">
+      <article class="twentyTwoWidth">
 		  <!--<img src="images/pump.jpg" alt="pump" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h6>$66.00</h6>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4>$66.00</h4>
          <ul class="links">
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
