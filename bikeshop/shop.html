@@ -6,16 +6,7 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<style>
 		/*shop*/
-		 section
-		{
-			width:100%;
-			height: auto%;
-			clear: both;
-			margin:0% 2% 1% 1%;
-			position:relative;
-			border: 1px solid pink;
-			overflow:hidden;
-		}
+		
 		#shop{
 		height: auto%;
 		clear: both;
@@ -24,22 +15,30 @@
 		#shop header{
 			 background: url("images/backpack.jpg")no-repeat;
             height:700px;
-			/*margin-top:-456px;*/
 			background-size: cover;
 			overflow: hidden;
 		}
-aside{
-			width:20%;
-			height:auto;
-			margin:0% 1% 2% 1%;
+		 section
+		{
+			width:100%;
+			height: auto%;
+			clear: both;
+			position:relative;
+			border: 1px solid pink;
+			overflow:hidden;
+		}
+		aside{
+			width:25%;
+			height:90%;
+			margin:0% 0% 2% 2%;
 			position:relative;
 			border: 1px solid blue;
 			float:left;
 			overflow:hidden;
-	background-color: white;
-}
+		background-color: white;
+		}
 		main{
-			width:75%;
+			width:70%;
 			height:auto;
 			margin:0% 1% 2% 0%;
 			position:relative;
@@ -56,8 +55,15 @@ aside{
 			padding-top: 5%;
 			border: 1px solid green;
 		}
+		
+		.breadcrumb{
+			margin:1% 1% 1% 3%;
+		}
 		.thirtyWidth{
 			width: 30%;
+		}
+		main h1{
+			margin-bottom: 1%;
 		}
 		#shop h4{
 		text-transform: lowercase;
@@ -109,13 +115,61 @@ aside{
 			
 		}
 		#pListings, #filters{
-			/*margin-top:-50%;*/
 		background-color: white;
 		}
 		.pageLinks{
 			float:right;
 			padding-right:5%;
 			margin-top:-40px;
+		}
+		
+		#collections h3{
+			color:black;
+		}
+		#collections h4{
+			text-transform: uppercase;
+			margin-top:-130px;
+			text-align: center;
+			position:relative;
+		}
+		#collections li{
+			padding-top: 1%;
+		}
+		
+		#collections img{
+			margin-top:50px;
+		}
+		.forSale div{
+			float:left;
+			width:30%;
+		}
+		.forSale{
+			margin-top: 25%;
+			
+		}
+		article section{
+			float:right;
+			width:68%;
+			margin-top: -40%;
+			text-align: left;
+		}
+		.forSale button{
+			background-color: #FBDD33;
+			width:30%;
+			color:white;
+		}
+		button{
+			background-color: #C0BCBC;
+			height:30px;
+		}
+		
+		button.active{
+			background-color: black;
+			color:white;
+		}
+		
+		.links img{
+			background-color: #FBDD33
 		}
 	</style>
 </head>
@@ -129,7 +183,6 @@ aside{
         <a href="contact.html">Contact</a>
  </nav>
 		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
-
 </header>
 
   <section class="breadcrumb">
@@ -139,34 +192,52 @@ aside{
   </section>
 <section id="pListings">
 <aside id="collections">
-    <h4>Collections</h4>
-        <p><a class="btn active" href="#" >Bike Parts & Components</a></p>
-        <p><a class="btn" href="#" >Bike Tools & Transport</a></p>
-        <p><a class="btn" href="#" >Bikes & Frames</a></p>
-        <p><a class="btn" href="#" >Cycling Clothing</a></p>
-        <p><a class="btn" href="#" >Light & Accessories</a></p>
-        <p><a class="btn" href="#" >Sale</a></p>
-	  
+	
+		<ul>
+			<li><h3>Collections</h3></li>
+       <li> <a class="btn active" href="#" >Bike Parts & Components</a></li>
+       <li> <a class="btn" href="#" >Bike Tools & Transport</a></li>
+       <li> <a class="btn" href="#" >Bikes & Frames</a></li>
+       <li> <a class="btn" href="#" >Cycling Clothing</a></li>
+       <li> <a class="btn" href="#" >Light & Accessories</a></li>
+       <li> <a class="btn" href="#" >Sale</a></li>
+			</ul>
+	  	
     <img src="images/newCollection.png" alt="new collection of bicycles" />
     <h4><em>New Collection</em></h4>
-	  
-    <h5>Products</h5>
+	<section class="forSale">
+    <h3>Products</h3>
     <article> 
+		<div>
 		<img src="images/shirt.png" alt="black shirt with blue color" >
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p class="sale">$55.00 - $88.00</p>
+		</div>
+		<section>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+      <h5 class="sale">$55.00 - $88.00</h5>
       <button >View</button>
+		</section>
     </article>
-    <article> <img src="images/motorBike1.png" alt="black bicycle" >
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p class="sale">$55.00 - $88.00</p>
+ <article> 
+	 <div>
+	 <img src="images/motorBike1.png" alt="black bicycle" >
+		 </div>
+		<section>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+      <h5 class="sale">$55.00 - $88.00</h5>
       <button>View</button>
+			</section>
     </article>
-    <article> <img src="images/motorBike2.png" alt="bicycle" >
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p class="sale">$55.00 - $88.00</p>
+    <article> 
+<div>
+<img src="images/motorBike2.png" alt="bicycle" >
+</div>
+		<section>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+      <h5 class="sale">$55.00 - $88.00</h5>
       <button >View</button>
+		</section>
     </article>
+		</section>
   </aside>
 	
  <main>
@@ -301,8 +372,9 @@ aside{
         <li><a href="#">Next</a></li>
       </ul>
     </section>
-	  </section>
+	  
 </main>
+</section>
 	<footer>
 		<section>
 			<ul>
