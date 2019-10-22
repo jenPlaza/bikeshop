@@ -6,13 +6,17 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<style>
 		 #Contact header{
-			 /*background: url("images/banner.jpg")no-repeat;*/
+			 background: url("images/handshake.png")no-repeat;
             background-size: cover;
+
 		}
 		
 		#contact article img{
 			border-radius: 50%;
 			overflow:hidden;
+		}
+		#A, #B{
+			background-color:white;
 		}
 
 	</style>
@@ -28,13 +32,13 @@
  </nav>
 		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
 </header>
-	<section></section>
-	<section>
+	<!--<section></section>-->
+	<section id="A">
 		<!--Action-->
-			<section>
+			<section id="B">
 				<article id ="visitUs">
 		<!--header-->
-	  <h2>Come Visit Us</h2>
+	  <h2 class="subtitle">Come Visit Us</h2>
 		<p>And Check us out. We love that our customers can feel relaxed and browse our aisles with your furry friends. or if you need help finding something special, <strong>you have our undivided attention!</strong></p>
 
 		<!--Company informtion -->
@@ -49,46 +53,46 @@
 					
 		<img src="images/bikeShop.png" alt="two ladies riding on a bike trail" class="profile-pic"/>
 						
-					
-	</article>
-
+			</article>		
 			</section>
 	</section>
+	
 	<section>
-		<h3>Shop</h3>
-		<h1>Featured Products</h1>
-	<section id="contact">
-		
+			<header>
 		<!--header -->	
-	<h5><u>Get In Touch </u></h5>
-	<h1> Contact <strong>Us</strong></h1>
-	<h5>We'd love to hear from you! Send us a question to <em>getstarted@cycleworld.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> If this is not fast enough, just simply call us at (234)123-4567.</h5>
+	<h3>Get In Touch</h3>
+	<h1 class="title"><em>Contact <strong>Us</strong></em></h1>
+			</header>
+			<section id="contact">
+		<!--<article id ="A">-->
+	<h3>We'd love to hear from you! Send us a question to <em>getstarted@cycleworld.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> If this is not fast enough, just simply call us at (234)123-4567.</h3>
 
 		<!--form fields and submision button -->	
 	<form>
 	<fieldset>
-	<p><label for='name'>Name</label></p>
+	<p><em><label for='name'>Name</label></em></p>
 	<input type='text' name='name' id='name'>
 		
 	<!--field set in table-->
 	<div id="cells">
-	<p><label for='phone'>Phone Number</label></p>
+	<p><em><label for='phone'>Phone Number</label></em></p>
 	<input type='text' name='phone' id='phone'>
 
 	
-	<p><label for='email'>Email Address</label></p>
+	<p><em><label for='email'>Email Address</label></em></p>
 	<input  type="email" name="email" id="email">
 	</div>
-	<p><label for='help'>How Can We Help?</label></p>
+	<p><em><label for='help'>How Can We Help?</label></em></p>
 	<input  type='text' name='help' id='help'>
 	
-	<p><input type="submit" /></p>
+	<p><em><input type="submit" /></em></p>
 	
 	</fieldset>
 	</form>
+			<!--</article>-->
 </section>
 	</section>
-
+<hr />
 	<footer>
 		<section>
 			<ul>
