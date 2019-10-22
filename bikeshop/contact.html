@@ -27,16 +27,17 @@
 			height:225px;
 		}
 		
-		.A h3{
+		#contact section:nth-of-type(2) h3
+		{
 			text-align:center;
 			margin: 5% 0px -1% 0px;
 			color: grey;
 		}
-		.A h1{
+		#contact section:nth-of-type(2) h1{
 			font-size: 500%;
 			text-align:center;
 		}
-		.contact h3{
+		#contact section:nth-of-type(3) h3{
 			text-transform:inherit;
 			margin:0px 5% -5% 5%;
 		}
@@ -46,7 +47,7 @@
 			text-align: center;
 			padding-bottom: 10%;
 		}
-	fieldset .row2{
+		fieldset .cellRow{
 		display:inline-table;
 		margin-top: -44px;
 		border:1px solid pink;
@@ -55,42 +56,46 @@
 		padding-left: 2%;
 			
 		}
-		input[type='email']{
-			width:225px;
-			background-color: grey;
+		.container
+		{
+			margin: -100px 0px -100px -5%;
 		}
 		
+		/*input text area*/
+		input[type='email']{
+			width:148%;
+			background-color: grey;
+		}
 		#phone{
 			width:19%;
 			background-color: grey;
 		}
-		
-		.B{
-			margin: -100px 0px -100px 0px;
-		}
+
 		#name, #help{
-			width:41%;
+			width:37%;
 			background-color: grey;
 		}
 		label{
 			margin-left:-38%;
 		}
-		.D{
-			text-align: center;
-			border:1px solid blue;
-			padding:5%;
-		}
+		
+		/*labels*/
 		.help{
 			margin-right:-9%;
 			text-transform: capitalize;
 			color:white;
 		}
 		.phone{
-			margin-right:-6%;
+			margin-right:-13%;
 			text-transform: capitalize;
 			color:white;
 		}
-		.name, .email{
+		.name{
+			text-transform: capitalize;
+			color:white;
+		margin-right:-3%;
+		}
+		.email{
 			text-transform: capitalize;
 			color:white;
 		}
@@ -148,13 +153,13 @@
 		</section>
 			
 	</section>
-	<section class="A">
+	<section>
 		
 		<!--header -->	
 	<h3><u>Get In Touch</u></h3>
 	<h1><em>Contact Us</em></h1>
 		
-			<section class="contact">
+	<section>
 		<!--<article id ="A">-->
 	<h3>We'd love to hear from you! Send us a question to <em>getstarted@cycleworld.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> <br/> If this is not fast enough, just simply call us at (234)123-4567.</h3>
 
@@ -164,16 +169,16 @@
 		
 	<p><em><label for="name" class="name">Name</label></em></p>
 	<input type="text" name="name" id="name">
-<div class="B">
-	<p><em><label for="phone" class="phone">Phone Number</label></em></p>
-	<input type="text" name="phone" id="phone">
+	<div class="container">
+		<p><em><label for="phone" class="phone">Phone Number</label></em></p>
+		<input type="text" name="phone" id="phone">
 		
-	<div class="row2">
-	<p><em><label for="email" class="email">Email Address</label></em></p>
-		<br />
-	<input  type="email" name="email" id="email">
-	</div>
+		<div class="cellRow">
+			<p><em><label for="email" class="email">Email Address</label></em></p>
+			<br />
+			<input  type="email" name="email" id="email">
 		</div>
+	</div>
 	<p><em><label for="help" class="help">How Can We Help?</label></em></p>
 	<input  type="text" name="help" id="help">
 
