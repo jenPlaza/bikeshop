@@ -510,7 +510,7 @@ h1, h2, h3, h4{
 			width: 48%;
 		}
 		
-		#events main input[type=submit], aside input[type=submit], #contact input[type=submit]{
+		#events main input[type=submit], #events aside input[type=submit], #contact input[type=submit]{
 			width:100px;
 			height:40px;
 			border:5px solid grey;

@@ -5,40 +5,106 @@
 <title>Contact | CycleWorld</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<style>
+		
+		/*CONTACT*/
 		 #contact header{
 			 background: url("images/visitUs2.png")no-repeat;
             background-size: cover;
-
 		}
-		
-		#contact #A img{
+		.fortySixWidth{
+			width:46%;
+		}
+		.fortySixWidth h2{
+			font-size: 250%;
+		}
+		.fortySixWidth img{
 			border-radius: 50%;
-			/*overflow:hidden;*/
 			width:100%;
 			height:100%;
 		}
-		/*#A, #B{
-			background-color:white;
-		}*/
-		
-		/*#A div{
-			width:auto;
-			height:auto;
-			border:1px solid aqua;
-			float:right;
-		}*/
-		
-		.C{
-			width:46%;
+		#contact article:first-of-type div{
+			width:50px;
+			height:225px;
 		}
 		
-		.C h2{
-			font-size: 250%;
+		.A h3{
+			text-align:center;
+			margin: 5% 0px -1% 0px;
+			color: grey;
+		}
+		.A h1{
+			font-size: 500%;
+			text-align:center;
+		}
+		.contact h3{
+			text-transform:inherit;
+			margin:0px 5% -5% 5%;
+		}
+		
+		fieldset{
+		border: 1px solid orange;
+			text-align: center;
+			padding-bottom: 10%;
+		}
+	fieldset .row2{
+		display:inline-table;
+		margin-top: -44px;
+		border:1px solid pink;
+		height:75px;
+		width:auto;
+		padding-left: 2%;
 			
 		}
+		input[type='email']{
+			width:225px;
+			background-color: grey;
+		}
+		
+		#phone{
+			width:19%;
+			background-color: grey;
+		}
+		
+		.B{
+			margin: -100px 0px -100px 0px;
+		}
+		#name, #help{
+			width:41%;
+			background-color: grey;
+		}
+		label{
+			margin-left:-38%;
+		}
 		.D{
-			width:50px;
-			height:570px;
+			text-align: center;
+			border:1px solid blue;
+			padding:5%;
+		}
+		.help{
+			margin-right:-9%;
+			text-transform: capitalize;
+			color:white;
+		}
+		.phone{
+			margin-right:-6%;
+			text-transform: capitalize;
+			color:white;
+		}
+		.name, .email{
+			text-transform: capitalize;
+			color:white;
+		}
+		
+		.submit{
+			width:500px;
+			height:40px;
+
+			border:none;
+			background-color: white;
+			color:grey;
+			font-size: 100%;
+			border-radius: 11px;
+			text-align: center;
 		}
 
 	</style>
@@ -54,10 +120,9 @@
  </nav>
 		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
 </header>
-	
-	<section id="A">
-		<section id="B">
-			<article class="C">
+<section>
+		<section>
+			<article class="fortySixWidth">
 					
 	  <h2>Come Visit Us</h2>
 		<p>... Check us out. We love that our customers can feel relaxed and browse our aisles with your furry friends. or if you need help finding something special, <strong>you have our undivided attention!
@@ -69,54 +134,54 @@
 <br /><br />
 		<!--button -->
 		<p><input type="submit"  value="Get Directions"/></p>
-		<div class="D">
+		<div>
 				<img src="images/whiteSpace" alt="two ladies riding on a bike trail"/>
 				</div>
 				
 		</article>
 
-				<article class="C">
+				<article class="fortySixWidth">
 					<div>
-		<img src="images/bikeShop2.png" alt="two ladies riding on a bike trail"/>
+		<img src="images/bikeShop2.png" alt="bike shop image"/>
 						</div>
 				</article>
 		</section>
 			
 	</section>
-	
-	<section>
+	<section class="A">
 		
 		<!--header -->	
-	<h3>Get In Touch</h3>
-	<h1 class="title"><em>Contact <strong>Us</strong></em></h1>
+	<h3><u>Get In Touch</u></h3>
+	<h1><em>Contact Us</em></h1>
 		
-			<section id="contact">
+			<section class="contact">
 		<!--<article id ="A">-->
-	<h3>We'd love to hear from you! Send us a question to <em>getstarted@cycleworld.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> If this is not fast enough, just simply call us at (234)123-4567.</h3>
+	<h3>We'd love to hear from you! Send us a question to <em>getstarted@cycleworld.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> <br/> If this is not fast enough, just simply call us at (234)123-4567.</h3>
 
 		<!--form fields and submision button -->	
 	<form>
 	<fieldset>
-	<p><em><label for='name'>Name</label></em></p>
-	<input type='text' name='name' id='name'>
 		
-	<!--field set in table-->
-	<div id="cells">
-	<p><em><label for='phone'>Phone Number</label></em></p>
-	<input type='text' name='phone' id='phone'>
-
-	
-	<p><em><label for='email'>Email Address</label></em></p>
+	<p><em><label for="name" class="name">Name</label></em></p>
+	<input type="text" name="name" id="name">
+<div class="B">
+	<p><em><label for="phone" class="phone">Phone Number</label></em></p>
+	<input type="text" name="phone" id="phone">
+		
+	<div class="row2">
+	<p><em><label for="email" class="email">Email Address</label></em></p>
+		<br />
 	<input  type="email" name="email" id="email">
 	</div>
-	<p><em><label for='help'>How Can We Help?</label></em></p>
-	<input  type='text' name='help' id='help'>
-	
-	<p><em><input type="submit" /></em></p>
+		</div>
+	<p><em><label for="help" class="help">How Can We Help?</label></em></p>
+	<input  type="text" name="help" id="help">
+
+	<h4><em><input type="submit" class="submit"/></em></h4>
 	
 	</fieldset>
 	</form>
-			<!--</article>-->
+			
 </section>
 	</section>
 <hr />
