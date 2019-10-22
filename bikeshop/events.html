@@ -3,30 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <title>Club Events | CycleWorld</title>
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<style>
+
+#events header{
+			 background: url("images/cycleEvent2.png")no-repeat;
+	background-size: cover;
+		}
+
+	</style>
 </head>
 
 <body id="events">
-	<header>
-			<!--Navigation-->
-			<nav>
-			<ul>
-				<li><a href="index.html" target="_blank">Home</a></li>
-				<li><a href="shop.html" target="_blank">Shop</a></li>
-				<li><a href="events.html" target="_blank">Club Events</a></li>
-				<li><a href="contact.html" target="_blank">Contact</a></li>
+<header>
+  <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html" >Shop</a>
+        <a href="events.html" class="active">Club Events</a>
+        <a href="contact.html">Contact</a>
+ </nav>
+		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
+</header>
+  
+<section id="A">
+<aside id="B">
 
-			</ul>
-			</nav>
-		<!--Logo-->
-			<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
-		</header>
+    
+    <article> 
+			<!--Title-->
 
-<section>
-<aside>
-	<!--Title-->
-<h3><em>Upcoming</em>Events</h3>
-	
+	<h3><em>Upcoming</em>Events</h3>
 	<!--Content-->
 <h4>Hitting the road with friends</h4>
 <p>The CycleWorld's purpose is to educate cyclists, elected officials, local decision makers and the general public of the benefits of cycling.  </p>
@@ -36,8 +42,11 @@
 	
 <!--Read More-->
 	<p><input type="submit" value="All Events"/></p>
-</aside>
-<section id="articles">
+    </article>
+  </aside>
+	
+ <main>
+	<section id="C">
 <article>
 <!--image-->
 <img src="images/cyclingRace.png" alt="cycling race" />
@@ -101,59 +110,63 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, dolorum!</p>
 		<p><input type="submit" value="Read More"/></p>
 </article>
+    </section>
+</main>
 </section>
-</section>
-	
 	<footer>
 		<section>
-			<section id="abtthestore">
-							<h6><strong><em><a href="#">Gift Cards</a></em></strong></h6>
-							<h6><strong><em><a href="#">Find A Store</a></em></strong></h6>
-							<h6><strong><em><a href="#">Sign Up For Email</a></em></strong></h6>
-							<h6><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></h6>
-			</section>
-			<section id="abttheorders">
-							<h6><strong><em><a href="#">Get Help</a></em></strong></h6>
-							<h6><a href="#">Order Status</a></h6>
-							<h6><a href="#">Shipping and Delivery</a></h6>
-							<h6><a href="#">Returns</a></h6>
-							<h6><a href="#">Payment Options</a></h6>
-							<h6><a href="#">Contact Us</a></h6>
-					
-		  </section>
-			<section id="abtthebus">
-				<h6><strong><em><a href="#">News</a></em></strong></h6>
-				<h6><strong><em><a href="#">About CycleWorld</a></em></strong></h6>
-				<h6><a href="#">Careers</a></h6>
-				<h6><a href="#">Gearup Culture & Careers</a></h6>
-				<h6><a href="#">Investors</a></h6>
-				<h6><a href="#">Sustainable Innovation</a></h6>
-				<h6><a href="#">CA Suply Chains Act</a></h6>
-				<h6><a href="#">Contact Us</a></h6>
-			</section>
-			<section id="abtthesocial">
-						<h6><strong><em>Social</em></strong></h6>
-       						 <ul >
-            				 <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" /></a></li>
-           					 <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon" /></a></li>
-           					 <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube icon" /></a></li>
-           					 <li><a href="https://www.google.com" target="_blank"><img src="images/google.png" alt="google icon" /></a></li>
-          					 <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo " /></a></li>
-       						 </ul>
+			<ul>
+							<li><strong><em><a href="#">Gift Cards</a></em></strong></li>
+							<li><strong><em><a href="#">Find A Store</a></em></strong></li>
+							<li><strong><em><a href="#">Sign Up For Email</a></em></strong></li>
+							<li><strong><em><a href="design/styleguide.jpg" target="_blank">Become A Member</a></em></strong></li>
+				<li>.</li>
+				<li>.</li>
+				<li>.</li>
+				<li>.</li>
+			</ul>
+			<ul>
+							<li><strong><em><a href="#">Get Help</a></em></strong></li>
+							<li><p><em><a href="#">Order Status</a></em></p></li>
+							<li><p><em><a href="#">Shipping and Delivery</a></em></p></li>
+							<li><p><em><a href="#">Returns</a></em></p></li>
+							<li><p><em><a href="#">Payment Options</a></em></p></li>
+							<li><p><em><a href="#">Contact Us</a></em></p></li>
+				<li>.</li>
+				<li>.</li>
+
+		  </ul>
+			<ul>
+				<li><strong><em><a href="#">News</a></em></strong></li>
+				<li><strong><em><a href="#">About CycleWorld</a></em></strong></li>
+				<li><p><em><a href="#">Careers</a></em></p></li>
+				<li><p><em><a href="#">Gearup Culture & Careers</a></em></p></li>
+				<li><p><em><a href="#">Investors</a></em></p></li>
+				<li><p><em><a href="#">Sustainable Innovation</a></em></p></li>
+				<li><p><em><a href="#">CA Suply Chains Act</a></em></p></li>
+				<li><p><em><a href="#">Contact Us</a></em></p></li>
+			</ul>
+		
+			<section class="social">
+						<strong><em>Social</em></strong>
+				<br /><br />
+            				 <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" /></a>
+           					 <a href="https://twitter.com" target="_blank"><img class="active" src="images/twitter.png" alt="twitter icon" /></a>
+           					 <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube icon" /></a>
+           					 <a href="https://www.google.com" target="_blank"><img src="images/google.png" alt="google icon" /></a>
+          					 <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo " /></a>
 		  </section>
 		</section>
 				<hr />
-		<section>
-				<section id="abttheinc">
+		<section >
 					<h6>United States 2016CycleWorld, Inc. All Rights Reserved</h6>
-				</section>
-				<section id="documentaion">
-					<h6><a href="#">Guides</a></h6>
-					<h6><a href="#">Terms of Use</a></h6>
-					<h6><a href="#">Privacy Policy</a></h6>
+			<ul class="abttheinc">
+					<li><p><em><a href="#">Guides</a></em></p></li>
+					<li><p><em><a href="#">Terms of Use</a></em></p></li>
+					<li><p><em><a href="#">Privacy Policy</a></em></p></li>
+		</ul>
 			</section>
-		</section>
 </footer>
-	<script src="js/content.js"></script>
+	<!--<script src="js/content.js"></script>-->
 </body>
 </html>
