@@ -45,7 +45,6 @@ h1, h2, h3, h4{
 			overflow: hidden;
 			padding-top: 5%;
 			overflow: hidden;
-			border: 1px solid green;
 		}
 		 section section
 		{
@@ -54,7 +53,6 @@ h1, h2, h3, h4{
 			margin:2% 0% 2% 8%;
 			position:relative;
 			overflow: hidden;
-			border: 1px solid red;
 		}
  section
 		{
@@ -62,7 +60,6 @@ h1, h2, h3, h4{
 			height: auto;
 			clear: both;
 			position:relative;
-			/*border: 1px solid pink;*/
 			overflow:hidden;
 		}
 		
@@ -96,8 +93,6 @@ h1, h2, h3, h4{
 		header img
 		{
 			margin:6% 0px 0px 15%;
-			height:60%;
-			width:60%;
 		}
 		
 		/*INDEX*/
@@ -558,14 +553,12 @@ h1, h2, h3, h4{
 		}
 		
 		fieldset{
-		border: 1px solid orange;
 			text-align: center;
 			padding-bottom: 10%;
 		}
 		fieldset .cellRow{
 		display:inline-table;
 		margin-top: -44px;
-		border:1px solid pink;
 		height:75px;
 		width:auto;
 		padding-left: 2%;
