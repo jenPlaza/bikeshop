@@ -6,7 +6,7 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<style>
 		/*shop*/
-		#shop section
+		 section
 		{
 			width:100%;
 			height: auto%;
@@ -14,11 +14,18 @@
 			margin:0% 2% 1% 1%;
 			position:relative;
 			border: 1px solid pink;
-			background-color: transparent;
 			overflow:hidden;
 			
-			
 		}
+		#shop{
+		height: auto%;
+		clear: both;
+			background-color: white;
+			
+		/*controling logo visibility*/
+		/*overflow: hidden;*/
+		}
+
 		/*	.apparel
 		{
 			background: url("images/backpack.jpg")no-repeat;
@@ -29,14 +36,14 @@
 			overflow: hidden;
 		}*/
 aside{
-	
-	width:20%;
+			width:20%;
 			height:auto;
 			margin:0% 1% 2% 1%;
 			position:relative;
 			border: 1px solid blue;
-	float:left;
-	overflow:hidden;
+			float:left;
+			overflow:hidden;
+	background-color: white;
 }
 		main{
 			width:75%;
@@ -46,9 +53,9 @@ aside{
 			border: 1px solid yellow;
 			float:right;
 			overflow:hidden;
+			background-color: white;
 		}
-		article{
-			
+		article{	
 			height:auto%;
 			margin:0% 01% 2% 1%;
 			display:inline-block;
@@ -58,15 +65,15 @@ aside{
 		}
 		.thirtyWidth{
 			width: 30%;
-			
 		}
 		#shop h4{
 		text-transform: lowercase;
 		}
-		.filters {
+		#filters {
 			height:35px;
+			
 		}
-		.filters div {
+		#filters div {
 			width:30px;
 			height:30px;
 			display:inline-block;		
@@ -75,6 +82,7 @@ aside{
 			display: inline-block;
 		 white-space: nowrap;
 			text-align:left;
+			
 		}
 		.show{
 			float:right;
@@ -103,19 +111,21 @@ aside{
 		#products a
 		{
 			height:20px;
-				width:20px;
+			width:20px;
 			float:left;
 			margin-left: 16%;
 			
 		}
-		#pListings{
-			margin-top:-50%;
+		#pListings, #filters{
+			/*margin-top:-50%;*/
+		background-color: white;
 		}
 		.pageLinks{
 			float:right;
 			padding-right:5%;
 			margin-top:-40px;
 		}
+
 	</style>
 </head>
 
@@ -138,7 +148,7 @@ aside{
     <a href="#">Collections > </a>
     <a href="#">Products</a>
   </section>
-<section>
+<section id="pListings">
 <aside id="collections">
     <h4>Collections</h4>
         <p><a class="btn active" href="#" >Bike Parts & Components</a></p>
@@ -180,7 +190,7 @@ aside{
       <button class="btn" >Bike Parts & Components</button>
       <button class="btn" >Bikes & Frames</button>
     </section>
-    <section class="filters">
+    <section id="filters">
 		<ul class="filter">
      <li><div>
         <a href="#"><img src="images/icons8-grid-view-96.png" alt="grid view icon" /><em>.</em></a>
@@ -304,7 +314,7 @@ aside{
     </section>
 	  </section>
 </main>
-	<!--<footer>
+	<footer>
 		<section>
 			<ul>
 							<li><strong><em><a href="#">Gift Cards</a></em></strong></li>
@@ -357,7 +367,7 @@ aside{
 					<li><p><em><a href="#">Privacy Policy</a></em></p></li>
 		</ul>
 			</section>
-</footer>-->
+</footer>
 	<!--<script src="js/content.js"></script>-->
 </body>
 </html>
