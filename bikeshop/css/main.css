@@ -485,5 +485,41 @@ h1, h2, h3, h4{
 			color:white;
 		}
 
+		/*EVENTS*/
+		section:first-of-type, main, aside{
+			background-color:black;
+		}
+
+		#events main section:first-of-type img{
+			height:100%;
+			width:100%;
+		}
+		
+		#events main section:first-of-type p{
+			padding: 1% 2% 1% 1%;
+		}
+		.fortyEightWidth{
+			width: 48%;
+		}
+		
+		#events main input[type=submit], aside input[type=submit]{
+			width:100px;
+			height:40px;
+			border:5px solid grey;
+			background-color: transparent;
+			color:grey;
+			border-radius: 11px;
+			text-align: center;
+		}	
+		
+		#events aside section{
+			padding:5%;
+		}
+
+		#events aside h4{
+			text-transform: capitalize;
+			
+}
+
 
 /*}*/
