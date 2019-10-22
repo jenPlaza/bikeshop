@@ -54,6 +54,15 @@ h1, h2, h3, h4{
 			overflow: hidden;
 			border: 1px solid red;
 		}
+ section
+		{
+			width:100%;
+			height: auto%;
+			clear: both;
+			position:relative;
+			/*border: 1px solid pink;*/
+			overflow:hidden;
+		}
 		
 		
 		/*Header*/
@@ -100,7 +109,7 @@ h1, h2, h3, h4{
 			overflow: hidden;
 		}*/
 		
-		/*Index*/
+		/*INDEX*/
 		/*CTA*/
 		.thirtyTwoWidth
 		{
@@ -232,7 +241,7 @@ h1, h2, h3, h4{
 			margin: 2% 0px -15px 0px;
 			position:relative;
 		}
-		section:nth-of-type(4) h1, , main h1
+		section:nth-of-type(4) h1
 		{
 			text-align: center;
 			margin-bottom: -35px;
@@ -329,6 +338,160 @@ h1, h2, h3, h4{
 		}
 		.abttheinc p em{
 			text-transform:capitalize;
+		}
+
+
+		/*SHOP*/
+		#shop{
+		height: auto%;
+		clear: both;
+			background-color: white;
+		}
+		/*#shop header{
+			 background: url("images/backpack.jpg")no-repeat;
+            height:700px;
+			background-size: cover;
+			overflow: hidden;
+		}*/
+		#shop article{	
+			text-align: center;
+			/*border: 1px solid green;*/
+		}
+		#shop header + section{
+			margin:1% 1% 1% 2%;
+		}
+		#shop h4{
+		text-transform: lowercase;
+		}
+		aside{
+			width:25%;
+			height:90%;
+			margin:0% 0% 2% 3%;
+			position:relative;
+			/*border: 1px solid blue;*/
+			float:left;
+			overflow:hidden;
+		background-color: white;
+		}
+		main{
+			width:70%;
+			height:auto;
+			margin:0% 1% 2% 0%;
+			position:relative;
+			/*border: 1px solid yellow;*/
+			float:right;
+			overflow:hidden;
+			background-color: white;
+		}
+		main h1{
+			margin-bottom: 1%;
+			text-align: center;
+		}
+		button{
+			background-color: #C0BCBC;
+			height:30px;
+		}
+		button.active{
+			background-color: black;
+			color:white;
+		}
+		main section:nth-of-type(2){
+			height:35px;
+		}
+		main section:nth-of-type(2) div {
+			width:30px;
+			height:30px;
+			display:inline-block;		
+		}
+		main section:nth-of-type(2),#listsings{
+		background-color: white;
+		}
+		ul.filter li, ul.show li, ul.pageLinks li{
+			display: inline-block;
+		 white-space: nowrap;
+			text-align:left;
+		}
+		.show{
+			float:right;
+			padding-right:5%;
+			margin-top:-75px;
+		}	
+		.sortBy{
+			margin-top:-15px;
+		}	
+		input[type=submit]{
+			width:50px;
+			background-color: #C0BCBC;
+			border:solid;
+			text-align: left;
+		}
+		.sortBy input[type=submit]{
+			width:150px;
+		}		
+		main section:nth-of-type(3) a
+		{
+			height:20px;
+			width:20px;
+			float:left;
+			margin-left: 4%;
+			
+		}
+		main section:nth-of-type(3) li{
+			padding-left:110px;
+		}
+		main section:nth-of-type(3) img{
+			background-color: #FBDD33;	
+			border:none;
+		}
+		.thirtyWidth{
+			width: 30%;
+		}
+		.thirtyWidth img
+		{
+			width:100%;
+			height:100%;
+			margin-top: -80px;
+			border:1px solid grey;
+		}
+		.pageLinks{
+			float:right;
+			padding-right:5%;
+			margin-top:-40px;
+		}
+		
+		#collections h3{
+			color:black;
+		}
+		#collections h4{
+			text-transform: uppercase;
+			margin-top:-130px;
+			text-align: center;
+			position:relative;
+		}
+		#collections li{
+			padding:1% 0px 0px 1%;
+		}
+		#collections img{
+			margin-top:50px;
+		}
+		.forSale div{
+			float:left;
+			width:30%;
+		}
+		.forSale{
+			margin-top: 25%;
+			
+		}
+		.forSale section{
+			float:right;
+			width:68%;
+			margin-top: -40%;
+			text-align: left;
+		}
+		.forSale button{
+			background-color: #FBDD33;
+			width:30%;
+			color:white;
 		}
 
 

@@ -5,172 +5,14 @@
 <title>Shop | CycleWorld</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<style>
-		/*shop*/
-		
-		#shop{
-		height: auto%;
-		clear: both;
-			background-color: white;
-		}
-		#shop header{
+
+#shop header{
 			 background: url("images/backpack.jpg")no-repeat;
             height:700px;
 			background-size: cover;
 			overflow: hidden;
 		}
-		 section
-		{
-			width:100%;
-			height: auto%;
-			clear: both;
-			position:relative;
-			border: 1px solid pink;
-			overflow:hidden;
-		}
-		aside{
-			width:25%;
-			height:90%;
-			margin:0% 0% 2% 2%;
-			position:relative;
-			border: 1px solid blue;
-			float:left;
-			overflow:hidden;
-		background-color: white;
-		}
-		main{
-			width:70%;
-			height:auto;
-			margin:0% 1% 2% 0%;
-			position:relative;
-			border: 1px solid yellow;
-			float:right;
-			overflow:hidden;
-			background-color: white;
-		}
-		article{	
-			height:auto%;
-			margin:0% 01% 2% 1%;
-			display:inline-block;
-			text-align: center;
-			padding-top: 5%;
-			border: 1px solid green;
-		}
-		
-		.breadcrumb{
-			margin:1% 1% 1% 3%;
-		}
-		.thirtyWidth{
-			width: 30%;
-		}
-		main h1{
-			margin-bottom: 1%;
-		}
-		#shop h4{
-		text-transform: lowercase;
-		}
-		#filters {
-			height:35px;
-			
-		}
-		#filters div {
-			width:30px;
-			height:30px;
-			display:inline-block;		
-		}
-		ul.filter li, ul.show li, ul.pageLinks li{
-			display: inline-block;
-		 white-space: nowrap;
-			text-align:left;
-		}
-		.show{
-			float:right;
-			padding-right:5%;
-			margin-top:-75px;
-		}	
-		.sortBy{
-			margin-top:-15px;
-		}	
-		input[type=submit]{
-			width:50px;
-			background-color: #C0BCBC;
-			border:solid;
-			text-align: left;
-		}
-		.sortBy input[type=submit]{
-			width:150px;
-		}		
-		#products img
-		{
-			width:100%;
-			height:100%;
-			margin-top: -80px;
-			border:1px solid grey;
-		}
-		#products a
-		{
-			height:20px;
-			width:20px;
-			float:left;
-			margin-left: 16%;
-			
-		}
-		#pListings, #filters{
-		background-color: white;
-		}
-		.pageLinks{
-			float:right;
-			padding-right:5%;
-			margin-top:-40px;
-		}
-		
-		#collections h3{
-			color:black;
-		}
-		#collections h4{
-			text-transform: uppercase;
-			margin-top:-130px;
-			text-align: center;
-			position:relative;
-		}
-		#collections li{
-			padding-top: 1%;
-		}
-		
-		#collections img{
-			margin-top:50px;
-		}
-		.forSale div{
-			float:left;
-			width:30%;
-		}
-		.forSale{
-			margin-top: 25%;
-			
-		}
-		article section{
-			float:right;
-			width:68%;
-			margin-top: -40%;
-			text-align: left;
-		}
-		.forSale button{
-			background-color: #FBDD33;
-			width:30%;
-			color:white;
-		}
-		button{
-			background-color: #C0BCBC;
-			height:30px;
-		}
-		
-		button.active{
-			background-color: black;
-			color:white;
-		}
-		
-		.links img{
-			background-color: #FBDD33
-		}
+
 	</style>
 </head>
 
@@ -184,16 +26,15 @@
  </nav>
 		<a href="/"><img src="images/cycleWorld.png" alt="cycleWorld Logo" /></a>
 </header>
-
-  <section class="breadcrumb">
+  <section>
     <a href="#">Home > </a>
     <a href="#">Collections > </a>
     <a href="#">Products</a>
   </section>
-<section id="pListings">
+<section id="listsings">
 <aside id="collections">
 	
-		<ul>
+	<ul>
 			<li><h3>Collections</h3></li>
        <li> <a class="btn active" href="#" >Bike Parts & Components</a></li>
        <li> <a class="btn" href="#" >Bike Tools & Transport</a></li>
@@ -202,9 +43,10 @@
        <li> <a class="btn" href="#" >Light & Accessories</a></li>
        <li> <a class="btn" href="#" >Sale</a></li>
 			</ul>
-	  	
+	  
     <img src="images/newCollection.png" alt="new collection of bicycles" />
     <h4><em>New Collection</em></h4>
+	
 	<section class="forSale">
     <h3>Products</h3>
     <article> 
@@ -250,7 +92,7 @@
       <button class="btn" >Bike Parts & Components</button>
       <button class="btn" >Bikes & Frames</button>
     </section>
-    <section id="filters">
+    <section>
 		<ul class="filter">
      <li><div>
         <a href="#"><img src="images/icons8-grid-view-96.png" alt="grid view icon" /><em>.</em></a>
@@ -278,7 +120,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$55.00 - $31.00</h4>
-        <ul class="links">
+        <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -289,7 +131,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$55.00 - $31.00</h4>
-        <ul class="links">
+        <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -300,7 +142,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$25.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -311,7 +153,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4 class="sale">$155.00 - $288.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -322,7 +164,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$55.00 - $88.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -333,7 +175,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$15.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -344,7 +186,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$25.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
@@ -355,7 +197,7 @@
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <h4>$66.00</h4>
-         <ul class="links">
+         <ul>
           <li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>
          <li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
