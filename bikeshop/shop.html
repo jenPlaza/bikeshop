@@ -56,11 +56,11 @@ aside{
 			padding-top: 5%;
 			border: 1px solid green;
 		}
-		.twentyTwoWidth{
+		.thirtyWidth{
 			width: 30%;
 			
 		}
-		.twentyTwoWidth h4{
+		#shop h4{
 		text-transform: lowercase;
 		}
 		.filters {
@@ -71,7 +71,7 @@ aside{
 			height:30px;
 			display:inline-block;		
 		}
-		ul.filter li, ul.show li{
+		ul.filter li, ul.show li, ul.pageLinks li{
 			display: inline-block;
 		 white-space: nowrap;
 			text-align:left;
@@ -111,8 +111,11 @@ aside{
 		#pListings{
 			margin-top:-50%;
 		}
-
-		
+		.pageLinks{
+			float:right;
+			padding-right:5%;
+			margin-top:-40px;
+		}
 	</style>
 </head>
 
@@ -200,7 +203,7 @@ aside{
 			</ul>
     </section>
 	<section id="products">
-      <article class="twentyTwoWidth">
+      <article class="thirtyWidth">
 		  <!--<img src="images/brakes.png" alt="brakes pads" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -211,7 +214,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth">
+      <article class="thirtyWidth">
 		  <!--<img src="images/brakes.png" alt="brakes pads" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -222,7 +225,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth"> 
+      <article class="thirtyWidth"> 
 		  <!--<img src="images/helmet2.png" alt="helmet" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -233,7 +236,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth"> 
+      <article class="thirtyWidth"> 
 		  <!--<img src="images/tricycle.png" alt="bicycle" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -244,7 +247,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth">
+      <article class="thirtyWidth">
 		 <!-- <img src="images/bars.png" alt="bicycle" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -255,7 +258,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth"> 
+      <article class="thirtyWidth"> 
 		  <!--<img src="images/basket.jpg" alt="basket" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -266,7 +269,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth"> 
+      <article class="thirtyWidth"> 
 		  <!--<img src="images/IB-BA20.jpg" alt="pakpak" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -277,7 +280,7 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-      <article class="twentyTwoWidth">
+      <article class="thirtyWidth">
 		  <!--<img src="images/pump.jpg" alt="pump" >-->
 		  	<img src="images/seat.jpg" alt="seat image" />
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -288,12 +291,10 @@ aside{
           <li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>
         </ul>
       </article>
-			
     </section>
-
-   <section class="pageLinks">
-      <p><strong>1-9</strong> products(s) of 20</p>
-      <ul>
+   <section>
+      <h4><strong>1-9</strong> products(s) of 20</h4>
+      <ul class="pageLinks">
         <li><a href="#">Previous</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
