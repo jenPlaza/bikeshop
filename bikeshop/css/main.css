@@ -33,14 +33,13 @@ h1, h2, h3, h4{
 			font-style: normal;
 		}
 		#index section{
-		height: auto%;
+		height: auto;
 		clear: both;
-		/*controling logo visibility*/
 		overflow: hidden;
 			
 		}
 		 article{
-			height:auto%;
+			height:auto;
 			margin:0% 1% 2% 0%;
 			display:inline-block;
 			overflow: hidden;
@@ -60,7 +59,7 @@ h1, h2, h3, h4{
  section
 		{
 			width:100%;
-			height: auto%;
+			height: auto;
 			clear: both;
 			position:relative;
 			/*border: 1px solid pink;*/
@@ -98,7 +97,7 @@ h1, h2, h3, h4{
 		{
 			margin:6% 0px 0px 15%;
 			height:60%;
-			weight:60%;
+			width:60%;
 		}
 		
 		/*INDEX*/
@@ -106,7 +105,7 @@ h1, h2, h3, h4{
 		.thirtyTwoWidth
 		{
 			width:32%;
-			margin left:0% 0% 1% 1%;
+			margin:0px 0px 1% 1%;
 			text-align: center;
 		}
 		.thirtyTwoWidth h2
@@ -214,7 +213,7 @@ h1, h2, h3, h4{
    color: grey;
  }
 		.fourrating
-		{visibility: visibile;
+		{visibility:visible;
 			background-color: transparent;
 			margin: 0px 0px -35px 0px;
 			
@@ -339,7 +338,7 @@ h1, h2, h3, h4{
 
 		/*SHOP*/
 		#shop{
-		height: auto%;
+		height: auto;
 		clear: both;
 			background-color: white;
 		}
