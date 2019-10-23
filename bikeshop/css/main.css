@@ -337,15 +337,10 @@ h1, h2, h3, h4{
 		clear: both;
 			background-color: white;
 		}
-		/*#shop header{
-			 background: url("images/backpack.jpg")no-repeat;
-            height:700px;
-			background-size: cover;
-			overflow: hidden;
-		}*/
+
 		#shop article{	
 			text-align: center;
-			/*border: 1px solid green;*/
+
 		}
 		#shop header + section{
 			margin:1% 1% 1% 2%;
@@ -353,47 +348,46 @@ h1, h2, h3, h4{
 		#shop h4{
 		text-transform: lowercase;
 		}
-		aside{
+		#shop aside{
 			width:25%;
 			height:90%;
 			margin:0% 0% 2% 3%;
 			position:relative;
-			/*border: 1px solid blue;*/
 			float:left;
 			overflow:hidden;
 		background-color: white;
 		}
-		main{
+		#shop main{
 			width:70%;
 			height:auto;
 			margin:0% 1% 2% 0%;
 			position:relative;
-			/*border: 1px solid yellow;*/
 			float:right;
 			overflow:hidden;
 			background-color: white;
 		}
-		main h1{
+		#shop main h1{
 			margin-bottom: 1%;
 			text-align: center;
 		}
-		button{
+		#shop button{
 			background-color: #C0BCBC;
 			height:30px;
 		}
-		button.active{
+		#shop button.active{
 			background-color: black;
 			color:white;
 		}
-		main section:nth-of-type(2){
+		#shop main section:nth-of-type(2){
 			height:35px;
+			border:1px solid grey;
 		}
-		main section:nth-of-type(2) div {
+		#shop main section:nth-of-type(2) div {
 			width:30px;
 			height:30px;
 			display:inline-block;		
 		}
-		main section:nth-of-type(2),#listsings{
+		#shop main section:nth-of-type(2),#listsings{
 		background-color: white;
 		}
 		ul.filter li, ul.show li, ul.pageLinks li{
@@ -418,7 +412,7 @@ h1, h2, h3, h4{
 		.sortBy input[type=submit]{
 			width:150px;
 		}		
-		main section:nth-of-type(3) a
+		#shop main section:nth-of-type(3) a
 		{
 			height:20px;
 			width:20px;
@@ -426,16 +420,17 @@ h1, h2, h3, h4{
 			margin-left: 4%;
 			
 		}
-		main section:nth-of-type(3) li{
+		#shop main section:nth-of-type(3) li{
 			padding-left:110px;
 		}
-		main section:nth-of-type(3) img{
+		#shop main section:nth-of-type(3) img{
 			background-color: #FBDD33;	
 			border:none;
 		}
 		.thirtyWidth{
 			width: 30%;
 		}
+
 		.thirtyWidth img
 		{
 			width:100%;
@@ -443,6 +438,9 @@ h1, h2, h3, h4{
 			margin-top: -80px;
 			border:1px solid grey;
 		}
+#shop main section:nth-of-type(4){
+	border:1px solid grey;
+}
 		.pageLinks{
 			float:right;
 			padding-right:5%;

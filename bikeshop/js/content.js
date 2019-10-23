@@ -1,4 +1,4 @@
-saleAllsaleAllsaleAllsaleAllsaleAllsaleAll/*
+/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -45,11 +45,7 @@ function features(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
 	
 	var p = document.querySelector('p');
-	var saleAll = document.querySelectorAll('.twentyFiveWidth');
-	/*var cartNo = document.getElementsByClassName('.cartNo');
-	var cartYes = document.getElementsByClassName('.addCart');*/
-	var saleYes = document.querySelector('.redSale');
-	/*var saleNo = document.querySelector('.redSaleNo');*/
+	var div = document.querySelector('div');
 	
 	//creating a new varible to hold my h4
     var data = '<h3>Shop</h3>';
@@ -61,23 +57,22 @@ function features(dFeatures) {
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article class="twentyFiveWidth">';
 		
-		
-		
-		for (var i = 0; i < saleAll.length; i++) {
-			var sale = saleAll.className;
-		if (sale.className.contains( 'redSale') {
+/*			var sale = p.className;
+		alert(sale);
+		if (sale === '.redSale') {
 			data += '<p class="redSale">sale</p>';
 		}
 		else
 		{
 			data += '<p class="redSaleNo">sale</p>';
-		}
-		}
+		}*/
 		
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
         data += 'alt="' + dFeatures.products[i].title + '"/>';
 		
-		/*if(cartNo){
+		/*var cart = div.className;
+		alert(cart);
+		if( cart === '.cartNo'){
 			 data += '<div class="cartNo">';
 			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
 			data += '<p><strong>Add To Cart</strong></p>';
@@ -143,15 +138,19 @@ function events(dEvents) {
 	var imageArray1 = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
 	
 	//creating a new varible to asign the article tag too.
-		var dataEvent = '<article>';
-	
+		var dataEvent = '<section>';
+		dataEvent += '<h1><em>Current Events</em></h1>';
 	//here I'm looping through the events array in the json object and retrieving the info for the title and text, for all articles in the articles section.
     for (var i = 0; i < dEvents.events.length; i++) {
+		dataEvent += '<article class="fortyEightWidth">';
 		dataEvent += '<img src="' + imageArray1[i] + '"';
         dataEvent += 'alt="' + dEvents.events[i].title + '"/>';
-		
-        dataEvent += '<h5><em>' + dEvents.events[i].title + '</em></h5>';
-        dataEvent += '<p>' + dEvents.events[i].text +'</p>';
+		dataEvent += '<section>';
+        dataEvent += '<h4><em>' + dEvents.events[i].title + '</em></h4>';
+        dataEvent += '<p><em>' + dEvents.events[i].text +'</em></p>';
+		dataEvent += '<br/>';
+		dataEvent += '<p><input type="submit" value="Read More"/></p>';
+		dataEvent += '</section>';
 		dataEvent += '</article>';
     }
 	
@@ -167,23 +166,38 @@ function shopCollections(dShopC) {
 	
 	//creating a new varible to asign the Aside tag too.
 	var dataSCollections = '<aside>';
+	dataSCollections += '<ul>';
+			dataSCollections += '<li><h3>Collections</h3></li>';
+       dataSCollections += '<li> <a class="btn active" href="#" >Bike Parts & Components</a></li>';
+       dataSCollections += '<li> <a class="btn" href="#" >Bike Tools & Transport</a></li>';
+       dataSCollections += '<li> <a class="btn" href="#" >Bikes & Frames</a></li>';
+       dataSCollections += '<li> <a class="btn" href="#" >Cycling Clothing</a></li>';
+       dataSCollections += '<li> <a class="btn" href="#" >Light & Accessories</a></li>';
+       dataSCollections += '<li> <a class="btn" href="#" >Sale</a></li>';
+			dataSCollections += '</ul>';
 	
 	//I'm going to take the value of my image, h4, and h5 and store it as my variable dataSCollections
 	dataSCollections += '<img src="images/newCollection.png" alt="new collection of bicycles" />';
 	dataSCollections += '<h4><em>New Collection</em></h4>';
-	dataSCollections += '<h5>Products</h5>';
+	dataSCollections += '<section class="forSale">';
+	dataSCollections += '<h3>Products</h3>';
 
 	//here I'm looping through the products array in the json object and retrieving the info for the image, title, description, and prices, for all articles in the collections section.
-    for (var i = 5; i < dShopC.products.length; i++) {
-		dataSCollections += '<article>';
+	dataSCollections += '<article>';
+    for (var i = 0; i < 3; i++) {
+		
+		dataSCollections += '<div>';
 		dataSCollections += '<img src="' + dShopC.products[i].imageURL + '"';
         dataSCollections += 'alt="' + dShopC.products[i].title + '"/>';
+		dataSCollections += '</div>';
+		dataSCollections += '<section>';
+        dataSCollections += '<h5>' + dShopC.products[i].title + '</em>';
+		dataSCollections += '<h5 class="sale">$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</h5>';
+		dataSCollections += '</section>';
 		
-        dataSCollections += '<h5><em>' + dShopC.products[i].title + '</em></h5>';
-        dataSCollections += '<p>' + dShopC.products[i].description +'</p>';
-		dataSCollections += '<p class="sale">$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</p>';
-		dataSCollections += '</article>';
     }
+	dataSCollections += '</article>';
+	dataSCollections += '</section>';
 	dataSCollections += '</aside>';
 	
 	//here I'm going to take the html value listed for collections and store it as my varible sectionColl, then I'm going to equal sectionColl with the new information stored in dataSCollections.
@@ -195,19 +209,24 @@ function shopProducts(dShopP) {
 
 	//using innerHtml to update elements in the section with an id of products
 	//creating a new varible to asign the article tag too.
-	var dataSProducts = '<article>';
+	var dataSProducts = '<section>';
 	
 	//here I'm looping through the products array in the json object and retrieving the info for the image, title, description, and prices, for all articles in the products section.
 for (var i = 0; i < dShopP.products.length; i++) {
-        
+        dataSProducts += '<article class="thirtyWidth">';
         dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
         dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
 		
-        dataSProducts += '<p>' + dShopP.products[i].description + '</p>';
-        dataSProducts += '<h6><em>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</em></h6>';
+        dataSProducts += '<h4>' + dShopP.products[i].title + '</h4>';
+        dataSProducts += '<h4>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</h4>';
+	dataSProducts += '<ul>';
+          dataSProducts += '<li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>';
+         dataSProducts += '<li> <a href="#"><img src="images/shopping-cart.png" alt="shopping-cart icon" ></a></li>';
+          dataSProducts += '<li><a href="#"><img src="images/heart.png" alt="favorite icon" ></a></li>';
+        dataSProducts += '</ul>';
 		dataSProducts += '</article>';
     }
-	
+	dataSProducts += '</section>';
 	//here I'm going to take the html value listed for products and store it as my varible sectionPro, then I'm going to equal sectionPro with the new information stored in dataSProducts.
     var sectionPro = document.getElementById("products");
     sectionPro.innerHTML = dataSProducts;
