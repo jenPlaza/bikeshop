@@ -200,8 +200,9 @@ h1, h2, h3, h4{
 .twentyFiveWidth
 		{
 			width:23.5%;
+
 		}
-		.twentyFiveWidth img{
+		.twentyFiveWidth img:not(.cart) {
 			width:100%;
 			height:100%;
 			margin-top:-60px;
@@ -426,13 +427,15 @@ form[method="post"]{
 		}
 		.thirtyWidth{
 			width: 30%;
+			padding:18% 0px 0px 0px;
+	
 		}
 
 		.thirtyWidth img
 		{
 			width:100%;
 			height:100%;
-			margin-top: -80px;
+			margin-top: -30px;
 			border:1px solid #666666;
 		}
  main section:nth-of-type(4){
@@ -483,15 +486,6 @@ form[method="post"]{
 
 /**************************EVENTS**************************/
 /**********************************************************/
-
-/*#events section section
-		{
-			width:80%;
-			height:75%;
-			margin:2% 0% 2% 7%;
-			position:relative;
-			overflow: hidden;
-		}*/
 
 		#events section:first-of-type, #events main, #events aside{
 			background-color:#111111;

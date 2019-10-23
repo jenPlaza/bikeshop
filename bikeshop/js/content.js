@@ -1,4 +1,4 @@
-<h2>Shop</h2><h2>Shop</h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2>/*
+/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -32,7 +32,7 @@ jsonRequest.onload = function () {
 	
 	//otherwise, convert html from these two functions
 	else  {
-		shopCollections(connection);
+		/*shopCollections(connection);*/
 	shopProducts(connection);
 	}
 };
@@ -48,10 +48,10 @@ function features(dFeatures) {
 	var div = document.querySelector('div');
 
 	//creating a new varible to hold my h4
-    var data = '<h3>Shop</h3>';
+    var data = '<h2>Shop</h2>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible data
-     data += '<h1>Featured Products</h1>';
+     data += '<h2><strong>Featured Products</strong></h2>';
 	data += '<section>';
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
     for (var i = 0; i < dFeatures.products.length; i++) {
@@ -93,7 +93,7 @@ function features(dFeatures) {
         data += '<p><strong>Product</strong></p>';
         data += '<p><em>' + dFeatures.products[i].description + '</em></p>';
 		data += '<br/>';
-        data += '<p><strong>$' + dFeatures.products[i].salePrice +"  "+dFeatures.products[i].price + '</strong></p>';
+        data += '<p>$' + dFeatures.products[i].salePrice +' <strong><em>$'+dFeatures.products[i].price + '</em></strong></p>';
 		data += '</article>';
     }
 	
@@ -108,20 +108,29 @@ function plans(dPlans) {
 	var imageArray = ["images/truck.png", "images/wrench.png", "images/envelope.png"];
 	
 	//creating a new varible to hold my h4
-    var dataPlan = '<h3>CycleClub</h3>';
+    var dataPlan = '<h2>CycleClub</h2>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible dataPlan
-     dataPlan += '<h1><em>Member Benefits</em></h1>';
+     dataPlan += '<h2><em>Member Benefits</em></h2>';
 
 	//here I'm looping through the benefits array in the json object and retrieving the info for the title and description, for all articles in the plans section.
 	 dataPlan += '<section>';
-    for (var i = 0; i < dPlans.benefits.length; i++) {
+    for (var i = 0; i < 2; i++) {
        dataPlan += '<article class="twentyWidth">';
 		dataPlan += '<img src="' + imageArray[i]+'"/>';
         dataPlan += '<h4><em>' + dPlans.benefits[i].title + '</em></h4>';
-        dataPlan += '<p><em>' + dPlans.benefits[i].description +'</em></p>';
+        dataPlan += '<p>' + dPlans.benefits[i].description +'</p>';
 		dataPlan += '</article>';
     }
+	
+		dataPlan += '<article class="twentyWidth">';
+		dataPlan += '<img src="' + imageArray[2]+'"/>';
+        dataPlan += '<h4><em>' + dPlans.benefits[2].title + '</em></h4>';
+        dataPlan += '<form method="post">';
+	dataPlan += '<input placeholder="Enter Email" type="email" name="email"><input type="submit" />';
+	dataPlan += '</form>';
+	dataPlan += '<br />';
+		dataPlan += '</article>';
 	
 	
 	
@@ -160,6 +169,7 @@ function events(dEvents) {
 }
 
 //shop page
+/*
 function shopCollections(dShopC) {
 
 	//using innerHtml to update elements in the section with an id of collections
@@ -204,6 +214,7 @@ function shopCollections(dShopC) {
     var sectionColl = document.getElementById("collections");
     sectionColl.innerHTML = dataSCollections;
 }
+*/
 
 function shopProducts(dShopP) {
 
