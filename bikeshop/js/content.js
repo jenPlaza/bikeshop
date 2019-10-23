@@ -1,4 +1,4 @@
-greygreygreygrey/*
+saleAllsaleAllsaleAllsaleAllsaleAllsaleAll/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -43,25 +43,62 @@ jsonRequest.send();
 //index Page
 function features(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
+	
+	var p = document.querySelector('p');
+	var saleAll = document.querySelectorAll('.twentyFiveWidth');
+	/*var cartNo = document.getElementsByClassName('.cartNo');
+	var cartYes = document.getElementsByClassName('.addCart');*/
+	var saleYes = document.querySelector('.redSale');
+	/*var saleNo = document.querySelector('.redSaleNo');*/
+	
 	//creating a new varible to hold my h4
-    var data = '<h4>Shop</h4>';
+    var data = '<h3>Shop</h3>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible data
-     data += '<h2>Featured Products</h2>';
+     data += '<h1>Featured Products</h1>';
 	data += '<section>';
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
     for (var i = 0; i < dFeatures.products.length; i++) {
-        data += '<article>';
+        data += '<article class="twentyFiveWidth">';
+		
+		
+		
+		for (var i = 0; i < saleAll.length; i++) {
+			var sale = saleAll.className;
+		if (sale.className.contains( 'redSale') {
+			data += '<p class="redSale">sale</p>';
+		}
+		else
+		{
+			data += '<p class="redSaleNo">sale</p>';
+		}
+		}
+		
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
         data += 'alt="' + dFeatures.products[i].title + '"/>';
 		
-        data += '<div>';
-        data += '<img src="images/ratings.png" alt="4 star rating" />';
-        data += '</div>';
+		/*if(cartNo){
+			 data += '<div class="cartNo">';
+			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
+			data += '<p><strong>Add To Cart</strong></p>';
+			data += '</div>'; 
+		}
+		else
+		{
+			data += '<div class="addCart">';
+			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
+			data += '<p><strong>Add To Cart</strong></p>';
+			data += '</div>';
+		}*/
 		
+        data += '<div class="fourrating">';
+        data += '<span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="staroutline">&#9734;</span>';
+        data += '</div>';
+		data += '<br/><br/>';
         data += '<p><strong>Product</strong></p>';
-        data += '<p>' + dFeatures.products[i].description + '</p>';
-        data += '<h6><strong>$' + dFeatures.products[i].salePrice +"  "+dFeatures.products[i].price + '</strong></h6>';
+        data += '<p><em>' + dFeatures.products[i].description + '</em></p>';
+		data += '<br/>';
+        data += '<p><strong>$' + dFeatures.products[i].salePrice +"  "+dFeatures.products[i].price + '</strong></p>';
 		data += '</article>';
     }
 	
@@ -73,17 +110,21 @@ function features(dFeatures) {
 function plans(dPlans) {
 
 	//using innerHtml to update elements in the section with an id of plans
+	var imageArray = ["images/truck.png", "images/wrench.png", "images/envelope.png"];
+	
 	//creating a new varible to hold my h4
-    var dataPlan = '<h4>CycleClub</h4>';
+    var dataPlan = '<h3>CycleClub</h3>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible dataPlan
-     dataPlan += '<h2><em>Member Benefits</em></h2>';
+     dataPlan += '<h1><em>Member Benefits</em></h1>';
 
 	//here I'm looping through the benefits array in the json object and retrieving the info for the title and description, for all articles in the plans section.
+	 dataPlan += '<section>';
     for (var i = 0; i < dPlans.benefits.length; i++) {
-        dataPlan += '<article>';
-        dataPlan += '<h5>' + dPlans.benefits[i].title + '</h5>';
-        dataPlan += '<p>' + dPlans.benefits[i].description +'</p>';
+       dataPlan += '<article class="twentyWidth">';
+		dataPlan += '<img src="' + imageArray[i]+'"/>';
+        dataPlan += '<h4><em>' + dPlans.benefits[i].title + '</em></h4>';
+        dataPlan += '<p><em>' + dPlans.benefits[i].description +'</em></p>';
 		dataPlan += '</article>';
     }
 	
