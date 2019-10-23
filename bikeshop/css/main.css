@@ -3,8 +3,65 @@
 ================================================== */
 
 /*html {*/
+/*******************Typography*************************/
+body {
+    font: normal 16px program, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#111111;
+}
+h1{
+	font-size: 50px;
+}
+h1 strong{
+	font-size: 52px;
+	font-weight: bold;
+}
+h2{
+	font-size: 26px;
+	font-weight: 100;
+	color:#666666
+}
+h2 strong{
+	font-size: 36px;
+	font-weight: bold;
+	color:#111111;
+}
+h3{
+	font-size: 20px;
+	color:#666666
+}
+h3 strong{
+	font-size: 24px;
+	font-weight: bold;
+	color:#444444;
+}
+h4, h5 strong{
+	font-size: 16px;
+	color:#666666
+}
+h4 strong{
+	font-size: 24px;
+	font-weight: bold;
+	color:#111111;
+}
+h5, h6 strong {
+		font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+			color: #888888;
+	font-weight: 100;
+}
+h5 strong, h6 strong{
+	font-weight: bold;
+}
 
-	body, section, footer, article, p, a, ul, li{
+em{color:#FFFFFF;
+	font-style: normal;
+		}
+
+	body, section, footer, article, p,a, ul, li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -19,17 +76,11 @@ h1, h2, h3, h4{
 			text-transform: uppercase;
 			display: block;
 		}
-		h3, h6 {
-			color: gray;
-		}
-		em{color:white;
-			font-style: normal;
-		}
 		.twentyFiveWidth strong em 
 		{text-decoration: line-through;}
 
 		p em, .twentyFiveWidth strong em {
-			color: gray;
+			color: #888888;
 			font-style: normal;
 		}
 		#index section{
@@ -46,7 +97,7 @@ h1, h2, h3, h4{
 			padding-top: 5%;
 			overflow: hidden;
 		}
-		 section section
+		 section section, footer section
 		{
 			width:85%;
 			height:75%;
@@ -64,7 +115,7 @@ h1, h2, h3, h4{
 		}
 		
 		
-		/*Header*/
+/*************************HEADER*************************/
 		header 
 		{
             width: 100%;
@@ -74,29 +125,30 @@ h1, h2, h3, h4{
 	 	nav
 		{
             height: 45px;
-			background-color: #3D3D3D;
+			background-color: #444444;
 			text-align: center;
         }
 		nav a 
 		{
-			height:44px;
 			width:150px;
-			padding:10px;
-			color: #FFFFFF;
-			background-color: #3D3D3D;
+			padding:13px;
+			color: #DDDDDD;
+			background-color: #444444;
 			display: inline-block;
 		}
 		nav a.active
 		{
-			background-color: #000000;
+			background-color: #111111;
+			color: #ffffff;
 		}
 		header img
 		{
 			margin:6% 0px 0px 15%;
 		}
 		
-		/*INDEX*/
-		/*CTA*/
+/*************************INDEX*************************/
+/*******************************************************/
+/*************************Cta***************************/
 		.thirtyTwoWidth
 		{
 			width:32%;
@@ -106,22 +158,24 @@ h1, h2, h3, h4{
 		.thirtyTwoWidth h2
 		{
   			width:100%;
-			background-color: black;
+			height:auto;
+			background-color: #111111;
 			opacity: 0.6;
-			top: -75px;
+			top: -25px;
 		}
-		.thirtyTwoWidth h5 strong
+		.thirtyTwoWidth h6 strong
 		{
-  			padding:1%;
-			background-color: red;
-			top: -75px;
+  			padding:10px 20px 10px 20px;
+			background-color: #C0392B;
+			top: -15px;
 			position:relative;
-			color: white;
+			color: #FFFFFF;
 			font-weight: bold;
+			text-transform: uppercase;
 		}
 		 section:nth-of-type(2), footer
 		{
-		background-color:#000000;
+		background-color:#111111;
         }
 		section:nth-of-type(2) img
 		{
@@ -133,44 +187,43 @@ h1, h2, h3, h4{
 		{
 			padding: 1%;
 			position: relative;
-  			color: #f0f0f0;
+  			color: #FFFFFF;
 			margin-top: 10%;
 			text-transform: uppercase;
 			display: block;
 }
 		
 		
-		/*Feature Products*/
-		section:nth-of-type(3) img
-		{
-			margin-top: -70px;
-		}
-		section:nth-of-type(3) h3
-		{
-			margin: 3% 0px -17px 8%;
-			color: grey;
-		}
-		section:nth-of-type(3) h1
-		{
-			margin-left:8%;
-		}
-				.twentyFiveWidth
+/**************************Feature Products**************************/
+				
+
+.twentyFiveWidth
 		{
 			width:23.5%;
 		}
+		.twentyFiveWidth img{
+			width:100%;
+			height:100%;
+			margin-top:-60px;
+		}
+		section:nth-of-type(3) h2
+		{
+			margin: 3% 0px -47px 8%;
+			color: #666666;
+		}
+
 		.redSale, .redSaleNo
 		{
 			padding: 1%;
-			position: relative;
-  			color: #f0f0f0;
-			margin-top: -35px;
+  			color: #FFFFFF;
+			margin: 0px 0px 0px -10px;
 			text-transform: uppercase;
-			display: block;
+			display: inline-block;
 			width:30%;
 			text-align: center;
-			margin-left:-10px;
-			background-color: red;
+			background-color: #C0392B;
 			transform: skew(-10deg);
+			position: relative;
 		}
 		.redSaleNo, .cartNo
 		{
@@ -180,7 +233,7 @@ h1, h2, h3, h4{
 		{
 			width:100%;
 			height:35px;
-			background-color: black;	
+			background-color: #111111;	
 			opacity: 0.7;
 			margin-top: -74px;
 		}
@@ -197,145 +250,89 @@ h1, h2, h3, h4{
 			width:25px;
 			height:25px;
 		}
+
+.cart img
+		{
+			margin-top: -70px;
+			position:relative;
+		}
+		.fourrating
+		{
+			visibility:visible;
+			background-color: transparent;
+			margin: 0px 0px -35px 0px;
+}
 		.starfill
 		{
-   font-size: 20px;
-   color: red;
+   color: #C0392B;
  }
 		.staroutline
 		{
-   font-size: 20px;
-   color: grey;
+   color: #666666;
  }
-		.fourrating
-		{visibility:visible;
-			background-color: transparent;
-			margin: 0px 0px -35px 0px;
 			
-}	
 		
 		
-		/*Plans*/
-		/*section:nth-of-type(4){
-			background: url("images/gears.jpg")no-repeat;
-			width:100%;
-			background-size: cover;
-			overflow: hidden;
-			position:relative;
-			opacity:1;
-			
-		}*/
-		section:nth-of-type(4) h3
+/**************************Plans**************************/
+
+		section:nth-of-type(4) h2
 		{
 			text-align: center;
-			margin: 2% 0px -15px 0px;
+			margin: 2% 0px -35px 0px;
 			position:relative;
+			color:#999999;
 		}
-		section:nth-of-type(4) h1
+		section:nth-of-type(4) h2 strong
 		{
 			text-align: center;
 			margin-bottom: -35px;
 			position:relative;
+
 		}
 		.twentyWidth img
 		{
-			margin-top: -60px;
+			margin-top: -40px;
 			width:170px;
 			height:170px;
-			border: 4px solid white;
+			border: 4px solid #FFFFFF;
 			position:relative;
 		
 }
 		.twentyWidth
 		{
 			width:15%;
-			margin:0% 0% 1% 14%;
+			margin:1% 0% 1% 14%;
 			text-align: center;
 		}
 		.twentyWidth p
 		{
 			text-align: left;
-			margin:-15px 5px 0px 25px;
+			margin:10px 5px 10px 25px;
+			color:#DDDDDD;
+			font-weight: 100;
 		}
+form[method="post"]{
+	margin-top: 20px;
+}
 		input{
 			height:22px;
 		}
-		input[type=submit] {
-			background-color:red;
-			color:white;
-			height:30px;
+		#index input[type=submit] {
+			background-color:#C0392B;
+			color:#FFFFFF;
+			height:28px;
 			border:none;
-		}
-		
-		/*Footer*/
-		footer{
-		overflow: hidden;
-		}
-		footer section{
-			width:85%;
-			height:75%;
-			margin:2% 0% 2% 8%;
-			position:relative;
-		}
-		footer ul{
-			height:auto;
-			margin:0% 5% 2% 5%;
-			display:inline-block;
-			overflow: hidden;
-			padding-top: 1%;
-		}
-		footer h6{
-			float:left;
-			text-transform:capitalize;
-		}
-		
-		.social
-		{
-			float:right;
-			height:auto;
-			width:30%;
-			text-align:right;
-			margin-right: 3%;
-			margin-top: -10%;
-		}
-		.social img{
-			margin-left: 3%;
-			height:8%;
-			width: 8%;
-			filter:brightness(30%);
-			
-		}
-.social .active{
-	filter:brightness(1);
-}
-
-		.abttheinc
-		{
-			float:right;
-			height:auto;
-			width:30%;
-			text-align:right;
-			margin-right: 3%;
-			display:inline;
-			padding:0;
-			
-		}
-		.abttheinc li{
-			display:inline-block;
-			margin: -20px 0px 0px 3%;
-			width:150px;
-			text-transform:lowercase;
-		}
-		.abttheinc p em{
-			text-transform:capitalize;
+			margin-top:10px;
 		}
 
 
-		/*SHOP*/
+
+/**************************SHOP**************************/
+/********************************************************/
 		#shop{
 		height: auto;
 		clear: both;
-			background-color: white;
+			background-color: #FFFFFF;
 		}
 
 		#shop article{	
@@ -355,7 +352,7 @@ h1, h2, h3, h4{
 			position:relative;
 			float:left;
 			overflow:hidden;
-		background-color: white;
+		background-color: #FFFFFF;
 		}
 		 main{
 			width:70%;
@@ -364,7 +361,7 @@ h1, h2, h3, h4{
 			position:relative;
 			float:right;
 			overflow:hidden;
-			background-color: white;
+			background-color: #FFFFFF;
 		}
 		 main h1{
 			margin-bottom: 1%;
@@ -375,12 +372,12 @@ h1, h2, h3, h4{
 			height:30px;
 		}
 		 button.active{
-			background-color: black;
-			color:white;
+			background-color: #111111;
+			color:#FFFFFF;
 		}
 		 main section:nth-of-type(2){
 			height:35px;
-			border:1px solid grey;
+			border:1px solid #666666;
 		}
 		 main section:nth-of-type(2) div {
 			width:30px;
@@ -388,11 +385,11 @@ h1, h2, h3, h4{
 			display:inline-block;		
 		}
 		 main section:nth-of-type(2),#listsings{
-		background-color: white;
+		background-color: #FFFFFF;
 		}
 		ul.filter li, ul.show li, ul.pageLinks li{
 			display: inline-block;
-		 white-space: nowrap;
+		 #FFFFFF-space: nowrap;
 			text-align:left;
 		}
 		.show{
@@ -404,7 +401,7 @@ h1, h2, h3, h4{
 			margin-top:-15px;
 		}	
 		input[type=submit]{
-			width:50px;
+			width:60px;
 			background-color: #C0BCBC;
 			border:solid;
 			text-align: left;
@@ -436,10 +433,10 @@ h1, h2, h3, h4{
 			width:100%;
 			height:100%;
 			margin-top: -80px;
-			border:1px solid grey;
+			border:1px solid #666666;
 		}
  main section:nth-of-type(4){
-	border:1px solid grey;
+	border:1px solid #666666;
 }
 		.pageLinks{
 			float:right;
@@ -448,7 +445,7 @@ h1, h2, h3, h4{
 		}
 		
 		#collections h3{
-			color:black;
+			color:#111111;
 		}
 		#collections h4{
 			text-transform: uppercase;
@@ -479,11 +476,25 @@ h1, h2, h3, h4{
 		.forSale button{
 			background-color: #FBDD33;
 			width:30%;
-			color:white;
+			color:#FFFFFF;
 		}
-/*EVENTS*/
+
+
+
+/**************************EVENTS**************************/
+/**********************************************************/
+
+/*#events section section
+		{
+			width:80%;
+			height:75%;
+			margin:2% 0% 2% 7%;
+			position:relative;
+			overflow: hidden;
+		}*/
+
 		#events section:first-of-type, #events main, #events aside{
-			background-color:black;
+			background-color:#111111;
 		}
 
 		 main section:first-of-type img{
@@ -498,12 +509,12 @@ h1, h2, h3, h4{
 			width: 48%;
 		}
 		
-		#events main input[type=submit], #events aside input[type=submit], #contact input[type=submit]{
+		#events input[type=submit], #contact input[type=submit]{
 			width:100px;
 			height:40px;
-			border:5px solid grey;
+			border:5px solid #666666;
 			background-color: transparent;
-			color:grey;
+			color:#666666;
 			border-radius: 11px;
 			text-align: center;
 		}	
@@ -517,13 +528,11 @@ h1, h2, h3, h4{
 			
 }
 
-/*CONTACT*/
+/**************************CONTACT**************************/
+/***********************************************************/
 		
 		.fortySixWidth{
 			width:46%;
-		}
-		.fortySixWidth h2{
-			font-size: 250%;
 		}
 		.fortySixWidth img{
 			border-radius: 50%;
@@ -538,16 +547,17 @@ h1, h2, h3, h4{
 		#contact section:nth-of-type(2) h3
 		{
 			text-align:center;
-			margin: 5% 0px -1% 0px;
-			color: grey;
+			margin: 5% 0px -50px 0px;
+			color: #666666;
 		}
 		#contact section:nth-of-type(2) h1{
 			font-size: 500%;
 			text-align:center;
-		}
+			margin-bottom:-3%;
+}
 		#contact section:nth-of-type(3) h3{
-			text-transform:inherit;
-			margin:0px 5% -5% 5%;
+			text-transform:capitalize;
+			margin:0px 5% 0px 5%;
 		}
 		
 		fieldset{
@@ -568,54 +578,100 @@ h1, h2, h3, h4{
 		}
 		
 		/*input text area*/
-		input[type='email']{
+		#name, #help, #phone, #contact input[type='email']{
+			background-color: #666666;
+		}
+		#contact input[type='email']{
 			width:148%;
-			background-color: grey;
 		}
 		#phone{
 			width:19%;
-			background-color: grey;
 		}
-
 		#name, #help{
 			width:37%;
-			background-color: grey;
 		}
 		label{
 			margin-left:-38%;
 		}
 		
 		/*labels*/
+		.email, .name, .phone, .help{
+			text-transform: capitalize;
+			color:#FFFFFF;
+		}
 		.help{
 			margin-right:-9%;
-			text-transform: capitalize;
-			color:white;
 		}
 		.phone{
 			margin-right:-13%;
-			text-transform: capitalize;
-			color:white;
 		}
 		.name{
-			text-transform: capitalize;
-			color:white;
 		margin-right:-3%;
 		}
-		.email{
-			text-transform: capitalize;
-			color:white;
-		}
-		
+
 		.submit{
 			width:500px;
 			height:40px;
 
 			border:none;
-			background-color: white;
-			color:grey;
+			background-color: #FFFFFF;
+			color:#666666;
 			font-size: 100%;
 			border-radius: 11px;
 			text-align: center;
+		}
+
+
+/**************************FOOTER**************************/
+/**********************************************************/
+		footer{
+		overflow: hidden;
+		}
+		footer ul{
+			height:auto;
+			margin:0% 5% 2% 5%;
+			display:inline-block;
+			overflow: hidden;
+			padding-top: 1%;
+		}
+		footer h6{
+			float:left;
+			text-transform:capitalize;
+		}
+		.social
+		{
+			float:right;
+			height:auto;
+			width:30%;
+			text-align:right;
+		    margin-right: 3%;
+			margin-top: -10%;
+		}
+		.social img{
+			margin-left: 3%;
+			height:8%;
+			width: 8%;
+			filter:brightness(30%);
+			
+		}
+		.social .active{
+			filter:brightness(1);
+		}
+
+		.abttheinc
+		{
+			float:right;
+			width:30%;
+			text-align:right;
+		}
+		.abttheinc li{
+			display:inline-block;
+			margin: -15px 0px 0px 1%;
+			width:80px;
+			text-transform:lowercase;
+		}
+		.abttheinc p em{
+			text-transform:capitalize;
 		}
 
 /*}*/

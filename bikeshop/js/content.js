@@ -44,8 +44,13 @@ jsonRequest.send();
 function features(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
 	
-	var p = document.querySelector('p');
+	/*var p = document.querySelector('p')
 	var div = document.querySelector('div');
+	var article = document.querySelectorAll('#features-p .redSale').length;*/
+	
+	var parent = document.getElementById("features");
+var nodesSameClass = parent.getElementsByClassName("redSale");
+alert(nodesSameClass.length);
 	
 	//creating a new varible to hold my h4
     var data = '<h3>Shop</h3>';
@@ -57,14 +62,16 @@ function features(dFeatures) {
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article class="twentyFiveWidth">';
 		
-/*			var sale = p.className;
-		alert(sale);
-		if (sale === '.redSale') {
+		/*for (var i = 0, childNode; i <article.childNodes.length; i++) {
+			var sale = p.className;
+		
+		if (sale === 'redSale') {
 			data += '<p class="redSale">sale</p>';
 		}
 		else
 		{
 			data += '<p class="redSaleNo">sale</p>';
+		}
 		}*/
 		
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
@@ -135,7 +142,7 @@ function events(dEvents) {
 
 	//using innerHtml to update elements in the section with an id of articles
 	//creating an array of images that the json object did not include.
-	var imageArray1 = ["images/cyclingRace.png", "images/bikeTrail1.png", "images/biketrail.jpg", "images/cyclingRace2.png", "images/bikeTrail2.png", "images/bikeTrail3.png"];
+	var imageArray1 = ["images/cyclingRace.png","images/bikeTrail1.png", "images/bikeTrail2.png", "images/cyclingRace2.png", "images/biketrail.jpg", "images/bikeTrail3.png"];
 	
 	//creating a new varible to asign the article tag too.
 		var dataEvent = '<section>';
