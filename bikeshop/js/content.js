@@ -1,4 +1,4 @@
-/*
+<h2>Shop</h2><h2>Shop</h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2><h2><strong>Featured Products</strong></h2>/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -44,14 +44,9 @@ jsonRequest.send();
 function features(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
 	
-	/*var p = document.querySelector('p')
+	var p = document.querySelector('p');
 	var div = document.querySelector('div');
-	var article = document.querySelectorAll('#features-p .redSale').length;*/
-	
-	var parent = document.getElementById("features");
-var nodesSameClass = parent.getElementsByClassName("redSale");
-alert(nodesSameClass.length);
-	
+
 	//creating a new varible to hold my h4
     var data = '<h3>Shop</h3>';
 
@@ -61,10 +56,9 @@ alert(nodesSameClass.length);
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article class="twentyFiveWidth">';
-		
-		/*for (var i = 0, childNode; i <article.childNodes.length; i++) {
+			
 			var sale = p.className;
-		
+
 		if (sale === 'redSale') {
 			data += '<p class="redSale">sale</p>';
 		}
@@ -72,13 +66,12 @@ alert(nodesSameClass.length);
 		{
 			data += '<p class="redSaleNo">sale</p>';
 		}
-		}*/
 		
         data += '<img src="' + dFeatures.products[i].imageURL + '"';
         data += 'alt="' + dFeatures.products[i].title + '"/>';
 		
-		/*var cart = div.className;
-		alert(cart);
+		var cart = div.className;
+		
 		if( cart === '.cartNo'){
 			 data += '<div class="cartNo">';
 			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
@@ -91,7 +84,7 @@ alert(nodesSameClass.length);
 			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
 			data += '<p><strong>Add To Cart</strong></p>';
 			data += '</div>';
-		}*/
+		}
 		
         data += '<div class="fourrating">';
         data += '<span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="staroutline">&#9734;</span>';
