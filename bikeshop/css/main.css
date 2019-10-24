@@ -236,7 +236,7 @@ h1, h2, h3, h4{
 			height:35px;
 			background-color: #111111;	
 			opacity: 0.7;
-			margin-top: -74px;
+			margin-top: -68px;
 		}
 		.addCart p
 		{
@@ -347,16 +347,16 @@ form[method="post"]{
 		text-transform: lowercase;
 		}
 		 aside{
-			width:25%;
+			width:23%;
 			height:90%;
-			margin:0% 0% 2% 3%;
+			margin:0% 0% 2% 8%;
 			position:relative;
 			float:left;
 			overflow:hidden;
 		background-color: #FFFFFF;
 		}
 		 main{
-			width:70%;
+			width:67%;
 			height:auto;
 			margin:0% 1% 2% 0%;
 			position:relative;
@@ -376,14 +376,13 @@ form[method="post"]{
 			background-color: #111111;
 			color:#FFFFFF;
 		}
+#shop section:nth-of-type(1){
+		padding-left:6%;
+}
+
 		 main section:nth-of-type(2){
-			height:35px;
+			height:50px;
 			border:1px solid #666666;
-		}
-		 main section:nth-of-type(2) div {
-			width:30px;
-			height:30px;
-			display:inline-block;		
 		}
 		 main section:nth-of-type(2),#listsings{
 		background-color: #FFFFFF;
@@ -396,10 +395,7 @@ form[method="post"]{
 		.show{
 			float:right;
 			padding-right:5%;
-			margin-top:-75px;
-		}	
-		.sortBy{
-			margin-top:-15px;
+			margin-top:-69px;
 		}	
 		input[type=submit]{
 			width:60px;

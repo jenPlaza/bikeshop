@@ -32,7 +32,6 @@ jsonRequest.onload = function () {
 	
 	//otherwise, convert html from these two functions
 	else  {
-		/*shopCollections(connection);*/
 	shopProducts(connection);
 	}
 };
@@ -169,53 +168,6 @@ function events(dEvents) {
 }
 
 //shop page
-/*
-function shopCollections(dShopC) {
-
-	//using innerHtml to update elements in the section with an id of collections
-	
-	//creating a new varible to asign the Aside tag too.
-	var dataSCollections = '<aside>';
-	dataSCollections += '<ul>';
-			dataSCollections += '<li><h3>Collections</h3></li>';
-       dataSCollections += '<li> <a class="btn active" href="#" >Bike Parts & Components</a></li>';
-       dataSCollections += '<li> <a class="btn" href="#" >Bike Tools & Transport</a></li>';
-       dataSCollections += '<li> <a class="btn" href="#" >Bikes & Frames</a></li>';
-       dataSCollections += '<li> <a class="btn" href="#" >Cycling Clothing</a></li>';
-       dataSCollections += '<li> <a class="btn" href="#" >Light & Accessories</a></li>';
-       dataSCollections += '<li> <a class="btn" href="#" >Sale</a></li>';
-			dataSCollections += '</ul>';
-	
-	//I'm going to take the value of my image, h4, and h5 and store it as my variable dataSCollections
-	dataSCollections += '<img src="images/newCollection.png" alt="new collection of bicycles" />';
-	dataSCollections += '<h4><em>New Collection</em></h4>';
-	dataSCollections += '<section class="forSale">';
-	dataSCollections += '<h3>Products</h3>';
-
-	//here I'm looping through the products array in the json object and retrieving the info for the image, title, description, and prices, for all articles in the collections section.
-	dataSCollections += '<article>';
-    for (var i = 0; i < 3; i++) {
-		
-		dataSCollections += '<div>';
-		dataSCollections += '<img src="' + dShopC.products[i].imageURL + '"';
-        dataSCollections += 'alt="' + dShopC.products[i].title + '"/>';
-		dataSCollections += '</div>';
-		dataSCollections += '<section>';
-        dataSCollections += '<h5>' + dShopC.products[i].title + '</em>';
-		dataSCollections += '<h5 class="sale">$' + dShopC.products[i].salePrice +" "+ dShopC.products[i].price +'</h5>';
-		dataSCollections += '</section>';
-		
-    }
-	dataSCollections += '</article>';
-	dataSCollections += '</section>';
-	dataSCollections += '</aside>';
-	
-	//here I'm going to take the html value listed for collections and store it as my varible sectionColl, then I'm going to equal sectionColl with the new information stored in dataSCollections.
-    var sectionColl = document.getElementById("collections");
-    sectionColl.innerHTML = dataSCollections;
-}
-*/
-
 function shopProducts(dShopP) {
 
 	//using innerHtml to update elements in the section with an id of products
