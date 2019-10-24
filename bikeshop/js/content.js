@@ -110,7 +110,7 @@ function plans(dPlans) {
     var dataPlan = '<h2>CycleClub</h2>';
 
 	//I'm going to take the value of my h2 tag and store it as my varible dataPlan
-     dataPlan += '<h2><em>Member Benefits</em></h2>';
+     dataPlan += '<h2><strong><em>Member Benefits</em></strong></h2>';
 
 	//here I'm looping through the benefits array in the json object and retrieving the info for the title and description, for all articles in the plans section.
 	 dataPlan += '<section>';

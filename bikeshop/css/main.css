@@ -95,7 +95,7 @@ h1, h2, h3, h4{
 			display:inline-block;
 			overflow: hidden;
 			padding-top: 5%;
-			overflow: hidden;
+			
 		}
 		 section section, footer section
 		{
@@ -572,17 +572,20 @@ form[method="post"]{
 			background-color: #666666;
 		}
 		#contact input[type='email']{
-			width:148%;
+			width:130%;
 		}
 		#phone{
-			width:19%;
+			width:18%;
 		}
 		#name, #help{
-			width:37%;
+			width:40%;
 		}
 		label{
 			margin-left:-38%;
 		}
+contact# form{
+	border:75px solid #111111;
+}
 		
 		/*labels*/
 		.email, .name, .phone, .help{
@@ -590,13 +593,13 @@ form[method="post"]{
 			color:#FFFFFF;
 		}
 		.help{
-			margin-right:-9%;
+			margin-right:-11%;
 		}
 		.phone{
 			margin-right:-13%;
 		}
 		.name{
-		margin-right:-3%;
+		margin-right:-1%;
 		}
 
 		.submit{
