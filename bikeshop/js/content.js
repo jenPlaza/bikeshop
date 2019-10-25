@@ -1,4 +1,10 @@
-/*
+<input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
+					<br />/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -42,9 +48,11 @@ jsonRequest.send();
 //index Page
 function features(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
-	
-	var p = document.querySelector('p');
-	var div = document.querySelector('div');
+	var sale = "";
+	var cart = "";
+	var headerFive = document.querySelectorAll('h5');
+	var div = document.querySelectorAll('div');
+	var twentyFiveWidth = document.querySelectorAll('.twentyFiveWidth');
 
 	//creating a new varible to hold my h4
     var data = '<h2>Shop</h2>';
@@ -52,49 +60,61 @@ function features(dFeatures) {
 	//I'm going to take the value of my h2 tag and store it as my varible data
      data += '<h2><strong>Featured Products</strong></h2>';
 	data += '<section>';
+	
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
+	for (var i = 0; i < twentyFiveWidth.length; i++) {
     for (var i = 0; i < dFeatures.products.length; i++) {
         data += '<article class="twentyFiveWidth">';
-			
-			var sale = p.className;
-
-		if (sale === 'redSale') {
-			data += '<p class="redSale">sale</p>';
-		}
-		else
+		sale= headerFive[i].className;
+			/*Testing
+			alert(i+": "+ redsale);*/
+		
+		if (sale === 'redSale') 
 		{
-			data += '<p class="redSaleNo">sale</p>';
+			data += '<h5 class="redSale">sale</h5>';
+		}
+		else if (sale === 'redSaleNo')
+		{
+			data += '<h5 class="redSaleNo">sale</h5>';
 		}
 		
-        data += '<img src="' + dFeatures.products[i].imageURL + '"';
+		data += '<img src="' + dFeatures.products[i].imageURL + '"';
         data += 'alt="' + dFeatures.products[i].title + '"/>';
 		
-		var cart = div.className;
+		cart = div[i].className;
+			/*Testing
+			alert(i+": "+ cart);*/
 		
-		if( cart === '.cartNo'){
-			 data += '<div class="cartNo">';
-			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
-			data += '<p><strong>Add To Cart</strong></p>';
-			data += '</div>'; 
-		}
-		else
+		if (cart === 'addCart')
 		{
 			data += '<div class="addCart">';
 			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
 			data += '<p><strong>Add To Cart</strong></p>';
 			data += '</div>';
 		}
+		else{
+			 data += '<div class="cartNo">';
+			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
+			data += '<p><strong>Add To Cart</strong></p>';
+			data += '</div>'; 
+		}
 		
-        data += '<div class="fourrating">';
         data += '<span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="staroutline">&#9734;</span>';
-        data += '</div>';
 		data += '<br/><br/>';
         data += '<p><strong>Product</strong></p>';
         data += '<p><em>' + dFeatures.products[i].description + '</em></p>';
 		data += '<br/>';
+		
+		if(dFeatures.products[i].salePrice === ""){
+			data += '<p>$' + dFeatures.products[i].price + '</p>';
+		}
+		else{
         data += '<p>$' + dFeatures.products[i].salePrice +' <strong><em>$'+dFeatures.products[i].price + '</em></strong></p>';
+		}
 		data += '</article>';
-    }
+	}
+	}
+	data += '</section>'
 	
 	//here I'm going to take the html value listed for features and store it as my varible sectionHome, then I'm going to equal sectionHome with the new information stored in data.
     var sectionFeatures = document.getElementById("features");
@@ -125,11 +145,32 @@ function plans(dPlans) {
 		dataPlan += '<article class="twentyWidth">';
 		dataPlan += '<img src="' + imageArray[2]+'"/>';
         dataPlan += '<h4><em>' + dPlans.benefits[2].title + '</em></h4>';
-        dataPlan += '<form method="post">';
-	dataPlan += '<input placeholder="Enter Email" type="email" name="email"><input type="submit" />';
-	dataPlan += '</form>';
+        
+	dataPlan += '<input placeholder=" Email" type="email" name="email">';
+	dataPlan += '<button id="Btn">Submit</button>';
 	dataPlan += '<br />';
-		dataPlan += '</article>';
+	dataPlan += '</article>';
+	dataPlan += '<form id="mailingList">';
+	dataPlan += '<div id="container" >';
+	dataPlan += '<h2 id="signUP">Sign Up to Recieve CycleWorld Promotions & Event Information</h2>';
+	dataPlan += '<section>';
+	dataPlan += '<label for="email"><b>Confirm Email</b></label><br />';
+	dataPlan += '<input type="email" placeholder="Confirm Email" name="email"><br /><br />';
+	dataPlan += '<label for="name"><b>Name</b></label><br />';
+	dataPlan += '<input type="text" placeholder="Enter Name" name="name"><br /><br />';
+	dataPlan += '<label for="birthdate"><b>Birthdate</b></label><br />';
+	dataPlan += '<input type="date" placeholder="Enter Birthdate" name="bday"><br /><br />';
+	
+	dataPlan += '<input id="radio" type="radio" name="radio">';
+	dataPlan += '<label for="radio"><b>Yes! Please send periodic information on product, services, and events</b></label><br /><br />';
+		dataPlan += '<section id="thankYou">';
+	dataPlan += '<h2>Thankyou for trusting us and helping us grow into a huge success</h2>';
+	dataPlan += '</section><br /><br />';
+	dataPlan += '<button id="newsBtn">Submit</button>';
+	dataPlan += '</section>';
+	dataPlan += '</div>';
+	dataPlan += '</form>';
+	dataPlan += '</section>';
 	
 	
 	

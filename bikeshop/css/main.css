@@ -200,8 +200,9 @@ h1, h2, h3, h4{
 .twentyFiveWidth
 		{
 			width:23.5%;
-
+			margin-top:5px;
 		}
+
 		.twentyFiveWidth img:not(.cart) {
 			width:100%;
 			height:100%;
@@ -257,12 +258,6 @@ h1, h2, h3, h4{
 			margin-top: -70px;
 			position:relative;
 		}
-		.fourrating
-		{
-			visibility:visible;
-			background-color: transparent;
-			margin: 0px 0px -35px 0px;
-}
 		.starfill
 		{
    color: #C0392B;
@@ -318,15 +313,39 @@ form[method="post"]{
 		input{
 			height:22px;
 		}
-		#index input[type=submit] {
+		#index button {
 			background-color:#C0392B;
 			color:#FFFFFF;
 			height:28px;
 			border:none;
 			margin-top:10px;
 		}
-
-
+#mailingList, #thankYou {
+    display: none;
+}
+    #mailingList input, select, option {
+        color: #111111;
+    }
+#container{
+  margin: -30% 0px 0px 30%;
+	padding:5%;
+	width:30%;
+	height: auto;
+  background-color: white;
+	position:relative;
+}
+#container section {
+	margin-top:55px;
+}
+#container label {
+	margin:20px 0px 0px 0px;
+	color:grey; 
+	text-align:left;
+}
+#container input {
+	width:100%;
+	text-align:left;
+}
 
 /**************************SHOP**************************/
 /********************************************************/
@@ -397,7 +416,7 @@ form[method="post"]{
 			padding-right:5%;
 			margin-top:-69px;
 		}	
-		input[type=submit]{
+		#shop input[type=submit]{
 			width:60px;
 			background-color: #C0BCBC;
 			border:solid;
