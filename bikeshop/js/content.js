@@ -1,10 +1,4 @@
-<input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br /><input placeholder=" Email" type="email" name="email"><button id="Btn">Submit</button>
-					<br />/*
+/*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/bikeshop.json
 */
@@ -150,6 +144,7 @@ function plans(dPlans) {
 	dataPlan += '<button id="Btn">Submit</button>';
 	dataPlan += '<br />';
 	dataPlan += '</article>';
+	
 	dataPlan += '<form id="mailingList">';
 	dataPlan += '<div id="container" >';
 	dataPlan += '<h2 id="signUP">Sign Up to Recieve CycleWorld Promotions & Event Information</h2>';
@@ -164,8 +159,8 @@ function plans(dPlans) {
 	dataPlan += '<input id="radio" type="radio" name="radio">';
 	dataPlan += '<label for="radio"><b>Yes! Please send periodic information on product, services, and events</b></label><br /><br />';
 		dataPlan += '<section id="thankYou">';
-	dataPlan += '<h2>Thankyou for trusting us and helping us grow into a huge success</h2>';
-	dataPlan += '</section><br /><br />';
+	dataPlan += '<h2>Thankyou for trusting us and helping us grow into a huge success</h2><br /><br />';
+	dataPlan += '</section><br />';
 	dataPlan += '<button id="newsBtn">Submit</button>';
 	dataPlan += '</section>';
 	dataPlan += '</div>';

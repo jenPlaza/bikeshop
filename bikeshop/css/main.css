@@ -568,6 +568,9 @@ form[method="post"]{
 			text-transform:capitalize;
 			margin:0px 5% 0px 5%;
 		}
+#directions {
+    display: none;
+}
 		
 		fieldset{
 			text-align: center;
