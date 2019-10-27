@@ -5,51 +5,51 @@
 /*html {*/
 /*******************Typography*************************/
 body {
-    font: normal 16px program, sans-serif;
+    font: normal 1rem program, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	color:#111111;
 }
 h1{
-	font-size: 50px;
+	font-size: 3.1rem;
 }
 h1 strong{
-	font-size: 52px;
+	font-size: 3.3rem;
 	font-weight: bold;
 }
 h2{
-	font-size: 26px;
+	font-size: 1.63rem;
 	font-weight: 100;
 	color:#666666
 }
 h2 strong{
-	font-size: 36px;
+	font-size: 2.3rem;
 	font-weight: bold;
 	color:#111111;
 }
 h3{
-	font-size: 20px;
+	font-size: 1.25rem;
 	color:#666666
 }
 h3 strong{
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color:#444444;
 }
 h4, h5 strong{
-	font-size: 16px;
+	font-size: 1rem;
 	color:#666666
 }
 h4 strong{
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color:#111111;
 }
 h5, h6 strong {
-		font-size: 14px;
+		font-size: 0.88rem;
 }
 h6 {
-	font-size: 12px;
+	font-size: 0.75rem;
 			color: #888888;
 	font-weight: 100;
 }
@@ -66,11 +66,10 @@ em{color:#FFFFFF;
 	padding: 0;
 	list-style: none;
 	font-size: 100%;
-	text-decoration: none;
+	text-decoration-line: none;
 	font-weight: normal;
 	color: inherit;
 	box-sizing: border-box;
-
 } 
 h1, h2, h3, h4{
 			text-transform: uppercase;
@@ -82,6 +81,7 @@ h1, h2, h3, h4{
 		p em, .twentyFiveWidth strong em {
 			color: #888888;
 			font-style: normal;
+			text-transform: capitalize;
 		}
 		#index section{
 		height: auto;
@@ -119,8 +119,7 @@ h1, h2, h3, h4{
 		header 
 		{
             width: 100%;
-            height: 500px;
-            clear: both;
+            height: 600px;
         }
 	 	nav
 		{
@@ -144,6 +143,8 @@ h1, h2, h3, h4{
 		header img
 		{
 			margin:6% 0px 0px 15%;
+			max-width: 100%;
+    		height: auto;
 		}
 		
 /*************************INDEX*************************/
@@ -151,8 +152,8 @@ h1, h2, h3, h4{
 /*************************Cta***************************/
 		.thirtyTwoWidth
 		{
-			width:32%;
-			margin:0px 0px 1% 1%;
+			width: calc(100%/3.15);
+			margin:0px 0px 1% 1;
 			text-align: center;
 		}
 		.thirtyTwoWidth h2
@@ -163,7 +164,7 @@ h1, h2, h3, h4{
 			opacity: 0.6;
 			top: -25px;
 		}
-		.thirtyTwoWidth h6 strong
+		.thirtyTwoWidth h3 strong
 		{
   			padding:10px 20px 10px 20px;
 			background-color: #C0392B;
@@ -199,7 +200,7 @@ h1, h2, h3, h4{
 
 .twentyFiveWidth
 		{
-			width:23.5%;
+			width:calc(100%/4.25);
 			margin-top:5px;
 		}
 
@@ -296,8 +297,8 @@ h1, h2, h3, h4{
 }
 		.twentyWidth
 		{
-			width:15%;
-			margin:1% 0% 1% 14%;
+			width:calc(100%/3.2);
+			margin:1% 0% 1% 0%;
 			text-align: center;
 		}
 		.twentyWidth p
@@ -326,7 +327,7 @@ form[method="post"]{
     #mailingList input, select, option {
         color: #111111;
     }
-#container{
+#signUpBox{
   margin: -30% 0px 0px 30%;
 	padding:5%;
 	width:30%;
@@ -334,15 +335,15 @@ form[method="post"]{
   background-color: white;
 	position:relative;
 }
-#container section {
+#signUpBox section {
 	margin-top:55px;
 }
-#container label {
+#signUpBox label {
 	margin:20px 0px 0px 0px;
 	color:grey; 
 	text-align:left;
 }
-#container input {
+#signUpBox input {
 	width:100%;
 	text-align:left;
 }
@@ -351,19 +352,14 @@ form[method="post"]{
 /********************************************************/
 		#shop{
 		height: auto;
-		clear: both;
 			background-color: #FFFFFF;
 		}
 
 		#shop article{	
 			text-align: center;
-
 		}
 		#shop header + section{
 			margin:1% 1% 1% 2%;
-		}
-		#shop h4{
-		text-transform: lowercase;
 		}
 		 aside{
 			width:23%;
@@ -391,7 +387,7 @@ form[method="post"]{
 			background-color: #C0BCBC;
 			height:30px;
 		}
-		 button.active{
+		 #collections a.active, button.active{
 			background-color: #111111;
 			color:#FFFFFF;
 		}
@@ -403,12 +399,12 @@ form[method="post"]{
 			height:50px;
 			border:1px solid #666666;
 		}
-		 main section:nth-of-type(2),#listsings{
+		 main section:nth-of-type(2),#listings{
 		background-color: #FFFFFF;
 		}
 		ul.filter li, ul.show li, ul.pageLinks li{
 			display: inline-block;
-		 #FFFFFF-space: nowrap;
+		 white-space: nowrap;
 			text-align:left;
 		}
 		.show{
@@ -424,7 +420,9 @@ form[method="post"]{
 		}
 		.sortBy input[type=submit]{
 			width:150px;
-		}		
+		}	
+
+/*cart links*/
 		 main section:nth-of-type(3) a
 		{
 			height:20px;
@@ -434,18 +432,17 @@ form[method="post"]{
 			
 		}
 		 main section:nth-of-type(3) li{
-			padding-left:110px;
+			padding-left:35%; 
 		}
 		 main section:nth-of-type(3) img{
 			background-color: #FBDD33;	
-			border:none;
-		}
+			 border:none;
+}
 		.thirtyWidth{
-			width: 30%;
+			/*width: 30%;*/
+			width: calc(100%/3.2);
 			padding:18% 0px 0px 0px;
-	
 		}
-
 		.thirtyWidth img
 		{
 			width:100%;
@@ -515,7 +512,7 @@ form[method="post"]{
 			padding: 1% 2% 1% 1%;
 		}
 		.fortyEightWidth{
-			width: 48%;
+			width:calc(100%/2.1);
 		}
 		
 		#events input[type=submit], #contact input[type=submit]{
@@ -541,25 +538,26 @@ form[method="post"]{
 /***********************************************************/
 		
 		.fortySixWidth{
-			width:46%;
+			width:calc(100%/2.1);
 		}
 		.fortySixWidth img{
 			border-radius: 50%;
 			width:100%;
 			height:100%;
 		}
-		#contact article:first-of-type div{
-			width:50px;
-			height:225px;
+		#contact article:nth-of-type(2) div{
+			width:60%;
+			height:auto;
 		}
 		
-		#contact section:nth-of-type(2) h3
+		#contact section:nth-of-type(2) h3 
 		{
 			text-align:center;
 			margin: 5% 0px -50px 0px;
 			color: #666666;
 		}
-		#contact section:nth-of-type(2) h1{
+		#contact section:nth-of-type(2) h1 
+{
 			font-size: 500%;
 			text-align:center;
 			margin-bottom:-3%;
@@ -605,7 +603,7 @@ form[method="post"]{
 		label{
 			margin-left:-38%;
 		}
-contact# form{
+		#contact form{
 	border:75px solid #111111;
 }
 		
@@ -645,7 +643,7 @@ contact# form{
 		footer ul{
 			height:auto;
 			margin:0% 5% 2% 5%;
-			display:inline-block;
+			float:left;
 			overflow: hidden;
 			padding-top: 1%;
 		}
@@ -660,7 +658,7 @@ contact# form{
 			width:30%;
 			text-align:right;
 		    margin-right: 3%;
-			margin-top: -10%;
+			margin-top: -9%;
 		}
 		.social img{
 			margin-left: 3%;
@@ -680,7 +678,7 @@ contact# form{
 			text-align:right;
 		}
 		.abttheinc li{
-			display:inline-block;
+			float:left;
 			margin: -15px 0px 0px 1%;
 			width:80px;
 			text-transform:lowercase;

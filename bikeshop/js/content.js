@@ -14,6 +14,7 @@ jsonRequest.onload = function () {
 
 	var indexBody = document.getElementById("index");
 	var eventsBody = document.getElementById("events");
+	var shopBody = document.getElementById("shop");
 	
 	//I'm going to parse the json arrray, and save it to variable connection
     var connection = JSON.parse(jsonRequest.responseText);
@@ -21,17 +22,17 @@ jsonRequest.onload = function () {
 	//conditional statements to return info from the index, events, shop, or contact page.
 	// body includes an id element of index, then convert html from these two functions
 	if(indexBody){
-    features(connection);
-	plans(connection);
+    featuredProducts(connection);
+	memberBenefits(connection);
 	}
 	
 	// body includes an id element of events, then convert html from this function
 	else if(eventsBody){
-	events(connection);
+	clubEvents(connection);
 	}
 	
 	//otherwise, convert html from these two functions
-	else  {
+	else  if(shopBody) {
 	shopProducts(connection);
 	}
 };
@@ -40,7 +41,7 @@ jsonRequest.onload = function () {
 jsonRequest.send();
 
 //index Page
-function features(dFeatures) {
+function featuredProducts(dFeatures) {
 	//using innerHtml to update elements in the section with an id of features
 	var sale = "";
 	var cart = "";
@@ -57,7 +58,7 @@ function features(dFeatures) {
 	
 	//here I'm looping through the products array in the json object and retrieng the info for the image, title, description, and prices for all articles in the features section.
 	for (var i = 0; i < twentyFiveWidth.length; i++) {
-    for (var i = 0; i < dFeatures.products.length; i++) {
+    for ( i = 0; i < dFeatures.products.length; i++) {
         data += '<article class="twentyFiveWidth">';
 		sale= headerFive[i].className;
 			/*Testing
@@ -87,7 +88,7 @@ function features(dFeatures) {
 			data += '</div>';
 		}
 		else{
-			 data += '<div class="cartNo">';
+			data +='<div class="cartNo">';
 			data += '<img class="cart" src="images/cart.png" alt="cart png" />';
 			data += '<p><strong>Add To Cart</strong></p>';
 			data += '</div>'; 
@@ -95,7 +96,7 @@ function features(dFeatures) {
 		
         data += '<span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="starfill">&#9733;</span><span class="staroutline">&#9734;</span>';
 		data += '<br/><br/>';
-        data += '<p><strong>Product</strong></p>';
+        data += '<p><strong>' + dFeatures.products[i].title +'</strong></p>';
         data += '<p><em>' + dFeatures.products[i].description + '</em></p>';
 		data += '<br/>';
 		
@@ -115,7 +116,7 @@ function features(dFeatures) {
     sectionFeatures.innerHTML = data;
 }
 
-function plans(dPlans) {
+function memberBenefits(dPlans) {
 
 	//using innerHtml to update elements in the section with an id of plans
 	var imageArray = ["images/truck.png", "images/wrench.png", "images/envelope.png"];
@@ -127,18 +128,18 @@ function plans(dPlans) {
      dataPlan += '<h2><strong><em>Member Benefits</em></strong></h2>';
 
 	//here I'm looping through the benefits array in the json object and retrieving the info for the title and description, for all articles in the plans section.
-	 dataPlan += '<section>';
+	dataPlan +='<section>';
     for (var i = 0; i < 2; i++) {
        dataPlan += '<article class="twentyWidth">';
 		dataPlan += '<img src="' + imageArray[i]+'"/>';
-        dataPlan += '<h4><em>' + dPlans.benefits[i].title + '</em></h4>';
+        dataPlan += '<h3><em>' + dPlans.benefits[i].title + '</em></h3>';
         dataPlan += '<p>' + dPlans.benefits[i].description +'</p>';
 		dataPlan += '</article>';
     }
 	
 		dataPlan += '<article class="twentyWidth">';
 		dataPlan += '<img src="' + imageArray[2]+'"/>';
-        dataPlan += '<h4><em>' + dPlans.benefits[2].title + '</em></h4>';
+        dataPlan += '<h3><em>' + dPlans.benefits[2].title + '</em></h3>';
         
 	dataPlan += '<input placeholder=" Email" type="email" name="email">';
 	dataPlan += '<button id="Btn">Submit</button>';
@@ -175,7 +176,7 @@ function plans(dPlans) {
 }
 
 //events page
-function events(dEvents) {
+function clubEvents(dEvents) {
 
 	//using innerHtml to update elements in the section with an id of articles
 	//creating an array of images that the json object did not include.
@@ -183,14 +184,14 @@ function events(dEvents) {
 	
 	//creating a new varible to asign the article tag too.
 		var dataEvent = '<section>';
-		dataEvent += '<h1><em>Current Events</em></h1>';
+		dataEvent += '<h2><strong><em>Current Events</em></strong></h2>';
 	//here I'm looping through the events array in the json object and retrieving the info for the title and text, for all articles in the articles section.
     for (var i = 0; i < dEvents.events.length; i++) {
 		dataEvent += '<article class="fortyEightWidth">';
 		dataEvent += '<img src="' + imageArray1[i] + '"';
         dataEvent += 'alt="' + dEvents.events[i].title + '"/>';
 		dataEvent += '<section>';
-        dataEvent += '<h4><em>' + dEvents.events[i].title + '</em></h4>';
+        dataEvent += '<h3><em>' + dEvents.events[i].title + '</em></h3>';
         dataEvent += '<p><em>' + dEvents.events[i].text +'</em></p>';
 		dataEvent += '<br/>';
 		dataEvent += '<p><input type="submit" value="Read More"/></p>';
@@ -216,7 +217,8 @@ for (var i = 0; i < dShopP.products.length; i++) {
         dataSProducts += '<img src="' + dShopP.products[i].imageURL + '"';
         dataSProducts += 'alt="' + dShopP.products[i].title + '"/>';
 		
-        dataSProducts += '<h4>' + dShopP.products[i].title + '</h4>';
+         dataSProducts += '<p><strong><em>' + dShopP.products[i].title + '</em></strong></p>';
+	dataSProducts += '<p><em>' + dShopP.products[i].description + '</em></p>';
         dataSProducts += '<h4>$' + dShopP.products[i].salePrice +"  "+dShopP.products[i].price + '</h4>';
 	dataSProducts += '<ul>';
           dataSProducts += '<li><a href="#"><img src="images/zoom-in-2.png" alt="zoom-in icon" ></a></li>';
