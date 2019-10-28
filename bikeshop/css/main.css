@@ -361,6 +361,9 @@ form[method="post"]{
 		#shop header + section{
 			margin:1% 1% 1% 2%;
 		}
+#shop div{
+	overflow:hidden;
+}
 		 aside{
 			width:23%;
 			height:90%;
@@ -369,19 +372,16 @@ form[method="post"]{
 			float:left;
 			overflow:hidden;
 		background-color: #FFFFFF;
+			 padding:0;
 		}
 		 main{
-			width:67%;
+			width:65%;
 			height:auto;
-			margin:0% 1% 2% 0%;
+			margin:0% 1% 2% 3%;
 			position:relative;
 			float:right;
 			overflow:hidden;
 			background-color: #FFFFFF;
-		}
-		 main h1{
-			margin-bottom: 1%;
-			text-align: center;
 		}
 		 button{
 			background-color: #C0BCBC;
@@ -391,15 +391,14 @@ form[method="post"]{
 			background-color: #111111;
 			color:#FFFFFF;
 		}
-#shop section:nth-of-type(1){
+		#shop section:nth-of-type(1){
 		padding-left:6%;
 }
-
 		 main section:nth-of-type(2){
 			height:50px;
 			border:1px solid #666666;
 		}
-		 main section:nth-of-type(2),#listings{
+		 main section:nth-of-type(2),#listings, aside section:nth-of-type(2){
 		background-color: #FFFFFF;
 		}
 		ul.filter li, ul.show li, ul.pageLinks li{
@@ -423,6 +422,7 @@ form[method="post"]{
 		}	
 
 /*cart links*/
+
 		 main section:nth-of-type(3) a
 		{
 			height:20px;
@@ -471,24 +471,29 @@ form[method="post"]{
 		#collections li{
 			padding:1% 0px 0px 1%;
 		}
+		#shop ul + div{
+			width:100%;
+		height:250px;
+}
+		.newCollect{
+		width:100%;
+		height:100%;
+}
 		#collections img{
 			margin-top:50px;
 		}
-		.forSale div{
+		aside section:nth-of-type(2) div{
 			float:left;
 			width:30%;
 		}
-		.forSale{
-			margin-top: 25%;
-			
-		}
-		.forSale section{
+		
+		aside section:nth-of-type(2) section{
 			float:right;
 			width:68%;
 			margin-top: -40%;
 			text-align: left;
 		}
-		.forSale button{
+		aside section:nth-of-type(2) button{
 			background-color: #FBDD33;
 			width:30%;
 			color:#FFFFFF;
@@ -502,6 +507,10 @@ form[method="post"]{
 		#events section:first-of-type, #events main, #events aside{
 			background-color:#111111;
 		}
+#events header + div{
+	overflow: hidden;
+	background-color:#111111;
+}
 
 		 main section:first-of-type img{
 			height:100%;
