@@ -350,7 +350,11 @@ form[method="post"]{
 
 /**************************SHOP**************************/
 /********************************************************/
-		#shop{
+#shop header{
+			 background: url("../images/backpack.jpg")no-repeat;
+	background-size: cover;
+		}		
+#shop{
 		height: auto;
 			background-color: #FFFFFF;
 		}
@@ -503,7 +507,10 @@ form[method="post"]{
 
 /**************************EVENTS**************************/
 /**********************************************************/
-
+ #events header{
+	 background: url("../images/cycleEvent2.png")no-repeat;
+	background-size: cover;
+		}
 		#events section:first-of-type, #events main, #events aside{
 			background-color:#111111;
 		}
@@ -511,19 +518,22 @@ form[method="post"]{
 	overflow: hidden;
 	background-color:#111111;
 }
-
+		 aside section{
+			padding:5%;
+		}
+		 aside h4{
+			text-transform: capitalize;
+}
 		 main section:first-of-type img{
 			height:100%;
 			width:100%;
 		}
-		
 		 main section:first-of-type p{
 			padding: 1% 2% 1% 1%;
 		}
 		.fortyEightWidth{
 			width:calc(100%/2.1);
 		}
-		
 		#events input[type=submit], #contact input[type=submit]{
 			width:100px;
 			height:40px;
@@ -534,18 +544,14 @@ form[method="post"]{
 			text-align: center;
 		}	
 		
-		 aside section{
-			padding:5%;
-		}
 
-		 aside h4{
-			text-transform: capitalize;
-			
-}
 
 /**************************CONTACT**************************/
 /***********************************************************/
-		
+		 #contact header{
+			 background: url("../images/visitUs2.png")no-repeat;
+            background-size: cover;
+		}
 		.fortySixWidth{
 			width:calc(100%/2.1);
 		}

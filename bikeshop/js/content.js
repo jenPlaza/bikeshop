@@ -35,6 +35,9 @@ jsonRequest.onload = function () {
 	else  if(shopBody) {
 	shopProducts(connection);
 	}
+	else{
+		void(0);
+	}
 };
 
 //send the request
@@ -200,7 +203,7 @@ function clubEvents(dEvents) {
     }
 	
 	//here I'm going to take the html value listed for articles and store it as my varible sectionEvents, then I'm going to equal sectionEvents with the new information stored in dataEvent.
-    var sectionEvents = document.getElementById("articles");
+    var sectionEvents = document.getElementById("currentEvents");
     sectionEvents.innerHTML = dataEvent;
 }
 
