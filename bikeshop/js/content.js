@@ -109,7 +109,7 @@ function featuredProducts(dFeatures) {
 		data += '</article>';
 	}
 	}
-	data += '</section>'
+	data += '</section>';
 	
 	//here I'm going to take the html value listed for features and store it as my varible sectionHome, then I'm going to equal sectionHome with the new information stored in data.
     var sectionFeatures = document.getElementById("features");
@@ -147,15 +147,15 @@ function memberBenefits(dPlans) {
 	dataPlan += '</article>';
 	
 	dataPlan += '<form id="mailingList">';
-	dataPlan += '<div id="container" >';
-	dataPlan += '<h2 id="signUP">Sign Up to Recieve CycleWorld Promotions & Event Information</h2>';
+	dataPlan += '<div id="signUpBox" >';
+	dataPlan += '<h2>Sign Up to Recieve CycleWorld Promotions & Event Information</h2>';
 	dataPlan += '<section>';
-	dataPlan += '<label for="email"><b>Confirm Email</b></label><br />';
+	dataPlan += '<label><b>Confirm Email</b></label><br />';
 	dataPlan += '<input type="email" placeholder="Confirm Email" name="email"><br /><br />';
-	dataPlan += '<label for="name"><b>Name</b></label><br />';
+	dataPlan += '<label><b>Name</b></label><br />';
 	dataPlan += '<input type="text" placeholder="Enter Name" name="name"><br /><br />';
-	dataPlan += '<label for="birthdate"><b>Birthdate</b></label><br />';
-	dataPlan += '<input type="date" placeholder="Enter Birthdate" name="bday"><br /><br />';
+	dataPlan += '<label><b>Birthdate</b></label><br />';
+	dataPlan += '<input type="text" placeholder="Enter Birthdate" name="birthdate"><br /><br />';
 	
 	dataPlan += '<input id="radio" type="radio" name="radio">';
 	dataPlan += '<label for="radio"><b>Yes! Please send periodic information on product, services, and events</b></label><br /><br />';
