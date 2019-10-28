@@ -686,8 +686,8 @@ form[method="post"]{
 		.social .active{
 			filter:brightness(1);
 		}
-		.social a:hover { 
-  		background-color: yellow;
+		.social img:hover { 
+  		 opacity: 0.5;
 		}
 
 		.abttheinc
